@@ -1,0 +1,141 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>Modifier région</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/data/c20_region/contact/_id:label">
+            <value>Primary Contact</value>
+          </text>
+          <text id="/data/c20_region/name:label">
+            <value>Region Name</value>
+          </text>
+        </translation>
+        <translation lang="fr">
+          <text id="/data/c20_region/contact/_id:label">
+            <value>Contact primaire</value>
+          </text>
+          <text id="/data/c20_region/meta/created_by:label">
+            <value>-</value>
+          </text>
+          <text id="/data/c20_region/meta/created_by_person_uuid:label">
+            <value>-</value>
+          </text>
+          <text id="/data/c20_region/meta/created_by_place_uuid:label">
+            <value>-</value>
+          </text>
+          <text id="/data/c20_region/meta:label">
+            <value>-</value>
+          </text>
+          <text id="/data/c20_region/name:label">
+            <value>Nom de la Region</value>
+          </text>
+          <text id="/data/c20_region/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/data/c20_region/type:label">
+            <value>-</value>
+          </text>
+          <text id="/data/c20_region:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user/facility_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user/name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs:label">
+            <value>-</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <data id="contact:c20_region:edit" prefix="J1!contact:c20_region:edit!" delimiter="#" version="2022-05-04 15-59">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <user>
+              <contact_id/>
+              <facility_id/>
+              <name/>
+            </user>
+          </inputs>
+          <c20_region>
+            <parent/>
+            <type/>
+            <contact>
+              <name/>
+              <contact_name/>
+              <_id/>
+            </contact>
+            <name/>
+            <geolocation/>
+            <meta tag="hidden">
+              <created_by/>
+              <created_by_person_uuid/>
+              <created_by_place_uuid/>
+              <last_edited_by/>
+              <last_edited_by_person_uuid/>
+              <last_edited_by_place_uuid/>
+            </meta>
+          </c20_region>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+      <bind nodeset="/data/inputs" relevant="false()"/>
+      <bind nodeset="/data/inputs/user/contact_id" type="string"/>
+      <bind nodeset="/data/inputs/user/facility_id" type="string"/>
+      <bind nodeset="/data/inputs/user/name" type="string"/>
+      <bind nodeset="/data/c20_region/parent" type="string" readonly="true()"/>
+      <bind nodeset="/data/c20_region/type" type="string" readonly="true()"/>
+      <bind nodeset="/data/c20_region/contact/name" type="string" readonly="true()"/>
+      <bind nodeset="/data/c20_region/contact/contact_name" type="string" calculate="../name"/>
+      <bind nodeset="/data/c20_region/contact/_id" type="string" required="true()"/>
+      <bind nodeset="/data/c20_region/name" type="string" required="true()"/>
+      <bind nodeset="/data/c20_region/geolocation" type="string" calculate="concat(../../inputs/meta/location/lat, concat(' ', ../../inputs/meta/location/long))"/>
+      <bind nodeset="/data/c20_region/meta/created_by" type="string" readonly="true()"/>
+      <bind nodeset="/data/c20_region/meta/created_by_person_uuid" type="string" readonly="true()"/>
+      <bind nodeset="/data/c20_region/meta/created_by_place_uuid" type="string"/>
+      <bind nodeset="/data/c20_region/meta/last_edited_by" type="string" calculate="../../../inputs/user/name"/>
+      <bind nodeset="/data/c20_region/meta/last_edited_by_person_uuid" type="string" calculate="../../../inputs/user/contact_id"/>
+      <bind nodeset="/data/c20_region/meta/last_edited_by_place_uuid" type="string" calculate="../../../inputs/user/facility_id"/>
+      <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body>
+    <group ref="/data/inputs">
+      <group ref="/data/inputs/user">
+        <input ref="/data/inputs/user/contact_id"/>
+        <input ref="/data/inputs/user/facility_id"/>
+        <input ref="/data/inputs/user/name"/>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/data/c20_region">
+      <group ref="/data/c20_region/contact">
+        <input appearance="select-contact type-c22_region" ref="/data/c20_region/contact/_id">
+          <label ref="jr:itext('/data/c20_region/contact/_id:label')"/>
+        </input>
+      </group>
+      <input ref="/data/c20_region/name">
+        <label ref="jr:itext('/data/c20_region/name:label')"/>
+      </input>
+      <group appearance="hidden" ref="/data/c20_region/meta"/>
+    </group>
+  </h:body>
+</h:html>

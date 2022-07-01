@@ -1,0 +1,127 @@
+
+  <model>
+    <instance>
+        <mother_referral_followup xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" id="mother_referral_followup" prefix="J1!mother_referral_followup!" delimiter="#" version="2022-05-09  19-25">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <t_follow_up_count/>
+            <t_delivery_date/>
+            <user>
+              <contact_id/>
+              <name/>
+              <phone/>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <short_name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <_id/>
+                <parent>
+                  <_id/>
+                  <parent>
+                    <_id/>
+                  </parent>
+                  <contact>
+                    <chw_name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <household_id tag="hidden"/>
+          <area_id tag="hidden"/>
+          <facility_id tag="hidden"/>
+          <patient_age_in_years tag="hidden"/>
+          <patient_uuid tag="hidden"/>
+          <patient_id tag="hidden"/>
+          <patient_name tag="hidden"/>
+          <patient_short_name tag="hidden"/>
+          <patient_short_name_start tag="hidden"/>
+          <followup_count/>
+          <follow_up_count_number/>
+          <delivery_date/>
+          <days_since_delivery/>
+          <months_since_delivery/>
+          <weeks_since_delivery/>
+          <refer_cscom/>
+          <continue_followup/>
+          <next_followup_days/>
+          <g_task>
+            <task_to_perform/>
+          </g_task>
+          <g_followup>
+            <g_realisation>
+              <followup_done_today/>
+              <followup_date/>
+              <not_done_today/>
+              <other_followup_reason/>
+            </g_realisation>
+            <g_patient_present>
+              <patient_present/>
+              <how_patient_found/>
+            </g_patient_present>
+            <g_visit>
+              <went_to_health_center/>
+              <health_center_date/>
+              <did_not_go/>
+              <label_did_not_go/>
+              <other_no_visit_reason/>
+              <n_visit/>
+            </g_visit>
+            <g_treatment>
+              <diagnosis_given/>
+              <treatment_given/>
+              <problem_handled/>
+              <reason_action/>
+            </g_treatment>
+            <g_disease_progress>
+              <health_status/>
+            </g_disease_progress>
+          </g_followup>
+          <g_end_followup>
+            <why_end_followup/>
+            <why_end_followup_other/>
+          </g_end_followup>
+          <g_summary>
+            <r_summary/>
+            <r_patient_info/>
+            <n_refer_cscom/>
+            <r_diagnosis/>
+            <n_did_not_go/>
+            <n_reason/>
+            <n_diagnosis_given/>
+            <n_treatment_given/>
+            <n_problem_handled/>
+            <r_instructions/>
+            <n_submit/>
+            <n_talk/>
+            <n_directions/>
+            <n_escort_cscom/>
+            <n_death_report/>
+            <n_followup/>
+            <n_next_followup/>
+            <n_next_request/>
+            <n_close_out/>
+          </g_summary>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </mother_referral_followup>
+      </instance>
+    <instance id="contact-summary"/>
+  </model>
+

@@ -1,0 +1,128 @@
+
+  <model>
+    <instance>
+        <pregnancy_referral_followup xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" id="pregnancy_referral_followup" prefix="J1!pregnancy_referral_followup!" delimiter="#" version="2022-05-13 17-20">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <t_lmp_date/>
+            <user>
+              <contact_id/>
+              <name/>
+              <phone/>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <short_name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <_id/>
+                <parent>
+                  <_id/>
+                  <parent>
+                    <_id/>
+                  </parent>
+                  <contact>
+                    <chw_name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <household_id tag="hidden"/>
+          <area_id tag="hidden"/>
+          <facility_id tag="hidden"/>
+          <patient_age_in_years tag="hidden"/>
+          <patient_uuid tag="hidden"/>
+          <patient_id tag="hidden"/>
+          <patient_name tag="hidden"/>
+          <patient_short_name tag="hidden"/>
+          <patient_short_name_start tag="hidden"/>
+          <lmp_date/>
+          <days_since_lmp/>
+          <weeks_since_lmp/>
+          <remainder_days_since_lmp/>
+          <months_since_lmp/>
+          <estimated_delivey_date/>
+          <next_referral_followup_date/>
+          <g_task>
+            <task_to_perform/>
+          </g_task>
+          <g_realisation>
+            <followup_done_today/>
+            <followup_date/>
+            <not_done_today/>
+            <other_followup_reason/>
+          </g_realisation>
+          <g_search_for_woman>
+            <has_woman_been_found/>
+            <how_patient_found/>
+            <other_reason/>
+          </g_search_for_woman>
+          <g_chw_visit>
+            <did_woman_go_to_health_center/>
+            <health_center_visit_date/>
+            <why_was_followup_missed/>
+            <chw_visit_other_reason/>
+            <n_advise_about_health_center_visit/>
+          </g_chw_visit>
+          <g_woman_treatment>
+            <what_was_the_diagnosis/>
+            <what_was_the_treatment_done/>
+            <has_the_issue_been_addressed/>
+            <indicate_the_reason/>
+          </g_woman_treatment>
+          <g_disease_progression>
+            <disease_progression/>
+          </g_disease_progression>
+          <g_end_followup>
+            <why_end_followup/>
+            <why_end_followup_other/>
+          </g_end_followup>
+          <reason_followup_note_description_fr/>
+          <reason_followup_note_description_en/>
+          <g_summary>
+            <r_patient_details/>
+            <r_patient_info/>
+            <r_refer_to_cscom/>
+            <diagnosis_treatment/>
+            <n_did_not_come_to_health_center/>
+            <n_reason_not_go_to_health_center/>
+            <n_what_diagnosis/>
+            <n_what_intervention_procedure/>
+            <n_problem_solved/>
+            <n_problem_not_solved/>
+            <special_instructions/>
+            <n_closing_the_followup_advise/>
+            <n_next_48h_followup/>
+            <n_teach_danger_signs/>
+            <n_recognize_danger_signs/>
+            <n_pnc_benefit_and_labor_signs/>
+            <n_family_planning/>
+            <n_accompany_to_health_center/>
+            <n_fill_death_form/>
+            <n_fill_birth_form/>
+            <follow_up/>
+            <n_next_followup_appointment_in_7_days/>
+            <n_no_further_followup/>
+          </g_summary>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </pregnancy_referral_followup>
+      </instance>
+    <instance id="contact-summary"/>
+  </model>
+

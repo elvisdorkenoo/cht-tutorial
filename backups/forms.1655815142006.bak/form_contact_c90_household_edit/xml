@@ -1,0 +1,388 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>Edit Household</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/data/c90_household/change_primary/false:label">
+            <value>No</value>
+          </text>
+          <text id="/data/c90_household/change_primary/true:label">
+            <value>Yes</value>
+          </text>
+          <text id="/data/c90_household/change_primary:label">
+            <value>Do you want to change the primary contact?</value>
+          </text>
+          <text id="/data/c90_household/contact/select_c12:label">
+            <value>Select Person</value>
+          </text>
+          <text id="/data/c90_household/contact/select_c72:label">
+            <value>Select Person</value>
+          </text>
+          <text id="/data/c90_household/contact/select_c82:label">
+            <value>Select Person</value>
+          </text>
+          <text id="/data/c90_household/contact/select_c92:label">
+            <value>Select Person</value>
+          </text>
+          <text id="/data/c90_household/contact_name_note:label">
+            <value>Primary contact: <output value=" /data/c90_household/contact/contact_name "/></value>
+          </text>
+          <text id="/data/c90_household/family_geolocation:hint">
+            <value>-</value>
+          </text>
+          <text id="/data/c90_household/family_geolocation:label">
+            <value>Geolocation of the family 
+Click on this point only when you are in the family</value>
+          </text>
+          <text id="/data/c90_household/family_number:jr:constraintMsg">
+            <value>Should be between 1 and 50</value>
+          </text>
+          <text id="/data/c90_household/family_number:label">
+            <value>Number of household(s) in the compound</value>
+          </text>
+          <text id="/data/c90_household/name:jr:constraintMsg">
+            <value>You can not edit this form. Please cancel.</value>
+          </text>
+          <text id="/data/c90_household/name:label">
+            <value><output value=" /data/init/place_name_label "/></value>
+          </text>
+          <text id="/data/init/place_name_selector/c10_central:label">
+            <value>Name of the central</value>
+          </text>
+          <text id="/data/init/place_name_selector/c70_village:label">
+            <value>Name of the village</value>
+          </text>
+          <text id="/data/init/place_name_selector/c80_concession:label">
+            <value>Name of the concession</value>
+          </text>
+          <text id="/data/init/place_name_selector/c90_household:label">
+            <value>Name of the household</value>
+          </text>
+          <text id="/data/init/place_type/c10_central:label">
+            <value>Central</value>
+          </text>
+          <text id="/data/init/place_type/c70_village:label">
+            <value>Village</value>
+          </text>
+          <text id="/data/init/place_type/c80_concession:label">
+            <value>Concession</value>
+          </text>
+          <text id="/data/init/place_type/c90_household:label">
+            <value>Household</value>
+          </text>
+          <text id="/data/init/user_contact/n_edit:label">
+            <value>&lt;span style="color:red;"&gt;You can not edit this form. Please cancel.&lt;/span&gt;</value>
+          </text>
+        </translation>
+        <translation lang="fr">
+          <text id="/data/c90_household/change_primary/false:label">
+            <value>Non</value>
+          </text>
+          <text id="/data/c90_household/change_primary/true:label">
+            <value>Oui</value>
+          </text>
+          <text id="/data/c90_household/change_primary:label">
+            <value>Voulez-vous changer le contact primaire?</value>
+          </text>
+          <text id="/data/c90_household/contact/select_c12:label">
+            <value>Choisisser le contact primaire</value>
+          </text>
+          <text id="/data/c90_household/contact/select_c72:label">
+            <value>Choisisser le contact primaire</value>
+          </text>
+          <text id="/data/c90_household/contact/select_c82:label">
+            <value>Choisisser le contact primaire</value>
+          </text>
+          <text id="/data/c90_household/contact/select_c92:label">
+            <value>Choisisser le contact primaire</value>
+          </text>
+          <text id="/data/c90_household/contact_name_note:label">
+            <value>Contact primaire: <output value=" /data/c90_household/contact/contact_name "/></value>
+          </text>
+          <text id="/data/c90_household/family_geolocation:hint">
+            <value>Click on this point only when you are in the concession.</value>
+          </text>
+          <text id="/data/c90_household/family_geolocation:label">
+            <value>Géolocalisation de la concession 
+Cliquez sur ce point seulement lorsque vous êtes dans la concession</value>
+          </text>
+          <text id="/data/c90_household/family_number:jr:constraintMsg">
+            <value>Doit être compris entre 1 et 50</value>
+          </text>
+          <text id="/data/c90_household/family_number:label">
+            <value>Nombre de ménage (s) dans la concession:</value>
+          </text>
+          <text id="/data/c90_household/meta/created_by:label">
+            <value>-</value>
+          </text>
+          <text id="/data/c90_household/meta/created_by_person_uuid:label">
+            <value>-</value>
+          </text>
+          <text id="/data/c90_household/meta/created_by_place_uuid:label">
+            <value>-</value>
+          </text>
+          <text id="/data/c90_household/meta:label">
+            <value>-</value>
+          </text>
+          <text id="/data/c90_household/name:jr:constraintMsg">
+            <value>Vous ne pouvez pas modifier ce formulaire. Veuillez annuler.</value>
+          </text>
+          <text id="/data/c90_household/name:label">
+            <value><output value=" /data/init/place_name_label "/></value>
+          </text>
+          <text id="/data/c90_household/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/data/c90_household/type:label">
+            <value>-</value>
+          </text>
+          <text id="/data/c90_household:label">
+            <value>-</value>
+          </text>
+          <text id="/data/init/place_name_selector/c10_central:label">
+            <value>Nom du central</value>
+          </text>
+          <text id="/data/init/place_name_selector/c70_village:label">
+            <value>Nom du village</value>
+          </text>
+          <text id="/data/init/place_name_selector/c80_concession:label">
+            <value>Nom de la concession</value>
+          </text>
+          <text id="/data/init/place_name_selector/c90_household:label">
+            <value>Nom du ménage</value>
+          </text>
+          <text id="/data/init/place_type/c10_central:label">
+            <value>Central</value>
+          </text>
+          <text id="/data/init/place_type/c70_village:label">
+            <value>Village</value>
+          </text>
+          <text id="/data/init/place_type/c80_concession:label">
+            <value>Concession</value>
+          </text>
+          <text id="/data/init/place_type/c90_household:label">
+            <value>Famille</value>
+          </text>
+          <text id="/data/init/user_contact/n_edit:label">
+            <value>&lt;span style="color:red;"&gt;Vous ne pouvez pas modifier ce formulaire. Veuillez annuler.&lt;/span&gt;</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user/facility_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user/name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs:label">
+            <value>-</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <data id="contact:c90_household:edit" prefix="J1!contact:c90_household:edit!" delimiter="#" version="2022-05-09 19-21">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <user>
+              <contact_id/>
+              <facility_id/>
+              <name/>
+            </user>
+          </inputs>
+          <c90_household>
+            <parent/>
+            <type/>
+            <contact_name_note/>
+            <change_primary>false</change_primary>
+            <contact>
+              <name/>
+              <contact_name/>
+              <select_c12/>
+              <select_c72/>
+              <select_c82/>
+              <select_c92/>
+              <_id/>
+            </contact>
+            <name/>
+            <geolocation/>
+            <family_number/>
+            <family_geolocation>Cliquez sur ce point seulement lorsque vous êtes dans la concession</family_geolocation>
+            <meta tag="hidden">
+              <created_by/>
+              <created_by_person_uuid/>
+              <created_by_place_uuid/>
+              <last_edited_by/>
+              <last_edited_by_person_uuid/>
+              <last_edited_by_place_uuid/>
+            </meta>
+          </c90_household>
+          <init>
+            <place_type/>
+            <place_name_selector>c90_household</place_name_selector>
+            <place_name_label/>
+            <user_contact>
+              <contact_uuid/>
+              <role/>
+              <user_role/>
+              <n_edit/>
+            </user_contact>
+          </init>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+      <bind nodeset="/data/inputs" relevant="false()"/>
+      <bind nodeset="/data/inputs/user/contact_id" type="string"/>
+      <bind nodeset="/data/inputs/user/facility_id" type="string"/>
+      <bind nodeset="/data/inputs/user/name" type="string"/>
+      <bind nodeset="/data/init/place_type" type="select1" calculate="&quot;c90_household&quot;"/>
+      <bind nodeset="/data/init/place_name_selector" type="select1"/>
+      <bind nodeset="/data/init/place_name_label" type="string" calculate="jr:choice-name( /data/init/place_name_selector ,' /data/init/place_name_selector ')"/>
+      <bind nodeset="/data/init/user_contact/contact_uuid" type="string" calculate=" /data/inputs/user/contact_id " readonly="true()"/>
+      <bind nodeset="/data/init/user_contact/role" type="string"/>
+      <bind nodeset="/data/init/user_contact/user_role" type="string" calculate="../role"/>
+      <bind nodeset="/data/init/user_contact/n_edit" readonly="true()" type="string" relevant=" /data/init/user_contact/user_role  = 'oca'"/>
+      <bind nodeset="/data/c90_household/parent" type="string" readonly="true()"/>
+      <bind nodeset="/data/c90_household/type" type="string" readonly="true()"/>
+      <bind nodeset="/data/c90_household/contact_name_note" readonly="true()" type="string"/>
+      <bind nodeset="/data/c90_household/change_primary" type="select1" required="true()"/>
+      <bind nodeset="/data/c90_household/contact/name" type="string" readonly="true()"/>
+      <bind nodeset="/data/c90_household/contact/contact_name" type="string" calculate="../name"/>
+      <bind nodeset="/data/c90_household/contact/select_c12" type="string" relevant=" /data/c90_household/change_primary  = 'true' and  /data/init/place_type  = 'c10_central'" required="true()"/>
+      <bind nodeset="/data/c90_household/contact/select_c72" type="string" relevant=" /data/c90_household/change_primary  = 'true' and  /data/init/place_type  = 'c70_village'" required="true()"/>
+      <bind nodeset="/data/c90_household/contact/select_c82" type="string" relevant=" /data/c90_household/change_primary  = 'true' and  /data/init/place_type  = 'c80_concession'" required="true()"/>
+      <bind nodeset="/data/c90_household/contact/select_c92" type="string" relevant=" /data/c90_household/change_primary  = 'true' and  /data/init/place_type  = 'c90_household'" required="true()"/>
+      <bind nodeset="/data/c90_household/contact/_id" type="string" calculate="if( /data/c90_household/change_primary  = 'true',
+coalesce(
+../select_c12,
+../select_c22,
+../select_c32,
+../select_c42,
+../select_c52,
+../select_c62,
+../select_c72,
+../select_c82,
+../select_c92
+), .)"/>
+      <bind nodeset="/data/c90_household/name" type="string" jr:constraintMsg="jr:itext('/data/c90_household/name:jr:constraintMsg')" constraint=" /data/init/user_contact/user_role  != 'oca'" required="true()"/>
+      <bind nodeset="/data/c90_household/geolocation" type="string" calculate="concat(../../inputs/meta/location/lat, concat(' ', ../../inputs/meta/location/long))"/>
+      <bind nodeset="/data/c90_household/family_number" type="int" jr:constraintMsg="jr:itext('/data/c90_household/family_number:jr:constraintMsg')" constraint=". &gt;= 1 and . &lt;= 50" relevant=" /data/init/place_type  = 'c80_concession'" required="true()"/>
+      <bind nodeset="/data/c90_household/family_geolocation" type="geopoint" relevant=" /data/init/place_type  = 'c80_concession'"/>
+      <bind nodeset="/data/c90_household/meta/created_by" type="string" readonly="true()"/>
+      <bind nodeset="/data/c90_household/meta/created_by_person_uuid" type="string" readonly="true()"/>
+      <bind nodeset="/data/c90_household/meta/created_by_place_uuid" type="string"/>
+      <bind nodeset="/data/c90_household/meta/last_edited_by" type="string" calculate="../../../inputs/user/name"/>
+      <bind nodeset="/data/c90_household/meta/last_edited_by_person_uuid" type="string" calculate="../../../inputs/user/contact_id"/>
+      <bind nodeset="/data/c90_household/meta/last_edited_by_place_uuid" type="string" calculate="../../../inputs/user/facility_id"/>
+      <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body>
+    <group ref="/data/inputs">
+      <group ref="/data/inputs/user">
+        <input ref="/data/inputs/user/contact_id"/>
+        <input ref="/data/inputs/user/facility_id"/>
+        <input ref="/data/inputs/user/name"/>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/data/init">
+      <select1 appearance="hidden" ref="/data/init/place_type">
+        <item>
+          <label ref="jr:itext('/data/init/place_type/c10_central:label')"/>
+          <value>c10_central</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/init/place_type/c70_village:label')"/>
+          <value>c70_village</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/init/place_type/c80_concession:label')"/>
+          <value>c80_concession</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/init/place_type/c90_household:label')"/>
+          <value>c90_household</value>
+        </item>
+      </select1>
+      <select1 appearance="hidden" ref="/data/init/place_name_selector">
+        <item>
+          <label ref="jr:itext('/data/init/place_name_selector/c10_central:label')"/>
+          <value>c10_central</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/init/place_name_selector/c70_village:label')"/>
+          <value>c70_village</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/init/place_name_selector/c80_concession:label')"/>
+          <value>c80_concession</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/init/place_name_selector/c90_household:label')"/>
+          <value>c90_household</value>
+        </item>
+      </select1>
+      <group ref="/data/init/user_contact">
+        <input appearance="db-object hidden" ref="/data/init/user_contact/contact_uuid"/>
+        <input ref="/data/init/user_contact/n_edit">
+          <label ref="jr:itext('/data/init/user_contact/n_edit:label')"/>
+        </input>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/data/c90_household">
+      <input ref="/data/c90_household/contact_name_note">
+        <label ref="jr:itext('/data/c90_household/contact_name_note:label')"/>
+      </input>
+      <select1 ref="/data/c90_household/change_primary">
+        <label ref="jr:itext('/data/c90_household/change_primary:label')"/>
+        <item>
+          <label ref="jr:itext('/data/c90_household/change_primary/true:label')"/>
+          <value>true</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c90_household/change_primary/false:label')"/>
+          <value>false</value>
+        </item>
+      </select1>
+      <group ref="/data/c90_household/contact">
+        <input appearance="select-contact type-c12_central" ref="/data/c90_household/contact/select_c12">
+          <label ref="jr:itext('/data/c90_household/contact/select_c12:label')"/>
+        </input>
+        <input appearance="select-contact type-c72_village" ref="/data/c90_household/contact/select_c72">
+          <label ref="jr:itext('/data/c90_household/contact/select_c72:label')"/>
+        </input>
+        <input appearance="select-contact type-c82_concession" ref="/data/c90_household/contact/select_c82">
+          <label ref="jr:itext('/data/c90_household/contact/select_c82:label')"/>
+        </input>
+        <input appearance="select-contact type-c92_household" ref="/data/c90_household/contact/select_c92">
+          <label ref="jr:itext('/data/c90_household/contact/select_c92:label')"/>
+        </input>
+      </group>
+      <input ref="/data/c90_household/name">
+        <label ref="jr:itext('/data/c90_household/name:label')"/>
+      </input>
+      <input ref="/data/c90_household/family_number">
+        <label ref="jr:itext('/data/c90_household/family_number:label')"/>
+      </input>
+      <input ref="/data/c90_household/family_geolocation">
+        <label ref="jr:itext('/data/c90_household/family_geolocation:label')"/>
+        <hint ref="jr:itext('/data/c90_household/family_geolocation:hint')"/>
+      </input>
+      <group appearance="hidden" ref="/data/c90_household/meta"/>
+    </group>
+  </h:body>
+</h:html>

@@ -1,0 +1,218 @@
+{
+  "roles": {
+    "moh-coordinator": {
+      "name": "usertype.moh-coordinator"
+    },
+    "district-coordinator": {
+      "name": "usertype.district-coordinator"
+    },
+    "health-assistant": {
+      "name": "usertype.health-assistant"
+    },
+    "vhw": {
+      "name": "usertype.vhw",
+      "offline": true
+    }
+  },
+  "permissions": {
+    "can_access_gateway_api": [
+
+    ],
+    "can_bulk_delete_reports": [
+
+    ],
+    "can_configure": [
+
+    ],
+    "can_create_people": [
+
+    ],
+    "can_create_places": [
+
+    ],
+    "can_create_records": [
+
+    ],
+    "can_create_users": [
+
+    ],
+    "can_delete_contacts": [
+
+    ],
+    "can_delete_messages": [
+
+    ],
+    "can_delete_reports": [
+
+    ],
+    "can_delete_users": [
+
+    ],
+    "can_edit": [
+
+    ],
+    "can_edit_profile": [
+
+    ],
+    "can_edit_verification": [
+
+    ],
+    "can_export_all": [
+
+    ],
+    "can_export_contacts": [
+
+    ],
+    "can_export_feedback": [
+
+    ],
+    "can_export_messages": [
+
+    ],
+    "can_log_out_on_android": [],
+    "can_update_places": [
+
+    ],
+    "can_update_reports": [
+
+    ],
+    "can_update_users": [
+
+    ],
+    "can_export_dhis": [
+
+    ],
+    "can_verify_reports": [
+
+    ],
+    "can_view_analytics": [
+
+    ],
+    "can_view_analytics_tab": [
+
+    ],
+    "can_view_call_action": [
+
+    ],
+    "can_view_contacts": [
+
+    ],
+    "can_view_contacts_tab": [
+
+    ],
+    "can_view_last_visited_date": [],
+    "can_view_uhc_stats": [],
+    "can_view_message_action": [
+
+    ],
+    "can_view_messages": [
+
+    ],
+    "can_view_messages_tab": [
+
+    ],
+    "can_view_outgoing_messages": [
+
+    ],
+    "can_view_reports": [
+
+    ],
+    "can_view_reports_tab": [
+
+    ],
+    "can_view_tasks": [
+
+    ],
+    "can_view_tasks_tab": [
+
+    ],
+    "can_view_tasks_group": [
+
+    ],
+    "can_view_unallocated_data_records": [
+
+    ],
+    "can_view_users": [
+
+    ],
+    "can_write_wealth_quintiles": [],
+    "can_aggregate_targets": [
+      "moh_coordinator",
+      "district_coordinator"
+    ],
+    "can_upgrade": [
+
+    ]
+  },
+  "contact_types": [
+    {
+      "id": "moh",
+      "name_key": "contact.type.moh",
+      "group_key": "contact.type.moh.plural",
+      "create_key": "contact.type.moh.new",
+      "edit_key": "contact.type.place.edit",
+      "icon": "medic-district-hospital",
+      "create_form": "form:contact:moh:create",
+      "edit_form": "form:contact:moh:edit"
+    },
+    {
+      "id": "district",
+      "name_key": "contact.type.district",
+      "group_key": "contact.type.district.plural",
+      "create_key": "contact.type.district.new",
+      "edit_key": "contact.type.place.edit",
+      "parents": [
+        "moh"
+      ],
+      "icon": "medic-district-hospital",
+      "create_form": "form:contact:district:create",
+      "edit_form": "form:contact:district:edit"
+    },
+    {
+      "id": "health_facility",
+      "name_key": "contact.type.health_facility",
+      "group_key": "contact.type.health_facility.plural",
+      "create_key": "contact.type.health_facility.new",
+      "edit_key": "contact.type.place.edit",
+      "parents": [
+        "moh",
+        "district"
+      ],
+      "icon": "medic-health-center",
+      "create_form": "form:contact:health_facility:create",
+      "edit_form": "form:contact:health_facility:edit"
+    },
+    {
+      "id": "community",
+      "name_key": "contact.type.community",
+      "group_key": "contact.type.community.plural",
+      "create_key": "contact.type.community.new",
+      "edit_key": "contact.type.place.edit",
+      "parents": [
+        "moh",
+        "district",
+        "health_facility"
+      ],
+      "icon": "medic-chw-area",
+      "create_form": "form:contact:community:create",
+      "edit_form": "form:contact:community:edit"
+    },
+    {
+      "id": "household",
+      "name_key": "contact.type.household",
+      "group_key": "contact.type.household.plural",
+      "create_key": "contact.type.household.new",
+      "edit_key": "contact.type.household.edit",
+      "primary_contact_key": "clinic.field.contact",
+      "parents": [
+        "moh",
+        "district",
+        "health_facility",
+        "community"
+      ],
+      "icon": "medic-family",
+      "create_form": "form:contact:person:create",
+      "edit_form": "form:contact:person:edit"
+    }
+  ]
+}

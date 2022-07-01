@@ -1,0 +1,1326 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>Suivi réalisation CPN</h:title>
+    <model>
+      <itext>
+        <translation lang="bm">
+          <text id="/anc_followup/g_anc_realization/did_patient_go_for_anc/no:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_anc_realization/did_patient_go_for_anc/yes:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_anc_realization/did_patient_go_for_anc:jr:requiredMsg">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_anc_realization/did_patient_go_for_anc:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_anc_realization/specify_other:jr:requiredMsg">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_anc_realization/specify_other:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_anc_realization/when_was_anc_performed:jr:constraintMsg">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_anc_realization/when_was_anc_performed:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_anc_realization/when_was_anc_scheduled:jr:constraintMsg">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_anc_realization/when_was_anc_scheduled:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_anc_realization/why_patient_missed_appointment/husband_refusal:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_anc_realization/why_patient_missed_appointment/lack_of_time:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_anc_realization/why_patient_missed_appointment/not_motivated:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_anc_realization/why_patient_missed_appointment/other:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_anc_realization/why_patient_missed_appointment:jr:requiredMsg">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_anc_realization/why_patient_missed_appointment:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_anc_realization:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_end_followup/why_end_followup/abortion:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_end_followup/why_end_followup/change_of_place_of_residence:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_end_followup/why_end_followup/death_of_the woman:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_end_followup/why_end_followup/other:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_end_followup/why_end_followup/woman_gave_birth:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_end_followup/why_end_followup:jr:requiredMsg">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_end_followup/why_end_followup:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_end_followup/why_end_followup_other:jr:requiredMsg">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_end_followup/why_end_followup_other:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_end_followup:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_next_anc_visit/anc_chosen_date:jr:requiredMsg">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_next_anc_visit/anc_chosen_date:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_next_anc_visit/is_new_anc_scheculed/no:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_next_anc_visit/is_new_anc_scheculed/yes:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_next_anc_visit/is_new_anc_scheculed:jr:requiredMsg">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_next_anc_visit/is_new_anc_scheculed:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_next_anc_visit/next_anc_visit_date:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_next_anc_visit:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_realisation/followup_date:jr:requiredMsg">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_realisation/followup_date:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_realisation/followup_done_today/no:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_realisation/followup_done_today/yes:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_realisation/followup_done_today:jr:requiredMsg">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_realisation/followup_done_today:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_realisation/has_woman_been_found/no:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_realisation/has_woman_been_found/yes:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_realisation/has_woman_been_found:jr:requiredMsg">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_realisation/has_woman_been_found:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_realisation/how_patient_found/during_home_visit:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_realisation/how_patient_found/other:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_realisation/how_patient_found/patient_to_chw:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_realisation/how_patient_found:jr:requiredMsg">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_realisation/how_patient_found:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_realisation/not_done_today/other:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_realisation/not_done_today/phone_discharged:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_realisation/not_done_today/phone_lost:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_realisation/not_done_today:jr:requiredMsg">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_realisation/not_done_today:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_realisation/other_followup_reason:jr:requiredMsg">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_realisation/other_followup_reason:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_realisation/other_patient_found_reason:jr:requiredMsg">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_realisation/other_patient_found_reason:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_realisation:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_summary/anc_information:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_summary/follow_up:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_summary/n_anc_completion_date:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_summary/n_anc_not_performed:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_summary/n_anc_scheduled:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_summary/n_next_anc_date:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_summary/n_next_anc_visit:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_summary/n_next_scheduled_anc:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_summary/n_no_further_followup:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_summary/n_no_information_on_anc:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_summary/n_patient_name_not_present:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_summary/n_patient_was_not_found:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_summary/n_unscheduled_anc:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_summary/n_woman_birth_information:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_summary/n_woman_death_information:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_summary/r_patient_details:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_summary/r_patient_info:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_summary/special_instructions:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_summary:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_task/task_to_perform/close_followup:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_task/task_to_perform/reference_followup:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_task/task_to_perform:jr:requiredMsg">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_task/task_to_perform:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/g_task:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/inputs/contact/_id:hint">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/inputs/contact/_id:jr:constraintMsg">
+            <value>Banabagatɔ si mankan ka caya ni san duru (5) ye</value>
+          </text>
+          <text id="/anc_followup/inputs/contact/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/inputs/contact/date_of_birth:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/inputs/contact/name:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/inputs/contact/sex:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/inputs/contact:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/inputs/source:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/inputs/source_id:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/inputs:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/patient_age_in_days:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/patient_age_in_months:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/patient_age_in_years:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/patient_id:jr:requiredMsg">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/patient_id:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/patient_name:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/patient_sex:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/patient_sex_bm:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/patient_sex_en:label">
+            <value>-</value>
+          </text>
+          <text id="/anc_followup/patient_sex_fr:label">
+            <value>-</value>
+          </text>
+        </translation>
+        <translation lang="en">
+          <text id="/anc_followup/g_anc_realization/did_patient_go_for_anc/no:label">
+            <value>No</value>
+          </text>
+          <text id="/anc_followup/g_anc_realization/did_patient_go_for_anc/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/anc_followup/g_anc_realization/did_patient_go_for_anc:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/anc_followup/g_anc_realization/did_patient_go_for_anc:label">
+            <value>Did <output value=" /anc_followup/patient_name "/> go to ANC?</value>
+          </text>
+          <text id="/anc_followup/g_anc_realization/specify_other:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/anc_followup/g_anc_realization/specify_other:label">
+            <value>Specify (Other)</value>
+          </text>
+          <text id="/anc_followup/g_anc_realization/when_was_anc_performed:jr:constraintMsg">
+            <value>The date must not be today or in the future</value>
+          </text>
+          <text id="/anc_followup/g_anc_realization/when_was_anc_performed:label">
+            <value>When was ANC performed?</value>
+          </text>
+          <text id="/anc_followup/g_anc_realization/when_was_anc_scheduled:jr:constraintMsg">
+            <value>The date must not be today or in the future</value>
+          </text>
+          <text id="/anc_followup/g_anc_realization/when_was_anc_scheduled:label">
+            <value>When was the ANC scheduled?</value>
+          </text>
+          <text id="/anc_followup/g_anc_realization/why_patient_missed_appointment/husband_refusal:label">
+            <value>Refusal by husband/other family members</value>
+          </text>
+          <text id="/anc_followup/g_anc_realization/why_patient_missed_appointment/lack_of_time:label">
+            <value>Lack of time</value>
+          </text>
+          <text id="/anc_followup/g_anc_realization/why_patient_missed_appointment/not_motivated:label">
+            <value>Not motivated</value>
+          </text>
+          <text id="/anc_followup/g_anc_realization/why_patient_missed_appointment/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/anc_followup/g_anc_realization/why_patient_missed_appointment:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/anc_followup/g_anc_realization/why_patient_missed_appointment:label">
+            <value>Why didn't <output value=" /anc_followup/patient_name "/> come to the ANC on the date indicated?</value>
+          </text>
+          <text id="/anc_followup/g_anc_realization:label">
+            <value>ANC realization</value>
+          </text>
+          <text id="/anc_followup/g_end_followup/why_end_followup/abortion:label">
+            <value>Abortion</value>
+          </text>
+          <text id="/anc_followup/g_end_followup/why_end_followup/change_of_place_of_residence:label">
+            <value>Change of place of residence</value>
+          </text>
+          <text id="/anc_followup/g_end_followup/why_end_followup/death_of_the woman:label">
+            <value>Death of wife</value>
+          </text>
+          <text id="/anc_followup/g_end_followup/why_end_followup/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/anc_followup/g_end_followup/why_end_followup/woman_gave_birth:label">
+            <value>The woman gave birth</value>
+          </text>
+          <text id="/anc_followup/g_end_followup/why_end_followup:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/anc_followup/g_end_followup/why_end_followup:label">
+            <value>Why do you want to stop this followup?</value>
+          </text>
+          <text id="/anc_followup/g_end_followup/why_end_followup_other:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/anc_followup/g_end_followup/why_end_followup_other:label">
+            <value>Specify (Other)</value>
+          </text>
+          <text id="/anc_followup/g_next_anc_visit/anc_chosen_date:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/anc_followup/g_next_anc_visit/anc_chosen_date:label">
+            <value>What is the date chosen for the ANC?</value>
+          </text>
+          <text id="/anc_followup/g_next_anc_visit/is_new_anc_scheculed/no:label">
+            <value>No</value>
+          </text>
+          <text id="/anc_followup/g_next_anc_visit/is_new_anc_scheculed/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/anc_followup/g_next_anc_visit/is_new_anc_scheculed:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/anc_followup/g_next_anc_visit/is_new_anc_scheculed:label">
+            <value>Is there a new ANC scheduled?</value>
+          </text>
+          <text id="/anc_followup/g_next_anc_visit/next_anc_visit_date:label">
+            <value>When would you like to go to the ANC?</value>
+          </text>
+          <text id="/anc_followup/g_realisation/followup_date:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/anc_followup/g_realisation/followup_date:label">
+            <value>Enter the date the follow-up</value>
+          </text>
+          <text id="/anc_followup/g_realisation/followup_done_today/no:label">
+            <value>No</value>
+          </text>
+          <text id="/anc_followup/g_realisation/followup_done_today/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/anc_followup/g_realisation/followup_done_today:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/anc_followup/g_realisation/followup_done_today:label">
+            <value>Was the follow-up done today?</value>
+          </text>
+          <text id="/anc_followup/g_realisation/has_woman_been_found/no:label">
+            <value>No</value>
+          </text>
+          <text id="/anc_followup/g_realisation/has_woman_been_found/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/anc_followup/g_realisation/has_woman_been_found:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/anc_followup/g_realisation/has_woman_been_found:label">
+            <value>Has <output value=" /anc_followup/patient_name "/> been found?</value>
+          </text>
+          <text id="/anc_followup/g_realisation/how_patient_found/during_home_visit:label">
+            <value>During the home visit</value>
+          </text>
+          <text id="/anc_followup/g_realisation/how_patient_found/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/anc_followup/g_realisation/how_patient_found/patient_to_chw:label">
+            <value>The woman went to the ASC</value>
+          </text>
+          <text id="/anc_followup/g_realisation/how_patient_found:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/anc_followup/g_realisation/how_patient_found:label">
+            <value>How was <output value=" /anc_followup/patient_name "/> found?</value>
+          </text>
+          <text id="/anc_followup/g_realisation/not_done_today/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/anc_followup/g_realisation/not_done_today/phone_discharged:label">
+            <value>Discharged/Broken Phone</value>
+          </text>
+          <text id="/anc_followup/g_realisation/not_done_today/phone_lost:label">
+            <value>Lost Phone</value>
+          </text>
+          <text id="/anc_followup/g_realisation/not_done_today:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/anc_followup/g_realisation/not_done_today:label">
+            <value>Why was the follow-up not done today?</value>
+          </text>
+          <text id="/anc_followup/g_realisation/other_followup_reason:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/anc_followup/g_realisation/other_followup_reason:label">
+            <value>Specify (Other)</value>
+          </text>
+          <text id="/anc_followup/g_realisation/other_patient_found_reason:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/anc_followup/g_realisation/other_patient_found_reason:label">
+            <value>Specify (Other)</value>
+          </text>
+          <text id="/anc_followup/g_realisation:label">
+            <value>Realization date</value>
+          </text>
+          <text id="/anc_followup/g_summary/anc_information:label">
+            <value>ANC Information&lt;i class="fa fa-medkit"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/anc_followup/g_summary/follow_up:label">
+            <value>Monitoring &lt;i class="fa fa-flag"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/anc_followup/g_summary/n_anc_completion_date:label">
+            <value>Date of completion of the ANC: <output value=" /anc_followup/g_anc_realization/when_was_anc_performed "/></value>
+          </text>
+          <text id="/anc_followup/g_summary/n_anc_not_performed:label">
+            <value>ANC not performed</value>
+          </text>
+          <text id="/anc_followup/g_summary/n_anc_scheduled:label">
+            <value>Date scheduled for ANC: <output value=" /anc_followup/g_anc_realization/when_was_anc_scheduled "/></value>
+          </text>
+          <text id="/anc_followup/g_summary/n_next_anc_date:label">
+            <value>Date of the next ANC: <output value=" /anc_followup/g_next_anc_visit/anc_chosen_date "/></value>
+          </text>
+          <text id="/anc_followup/g_summary/n_next_anc_visit:label">
+            <value>The next CHW visit is for: <output value=" /anc_followup/g_next_anc_visit/anc_chosen_date "/></value>
+          </text>
+          <text id="/anc_followup/g_summary/n_next_scheduled_anc:label">
+            <value>Next unscheduled ANC</value>
+          </text>
+          <text id="/anc_followup/g_summary/n_no_further_followup:label">
+            <value>There is no further follow-up for this woman.</value>
+          </text>
+          <text id="/anc_followup/g_summary/n_no_information_on_anc:label">
+            <value>No information on the ANC</value>
+          </text>
+          <text id="/anc_followup/g_summary/n_patient_name_not_present:label">
+            <value>Make sure that <output value=" /anc_followup/patient_name "/> is not present before proceeding with this action.
+Submitting this form will close the tracking of <output value=" /anc_followup/patient_name "/> pregnant.</value>
+          </text>
+          <text id="/anc_followup/g_summary/n_patient_was_not_found:label">
+            <value><output value=" /anc_followup/patient_name "/> was not found</value>
+          </text>
+          <text id="/anc_followup/g_summary/n_unscheduled_anc:label">
+            <value>Unscheduled ANC</value>
+          </text>
+          <text id="/anc_followup/g_summary/n_woman_birth_information:label">
+            <value>Please complete the birth form for this woman</value>
+          </text>
+          <text id="/anc_followup/g_summary/n_woman_death_information:label">
+            <value>Please complete the death form for this woman</value>
+          </text>
+          <text id="/anc_followup/g_summary/r_patient_details:label">
+            <value>Patient summary &lt;i class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/anc_followup/g_summary/r_patient_info:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /anc_followup/patient_name "/>&lt;/h4&gt; &lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /anc_followup/patient_age_in_years "/> years old&lt;/h5&gt;</value>
+          </text>
+          <text id="/anc_followup/g_summary/special_instructions:label">
+            <value>Special Instructions &lt;i class = "fa fa-hand-o-right"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/anc_followup/g_summary:label">
+            <value>Summary</value>
+          </text>
+          <text id="/anc_followup/g_task/task_to_perform/close_followup:label">
+            <value>Close followup</value>
+          </text>
+          <text id="/anc_followup/g_task/task_to_perform/reference_followup:label">
+            <value>Followup <output value=" /anc_followup/patient_name "/> pregnant</value>
+          </text>
+          <text id="/anc_followup/g_task/task_to_perform:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/anc_followup/g_task/task_to_perform:label">
+            <value>What do you want to do?</value>
+          </text>
+          <text id="/anc_followup/inputs/contact/_id:hint">
+            <value>select a person from the list</value>
+          </text>
+          <text id="/anc_followup/inputs/contact/_id:jr:constraintMsg">
+            <value>Patient must be less that 5 years old</value>
+          </text>
+          <text id="/anc_followup/inputs/contact/_id:label">
+            <value>What is the patient name?</value>
+          </text>
+          <text id="/anc_followup/inputs/contact/date_of_birth:label">
+            <value>Date of birth</value>
+          </text>
+          <text id="/anc_followup/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/anc_followup/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/anc_followup/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/anc_followup/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/anc_followup/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/anc_followup/patient_age_in_days:label">
+            <value>Days old</value>
+          </text>
+          <text id="/anc_followup/patient_age_in_months:label">
+            <value>Months</value>
+          </text>
+          <text id="/anc_followup/patient_age_in_years:label">
+            <value>Years</value>
+          </text>
+          <text id="/anc_followup/patient_id:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/anc_followup/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/anc_followup/patient_name:label">
+            <value>Patient Name</value>
+          </text>
+          <text id="/anc_followup/patient_sex:label">
+            <value>Patient Sex</value>
+          </text>
+          <text id="/anc_followup/patient_sex_bm:label">
+            <value>Patient Sex</value>
+          </text>
+          <text id="/anc_followup/patient_sex_en:label">
+            <value>Patient Sex</value>
+          </text>
+          <text id="/anc_followup/patient_sex_fr:label">
+            <value>Patient Sex</value>
+          </text>
+        </translation>
+        <translation lang="fr">
+          <text id="/anc_followup/g_anc_realization/did_patient_go_for_anc/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/anc_followup/g_anc_realization/did_patient_go_for_anc/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/anc_followup/g_anc_realization/did_patient_go_for_anc:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/anc_followup/g_anc_realization/did_patient_go_for_anc:label">
+            <value><output value=" /anc_followup/patient_name "/> s'est-elle rendue à la CPN?</value>
+          </text>
+          <text id="/anc_followup/g_anc_realization/specify_other:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/anc_followup/g_anc_realization/specify_other:label">
+            <value>Précisez (Autre)</value>
+          </text>
+          <text id="/anc_followup/g_anc_realization/when_was_anc_performed:jr:constraintMsg">
+            <value>La date ne doit pas être aujourd'hui ou dans le futur</value>
+          </text>
+          <text id="/anc_followup/g_anc_realization/when_was_anc_performed:label">
+            <value>Quand est-ce que la CPN a été réalisée?</value>
+          </text>
+          <text id="/anc_followup/g_anc_realization/when_was_anc_scheduled:jr:constraintMsg">
+            <value>La date ne doit pas être aujourd'hui ou dans le futur</value>
+          </text>
+          <text id="/anc_followup/g_anc_realization/when_was_anc_scheduled:label">
+            <value>Quand est-ce que la CPN avait été programmée?</value>
+          </text>
+          <text id="/anc_followup/g_anc_realization/why_patient_missed_appointment/husband_refusal:label">
+            <value>Refus du mari/autres membres de la famille</value>
+          </text>
+          <text id="/anc_followup/g_anc_realization/why_patient_missed_appointment/lack_of_time:label">
+            <value>Manque de temps</value>
+          </text>
+          <text id="/anc_followup/g_anc_realization/why_patient_missed_appointment/not_motivated:label">
+            <value>Pas motivé</value>
+          </text>
+          <text id="/anc_followup/g_anc_realization/why_patient_missed_appointment/other:label">
+            <value>Autre</value>
+          </text>
+          <text id="/anc_followup/g_anc_realization/why_patient_missed_appointment:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/anc_followup/g_anc_realization/why_patient_missed_appointment:label">
+            <value>Pourquoi <output value=" /anc_followup/patient_name "/> ne s'est-elle pas rendue à la CPN à la date indiquée?</value>
+          </text>
+          <text id="/anc_followup/g_anc_realization:label">
+            <value>Réalisation CPN</value>
+          </text>
+          <text id="/anc_followup/g_end_followup/why_end_followup/abortion:label">
+            <value>Avortement</value>
+          </text>
+          <text id="/anc_followup/g_end_followup/why_end_followup/change_of_place_of_residence:label">
+            <value>Changement du lieu residence</value>
+          </text>
+          <text id="/anc_followup/g_end_followup/why_end_followup/death_of_the woman:label">
+            <value>Décès de la femme</value>
+          </text>
+          <text id="/anc_followup/g_end_followup/why_end_followup/other:label">
+            <value>Autre</value>
+          </text>
+          <text id="/anc_followup/g_end_followup/why_end_followup/woman_gave_birth:label">
+            <value>La femme a accouché</value>
+          </text>
+          <text id="/anc_followup/g_end_followup/why_end_followup:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/anc_followup/g_end_followup/why_end_followup:label">
+            <value>Pourquoi voulez-vous arrêter ce suivi?</value>
+          </text>
+          <text id="/anc_followup/g_end_followup/why_end_followup_other:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/anc_followup/g_end_followup/why_end_followup_other:label">
+            <value>Précisez (Autre)</value>
+          </text>
+          <text id="/anc_followup/g_next_anc_visit/anc_chosen_date:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/anc_followup/g_next_anc_visit/anc_chosen_date:label">
+            <value>Quelle est la date choisie pour la CPN?</value>
+          </text>
+          <text id="/anc_followup/g_next_anc_visit/is_new_anc_scheculed/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/anc_followup/g_next_anc_visit/is_new_anc_scheculed/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/anc_followup/g_next_anc_visit/is_new_anc_scheculed:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/anc_followup/g_next_anc_visit/is_new_anc_scheculed:label">
+            <value>Est-ce qu'il y a une nouvelle CPN programmée?</value>
+          </text>
+          <text id="/anc_followup/g_next_anc_visit/next_anc_visit_date:label">
+            <value>Quand souhaitez vous allez à la CPN ?</value>
+          </text>
+          <text id="/anc_followup/g_realisation/followup_date:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/anc_followup/g_realisation/followup_date:label">
+            <value>Entrez la date où le suivi a été fait</value>
+          </text>
+          <text id="/anc_followup/g_realisation/followup_done_today/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/anc_followup/g_realisation/followup_done_today/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/anc_followup/g_realisation/followup_done_today:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/anc_followup/g_realisation/followup_done_today:label">
+            <value>Ce suivi a t-il été fait aujourd'hui?</value>
+          </text>
+          <text id="/anc_followup/g_realisation/has_woman_been_found/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/anc_followup/g_realisation/has_woman_been_found/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/anc_followup/g_realisation/has_woman_been_found:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/anc_followup/g_realisation/has_woman_been_found:label">
+            <value><output value=" /anc_followup/patient_name "/> a t-elle été retrouvée?</value>
+          </text>
+          <text id="/anc_followup/g_realisation/how_patient_found/during_home_visit:label">
+            <value>Au cours de la visite à domicile</value>
+          </text>
+          <text id="/anc_followup/g_realisation/how_patient_found/other:label">
+            <value>Autre</value>
+          </text>
+          <text id="/anc_followup/g_realisation/how_patient_found/patient_to_chw:label">
+            <value>La femme s'est rendue chez l'ASC</value>
+          </text>
+          <text id="/anc_followup/g_realisation/how_patient_found:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/anc_followup/g_realisation/how_patient_found:label">
+            <value>Comment <output value=" /anc_followup/patient_name "/> a t-elle été retrouvée?</value>
+          </text>
+          <text id="/anc_followup/g_realisation/not_done_today/other:label">
+            <value>Autre</value>
+          </text>
+          <text id="/anc_followup/g_realisation/not_done_today/phone_discharged:label">
+            <value>Téléphone Déchargé/Cassé</value>
+          </text>
+          <text id="/anc_followup/g_realisation/not_done_today/phone_lost:label">
+            <value>Téléphone Perdu</value>
+          </text>
+          <text id="/anc_followup/g_realisation/not_done_today:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/anc_followup/g_realisation/not_done_today:label">
+            <value>Pourquoi le suivi n'a pas été fait aujourd'hui?</value>
+          </text>
+          <text id="/anc_followup/g_realisation/other_followup_reason:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/anc_followup/g_realisation/other_followup_reason:label">
+            <value>Précisez (Autre)</value>
+          </text>
+          <text id="/anc_followup/g_realisation/other_patient_found_reason:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/anc_followup/g_realisation/other_patient_found_reason:label">
+            <value>Précisez (Autre)</value>
+          </text>
+          <text id="/anc_followup/g_realisation:label">
+            <value>Date de réalisation</value>
+          </text>
+          <text id="/anc_followup/g_summary/anc_information:label">
+            <value>Informations sur les CPN&lt;i class="fa fa-medkit"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/anc_followup/g_summary/follow_up:label">
+            <value>Suivi &lt;i class="fa fa-flag"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/anc_followup/g_summary/n_anc_completion_date:label">
+            <value>Date de réalisation de la CPN : <output value=" /anc_followup/g_anc_realization/when_was_anc_performed "/></value>
+          </text>
+          <text id="/anc_followup/g_summary/n_anc_not_performed:label">
+            <value>CPN non réalisée</value>
+          </text>
+          <text id="/anc_followup/g_summary/n_anc_scheduled:label">
+            <value>Date programmée pour la CPN : <output value=" /anc_followup/g_anc_realization/when_was_anc_scheduled "/></value>
+          </text>
+          <text id="/anc_followup/g_summary/n_next_anc_date:label">
+            <value>Date de la prochaine CPN : <output value=" /anc_followup/g_next_anc_visit/anc_chosen_date "/></value>
+          </text>
+          <text id="/anc_followup/g_summary/n_next_anc_visit:label">
+            <value>La prochaine visite de l'ASC est pour le: <output value=" /anc_followup/g_next_anc_visit/anc_chosen_date "/></value>
+          </text>
+          <text id="/anc_followup/g_summary/n_next_scheduled_anc:label">
+            <value>Prochaine CPN non programmée</value>
+          </text>
+          <text id="/anc_followup/g_summary/n_no_further_followup:label">
+            <value>Il n'y a plus de suivi pour cette femme.</value>
+          </text>
+          <text id="/anc_followup/g_summary/n_no_information_on_anc:label">
+            <value>Pas d'information sur la CPN</value>
+          </text>
+          <text id="/anc_followup/g_summary/n_patient_name_not_present:label">
+            <value>Rassurez vous de la non présence de <output value=" /anc_followup/patient_name "/> avant de procéder à cette action.
+Soumettre ce formulaire va fermer le suivi de le suivi de <output value=" /anc_followup/patient_name "/> enceinte.</value>
+          </text>
+          <text id="/anc_followup/g_summary/n_patient_was_not_found:label">
+            <value><output value=" /anc_followup/patient_name "/> n'a pas été retrouvée</value>
+          </text>
+          <text id="/anc_followup/g_summary/n_unscheduled_anc:label">
+            <value>CPN non programmée</value>
+          </text>
+          <text id="/anc_followup/g_summary/n_woman_birth_information:label">
+            <value>Veuillez remplir le formulaire de'accouchement pour cette femme</value>
+          </text>
+          <text id="/anc_followup/g_summary/n_woman_death_information:label">
+            <value>Veuillez remplir le formulaire de décès pour cette femme</value>
+          </text>
+          <text id="/anc_followup/g_summary/r_patient_details:label">
+            <value>Détails du patient &lt;i class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/anc_followup/g_summary/r_patient_info:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /anc_followup/patient_name "/>&lt;/h4&gt; &lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /anc_followup/patient_age_in_years "/> ans&lt;/h5&gt;</value>
+          </text>
+          <text id="/anc_followup/g_summary/special_instructions:label">
+            <value>Instructions Spéciale &lt;i class = "fa fa-hand-o-right"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/anc_followup/g_summary:label">
+            <value>Résumé</value>
+          </text>
+          <text id="/anc_followup/g_task/task_to_perform/close_followup:label">
+            <value>Arrêt du suivi</value>
+          </text>
+          <text id="/anc_followup/g_task/task_to_perform/reference_followup:label">
+            <value>Suivi <output value=" /anc_followup/patient_name "/> enceinte</value>
+          </text>
+          <text id="/anc_followup/g_task/task_to_perform:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/anc_followup/g_task/task_to_perform:label">
+            <value>Que voulez-vous faire?</value>
+          </text>
+          <text id="/anc_followup/inputs/contact/_id:hint">
+            <value>Sélectionner une personne dans la liste</value>
+          </text>
+          <text id="/anc_followup/inputs/contact/_id:jr:constraintMsg">
+            <value>L'âge du patient doit être inférieur à 5 ans</value>
+          </text>
+          <text id="/anc_followup/inputs/contact/_id:label">
+            <value>Quel est le nom du patient?</value>
+          </text>
+          <text id="/anc_followup/inputs/contact/date_of_birth:label">
+            <value>Date de naissance</value>
+          </text>
+          <text id="/anc_followup/inputs/contact/name:label">
+            <value>Nom</value>
+          </text>
+          <text id="/anc_followup/inputs/contact/sex:label">
+            <value>Sexe</value>
+          </text>
+          <text id="/anc_followup/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/anc_followup/inputs/source_id:label">
+            <value>Source de l'ID</value>
+          </text>
+          <text id="/anc_followup/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/anc_followup/patient_age_in_days:label">
+            <value>Jours</value>
+          </text>
+          <text id="/anc_followup/patient_age_in_months:label">
+            <value>Mois</value>
+          </text>
+          <text id="/anc_followup/patient_age_in_years:label">
+            <value>Années</value>
+          </text>
+          <text id="/anc_followup/patient_id:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/anc_followup/patient_id:label">
+            <value>Identifiant du patient</value>
+          </text>
+          <text id="/anc_followup/patient_name:label">
+            <value>Nom du patient</value>
+          </text>
+          <text id="/anc_followup/patient_sex:label">
+            <value>Sexe du patient</value>
+          </text>
+          <text id="/anc_followup/patient_sex_bm:label">
+            <value>Sex du patient</value>
+          </text>
+          <text id="/anc_followup/patient_sex_en:label">
+            <value>Sexe du patient</value>
+          </text>
+          <text id="/anc_followup/patient_sex_fr:label">
+            <value>Sexe du patient</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <anc_followup id="anc_followup" prefix="J1!anc_followup!" delimiter="#" version="2022/05/13 16:25:57">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <contact>
+              <_id/>
+              <name/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+            </contact>
+          </inputs>
+          <patient_age_in_years>0</patient_age_in_years>
+          <patient_age_in_months>0</patient_age_in_months>
+          <patient_age_in_days/>
+          <patient_age_display/>
+          <patient_age_display_fr/>
+          <patient_age_display_bm/>
+          <patient_sex_bm/>
+          <patient_id/>
+          <patient_name/>
+          <patient_sex/>
+          <patient_sex_en/>
+          <patient_sex_fr/>
+          <g_task>
+            <task_to_perform/>
+          </g_task>
+          <g_realisation>
+            <followup_done_today/>
+            <followup_date/>
+            <not_done_today/>
+            <other_followup_reason/>
+            <has_woman_been_found/>
+            <how_patient_found/>
+            <other_patient_found_reason/>
+          </g_realisation>
+          <g_anc_realization>
+            <did_patient_go_for_anc/>
+            <when_was_anc_scheduled/>
+            <when_was_anc_performed/>
+            <diff_date_anc/>
+            <why_patient_missed_appointment/>
+            <specify_other/>
+          </g_anc_realization>
+          <g_next_anc_visit>
+            <next_anc_visit_date/>
+            <is_new_anc_scheculed/>
+            <anc_chosen_date/>
+          </g_next_anc_visit>
+          <g_end_followup>
+            <why_end_followup/>
+            <why_end_followup_other/>
+          </g_end_followup>
+          <g_summary>
+            <r_patient_details/>
+            <r_patient_info/>
+            <anc_information/>
+            <n_patient_was_not_found/>
+            <n_anc_scheduled/>
+            <n_anc_completion_date/>
+            <n_next_anc_date/>
+            <n_anc_not_performed/>
+            <n_unscheduled_anc/>
+            <n_next_scheduled_anc/>
+            <n_no_information_on_anc/>
+            <special_instructions/>
+            <n_woman_death_information/>
+            <n_woman_birth_information/>
+            <n_patient_name_not_present/>
+            <follow_up/>
+            <n_next_anc_visit/>
+            <n_no_further_followup/>
+          </g_summary>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </anc_followup>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/anc_followup/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/anc_followup/inputs/source" type="string"/>
+      <bind nodeset="/anc_followup/inputs/source_id" type="string"/>
+      <bind nodeset="/anc_followup/inputs/contact/_id" type="db:person" constraint=" /anc_followup/patient_age_in_years  &lt; 5" jr:constraintMsg="jr:itext('/anc_followup/inputs/contact/_id:jr:constraintMsg')"/>
+      <bind nodeset="/anc_followup/inputs/contact/name" type="string"/>
+      <bind nodeset="/anc_followup/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/anc_followup/inputs/contact/sex" type="string"/>
+      <bind nodeset="/anc_followup/patient_age_in_years" type="string" calculate="floor( difference-in-months(  /anc_followup/inputs/contact/date_of_birth , today() ) div 12 )"/>
+      <bind nodeset="/anc_followup/patient_age_in_months" type="string" calculate="difference-in-months(  /anc_followup/inputs/contact/date_of_birth , today() )"/>
+      <bind nodeset="/anc_followup/patient_age_in_days" type="string" calculate="floor( decimal-date-time(today()) - decimal-date-time( /anc_followup/inputs/contact/date_of_birth ) )"/>
+      <bind nodeset="/anc_followup/patient_age_display" type="string" calculate="concat(concat( /anc_followup/patient_age_in_years , if( /anc_followup/patient_age_in_years =1,' year and ',' years and ')),concat( /anc_followup/patient_age_in_months  mod 12, if(( /anc_followup/patient_age_in_months  mod 12)=1,' month old',' months old')))"/>
+      <bind nodeset="/anc_followup/patient_age_display_fr" type="string" calculate="concat(concat( /anc_followup/patient_age_in_years , if( /anc_followup/patient_age_in_years =1,' an et ',' ans et ')),concat( /anc_followup/patient_age_in_months  mod 12, if(( /anc_followup/patient_age_in_months  mod 12)=1,' mois',' mois')))"/>
+      <bind nodeset="/anc_followup/patient_age_display_bm" type="string" calculate="concat( concat( if( /anc_followup/patient_age_in_years  != '','San ',''),  /anc_followup/patient_age_in_years  ), concat( if(( /anc_followup/patient_age_in_months  mod 12)=1,' ani kalo ',' ani kalo ')  /anc_followup/patient_age_in_months  mod 12, ) )"/>
+      <bind nodeset="/anc_followup/patient_sex_bm" type="string" calculate="if( /anc_followup/patient_sex  = 'male' or  /anc_followup/patient_sex  = 'homme' or  /anc_followup/patient_sex  = 'Homme', 'Cɛ', if( /anc_followup/patient_sex  = 'female' or  /anc_followup/patient_sex  = 'femme' or  /anc_followup/patient_sex  = 'Femme', 'Muso', ''))"/>
+      <bind nodeset="/anc_followup/patient_id" type="string" required="true()" jr:requiredMsg="jr:itext('/anc_followup/patient_id:jr:requiredMsg')" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/anc_followup/patient_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/anc_followup/patient_sex" type="string" calculate="../inputs/contact/sex"/>
+      <bind nodeset="/anc_followup/patient_sex_en" type="string" calculate="if( /anc_followup/patient_sex  = 'male', 'Male', if( /anc_followup/patient_sex  = 'female', 'Female', ''))"/>
+      <bind nodeset="/anc_followup/patient_sex_fr" type="string" calculate="if( /anc_followup/patient_sex  = 'male', 'Homme', if( /anc_followup/patient_sex  = 'female', 'Femme', ''))"/>
+      <bind nodeset="/anc_followup/g_task/task_to_perform" type="select1" required="true()" jr:requiredMsg="jr:itext('/anc_followup/g_task/task_to_perform:jr:requiredMsg')"/>
+      <bind nodeset="/anc_followup/g_realisation" relevant=" /anc_followup/g_task/task_to_perform ='reference_followup'"/>
+      <bind nodeset="/anc_followup/g_realisation/followup_done_today" type="select1" required="true()" jr:requiredMsg="jr:itext('/anc_followup/g_realisation/followup_done_today:jr:requiredMsg')"/>
+      <bind nodeset="/anc_followup/g_realisation/followup_date" type="date" constraint=". &lt;= today()-1" required="true()" jr:requiredMsg="jr:itext('/anc_followup/g_realisation/followup_date:jr:requiredMsg')" relevant=" /anc_followup/g_realisation/followup_done_today ='no'"/>
+      <bind nodeset="/anc_followup/g_realisation/not_done_today" type="select1" required="true()" jr:requiredMsg="jr:itext('/anc_followup/g_realisation/not_done_today:jr:requiredMsg')" relevant=" /anc_followup/g_realisation/followup_done_today ='no'"/>
+      <bind nodeset="/anc_followup/g_realisation/other_followup_reason" type="string" required="true()" jr:requiredMsg="jr:itext('/anc_followup/g_realisation/other_followup_reason:jr:requiredMsg')" relevant=" /anc_followup/g_realisation/not_done_today ='other'"/>
+      <bind nodeset="/anc_followup/g_realisation/has_woman_been_found" type="select1" required="true()" jr:requiredMsg="jr:itext('/anc_followup/g_realisation/has_woman_been_found:jr:requiredMsg')"/>
+      <bind nodeset="/anc_followup/g_realisation/how_patient_found" type="select1" required="true()" jr:requiredMsg="jr:itext('/anc_followup/g_realisation/how_patient_found:jr:requiredMsg')" relevant=" /anc_followup/g_realisation/has_woman_been_found ='yes'"/>
+      <bind nodeset="/anc_followup/g_realisation/other_patient_found_reason" type="string" required="true()" jr:requiredMsg="jr:itext('/anc_followup/g_realisation/other_patient_found_reason:jr:requiredMsg')" relevant=" /anc_followup/g_realisation/how_patient_found ='other'"/>
+      <bind nodeset="/anc_followup/g_anc_realization" relevant=" /anc_followup/g_realisation/has_woman_been_found ='yes'"/>
+      <bind nodeset="/anc_followup/g_anc_realization/did_patient_go_for_anc" type="select1" required="true()" jr:requiredMsg="jr:itext('/anc_followup/g_anc_realization/did_patient_go_for_anc:jr:requiredMsg')"/>
+      <bind nodeset="/anc_followup/g_anc_realization/when_was_anc_scheduled" type="date" required="false()" relevant=" /anc_followup/g_anc_realization/did_patient_go_for_anc ='yes'" jr:constraintMsg="jr:itext('/anc_followup/g_anc_realization/when_was_anc_scheduled:jr:constraintMsg')" constraint=". &lt;= today()-1"/>
+      <bind nodeset="/anc_followup/g_anc_realization/when_was_anc_performed" type="date" required="false()" relevant=" /anc_followup/g_anc_realization/did_patient_go_for_anc ='yes'" jr:constraintMsg="jr:itext('/anc_followup/g_anc_realization/when_was_anc_performed:jr:constraintMsg')" constraint=". &lt; today()-1 and floor(decimal-date-time(.)) &gt;= floor(decimal-date-time( /anc_followup/g_anc_realization/when_was_anc_scheduled ))"/>
+      <bind nodeset="/anc_followup/g_anc_realization/diff_date_anc" type="string" calculate="floor( decimal-date-time( /anc_followup/g_anc_realization/when_was_anc_performed ) - decimal-date-time( /anc_followup/g_anc_realization/when_was_anc_scheduled ))"/>
+      <bind nodeset="/anc_followup/g_anc_realization/why_patient_missed_appointment" type="select1" required="true()" jr:requiredMsg="jr:itext('/anc_followup/g_anc_realization/why_patient_missed_appointment:jr:requiredMsg')" relevant=" /anc_followup/g_anc_realization/diff_date_anc  &gt; 0 or  /anc_followup/g_anc_realization/did_patient_go_for_anc ='no'"/>
+      <bind nodeset="/anc_followup/g_anc_realization/specify_other" type="string" required="true()" jr:requiredMsg="jr:itext('/anc_followup/g_anc_realization/specify_other:jr:requiredMsg')" relevant=" /anc_followup/g_anc_realization/why_patient_missed_appointment ='other'"/>
+      <bind nodeset="/anc_followup/g_next_anc_visit/next_anc_visit_date" type="date" required="false()" constraint=". &gt; today()" relevant=" /anc_followup/g_anc_realization/did_patient_go_for_anc ='no'"/>
+      <bind nodeset="/anc_followup/g_next_anc_visit/is_new_anc_scheculed" type="select1" required="true()" jr:requiredMsg="jr:itext('/anc_followup/g_next_anc_visit/is_new_anc_scheculed:jr:requiredMsg')" relevant=" /anc_followup/g_anc_realization/did_patient_go_for_anc ='yes'"/>
+      <bind nodeset="/anc_followup/g_next_anc_visit/anc_chosen_date" type="date" constraint=". &gt; today()" required="true()" jr:requiredMsg="jr:itext('/anc_followup/g_next_anc_visit/anc_chosen_date:jr:requiredMsg')" relevant=" /anc_followup/g_next_anc_visit/is_new_anc_scheculed ='yes'"/>
+      <bind nodeset="/anc_followup/g_end_followup" relevant=" /anc_followup/g_task/task_to_perform ='close_followup'"/>
+      <bind nodeset="/anc_followup/g_end_followup/why_end_followup" type="select1" required="true()" jr:requiredMsg="jr:itext('/anc_followup/g_end_followup/why_end_followup:jr:requiredMsg')"/>
+      <bind nodeset="/anc_followup/g_end_followup/why_end_followup_other" type="string" required="true()" jr:requiredMsg="jr:itext('/anc_followup/g_end_followup/why_end_followup_other:jr:requiredMsg')" relevant=" /anc_followup/g_end_followup/why_end_followup ='other'"/>
+      <bind nodeset="/anc_followup/g_summary/r_patient_details" readonly="true()" type="string"/>
+      <bind nodeset="/anc_followup/g_summary/r_patient_info" readonly="true()" type="string"/>
+      <bind nodeset="/anc_followup/g_summary/anc_information" readonly="true()" type="string"/>
+      <bind nodeset="/anc_followup/g_summary/n_patient_was_not_found" readonly="true()" type="string" relevant=" /anc_followup/g_realisation/has_woman_been_found ='no'"/>
+      <bind nodeset="/anc_followup/g_summary/n_anc_scheduled" readonly="true()" type="string" relevant=" /anc_followup/g_anc_realization/did_patient_go_for_anc ='yes'"/>
+      <bind nodeset="/anc_followup/g_summary/n_anc_completion_date" readonly="true()" type="string" relevant=" /anc_followup/g_anc_realization/did_patient_go_for_anc ='yes'"/>
+      <bind nodeset="/anc_followup/g_summary/n_next_anc_date" readonly="true()" type="string" relevant=" /anc_followup/g_next_anc_visit/anc_chosen_date !=' '"/>
+      <bind nodeset="/anc_followup/g_summary/n_anc_not_performed" readonly="true()" type="string" relevant=" /anc_followup/g_anc_realization/did_patient_go_for_anc ='no'"/>
+      <bind nodeset="/anc_followup/g_summary/n_unscheduled_anc" readonly="true()" type="string" relevant=" /anc_followup/g_anc_realization/when_was_anc_scheduled =' '"/>
+      <bind nodeset="/anc_followup/g_summary/n_next_scheduled_anc" readonly="true()" type="string" relevant=" /anc_followup/g_next_anc_visit/is_new_anc_scheculed ='no'"/>
+      <bind nodeset="/anc_followup/g_summary/n_no_information_on_anc" readonly="true()" type="string" relevant=" /anc_followup/g_realisation/has_woman_been_found ='no'"/>
+      <bind nodeset="/anc_followup/g_summary/special_instructions" readonly="true()" type="string"/>
+      <bind nodeset="/anc_followup/g_summary/n_woman_death_information" readonly="true()" type="string" relevant=" /anc_followup/g_end_followup/why_end_followup ='death_of_the woman'"/>
+      <bind nodeset="/anc_followup/g_summary/n_woman_birth_information" readonly="true()" type="string" relevant=" /anc_followup/g_end_followup/why_end_followup ='woman_gave_birth'"/>
+      <bind nodeset="/anc_followup/g_summary/n_patient_name_not_present" readonly="true()" type="string" relevant=" /anc_followup/g_realisation/has_woman_been_found ='yes'"/>
+      <bind nodeset="/anc_followup/g_summary/follow_up" readonly="true()" type="string"/>
+      <bind nodeset="/anc_followup/g_summary/n_next_anc_visit" readonly="true()" type="string" relevant=" /anc_followup/g_next_anc_visit/is_new_anc_scheculed ='yes'"/>
+      <bind nodeset="/anc_followup/g_summary/n_no_further_followup" readonly="true()" type="string" relevant=" /anc_followup/g_task/task_to_perform ='close_followup'"/>
+      <bind nodeset="/anc_followup/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/anc_followup/inputs">
+      <label ref="jr:itext('/anc_followup/inputs:label')"/>
+      <input appearance="hidden" ref="/anc_followup/inputs/source">
+        <label ref="jr:itext('/anc_followup/inputs/source:label')"/>
+      </input>
+      <input appearance="hidden" ref="/anc_followup/inputs/source_id">
+        <label ref="jr:itext('/anc_followup/inputs/source_id:label')"/>
+      </input>
+      <group ref="/anc_followup/inputs/contact">
+        <input appearance="db-object" ref="/anc_followup/inputs/contact/_id">
+          <label ref="jr:itext('/anc_followup/inputs/contact/_id:label')"/>
+          <hint ref="jr:itext('/anc_followup/inputs/contact/_id:hint')"/>
+        </input>
+        <input appearance="hidden" ref="/anc_followup/inputs/contact/name">
+          <label ref="jr:itext('/anc_followup/inputs/contact/name:label')"/>
+        </input>
+        <input appearance="hidden" ref="/anc_followup/inputs/contact/date_of_birth">
+          <label ref="jr:itext('/anc_followup/inputs/contact/date_of_birth:label')"/>
+        </input>
+        <input appearance="hidden" ref="/anc_followup/inputs/contact/sex">
+          <label ref="jr:itext('/anc_followup/inputs/contact/sex:label')"/>
+        </input>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/anc_followup/g_task">
+      <select1 ref="/anc_followup/g_task/task_to_perform">
+        <label ref="jr:itext('/anc_followup/g_task/task_to_perform:label')"/>
+        <item>
+          <label ref="jr:itext('/anc_followup/g_task/task_to_perform/reference_followup:label')"/>
+          <value>reference_followup</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/anc_followup/g_task/task_to_perform/close_followup:label')"/>
+          <value>close_followup</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/anc_followup/g_realisation">
+      <label ref="jr:itext('/anc_followup/g_realisation:label')"/>
+      <select1 ref="/anc_followup/g_realisation/followup_done_today">
+        <label ref="jr:itext('/anc_followup/g_realisation/followup_done_today:label')"/>
+        <item>
+          <label ref="jr:itext('/anc_followup/g_realisation/followup_done_today/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/anc_followup/g_realisation/followup_done_today/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/anc_followup/g_realisation/followup_date">
+        <label ref="jr:itext('/anc_followup/g_realisation/followup_date:label')"/>
+      </input>
+      <select1 ref="/anc_followup/g_realisation/not_done_today">
+        <label ref="jr:itext('/anc_followup/g_realisation/not_done_today:label')"/>
+        <item>
+          <label ref="jr:itext('/anc_followup/g_realisation/not_done_today/phone_discharged:label')"/>
+          <value>phone_discharged</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/anc_followup/g_realisation/not_done_today/phone_lost:label')"/>
+          <value>phone_lost</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/anc_followup/g_realisation/not_done_today/other:label')"/>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/anc_followup/g_realisation/other_followup_reason">
+        <label ref="jr:itext('/anc_followup/g_realisation/other_followup_reason:label')"/>
+      </input>
+      <select1 ref="/anc_followup/g_realisation/has_woman_been_found">
+        <label ref="jr:itext('/anc_followup/g_realisation/has_woman_been_found:label')"/>
+        <item>
+          <label ref="jr:itext('/anc_followup/g_realisation/has_woman_been_found/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/anc_followup/g_realisation/has_woman_been_found/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/anc_followup/g_realisation/how_patient_found">
+        <label ref="jr:itext('/anc_followup/g_realisation/how_patient_found:label')"/>
+        <item>
+          <label ref="jr:itext('/anc_followup/g_realisation/how_patient_found/during_home_visit:label')"/>
+          <value>during_home_visit</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/anc_followup/g_realisation/how_patient_found/patient_to_chw:label')"/>
+          <value>patient_to_chw</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/anc_followup/g_realisation/how_patient_found/other:label')"/>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/anc_followup/g_realisation/other_patient_found_reason">
+        <label ref="jr:itext('/anc_followup/g_realisation/other_patient_found_reason:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/anc_followup/g_anc_realization">
+      <label ref="jr:itext('/anc_followup/g_anc_realization:label')"/>
+      <select1 ref="/anc_followup/g_anc_realization/did_patient_go_for_anc">
+        <label ref="jr:itext('/anc_followup/g_anc_realization/did_patient_go_for_anc:label')"/>
+        <item>
+          <label ref="jr:itext('/anc_followup/g_anc_realization/did_patient_go_for_anc/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/anc_followup/g_anc_realization/did_patient_go_for_anc/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/anc_followup/g_anc_realization/when_was_anc_scheduled">
+        <label ref="jr:itext('/anc_followup/g_anc_realization/when_was_anc_scheduled:label')"/>
+      </input>
+      <input ref="/anc_followup/g_anc_realization/when_was_anc_performed">
+        <label ref="jr:itext('/anc_followup/g_anc_realization/when_was_anc_performed:label')"/>
+      </input>
+      <select1 ref="/anc_followup/g_anc_realization/why_patient_missed_appointment">
+        <label ref="jr:itext('/anc_followup/g_anc_realization/why_patient_missed_appointment:label')"/>
+        <item>
+          <label ref="jr:itext('/anc_followup/g_anc_realization/why_patient_missed_appointment/lack_of_time:label')"/>
+          <value>lack_of_time</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/anc_followup/g_anc_realization/why_patient_missed_appointment/not_motivated:label')"/>
+          <value>not_motivated</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/anc_followup/g_anc_realization/why_patient_missed_appointment/husband_refusal:label')"/>
+          <value>husband_refusal</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/anc_followup/g_anc_realization/why_patient_missed_appointment/other:label')"/>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/anc_followup/g_anc_realization/specify_other">
+        <label ref="jr:itext('/anc_followup/g_anc_realization/specify_other:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/anc_followup/g_next_anc_visit">
+      <input ref="/anc_followup/g_next_anc_visit/next_anc_visit_date">
+        <label ref="jr:itext('/anc_followup/g_next_anc_visit/next_anc_visit_date:label')"/>
+      </input>
+      <select1 ref="/anc_followup/g_next_anc_visit/is_new_anc_scheculed">
+        <label ref="jr:itext('/anc_followup/g_next_anc_visit/is_new_anc_scheculed:label')"/>
+        <item>
+          <label ref="jr:itext('/anc_followup/g_next_anc_visit/is_new_anc_scheculed/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/anc_followup/g_next_anc_visit/is_new_anc_scheculed/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/anc_followup/g_next_anc_visit/anc_chosen_date">
+        <label ref="jr:itext('/anc_followup/g_next_anc_visit/anc_chosen_date:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/anc_followup/g_end_followup">
+      <select1 ref="/anc_followup/g_end_followup/why_end_followup">
+        <label ref="jr:itext('/anc_followup/g_end_followup/why_end_followup:label')"/>
+        <item>
+          <label ref="jr:itext('/anc_followup/g_end_followup/why_end_followup/woman_gave_birth:label')"/>
+          <value>woman_gave_birth</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/anc_followup/g_end_followup/why_end_followup/death_of_the woman:label')"/>
+          <value>death_of_the woman</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/anc_followup/g_end_followup/why_end_followup/abortion:label')"/>
+          <value>abortion</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/anc_followup/g_end_followup/why_end_followup/change_of_place_of_residence:label')"/>
+          <value>change_of_place_of_residence</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/anc_followup/g_end_followup/why_end_followup/other:label')"/>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/anc_followup/g_end_followup/why_end_followup_other">
+        <label ref="jr:itext('/anc_followup/g_end_followup/why_end_followup_other:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list summary" ref="/anc_followup/g_summary">
+      <label ref="jr:itext('/anc_followup/g_summary:label')"/>
+      <input appearance="h1 yellow" ref="/anc_followup/g_summary/r_patient_details">
+        <label ref="jr:itext('/anc_followup/g_summary/r_patient_details:label')"/>
+      </input>
+      <input ref="/anc_followup/g_summary/r_patient_info">
+        <label ref="jr:itext('/anc_followup/g_summary/r_patient_info:label')"/>
+      </input>
+      <input appearance="h1 green" ref="/anc_followup/g_summary/anc_information">
+        <label ref="jr:itext('/anc_followup/g_summary/anc_information:label')"/>
+      </input>
+      <input ref="/anc_followup/g_summary/n_patient_was_not_found">
+        <label ref="jr:itext('/anc_followup/g_summary/n_patient_was_not_found:label')"/>
+      </input>
+      <input ref="/anc_followup/g_summary/n_anc_scheduled">
+        <label ref="jr:itext('/anc_followup/g_summary/n_anc_scheduled:label')"/>
+      </input>
+      <input ref="/anc_followup/g_summary/n_anc_completion_date">
+        <label ref="jr:itext('/anc_followup/g_summary/n_anc_completion_date:label')"/>
+      </input>
+      <input ref="/anc_followup/g_summary/n_next_anc_date">
+        <label ref="jr:itext('/anc_followup/g_summary/n_next_anc_date:label')"/>
+      </input>
+      <input ref="/anc_followup/g_summary/n_anc_not_performed">
+        <label ref="jr:itext('/anc_followup/g_summary/n_anc_not_performed:label')"/>
+      </input>
+      <input ref="/anc_followup/g_summary/n_unscheduled_anc">
+        <label ref="jr:itext('/anc_followup/g_summary/n_unscheduled_anc:label')"/>
+      </input>
+      <input ref="/anc_followup/g_summary/n_next_scheduled_anc">
+        <label ref="jr:itext('/anc_followup/g_summary/n_next_scheduled_anc:label')"/>
+      </input>
+      <input ref="/anc_followup/g_summary/n_no_information_on_anc">
+        <label ref="jr:itext('/anc_followup/g_summary/n_no_information_on_anc:label')"/>
+      </input>
+      <input appearance="h1 blue" ref="/anc_followup/g_summary/special_instructions">
+        <label ref="jr:itext('/anc_followup/g_summary/special_instructions:label')"/>
+      </input>
+      <input ref="/anc_followup/g_summary/n_woman_death_information">
+        <label ref="jr:itext('/anc_followup/g_summary/n_woman_death_information:label')"/>
+      </input>
+      <input ref="/anc_followup/g_summary/n_woman_birth_information">
+        <label ref="jr:itext('/anc_followup/g_summary/n_woman_birth_information:label')"/>
+      </input>
+      <input ref="/anc_followup/g_summary/n_patient_name_not_present">
+        <label ref="jr:itext('/anc_followup/g_summary/n_patient_name_not_present:label')"/>
+      </input>
+      <input appearance="h1 green" ref="/anc_followup/g_summary/follow_up">
+        <label ref="jr:itext('/anc_followup/g_summary/follow_up:label')"/>
+      </input>
+      <input ref="/anc_followup/g_summary/n_next_anc_visit">
+        <label ref="jr:itext('/anc_followup/g_summary/n_next_anc_visit:label')"/>
+      </input>
+      <input ref="/anc_followup/g_summary/n_no_further_followup">
+        <label ref="jr:itext('/anc_followup/g_summary/n_no_further_followup:label')"/>
+      </input>
+    </group>
+  </h:body>
+</h:html>

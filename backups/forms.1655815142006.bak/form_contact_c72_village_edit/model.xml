@@ -1,0 +1,49 @@
+
+  <model>
+    <instance>
+        <data xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" id="contact:c72_village:edit" prefix="J1!contact:c72_village:edit!" delimiter="#" version="2022-05-09 19-28">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <user>
+              <contact_id/>
+              <facility_id/>
+              <name/>
+            </user>
+          </inputs>
+          <c72_village>
+            <first_name/>
+            <last_name/>
+            <name/>
+            <sex/>
+            <phone/>
+            <meta tag="hidden">
+              <created_by/>
+              <created_by_person_uuid/>
+              <created_by_place_uuid/>
+              <last_edited_by>Will be hidden</last_edited_by>
+              <last_edited_by_person_uuid/>
+              <last_edited_by_place_uuid/>
+            </meta>
+          </c72_village>
+          <init>
+            <user_contact>
+              <contact_uuid/>
+              <role/>
+              <user_role/>
+              <n_edit/>
+            </user_contact>
+          </init>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+  </model>
+

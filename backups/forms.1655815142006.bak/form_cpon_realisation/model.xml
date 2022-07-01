@@ -1,0 +1,114 @@
+
+  <model>
+    <instance>
+        <cpon_realisation xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" id="cpon_realisation" prefix="J1!cpon_realisation!" delimiter="#" version="2022-05-05  16-37">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+              <name/>
+              <phone/>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <short_name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <_id/>
+                <parent>
+                  <_id/>
+                  <parent>
+                    <_id/>
+                  </parent>
+                  <contact>
+                    <chw_name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <household_id tag="hidden"/>
+          <area_id tag="hidden"/>
+          <facility_id tag="hidden"/>
+          <patient_age_in_years tag="hidden"/>
+          <patient_uuid tag="hidden"/>
+          <patient_id tag="hidden"/>
+          <patient_name tag="hidden"/>
+          <patient_short_name tag="hidden"/>
+          <patient_short_name_start tag="hidden"/>
+          <g_task_realisation>
+            <cpon_followup/>
+          </g_task_realisation>
+          <g_followup_realisation>
+            <g_realisation_date>
+              <followup_done_today/>
+              <followup_date/>
+              <followup_not_done_reason/>
+              <followup_not_done_other/>
+              <patient_found/>
+              <patient_found_how/>
+              <patient_found_other/>
+            </g_realisation_date>
+            <gr_cpn_realisation>
+              <g_cpn_realisation>
+                <did_cpon_visit/>
+                <cpon_scheduled_date/>
+                <cpon_realisation_date/>
+                <cpon_scheduled_date_french/>
+                <cpon_realisation_date_french/>
+                <why_no_cpon_visit/>
+                <why_no_cpon_visit_other/>
+              </g_cpn_realisation>
+              <g_next_cpon_visit>
+                <when_cpon_visit/>
+                <when_cpon_visit_french/>
+                <has_new_cpon_scheduled/>
+                <new_cpon_scheduled_date/>
+                <new_cpon_scheduled_date_french/>
+              </g_next_cpon_visit>
+            </gr_cpn_realisation>
+          </g_followup_realisation>
+          <g_end_followup>
+            <why_end_followup/>
+            <why_end_followup_other/>
+          </g_end_followup>
+          <g_summary>
+            <r_summary/>
+            <n_patient_info/>
+            <r_cpn_info/>
+            <n_not_found/>
+            <n_program_cpon/>
+            <n_realisation_cpon/>
+            <n_next_cpon/>
+            <n_cpon_not_performed/>
+            <n_not_programmed/>
+            <n_next_cpon_not_programmed/>
+            <n_no_info_cpon/>
+            <r_special_instruction/>
+            <n_patient_deceased_form/>
+            <n_not_present_patient_fill_form/>
+            <r_followup/>
+            <n_next_chw_visit/>
+            <n_not_followup/>
+          </g_summary>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </cpon_realisation>
+      </instance>
+    <instance id="contact-summary"/>
+  </model>
+

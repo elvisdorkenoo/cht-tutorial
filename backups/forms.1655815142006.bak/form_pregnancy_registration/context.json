@@ -1,0 +1,5 @@
+{
+  "place": false,
+  "person": true,
+  "expression": "summary.canBecomePregnant && ageInYears(contact) > 12"
+}

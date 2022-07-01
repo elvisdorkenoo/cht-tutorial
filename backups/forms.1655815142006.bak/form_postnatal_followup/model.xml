@@ -1,0 +1,416 @@
+
+  <model>
+    <instance>
+        <postnatal_followup xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" id="postnatal_followup" prefix="J1!postnatal_followup!" delimiter="#" version="2022-05-11  13-42">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <t_follow_up_count/>
+            <t_number_of_children/>
+            <t_delivery_date/>
+            <t_next_followup_date/>
+            <t_delivery_location/>
+            <user>
+              <contact_id/>
+              <name/>
+              <phone/>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <short_name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <_id/>
+                <parent>
+                  <_id/>
+                  <parent>
+                    <_id/>
+                  </parent>
+                  <contact>
+                    <chw_name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <household_id tag="hidden"/>
+          <area_id tag="hidden"/>
+          <facility_id tag="hidden"/>
+          <patient_age_in_years tag="hidden"/>
+          <patient_uuid tag="hidden"/>
+          <patient_id tag="hidden"/>
+          <patient_name tag="hidden"/>
+          <patient_short_name tag="hidden"/>
+          <patient_short_name_start tag="hidden"/>
+          <has_mother_danger_signs/>
+          <next_visit_date_french/>
+          <delivery_date_french/>
+          <next_followup_1day/>
+          <has_child_danger_signs/>
+          <one_alive_child_exists/>
+          <g_task>
+            <task_to_perform/>
+          </g_task>
+          <g_realisation>
+            <followup_done_today/>
+            <followup_date/>
+            <not_done_today/>
+            <other_followup_reason/>
+            <how_patient_found/>
+            <other_patient_found_reason/>
+          </g_realisation>
+          <g_postnatal_consultation>
+            <why_child_mother_consult/>
+            <why_child_mother_consult_second_time/>
+            <other_child_mother_did_not_go/>
+            <next_visit_date/>
+          </g_postnatal_consultation>
+          <g_mother_info>
+            <weight_mother/>
+            <height_mother/>
+          </g_mother_info>
+          <g_mother_danger_signs>
+            <n_danger_sign/>
+            <mother_danger_sign_bleeding/>
+            <mother_danger_sign_headaches/>
+            <mother_danger_sign_stomach_ache/>
+            <mother_danger_sign_fever/>
+            <mother_danger_sign_vaginal_discharge/>
+            <mother_danger_sign_breast_abscess/>
+            <mother_danger_sign_blurred_vision/>
+            <mother_danger_sign_calf_pain/>
+          </g_mother_danger_signs>
+          <g_new_born_repeat_count/>
+          <g_new_born_repeat jr:template="">
+            <new_born_alive/>
+            <new_born_alive_boolean/>
+            <g_treatment>
+              <n_child_danger_sign/>
+              <child_danger_sign_refusal_to_feed/>
+              <child_danger_sign_vomit/>
+              <child_danger_sign_breathing/>
+              <child_danger_sign_umbilical_infection/>
+              <child_danger_sign_cutaneous_pustules/>
+              <child_danger_sign_abdomen/>
+              <child_danger_sign_weak_cry/>
+              <child_danger_sign_unconscious/>
+              <child_danger_sign_seizures/>
+              <child_has_danger_signs/>
+              <child_has_danger_signs_boolean/>
+              <child_temperature/>
+              <n_disinfect_thermometer/>
+              <n_fever_presence/>
+              <n_hypothermia/>
+              <child_respiratory_frequency/>
+              <n_how_measure_respiratory_freq>30</n_how_measure_respiratory_freq>
+              <child_frequency_respiratory_rate/>
+              <n_frequency_summary/>
+              <n_refer_health_center/>
+            </g_treatment>
+            <g_child_vaccination>
+              <delivery_period_elapsed/>
+              <time_vaccination/>
+              <has_child_vaccine/>
+              <bcg_vaccine_date/>
+              <polio_vaccine_date/>
+              <dtc_vaccine_date/>
+              <pneumo_vaccine_date/>
+              <vpo_vaccine_date/>
+              <rota_vaccine_date/>
+            </g_child_vaccination>
+            <g_new_born_care>
+              <is_ombilical_cord_protected/>
+              <how_many_clean_per_day/>
+              <n_refer_cscom/>
+              <n_follow_newborn/>
+              <n_follow_new_born_assurance/>
+            </g_new_born_care>
+          </g_new_born_repeat>
+          <g_child_care_advice>
+            <n_child_changes_care/>
+            <n_child_temperature_care/>
+            <n_child_clothes_care/>
+          </g_child_care_advice>
+          <g_end_followup>
+            <why_end_followup/>
+            <why_end_followup_other/>
+          </g_end_followup>
+          <g_summary>
+            <r_summary/>
+            <r_patient_info/>
+            <n_presence_mother_danger_signs/>
+            <n_refer_cscom/>
+            <n_delivery_info/>
+            <n_delivery_date/>
+            <n_next_cpon_date/>
+            <r_instructions/>
+            <n_visits/>
+            <n_followup/>
+            <n_next_followup_summary/>
+            <n_next_followup/>
+            <n_next_request/>
+            <n_close_out/>
+          </g_summary>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </postnatal_followup>
+      </instance>
+    <instance id="contact-summary"/>
+    <instance id="c_task_to_perform">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>static_instance-c_task_to_perform-0</itextId>
+            <name>postnatal_followup</name>
+          </item>
+          <item>
+            <itextId>static_instance-c_task_to_perform-1</itextId>
+            <name>close_followup</name>
+          </item>
+        </root>
+      </instance>
+    <instance id="yes_no">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>static_instance-yes_no-0</itextId>
+            <name>yes</name>
+          </item>
+          <item>
+            <itextId>static_instance-yes_no-1</itextId>
+            <name>no</name>
+          </item>
+        </root>
+      </instance>
+    <instance id="c_not_done_today">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>static_instance-c_not_done_today-0</itextId>
+            <name>phone_discharged</name>
+          </item>
+          <item>
+            <itextId>static_instance-c_not_done_today-1</itextId>
+            <name>phone_lost</name>
+          </item>
+          <item>
+            <itextId>static_instance-c_not_done_today-2</itextId>
+            <name>other</name>
+          </item>
+        </root>
+      </instance>
+    <instance id="c_how_patient_found">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>static_instance-c_how_patient_found-0</itextId>
+            <name>during_home_visit</name>
+          </item>
+          <item>
+            <itextId>static_instance-c_how_patient_found-1</itextId>
+            <name>patient_to_chw</name>
+          </item>
+          <item>
+            <itextId>static_instance-c_how_patient_found-2</itextId>
+            <name>other</name>
+          </item>
+        </root>
+      </instance>
+    <instance id="c_did_not_go_second_consultation">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>static_instance-c_did_not_go_second_consultation-0</itextId>
+            <name>ignore</name>
+          </item>
+          <item>
+            <itextId>static_instance-c_did_not_go_second_consultation-1</itextId>
+            <name>tired</name>
+          </item>
+          <item>
+            <itextId>static_instance-c_did_not_go_second_consultation-2</itextId>
+            <name>follow</name>
+          </item>
+          <item>
+            <itextId>static_instance-c_did_not_go_second_consultation-3</itextId>
+            <name>mari_refuse</name>
+          </item>
+          <item>
+            <itextId>static_instance-c_did_not_go_second_consultation-4</itextId>
+            <name>not_important</name>
+          </item>
+          <item>
+            <itextId>static_instance-c_did_not_go_second_consultation-5</itextId>
+            <name>busy</name>
+          </item>
+          <item>
+            <itextId>static_instance-c_did_not_go_second_consultation-6</itextId>
+            <name>not_ready</name>
+          </item>
+          <item>
+            <itextId>static_instance-c_did_not_go_second_consultation-7</itextId>
+            <name>other</name>
+          </item>
+        </root>
+      </instance>
+    <instance id="child_vaccines">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>static_instance-child_vaccines-0</itextId>
+            <name>bcg</name>
+            <category>new_vaccine</category>
+          </item>
+          <item>
+            <itextId>static_instance-child_vaccines-1</itextId>
+            <name>dtc</name>
+            <category>old_vaccine</category>
+          </item>
+          <item>
+            <itextId>static_instance-child_vaccines-2</itextId>
+            <name>vpo</name>
+            <category>old_vaccine</category>
+          </item>
+          <item>
+            <itextId>static_instance-child_vaccines-3</itextId>
+            <name>polio</name>
+            <category>new_vaccine</category>
+          </item>
+          <item>
+            <itextId>static_instance-child_vaccines-4</itextId>
+            <name>pneumo</name>
+            <category>old_vaccine</category>
+          </item>
+          <item>
+            <itextId>static_instance-child_vaccines-5</itextId>
+            <name>rota</name>
+            <category>old_vaccine</category>
+          </item>
+        </root>
+      </instance>
+    <instance id="c_why_close_out">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>static_instance-c_why_close_out-0</itextId>
+            <name>mother_deceased</name>
+          </item>
+          <item>
+            <itextId>static_instance-c_why_close_out-1</itextId>
+            <name>newborn_deceased</name>
+          </item>
+          <item>
+            <itextId>static_instance-c_why_close_out-2</itextId>
+            <name>other</name>
+          </item>
+        </root>
+      </instance>
+    <instance id="male_female">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>static_instance-male_female-0</itextId>
+            <name>male</name>
+          </item>
+          <item>
+            <itextId>static_instance-male_female-1</itextId>
+            <name>female</name>
+          </item>
+        </root>
+      </instance>
+    <instance id="knows_weight">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>static_instance-knows_weight-0</itextId>
+            <name>no</name>
+          </item>
+          <item>
+            <itextId>static_instance-knows_weight-1</itextId>
+            <name>yes</name>
+          </item>
+        </root>
+      </instance>
+    <instance id="knows_length">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>static_instance-knows_length-0</itextId>
+            <name>no</name>
+          </item>
+          <item>
+            <itextId>static_instance-knows_length-1</itextId>
+            <name>yes</name>
+          </item>
+        </root>
+      </instance>
+    <instance id="vaccines">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>static_instance-vaccines-0</itextId>
+            <name>bcg_only</name>
+          </item>
+          <item>
+            <itextId>static_instance-vaccines-1</itextId>
+            <name>birth_polio_only</name>
+          </item>
+          <item>
+            <itextId>static_instance-vaccines-2</itextId>
+            <name>bcg_and_birth_polio</name>
+          </item>
+          <item>
+            <itextId>static_instance-vaccines-3</itextId>
+            <name>none</name>
+          </item>
+        </root>
+      </instance>
+    <instance id="pnc_visits">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>static_instance-pnc_visits-0</itextId>
+            <name>within_24_hrs</name>
+            <category>0</category>
+          </item>
+          <item>
+            <itextId>static_instance-pnc_visits-1</itextId>
+            <name>3_days</name>
+            <category>3</category>
+          </item>
+          <item>
+            <itextId>static_instance-pnc_visits-2</itextId>
+            <name>7_days</name>
+            <category>7</category>
+          </item>
+          <item>
+            <itextId>static_instance-pnc_visits-3</itextId>
+            <name>6_weeks</name>
+            <category>42</category>
+          </item>
+          <item>
+            <itextId>static_instance-pnc_visits-4</itextId>
+            <name>none</name>
+            <category>0</category>
+          </item>
+        </root>
+      </instance>
+    <instance id="translate_woman_label">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>static_instance-translate_woman_label-0</itextId>
+            <name>woman</name>
+          </item>
+        </root>
+      </instance>
+    <instance id="translate_woman_start_label">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>static_instance-translate_woman_start_label-0</itextId>
+            <name>woman-start</name>
+          </item>
+        </root>
+      </instance>
+  </model>
+

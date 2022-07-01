@@ -1,0 +1,66 @@
+
+  <model>
+    <instance>
+        <data xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" id="contact:c60_chw_site:create" prefix="J1!contact:c60_chw_site:create!" delimiter="#" version="2022-05-06 13-41">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <user>
+              <contact_id/>
+              <facility_id/>
+              <name/>
+            </user>
+          </inputs>
+          <c60_chw_site>
+            <parent>PARENT</parent>
+            <parent_place_id/>
+            <type/>
+            <name/>
+            <contact/>
+            <geolocation/>
+            <meta tag="hidden">
+              <created_by/>
+              <created_by_person_uuid/>
+              <created_by_place_uuid/>
+            </meta>
+          </c60_chw_site>
+          <init>
+            <parent>
+              <parent_id/>
+              <parent>
+                <name/>
+                <health_area_name/>
+              </parent>
+            </parent>
+          </init>
+          <contact>
+            <parent>PARENT</parent>
+            <type>contact</type>
+            <contact_type/>
+            <first_name/>
+            <last_name/>
+            <name/>
+            <sex/>
+            <phone/>
+            <username/>
+            <role/>
+            <geolocalized/>
+            <meta tag="hidden">
+              <created_by/>
+              <created_by_person_uuid/>
+              <created_by_place_uuid/>
+            </meta>
+          </contact>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+  </model>
+

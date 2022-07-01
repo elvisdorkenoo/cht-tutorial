@@ -1,0 +1,216 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>New District</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/data/c30_district/name:label">
+            <value>District Name</value>
+          </text>
+          <text id="/data/contact/email:jr:constraintMsg">
+            <value>-</value>
+          </text>
+          <text id="/data/contact/email:label">
+            <value>Email</value>
+          </text>
+          <text id="/data/contact/first_name:label">
+            <value>First name</value>
+          </text>
+          <text id="/data/contact/last_name:label">
+            <value>Last name</value>
+          </text>
+          <text id="/data/contact/membership_structure:label">
+            <value>Membership Structure</value>
+          </text>
+          <text id="/data/contact/phone:hint">
+            <value>Put "11111111" if no number is available</value>
+          </text>
+          <text id="/data/contact/phone:jr:constraintMsg">
+            <value>Please enter a valid local number, or use the standard international format, which includes a plus sign (+) and country code. For example: +254712345678</value>
+          </text>
+          <text id="/data/contact/phone:label">
+            <value>Phone Number</value>
+          </text>
+          <text id="/data/contact/username:label">
+            <value>Username</value>
+          </text>
+          <text id="/data/init/parent/parent_id:label">
+            <value>Region belonging to the district</value>
+          </text>
+        </translation>
+        <translation lang="fr">
+          <text id="/data/c30_district/name:label">
+            <value>Nom du District</value>
+          </text>
+          <text id="/data/contact/email:jr:constraintMsg">
+            <value>Entrez une adresse email valide(ex. adrien@health.org)</value>
+          </text>
+          <text id="/data/contact/email:label">
+            <value>Adresse email</value>
+          </text>
+          <text id="/data/contact/first_name:label">
+            <value>Prénom de la Personne</value>
+          </text>
+          <text id="/data/contact/last_name:label">
+            <value>Nom de la Personne</value>
+          </text>
+          <text id="/data/contact/membership_structure:label">
+            <value>Structure d'appartenance</value>
+          </text>
+          <text id="/data/contact/meta:label">
+            <value>-</value>
+          </text>
+          <text id="/data/contact/phone:hint">
+            <value>Si le numéro n'est pas disponible, mettre "11111111"</value>
+          </text>
+          <text id="/data/contact/phone:jr:constraintMsg">
+            <value>Entrez un numero valide sous la forme XXXXXXXX</value>
+          </text>
+          <text id="/data/contact/phone:label">
+            <value>N° de téléphone</value>
+          </text>
+          <text id="/data/contact/username:label">
+            <value>Nom d'utilisateur</value>
+          </text>
+          <text id="/data/init/parent/parent_id:label">
+            <value>Région d'appartenance du district</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <data id="contact:c30_district:create" prefix="J1!contact:c30_district:create!" delimiter="#" version="2022-05-06 12-35">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <user>
+              <contact_id/>
+              <facility_id/>
+              <name/>
+            </user>
+          </inputs>
+          <c30_district>
+            <parent>PARENT</parent>
+            <parent_place_id/>
+            <type/>
+            <name/>
+            <contact/>
+            <geolocation/>
+            <meta tag="hidden">
+              <created_by/>
+              <created_by_person_uuid/>
+              <created_by_place_uuid/>
+            </meta>
+          </c30_district>
+          <init>
+            <parent>
+              <parent_id/>
+              <region/>
+            </parent>
+          </init>
+          <contact>
+            <parent>PARENT</parent>
+            <type>contact</type>
+            <contact_type/>
+            <membership_structure/>
+            <first_name/>
+            <last_name/>
+            <name/>
+            <phone/>
+            <email/>
+            <username/>
+            <role/>
+            <meta tag="hidden">
+              <created_by/>
+              <created_by_person_uuid/>
+              <created_by_place_uuid/>
+            </meta>
+          </contact>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+      <bind nodeset="/data/inputs" relevant="false()"/>
+      <bind nodeset="/data/inputs/user/contact_id" type="string"/>
+      <bind nodeset="/data/inputs/user/facility_id" type="string"/>
+      <bind nodeset="/data/inputs/user/name" type="string"/>
+      <bind nodeset="/data/init/parent/parent_id" type="string" calculate=" /data/c30_district/parent_place_id " readonly="true()"/>
+      <bind nodeset="/data/init/parent/region" type="string"/>
+      <bind nodeset="/data/contact/parent" type="string"/>
+      <bind nodeset="/data/contact/type" type="string"/>
+      <bind nodeset="/data/contact/contact_type" type="string" calculate="&quot;c32_district&quot;"/>
+      <bind nodeset="/data/contact/membership_structure" type="string" required="true()"/>
+      <bind nodeset="/data/contact/first_name" type="string" required="true()"/>
+      <bind nodeset="/data/contact/last_name" type="string" required="true()"/>
+      <bind nodeset="/data/contact/name" type="string" calculate="concat( /data/contact/first_name ,' ', /data/contact/last_name )"/>
+      <bind nodeset="/data/contact/phone" type="string" constraint="regex(.,'^(\d{2}\s?){4}$')" jr:constraintMsg="jr:itext('/data/contact/phone:jr:constraintMsg')" required="true()"/>
+      <bind nodeset="/data/contact/email" type="string" constraint="regex(.,'^.+\@.+\..+$')" jr:constraintMsg="jr:itext('/data/contact/email:jr:constraintMsg')" required="false()"/>
+      <bind nodeset="/data/contact/username" type="string" required="true()"/>
+      <bind nodeset="/data/contact/role" type="string" calculate="&quot;administrator&quot;"/>
+      <bind nodeset="/data/contact/meta/created_by" type="string" calculate="../../../inputs/user/name"/>
+      <bind nodeset="/data/contact/meta/created_by_person_uuid" type="string" calculate="../../../inputs/user/contact_id"/>
+      <bind nodeset="/data/contact/meta/created_by_place_uuid" type="string" calculate="../../../inputs/user/facility_id"/>
+      <bind nodeset="/data/c30_district/parent" type="string"/>
+      <bind nodeset="/data/c30_district/parent_place_id" type="string" calculate="../parent"/>
+      <bind nodeset="/data/c30_district/type" type="string"/>
+      <bind nodeset="/data/c30_district/name" type="string" required="true()"/>
+      <bind nodeset="/data/c30_district/contact" type="string" calculate="&quot;NEW&quot;"/>
+      <bind nodeset="/data/c30_district/geolocation" type="string" calculate="concat(../../inputs/meta/location/lat, concat(' ', ../../inputs/meta/location/long))"/>
+      <bind nodeset="/data/c30_district/meta/created_by" type="string" calculate="../../../inputs/user/name"/>
+      <bind nodeset="/data/c30_district/meta/created_by_person_uuid" type="string" calculate="../../../inputs/user/contact_id"/>
+      <bind nodeset="/data/c30_district/meta/created_by_place_uuid" type="string" calculate="../../../inputs/user/facility_id"/>
+      <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group ref="/data/inputs">
+      <group ref="/data/inputs/user">
+        <input ref="/data/inputs/user/contact_id"/>
+        <input ref="/data/inputs/user/facility_id"/>
+        <input ref="/data/inputs/user/name"/>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/data/init">
+      <group ref="/data/init/parent">
+        <input appearance="db-object" ref="/data/init/parent/parent_id">
+          <label ref="jr:itext('/data/init/parent/parent_id:label')"/>
+        </input>
+      <group appearance="field-list" ref="/data/contact">
+        <input ref="/data/contact/membership_structure">
+          <label ref="jr:itext('/data/contact/membership_structure:label')"/>
+        </input>
+        <input ref="/data/contact/first_name">
+          <label ref="jr:itext('/data/contact/first_name:label')"/>
+        </input>
+        <input ref="/data/contact/last_name">
+          <label ref="jr:itext('/data/contact/last_name:label')"/>
+        </input>
+        <input ref="/data/contact/phone">
+          <label ref="jr:itext('/data/contact/phone:label')"/>
+          <hint ref="jr:itext('/data/contact/phone:hint')"/>
+        </input>
+        <input ref="/data/contact/email">
+          <label ref="jr:itext('/data/contact/email:label')"/>
+        </input>
+        <input ref="/data/contact/username">
+          <label ref="jr:itext('/data/contact/username:label')"/>
+        </input>
+        <group appearance="hidden" ref="/data/contact/meta"/>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/data/c30_district">
+      <input ref="/data/c30_district/name">
+        <label ref="jr:itext('/data/c30_district/name:label')"/>
+      </input>
+      <group appearance="hidden" ref="/data/c30_district/meta"/>
+    </group>
+  </h:body>
+</h:html>

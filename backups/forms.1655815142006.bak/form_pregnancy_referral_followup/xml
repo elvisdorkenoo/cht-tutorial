@@ -1,0 +1,1203 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>Pregnancy Referral Followup</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/pregnancy_referral_followup/days_since_lmp:label">
+            <value>Days since LMP</value>
+          </text>
+          <text id="/pregnancy_referral_followup/estimated_delivey_date:label">
+            <value>Estimated delivery date</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_chw_visit/chw_visit_other_reason:label">
+            <value>Specify (Other)</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_chw_visit/did_woman_go_to_health_center/no:label">
+            <value>No</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_chw_visit/did_woman_go_to_health_center/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_chw_visit/did_woman_go_to_health_center:label">
+            <value>Did the <output value=" /pregnancy_referral_followup/patient_name "/> go to the Health Center?</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_chw_visit/health_center_visit_date:label">
+            <value>What is the date of visit to the health center?</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_chw_visit/n_advise_about_health_center_visit:label">
+            <value>Encourage the woman to come to the Antenatal Care Center immediately to make sure that she and her baby are healthy and to plan for her delivery</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_chw_visit/why_was_followup_missed/end_of_follow_up:label">
+            <value>End of follow-up</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_chw_visit/why_was_followup_missed/forgot:label">
+            <value>Forgotten</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_chw_visit/why_was_followup_missed/husband_refusal:label">
+            <value>Husband's refusal</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_chw_visit/why_was_followup_missed/lack_of_time:label">
+            <value>Lack of time</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_chw_visit/why_was_followup_missed/no_money:label">
+            <value>No money</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_chw_visit/why_was_followup_missed/not_motivated:label">
+            <value>Not motivated</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_chw_visit/why_was_followup_missed/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_chw_visit/why_was_followup_missed:label">
+            <value>Why didn't the woman come to the health center?</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_chw_visit:label">
+            <value>Visit of <output value=" /pregnancy_referral_followup/patient_name "/> to the Health Center</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_disease_progression/disease_progression/healed:label">
+            <value>Healed</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_disease_progression/disease_progression/improved:label">
+            <value>Improved</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_disease_progression/disease_progression/no_change:label">
+            <value>No change</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_disease_progression/disease_progression/worsen:label">
+            <value>Worsen</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_disease_progression/disease_progression:label">
+            <value>What is her health state ?</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_disease_progression:label">
+            <value>Disease progression</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_end_followup/why_end_followup/abortion:label">
+            <value>Abortion</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_end_followup/why_end_followup/death_of_the woman:label">
+            <value>Death of <output value=" /pregnancy_referral_followup/patient_name "/></value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_end_followup/why_end_followup/miscarriage:label">
+            <value>Miscarriage</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_end_followup/why_end_followup/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_end_followup/why_end_followup/woman_gave_birth:label">
+            <value><output value=" /pregnancy_referral_followup/patient_name "/> gave birth</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_end_followup/why_end_followup:label">
+            <value>Why do you want to close this follow-up?</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_end_followup/why_end_followup_other:label">
+            <value>Specify (Other)</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_end_followup:label">
+            <value>Closure</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_realisation/followup_date:jr:constraintMsg">
+            <value>Date should be before today</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_realisation/followup_date:label">
+            <value>Enter the date the follow-up</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_realisation/followup_done_today/no:label">
+            <value>No</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_realisation/followup_done_today/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_realisation/followup_done_today:label">
+            <value>Was the follow-up done today?</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_realisation/not_done_today/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_realisation/not_done_today/phone_discharged:label">
+            <value>Discharged/Broken Phone</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_realisation/not_done_today/phone_lost:label">
+            <value>Lost Phone</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_realisation/not_done_today:label">
+            <value>Why was the follow-up not done today?</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_realisation/other_followup_reason:label">
+            <value>Specify (Other)</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_realisation:label">
+            <value>Date of completion</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_search_for_woman/has_woman_been_found/no:label">
+            <value>No</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_search_for_woman/has_woman_been_found/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_search_for_woman/has_woman_been_found:label">
+            <value>Has <output value=" /pregnancy_referral_followup/patient_name "/> been found?</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_search_for_woman/how_patient_found/during_home_visit:label">
+            <value>During the home visit</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_search_for_woman/how_patient_found/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_search_for_woman/how_patient_found/patient_to_chw:label">
+            <value><output value=" /pregnancy_referral_followup/patient_name "/> went to the ASC</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_search_for_woman/how_patient_found:label">
+            <value>How was <output value=" /pregnancy_referral_followup/patient_name "/> found?</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_search_for_woman/other_reason:label">
+            <value>Specify (Other)</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_search_for_woman:label">
+            <value>Search for <output value=" /pregnancy_referral_followup/patient_name "/></value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_summary/diagnosis_treatment:label">
+            <value>Diagnosis and Treatment &lt;i class = "fa fa-stethoscope"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_summary/follow_up:label">
+            <value>Follow up &lt;i class="fa fa-flag"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_summary/n_accompany_to_health_center:label">
+            <value>Immediately escort <output value=" /pregnancy_referral_followup/patient_name "/> to the health center</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_summary/n_closing_the_followup_advise:label">
+            <value>Make sure that <output value=" /pregnancy_referral_followup/patient_name "/> is not present before proceeding with this action.
+Submitting this form will close the monitoring of <output value=" /pregnancy_referral_followup/patient_name "/> pregnant.</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_summary/n_did_not_come_to_health_center:label">
+            <value>The <output value=" /pregnancy_referral_followup/patient_name "/> did not come to the Health Center</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_summary/n_family_planning:label">
+            <value>Teach <output value=" /pregnancy_referral_followup/patient_name "/> to recognize danger signs. Discuss with the woman the importance of ANC. Discuss preparing for childbirth. Give advice on family planning and help <output value=" /pregnancy_referral_followup/patient_name "/> choose a method to use after giving birth.</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_summary/n_fill_birth_form:label">
+            <value>Complete the birth form for this woman</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_summary/n_fill_death_form:label">
+            <value>Remplir le formulaire de décès pour cette femme</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_summary/n_next_48h_followup:label">
+            <value>Discuss with <output value=" /pregnancy_referral_followup/patient_name "/> and tell her that you will follow up in the next 48 hours to make sure she has gone to the health center</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_summary/n_next_followup_appointment_in_7_days:label">
+            <value><output value=" /pregnancy_referral_followup/patient_name "/>'s next follow-up appointment is in 7 days on <output value=" /pregnancy_referral_followup/next_referral_followup_date "/></value></text>
+          <text id="/pregnancy_referral_followup/g_summary/n_no_further_followup:label">
+            <value>There is no further follow-up for this woman.</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_summary/n_pnc_benefit_and_labor_signs:label">
+            <value>Teach <output value=" /pregnancy_referral_followup/patient_name "/> to recognize danger signs. Discuss with the woman the importance of ANC. Discuss the benefits of giving birth at a health facility.Teach <output value=" /pregnancy_referral_followup/patient_name "/> to recognize the signs of labor.</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_summary/n_problem_not_solved:label">
+            <value>The problem has not been solved</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_summary/n_problem_solved:label">
+            <value>The issue has been addressed</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_summary/n_reason_not_go_to_health_center:label">
+            <value>Reason: <output value=" /pregnancy_referral_followup/reason_followup_note_description_en "/></value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_summary/n_recognize_danger_signs:label">
+            <value>Teach <output value=" /pregnancy_referral_followup/patient_name "/> to recognize danger signs. Discuss with the woman the importance of ANC. Remind the <output value=" /pregnancy_referral_followup/patient_name "/> of the date of the next ANC. Be reassured that the woman has carried out the necessary prenatal check-up.</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_summary/n_teach_danger_signs:label">
+            <value>Teach <output value=" /pregnancy_referral_followup/patient_name "/> to recognize danger signs. Ask the woman to follow the instructions given for her good health and that of the baby. Remember that sleeping under a mosquito net and having a good diet improves health.</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_summary/n_what_diagnosis:label">
+            <value>Diagnostic <output value=" /pregnancy_referral_followup/g_woman_treatment/what_was_the_diagnosis "/></value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_summary/n_what_intervention_procedure:label">
+            <value>Treatment <output value=" /pregnancy_referral_followup/g_woman_treatment/what_was_the_treatment_done "/></value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_summary/r_patient_details:label">
+            <value>Patient summary &lt;i class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_summary/r_patient_info:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /pregnancy_referral_followup/patient_name "/>&lt;/h4&gt; &lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /pregnancy_referral_followup/patient_age_in_years "/> years old&lt;/h5&gt;</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_summary/r_refer_to_cscom:label">
+            <value>Refer <output value=" /pregnancy_referral_followup/patient_name "/> to CSCOM</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_summary/special_instructions:label">
+            <value>Special Instructions&lt;i class = "fa fa-hand-o-right"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_summary:label">
+            <value>Summary</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_task/task_to_perform/close_followup:label">
+            <value>Close followup</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_task/task_to_perform/reference_followup:label">
+            <value>Followup <output value=" /pregnancy_referral_followup/patient_name "/> pregnant</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_task/task_to_perform:label">
+            <value>What do you want to do?</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_task:label">
+            <value>Task to be performed</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_woman_treatment/has_the_issue_been_addressed/no:label">
+            <value>No</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_woman_treatment/has_the_issue_been_addressed/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_woman_treatment/has_the_issue_been_addressed:hint">
+            <value>Check the woman's care book</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_woman_treatment/has_the_issue_been_addressed:label">
+            <value>Has the issue been addressed?</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_woman_treatment/indicate_the_reason:hint">
+            <value>Check the woman's care book</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_woman_treatment/indicate_the_reason:label">
+            <value>Indicate the reason and the action taken:</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_woman_treatment/what_was_the_diagnosis:hint">
+            <value>Check the woman's care book</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_woman_treatment/what_was_the_diagnosis:label">
+            <value>What was the diagnosis?</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_woman_treatment/what_was_the_treatment_done:hint">
+            <value>Check the woman's care book</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_woman_treatment/what_was_the_treatment_done:label">
+            <value>What was the treatment done?</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_woman_treatment:label">
+            <value>Treatment of <output value=" /pregnancy_referral_followup/patient_name "/></value>
+          </text>
+          <text id="/pregnancy_referral_followup/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/pregnancy_referral_followup/inputs/contact/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/pregnancy_referral_followup/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/pregnancy_referral_followup/inputs/contact/parent/_id:label">
+            <value>Household ID</value>
+          </text>
+          <text id="/pregnancy_referral_followup/inputs/contact/parent/parent/_id:label">
+            <value>Area ID</value>
+          </text>
+          <text id="/pregnancy_referral_followup/inputs/contact/parent/parent/contact/chw_name:label">
+            <value>CHW name</value>
+          </text>
+          <text id="/pregnancy_referral_followup/inputs/contact/parent/parent/contact/phone:label">
+            <value>CHW phone</value>
+          </text>
+          <text id="/pregnancy_referral_followup/inputs/contact/parent/parent/parent/_id:label">
+            <value>Health Facility ID</value>
+          </text>
+          <text id="/pregnancy_referral_followup/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/pregnancy_referral_followup/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/pregnancy_referral_followup/inputs/contact/short_name:label">
+            <value>Short Name</value>
+          </text>
+          <text id="/pregnancy_referral_followup/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/pregnancy_referral_followup/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/pregnancy_referral_followup/inputs/t_lmp_date:label">
+            <value>LMP</value>
+          </text>
+          <text id="/pregnancy_referral_followup/inputs/user/contact_id:label">
+            <value>Contact ID</value>
+          </text>
+          <text id="/pregnancy_referral_followup/inputs/user/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/pregnancy_referral_followup/inputs/user/phone:label">
+            <value>Phone</value>
+          </text>
+          <text id="/pregnancy_referral_followup/inputs/user:label">
+            <value>User</value>
+          </text>
+          <text id="/pregnancy_referral_followup/lmp_date:label">
+            <value>LMP Date</value>
+          </text>
+          <text id="/pregnancy_referral_followup/weeks_since_lmp:label">
+            <value>Weeks since LMP</value>
+          </text>
+        </translation>
+        <translation lang="fr">
+          <text id="/pregnancy_referral_followup/days_since_lmp:label">
+            <value>-</value>
+          </text>
+          <text id="/pregnancy_referral_followup/estimated_delivey_date:label">
+            <value>Date d'accouchement prévue</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_chw_visit/chw_visit_other_reason:label">
+            <value>Précisez (Autre)</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_chw_visit/did_woman_go_to_health_center/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_chw_visit/did_woman_go_to_health_center/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_chw_visit/did_woman_go_to_health_center:label">
+            <value><output value=" /pregnancy_referral_followup/patient_name "/> s'est-elle rendue au Centre de santé ?</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_chw_visit/health_center_visit_date:label">
+            <value>Quelle est la date de visite au centre de Santé?</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_chw_visit/n_advise_about_health_center_visit:label">
+            <value>Encouragez la femme à se rendre immédiatement dans le Centre de soins prénatals afin de s'assurer qu'elle et son bébé sont en bonne santé et pour planifier son accouchement.</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_chw_visit/why_was_followup_missed/end_of_follow_up:label">
+            <value>Fin du suivi</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_chw_visit/why_was_followup_missed/forgot:label">
+            <value>Oubli</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_chw_visit/why_was_followup_missed/husband_refusal:label">
+            <value>Refus du mari</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_chw_visit/why_was_followup_missed/lack_of_time:label">
+            <value>Manque de temps</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_chw_visit/why_was_followup_missed/no_money:label">
+            <value>Pas d'argent</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_chw_visit/why_was_followup_missed/not_motivated:label">
+            <value>Pas motivé</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_chw_visit/why_was_followup_missed/other:label">
+            <value>Autre</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_chw_visit/why_was_followup_missed:label">
+            <value>Pourquoi la femme ne s'est-elle pas rendue au centre de santé?</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_chw_visit:label">
+            <value>Visite de <output value=" /pregnancy_referral_followup/patient_name "/> au Centre de Santé</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_disease_progression/disease_progression/healed:label">
+            <value>Guéri</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_disease_progression/disease_progression/improved:label">
+            <value>Amélioré</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_disease_progression/disease_progression/no_change:label">
+            <value>Pas de changement</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_disease_progression/disease_progression/worsen:label">
+            <value>Aggravé</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_disease_progression/disease_progression:label">
+            <value>Quel est son état de santé?</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_disease_progression:label">
+            <value>Progression de la maladie</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_end_followup/why_end_followup/abortion:label">
+            <value>Avortement</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_end_followup/why_end_followup/death_of_the woman:label">
+            <value>Décès de <output value=" /pregnancy_referral_followup/patient_name "/></value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_end_followup/why_end_followup/miscarriage:label">
+            <value>Fausse-couche</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_end_followup/why_end_followup/other:label">
+            <value>Autre</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_end_followup/why_end_followup/woman_gave_birth:label">
+            <value><output value=" /pregnancy_referral_followup/patient_name "/> a accouché</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_end_followup/why_end_followup:label">
+            <value>Pourquoi voulez-vous clôturer ce suivi?</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_end_followup/why_end_followup_other:label">
+            <value>Précisez (Autre)</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_end_followup:label">
+            <value>Clôture</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_realisation/followup_date:jr:constraintMsg">
+            <value>La date doit être antérieure à aujourd'hui</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_realisation/followup_date:label">
+            <value>Entrez la date où le suivi a été fait</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_realisation/followup_done_today/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_realisation/followup_done_today/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_realisation/followup_done_today:label">
+            <value>Ce suivi a t-il été fait aujourd'hui?</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_realisation/not_done_today/other:label">
+            <value>Autre</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_realisation/not_done_today/phone_discharged:label">
+            <value>Téléphone Déchargé/Cassé</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_realisation/not_done_today/phone_lost:label">
+            <value>Téléphone Perdu</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_realisation/not_done_today:label">
+            <value>Pourquoi le suivi n'a pas été fait aujourd'hui?</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_realisation/other_followup_reason:label">
+            <value>Précisez (Autre)</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_realisation:label">
+            <value>Date de réalisation</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_search_for_woman/has_woman_been_found/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_search_for_woman/has_woman_been_found/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_search_for_woman/has_woman_been_found:label">
+            <value><output value=" /pregnancy_referral_followup/patient_name "/> a t-elle été retrouvée?</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_search_for_woman/how_patient_found/during_home_visit:label">
+            <value>Au cours de la visite à domicile</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_search_for_woman/how_patient_found/other:label">
+            <value>Autre</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_search_for_woman/how_patient_found/patient_to_chw:label">
+            <value><output value=" /pregnancy_referral_followup/patient_name "/> s'est rendue chez l'ASC</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_search_for_woman/how_patient_found:label">
+            <value>Comment <output value=" /pregnancy_referral_followup/patient_name "/> a t-elle été retrouvée?</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_search_for_woman/other_reason:label">
+            <value>Précisez (Autre)</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_search_for_woman:label">
+            <value>Recherche de <output value=" /pregnancy_referral_followup/patient_name "/></value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_summary/diagnosis_treatment:label">
+            <value>Diagnostic et Traitement &lt;i class = "fa fa-stethoscope"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_summary/follow_up:label">
+            <value>Suivi &lt;i class="fa fa-flag"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_summary/n_accompany_to_health_center:label">
+            <value>Accompagner immédiatement <output value=" /pregnancy_referral_followup/patient_name "/> au centre de santé</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_summary/n_closing_the_followup_advise:label">
+            <value>Rassurez vous de la non présence de <output value=" /pregnancy_referral_followup/patient_name "/> avant de procéder à cette action. Soumettre ce formulaire va fermer le suivi de <output value=" /pregnancy_referral_followup/patient_name "/> enceinte.</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_summary/n_did_not_come_to_health_center:label">
+            <value><output value=" /pregnancy_referral_followup/patient_name "/> ne s'est pas rendue au Centre de Santé</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_summary/n_family_planning:label">
+            <value>Apprendre à <output value=" /pregnancy_referral_followup/patient_name "/> à reconnaître les signes de danger. Discuter avec la femme sur l'importance de la CPN. Discuter sur la preparation l'accouchement. Donner des conseils sur la planification familiale et aider <output value=" /pregnancy_referral_followup/patient_name "/> à choisir une méthode qu'elle utilisera après son accouchement.</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_summary/n_fill_birth_form:label">
+            <value>Remplir le formulaire de'accouchement pour cette femme</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_summary/n_fill_death_form:label">
+            <value>Remplir le formulaire de décès pour cette femme</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_summary/n_next_48h_followup:label">
+            <value>Discuter avec <output value=" /pregnancy_referral_followup/patient_name "/> et dites lui que vous ferez un suivi dans les prochaines 48h pour s'assurer qu'elle est allée au centre de santé</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_summary/n_next_followup_appointment_in_7_days:label">
+            <value>Le prochain rendez-vous pour le suivi de <output value=" /pregnancy_referral_followup/patient_name "/> est dans 7 jours, le <output value=" /pregnancy_referral_followup/next_referral_followup_date "/></value></text>
+          <text id="/pregnancy_referral_followup/g_summary/n_no_further_followup:label">
+            <value>Il n'y a plus de suivi pour cette femme.</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_summary/n_pnc_benefit_and_labor_signs:label">
+            <value>Apprendre à <output value=" /pregnancy_referral_followup/patient_name "/> à reconnaître les signes de danger. Discuter avec la femme sur l'importance de la CPN. Discuter sur les avantages d'accoucher dans un centre de santé. Apprendre à <output value=" /pregnancy_referral_followup/patient_name "/> à reconnaître les signes du travail d'accouchement.</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_summary/n_problem_not_solved:label">
+            <value>Le problème n'a pas été résolu</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_summary/n_problem_solved:label">
+            <value>Le problème a été traité</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_summary/n_reason_not_go_to_health_center:label">
+            <value>Raison : <output value=" /pregnancy_referral_followup/reason_followup_note_description_fr "/></value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_summary/n_recognize_danger_signs:label">
+            <value>Apprendre à <output value=" /pregnancy_referral_followup/patient_name "/> à reconnaître les signes de danger. Discuter avec <output value=" /pregnancy_referral_followup/patient_name "/> sur l'importance de la CPN. 
+Rappeler à la femme la date de la prochaine CPN. Se rassurer que la femme a réalisé le bilan prénatal nécessaire.</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_summary/n_teach_danger_signs:label">
+            <value>Apprendre à <output value=" /pregnancy_referral_followup/patient_name "/> à reconnaître les signes de danger.Dmander à la femme de suivre les indications données pour sa bonne santé et celle du bébé.Rappeler que dormir sous une moustiquaire et avoir une bonne alimentation améliore la santé.</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_summary/n_what_diagnosis:label">
+            <value>Diagnostic <output value=" /pregnancy_referral_followup/g_woman_treatment/what_was_the_diagnosis "/></value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_summary/n_what_intervention_procedure:label">
+            <value>Traitement <output value=" /pregnancy_referral_followup/g_woman_treatment/what_was_the_treatment_done "/></value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_summary/r_patient_details:label">
+            <value>Détail du Patient &lt;i class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_summary/r_patient_info:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /pregnancy_referral_followup/patient_name "/>&lt;/h4&gt; &lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /pregnancy_referral_followup/patient_age_in_years "/> ans&lt;/h5&gt;</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_summary/r_refer_to_cscom:label">
+            <value>Référer <output value=" /pregnancy_referral_followup/patient_name "/> au CSCOM</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_summary/special_instructions:label">
+            <value>Instructions Spéciale &lt;i class = "fa fa-hand-o-right"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_summary:label">
+            <value>Résumé</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_task/task_to_perform/close_followup:label">
+            <value>Arrêt du suivi</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_task/task_to_perform/reference_followup:label">
+            <value>Suivi <output value=" /pregnancy_referral_followup/patient_name "/> enceinte</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_task/task_to_perform:label">
+            <value>Que voulez-vous faire?</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_task:label">
+            <value>Tâche à effectuer</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_woman_treatment/has_the_issue_been_addressed/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_woman_treatment/has_the_issue_been_addressed/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_woman_treatment/has_the_issue_been_addressed:hint">
+            <value>Vérifiez le carnet de soins de la femme</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_woman_treatment/has_the_issue_been_addressed:label">
+            <value>Le problème a t-il été traité?</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_woman_treatment/indicate_the_reason:hint">
+            <value>Vérifiez le carnet de soins de la femme</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_woman_treatment/indicate_the_reason:label">
+            <value>Indiquez la raison et l'action effectuée :</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_woman_treatment/what_was_the_diagnosis:hint">
+            <value>Vérifiez le carnet de soins de la femme</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_woman_treatment/what_was_the_diagnosis:label">
+            <value>Quel a été le diagnostic?</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_woman_treatment/what_was_the_treatment_done:hint">
+            <value>Vérifiez le carnet de soins de la femme</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_woman_treatment/what_was_the_treatment_done:label">
+            <value>Quel a été le traitement fait?</value>
+          </text>
+          <text id="/pregnancy_referral_followup/g_woman_treatment:label">
+            <value>Traitement de <output value=" /pregnancy_referral_followup/patient_name "/></value>
+          </text>
+          <text id="/pregnancy_referral_followup/inputs/contact/_id:label">
+            <value>Quel est le nom du Patient ?</value>
+          </text>
+          <text id="/pregnancy_referral_followup/inputs/contact/date_of_birth:label">
+            <value>Date de naissance</value>
+          </text>
+          <text id="/pregnancy_referral_followup/inputs/contact/name:label">
+            <value>Nom</value>
+          </text>
+          <text id="/pregnancy_referral_followup/inputs/contact/parent/_id:label">
+            <value>ID du Menage</value>
+          </text>
+          <text id="/pregnancy_referral_followup/inputs/contact/parent/parent/_id:label">
+            <value>ID de la Zone</value>
+          </text>
+          <text id="/pregnancy_referral_followup/inputs/contact/parent/parent/contact/chw_name:label">
+            <value>Nom de l'ASC</value>
+          </text>
+          <text id="/pregnancy_referral_followup/inputs/contact/parent/parent/contact/phone:label">
+            <value>Telephone de l'ASC</value>
+          </text>
+          <text id="/pregnancy_referral_followup/inputs/contact/parent/parent/parent/_id:label">
+            <value>Health Facility ID</value>
+          </text>
+          <text id="/pregnancy_referral_followup/inputs/contact/patient_id:label">
+            <value>ID du Patient</value>
+          </text>
+          <text id="/pregnancy_referral_followup/inputs/contact/sex:label">
+            <value>Sexe</value>
+          </text>
+          <text id="/pregnancy_referral_followup/inputs/contact/short_name:label">
+            <value>Nom Court</value>
+          </text>
+          <text id="/pregnancy_referral_followup/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/pregnancy_referral_followup/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/pregnancy_referral_followup/inputs/t_lmp_date:label">
+            <value>LMP</value>
+          </text>
+          <text id="/pregnancy_referral_followup/inputs/user/contact_id:label">
+            <value>Contact ID</value>
+          </text>
+          <text id="/pregnancy_referral_followup/inputs/user/name:label">
+            <value>Nom</value>
+          </text>
+          <text id="/pregnancy_referral_followup/inputs/user/phone:label">
+            <value>Telephone</value>
+          </text>
+          <text id="/pregnancy_referral_followup/inputs/user:label">
+            <value>Utilisateur</value>
+          </text>
+          <text id="/pregnancy_referral_followup/lmp_date:label">
+            <value>Date de dernieres regles</value>
+          </text>
+          <text id="/pregnancy_referral_followup/weeks_since_lmp:label">
+            <value>-</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <pregnancy_referral_followup id="pregnancy_referral_followup" prefix="J1!pregnancy_referral_followup!" delimiter="#" version="2022-05-13 17-20">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <t_lmp_date/>
+            <user>
+              <contact_id/>
+              <name/>
+              <phone/>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <short_name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <_id/>
+                <parent>
+                  <_id/>
+                  <parent>
+                    <_id/>
+                  </parent>
+                  <contact>
+                    <chw_name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <household_id tag="hidden"/>
+          <area_id tag="hidden"/>
+          <facility_id tag="hidden"/>
+          <patient_age_in_years tag="hidden"/>
+          <patient_uuid tag="hidden"/>
+          <patient_id tag="hidden"/>
+          <patient_name tag="hidden"/>
+          <patient_short_name tag="hidden"/>
+          <patient_short_name_start tag="hidden"/>
+          <lmp_date/>
+          <days_since_lmp/>
+          <weeks_since_lmp/>
+          <remainder_days_since_lmp/>
+          <months_since_lmp/>
+          <estimated_delivey_date/>
+          <next_referral_followup_date/>
+          <g_task>
+            <task_to_perform/>
+          </g_task>
+          <g_realisation>
+            <followup_done_today/>
+            <followup_date/>
+            <not_done_today/>
+            <other_followup_reason/>
+          </g_realisation>
+          <g_search_for_woman>
+            <has_woman_been_found/>
+            <how_patient_found/>
+            <other_reason/>
+          </g_search_for_woman>
+          <g_chw_visit>
+            <did_woman_go_to_health_center/>
+            <health_center_visit_date/>
+            <why_was_followup_missed/>
+            <chw_visit_other_reason/>
+            <n_advise_about_health_center_visit/>
+          </g_chw_visit>
+          <g_woman_treatment>
+            <what_was_the_diagnosis/>
+            <what_was_the_treatment_done/>
+            <has_the_issue_been_addressed/>
+            <indicate_the_reason/>
+          </g_woman_treatment>
+          <g_disease_progression>
+            <disease_progression/>
+          </g_disease_progression>
+          <g_end_followup>
+            <why_end_followup/>
+            <why_end_followup_other/>
+          </g_end_followup>
+          <reason_followup_note_description_fr/>
+          <reason_followup_note_description_en/>
+          <g_summary>
+            <r_patient_details/>
+            <r_patient_info/>
+            <r_refer_to_cscom/>
+            <diagnosis_treatment/>
+            <n_did_not_come_to_health_center/>
+            <n_reason_not_go_to_health_center/>
+            <n_what_diagnosis/>
+            <n_what_intervention_procedure/>
+            <n_problem_solved/>
+            <n_problem_not_solved/>
+            <special_instructions/>
+            <n_closing_the_followup_advise/>
+            <n_next_48h_followup/>
+            <n_teach_danger_signs/>
+            <n_recognize_danger_signs/>
+            <n_pnc_benefit_and_labor_signs/>
+            <n_family_planning/>
+            <n_accompany_to_health_center/>
+            <n_fill_death_form/>
+            <n_fill_birth_form/>
+            <follow_up/>
+            <n_next_followup_appointment_in_7_days/>
+            <n_no_further_followup/>
+          </g_summary>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </pregnancy_referral_followup>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/pregnancy_referral_followup/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/pregnancy_referral_followup/inputs/source" type="string"/>
+      <bind nodeset="/pregnancy_referral_followup/inputs/source_id" type="string"/>
+      <bind nodeset="/pregnancy_referral_followup/inputs/t_lmp_date" type="string"/>
+      <bind nodeset="/pregnancy_referral_followup/inputs/user/contact_id" type="db:person"/>
+      <bind nodeset="/pregnancy_referral_followup/inputs/user/name" type="string"/>
+      <bind nodeset="/pregnancy_referral_followup/inputs/user/phone" type="string"/>
+      <bind nodeset="/pregnancy_referral_followup/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/pregnancy_referral_followup/inputs/contact/name" type="string"/>
+      <bind nodeset="/pregnancy_referral_followup/inputs/contact/short_name" type="string"/>
+      <bind nodeset="/pregnancy_referral_followup/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/pregnancy_referral_followup/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/pregnancy_referral_followup/inputs/contact/sex" type="string"/>
+      <bind nodeset="/pregnancy_referral_followup/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/pregnancy_referral_followup/inputs/contact/parent/parent/_id" type="string"/>
+      <bind nodeset="/pregnancy_referral_followup/inputs/contact/parent/parent/parent/_id" type="string"/>
+      <bind nodeset="/pregnancy_referral_followup/inputs/contact/parent/parent/contact/chw_name" type="string"/>
+      <bind nodeset="/pregnancy_referral_followup/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind nodeset="/pregnancy_referral_followup/household_id" type="string" calculate="../inputs/contact/parent/_id"/>
+      <bind nodeset="/pregnancy_referral_followup/area_id" type="string" calculate="../inputs/contact/parent/parent/_id"/>
+      <bind nodeset="/pregnancy_referral_followup/facility_id" type="string" calculate="../inputs/contact/parent/parent/parent/_id"/>
+      <bind nodeset="/pregnancy_referral_followup/patient_age_in_years" type="string" calculate="floor( difference-in-months( ../inputs/contact/date_of_birth, today() ) div 12 )"/>
+      <bind nodeset="/pregnancy_referral_followup/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/pregnancy_referral_followup/patient_id" type="string" calculate="../inputs/contact/patient_id"/>
+      <bind nodeset="/pregnancy_referral_followup/patient_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/pregnancy_referral_followup/patient_short_name" type="string" calculate="coalesce(../inputs/contact/short_name, ../summary/custom_translations/custom_woman_label)"/>
+      <bind nodeset="/pregnancy_referral_followup/patient_short_name_start" type="string" calculate="coalesce(../inputs/contact/short_name, ../summary/custom_translations/custom_woman_start_label)"/>
+      <bind nodeset="/pregnancy_referral_followup/lmp_date" type="string" calculate=" /pregnancy_referral_followup/inputs/t_lmp_date "/>
+      <bind nodeset="/pregnancy_referral_followup/days_since_lmp" type="string" calculate="round(decimal-date-time(today()) - decimal-date-time( /pregnancy_referral_followup/lmp_date ), 2)"/>
+      <bind nodeset="/pregnancy_referral_followup/weeks_since_lmp" type="string" calculate="round( /pregnancy_referral_followup/days_since_lmp  div 7, 0)"/>
+      <bind nodeset="/pregnancy_referral_followup/remainder_days_since_lmp" type="string" calculate="round( /pregnancy_referral_followup/days_since_lmp  mod 7,0)"/>
+      <bind nodeset="/pregnancy_referral_followup/months_since_lmp" type="string" calculate="round( /pregnancy_referral_followup/days_since_lmp  mod 30,0)"/>
+      <bind nodeset="/pregnancy_referral_followup/estimated_delivey_date" type="string" calculate="format-date-time(date-time(decimal-date-time( /pregnancy_referral_followup/lmp_date )+280),&quot;%Y-%m-%d&quot;)"/>
+      <bind nodeset="/pregnancy_referral_followup/next_referral_followup_date" type="string" calculate="format-date-time(date-time(decimal-date-time(today())+7),&quot;%d/%m/%Y&quot;)"/>
+      <bind nodeset="/pregnancy_referral_followup/g_task/task_to_perform" type="select1" required="true()"/>
+      <bind nodeset="/pregnancy_referral_followup/g_realisation" relevant=" /pregnancy_referral_followup/g_task/task_to_perform ='reference_followup'"/>
+      <bind nodeset="/pregnancy_referral_followup/g_realisation/followup_done_today" type="select1" required="true()"/>
+      <bind nodeset="/pregnancy_referral_followup/g_realisation/followup_date" type="date" required="true()" relevant=" /pregnancy_referral_followup/g_realisation/followup_done_today ='no'" jr:constraintMsg="jr:itext('/pregnancy_referral_followup/g_realisation/followup_date:jr:constraintMsg')" constraint=".&lt; today() - 1"/>
+      <bind nodeset="/pregnancy_referral_followup/g_realisation/not_done_today" type="select1" required="true()" relevant=" /pregnancy_referral_followup/g_realisation/followup_done_today ='no'"/>
+      <bind nodeset="/pregnancy_referral_followup/g_realisation/other_followup_reason" type="string" required="true()" relevant=" /pregnancy_referral_followup/g_realisation/not_done_today ='other'"/>
+      <bind nodeset="/pregnancy_referral_followup/g_search_for_woman" required="true()" relevant=" /pregnancy_referral_followup/g_task/task_to_perform ='reference_followup'"/>
+      <bind nodeset="/pregnancy_referral_followup/g_search_for_woman/has_woman_been_found" type="select1" required="true()"/>
+      <bind nodeset="/pregnancy_referral_followup/g_search_for_woman/how_patient_found" type="select1" required="true()" relevant=" /pregnancy_referral_followup/g_search_for_woman/has_woman_been_found ='yes'"/>
+      <bind nodeset="/pregnancy_referral_followup/g_search_for_woman/other_reason" type="string" relevant=" /pregnancy_referral_followup/g_search_for_woman/how_patient_found ='other'"/>
+      <bind nodeset="/pregnancy_referral_followup/g_chw_visit" required="true()" relevant=" /pregnancy_referral_followup/g_search_for_woman/has_woman_been_found ='yes'"/>
+      <bind nodeset="/pregnancy_referral_followup/g_chw_visit/did_woman_go_to_health_center" type="select1" required="true()"/>
+      <bind nodeset="/pregnancy_referral_followup/g_chw_visit/health_center_visit_date" type="date" constraint=".&lt; today()" required="true()" relevant=" /pregnancy_referral_followup/g_chw_visit/did_woman_go_to_health_center ='yes'"/>
+      <bind nodeset="/pregnancy_referral_followup/g_chw_visit/why_was_followup_missed" type="select1" required="true()" relevant=" /pregnancy_referral_followup/g_chw_visit/did_woman_go_to_health_center ='no'"/>
+      <bind nodeset="/pregnancy_referral_followup/g_chw_visit/chw_visit_other_reason" type="string" required="true()" relevant=" /pregnancy_referral_followup/g_chw_visit/why_was_followup_missed ='other'"/>
+      <bind nodeset="/pregnancy_referral_followup/g_chw_visit/n_advise_about_health_center_visit" readonly="true()" type="string" required="true()" relevant=" /pregnancy_referral_followup/g_chw_visit/did_woman_go_to_health_center ='no'"/>
+      <bind nodeset="/pregnancy_referral_followup/g_woman_treatment" relevant=" /pregnancy_referral_followup/g_chw_visit/did_woman_go_to_health_center ='yes'"/>
+      <bind nodeset="/pregnancy_referral_followup/g_woman_treatment/what_was_the_diagnosis" type="string" required="true()"/>
+      <bind nodeset="/pregnancy_referral_followup/g_woman_treatment/what_was_the_treatment_done" type="string" required="true()"/>
+      <bind nodeset="/pregnancy_referral_followup/g_woman_treatment/has_the_issue_been_addressed" type="select1" required="true()"/>
+      <bind nodeset="/pregnancy_referral_followup/g_woman_treatment/indicate_the_reason" type="string" required="true()" relevant=" /pregnancy_referral_followup/g_woman_treatment/has_the_issue_been_addressed ='no'"/>
+      <bind nodeset="/pregnancy_referral_followup/g_disease_progression" relevant=" /pregnancy_referral_followup/g_search_for_woman/has_woman_been_found ='yes'"/>
+      <bind nodeset="/pregnancy_referral_followup/g_disease_progression/disease_progression" type="select1" required="true()"/>
+      <bind nodeset="/pregnancy_referral_followup/g_end_followup" relevant=" /pregnancy_referral_followup/g_task/task_to_perform ='close_followup'"/>
+      <bind nodeset="/pregnancy_referral_followup/g_end_followup/why_end_followup" type="select1" required="true()"/>
+      <bind nodeset="/pregnancy_referral_followup/g_end_followup/why_end_followup_other" type="string" required="true()" relevant=" /pregnancy_referral_followup/g_end_followup/why_end_followup ='other'"/>
+      <bind nodeset="/pregnancy_referral_followup/reason_followup_note_description_fr" type="string" calculate="if( /pregnancy_referral_followup/g_chw_visit/why_was_followup_missed  = 'lack_of_time', 'Manque de temps' , if( /pregnancy_referral_followup/g_chw_visit/why_was_followup_missed  = 'end_of_follow_up', 'Fin du suivi' , if( /pregnancy_referral_followup/g_chw_visit/why_was_followup_missed  = 'not_motivated', 'Pas motivé', if( /pregnancy_referral_followup/g_chw_visit/why_was_followup_missed  = 'husband_refusal', 'Refus du mari', if( /pregnancy_referral_followup/g_chw_visit/why_was_followup_missed  = 'other',  /pregnancy_referral_followup/g_chw_visit/chw_visit_other_reason  , 'No reason' ) ) )))"/>
+      <bind nodeset="/pregnancy_referral_followup/reason_followup_note_description_en" type="string" calculate="if( /pregnancy_referral_followup/g_chw_visit/why_was_followup_missed  = 'lack_of_time', 'Lack of time' , if( /pregnancy_referral_followup/g_chw_visit/why_was_followup_missed  = 'end_of_follow_up', 'End of follow-up' , if( /pregnancy_referral_followup/g_chw_visit/why_was_followup_missed  = 'not_motivated', 'Not motivated', if( /pregnancy_referral_followup/g_chw_visit/why_was_followup_missed  = 'husband_refusal', 'Husbands refusal', if( /pregnancy_referral_followup/g_chw_visit/why_was_followup_missed  = 'other',  /pregnancy_referral_followup/g_chw_visit/chw_visit_other_reason  , 'No reason' ) ) )))"/>
+      <bind nodeset="/pregnancy_referral_followup/g_summary/r_patient_details" readonly="true()" type="string"/>
+      <bind nodeset="/pregnancy_referral_followup/g_summary/r_patient_info" readonly="true()" type="string"/>
+      <bind nodeset="/pregnancy_referral_followup/g_summary/r_refer_to_cscom" readonly="true()" type="string" relevant=" /pregnancy_referral_followup/g_disease_progression/disease_progression ='worsen' or  /pregnancy_referral_followup/g_disease_progression/disease_progression ='no_change'"/>
+      <bind nodeset="/pregnancy_referral_followup/g_summary/diagnosis_treatment" readonly="true()" type="string" relevant=" /pregnancy_referral_followup/g_chw_visit/did_woman_go_to_health_center ='yes'"/>
+      <bind nodeset="/pregnancy_referral_followup/g_summary/n_did_not_come_to_health_center" readonly="true()" type="string" relevant=" /pregnancy_referral_followup/g_chw_visit/did_woman_go_to_health_center ='no'"/>
+      <bind nodeset="/pregnancy_referral_followup/g_summary/n_reason_not_go_to_health_center" readonly="true()" type="string" relevant=" /pregnancy_referral_followup/g_chw_visit/did_woman_go_to_health_center ='no'"/>
+      <bind nodeset="/pregnancy_referral_followup/g_summary/n_what_diagnosis" readonly="true()" type="string" relevant=" /pregnancy_referral_followup/g_chw_visit/did_woman_go_to_health_center ='yes'"/>
+      <bind nodeset="/pregnancy_referral_followup/g_summary/n_what_intervention_procedure" readonly="true()" type="string" relevant=" /pregnancy_referral_followup/g_chw_visit/did_woman_go_to_health_center ='yes'"/>
+      <bind nodeset="/pregnancy_referral_followup/g_summary/n_problem_solved" readonly="true()" type="string" relevant=" /pregnancy_referral_followup/g_woman_treatment/has_the_issue_been_addressed ='yes'"/>
+      <bind nodeset="/pregnancy_referral_followup/g_summary/n_problem_not_solved" readonly="true()" type="string" relevant=" /pregnancy_referral_followup/g_woman_treatment/has_the_issue_been_addressed ='no'"/>
+      <bind nodeset="/pregnancy_referral_followup/g_summary/special_instructions" readonly="true()" type="string" relevant=" /pregnancy_referral_followup/g_chw_visit/did_woman_go_to_health_center ='no'"/>
+      <bind nodeset="/pregnancy_referral_followup/g_summary/n_closing_the_followup_advise" readonly="true()" type="string" relevant=" /pregnancy_referral_followup/g_search_for_woman/has_woman_been_found ='no'"/>
+      <bind nodeset="/pregnancy_referral_followup/g_summary/n_next_48h_followup" readonly="true()" type="string" relevant=" /pregnancy_referral_followup/g_chw_visit/did_woman_go_to_health_center ='no'"/>
+      <bind nodeset="/pregnancy_referral_followup/g_summary/n_teach_danger_signs" readonly="true()" type="string" relevant=" /pregnancy_referral_followup/weeks_since_lmp &gt;=1 and  /pregnancy_referral_followup/weeks_since_lmp &lt;12"/>
+      <bind nodeset="/pregnancy_referral_followup/g_summary/n_recognize_danger_signs" readonly="true()" type="string" relevant=" /pregnancy_referral_followup/weeks_since_lmp =12"/>
+      <bind nodeset="/pregnancy_referral_followup/g_summary/n_pnc_benefit_and_labor_signs" readonly="true()" type="string" relevant=" /pregnancy_referral_followup/weeks_since_lmp &gt;13 and  /pregnancy_referral_followup/weeks_since_lmp &lt;=14"/>
+      <bind nodeset="/pregnancy_referral_followup/g_summary/n_family_planning" readonly="true()" type="string" relevant=" /pregnancy_referral_followup/weeks_since_lmp &gt;=25"/>
+      <bind nodeset="/pregnancy_referral_followup/g_summary/n_accompany_to_health_center" readonly="true()" type="string" relevant=" /pregnancy_referral_followup/g_disease_progression/disease_progression ='worsen' or  /pregnancy_referral_followup/g_disease_progression/disease_progression ='no_change'"/>
+      <bind nodeset="/pregnancy_referral_followup/g_summary/n_fill_death_form" readonly="true()" type="string" relevant=" /pregnancy_referral_followup/g_end_followup/why_end_followup ='death_of_the woman'"/>
+      <bind nodeset="/pregnancy_referral_followup/g_summary/n_fill_birth_form" readonly="true()" type="string" relevant=" /pregnancy_referral_followup/g_end_followup/why_end_followup ='woman_gave_birth'"/>
+      <bind nodeset="/pregnancy_referral_followup/g_summary/follow_up" readonly="true()" type="string"/>
+      <bind nodeset="/pregnancy_referral_followup/g_summary/n_next_followup_appointment_in_7_days" readonly="true()" type="string"/>
+      <bind nodeset="/pregnancy_referral_followup/g_summary/n_no_further_followup" readonly="true()" type="string" relevant=" /pregnancy_referral_followup/g_task/task_to_perform ='close_followup'"/>
+      <bind nodeset="/pregnancy_referral_followup/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/pregnancy_referral_followup/inputs">
+      <input ref="/pregnancy_referral_followup/inputs/t_lmp_date">
+        <label ref="jr:itext('/pregnancy_referral_followup/inputs/t_lmp_date:label')"/>
+      </input>
+      <group ref="/pregnancy_referral_followup/inputs/user">
+        <label ref="jr:itext('/pregnancy_referral_followup/inputs/user:label')"/>
+        <input appearance="db-object" ref="/pregnancy_referral_followup/inputs/user/contact_id">
+          <label ref="jr:itext('/pregnancy_referral_followup/inputs/user/contact_id:label')"/>
+        </input>
+      </group>
+      <group ref="/pregnancy_referral_followup/inputs/contact">
+        <input appearance="db-object" ref="/pregnancy_referral_followup/inputs/contact/_id">
+          <label ref="jr:itext('/pregnancy_referral_followup/inputs/contact/_id:label')"/>
+        </input>
+        <group ref="/pregnancy_referral_followup/inputs/contact/parent">
+          <input appearance="hidden" ref="/pregnancy_referral_followup/inputs/contact/parent/_id">
+            <label ref="jr:itext('/pregnancy_referral_followup/inputs/contact/parent/_id:label')"/>
+          </input>
+          <group ref="/pregnancy_referral_followup/inputs/contact/parent/parent">
+            <input appearance="hidden" ref="/pregnancy_referral_followup/inputs/contact/parent/parent/_id">
+              <label ref="jr:itext('/pregnancy_referral_followup/inputs/contact/parent/parent/_id:label')"/>
+            </input>
+            <group ref="/pregnancy_referral_followup/inputs/contact/parent/parent/parent">
+              <input appearance="hidden" ref="/pregnancy_referral_followup/inputs/contact/parent/parent/parent/_id">
+                <label ref="jr:itext('/pregnancy_referral_followup/inputs/contact/parent/parent/parent/_id:label')"/>
+              </input>
+            </group>
+            <group ref="/pregnancy_referral_followup/inputs/contact/parent/parent/contact"/>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/pregnancy_referral_followup/g_task">
+      <label ref="jr:itext('/pregnancy_referral_followup/g_task:label')"/>
+      <select1 ref="/pregnancy_referral_followup/g_task/task_to_perform">
+        <label ref="jr:itext('/pregnancy_referral_followup/g_task/task_to_perform:label')"/>
+        <item>
+          <label ref="jr:itext('/pregnancy_referral_followup/g_task/task_to_perform/reference_followup:label')"/>
+          <value>reference_followup</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_referral_followup/g_task/task_to_perform/close_followup:label')"/>
+          <value>close_followup</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/pregnancy_referral_followup/g_realisation">
+      <label ref="jr:itext('/pregnancy_referral_followup/g_realisation:label')"/>
+      <select1 ref="/pregnancy_referral_followup/g_realisation/followup_done_today">
+        <label ref="jr:itext('/pregnancy_referral_followup/g_realisation/followup_done_today:label')"/>
+        <item>
+          <label ref="jr:itext('/pregnancy_referral_followup/g_realisation/followup_done_today/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_referral_followup/g_realisation/followup_done_today/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/pregnancy_referral_followup/g_realisation/followup_date">
+        <label ref="jr:itext('/pregnancy_referral_followup/g_realisation/followup_date:label')"/>
+      </input>
+      <select1 ref="/pregnancy_referral_followup/g_realisation/not_done_today">
+        <label ref="jr:itext('/pregnancy_referral_followup/g_realisation/not_done_today:label')"/>
+        <item>
+          <label ref="jr:itext('/pregnancy_referral_followup/g_realisation/not_done_today/phone_discharged:label')"/>
+          <value>phone_discharged</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_referral_followup/g_realisation/not_done_today/phone_lost:label')"/>
+          <value>phone_lost</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_referral_followup/g_realisation/not_done_today/other:label')"/>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/pregnancy_referral_followup/g_realisation/other_followup_reason">
+        <label ref="jr:itext('/pregnancy_referral_followup/g_realisation/other_followup_reason:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/pregnancy_referral_followup/g_search_for_woman">
+      <label ref="jr:itext('/pregnancy_referral_followup/g_search_for_woman:label')"/>
+      <select1 ref="/pregnancy_referral_followup/g_search_for_woman/has_woman_been_found">
+        <label ref="jr:itext('/pregnancy_referral_followup/g_search_for_woman/has_woman_been_found:label')"/>
+        <item>
+          <label ref="jr:itext('/pregnancy_referral_followup/g_search_for_woman/has_woman_been_found/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_referral_followup/g_search_for_woman/has_woman_been_found/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/pregnancy_referral_followup/g_search_for_woman/how_patient_found">
+        <label ref="jr:itext('/pregnancy_referral_followup/g_search_for_woman/how_patient_found:label')"/>
+        <item>
+          <label ref="jr:itext('/pregnancy_referral_followup/g_search_for_woman/how_patient_found/during_home_visit:label')"/>
+          <value>during_home_visit</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_referral_followup/g_search_for_woman/how_patient_found/patient_to_chw:label')"/>
+          <value>patient_to_chw</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_referral_followup/g_search_for_woman/how_patient_found/other:label')"/>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/pregnancy_referral_followup/g_search_for_woman/other_reason">
+        <label ref="jr:itext('/pregnancy_referral_followup/g_search_for_woman/other_reason:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/pregnancy_referral_followup/g_chw_visit">
+      <label ref="jr:itext('/pregnancy_referral_followup/g_chw_visit:label')"/>
+      <select1 ref="/pregnancy_referral_followup/g_chw_visit/did_woman_go_to_health_center">
+        <label ref="jr:itext('/pregnancy_referral_followup/g_chw_visit/did_woman_go_to_health_center:label')"/>
+        <item>
+          <label ref="jr:itext('/pregnancy_referral_followup/g_chw_visit/did_woman_go_to_health_center/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_referral_followup/g_chw_visit/did_woman_go_to_health_center/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/pregnancy_referral_followup/g_chw_visit/health_center_visit_date">
+        <label ref="jr:itext('/pregnancy_referral_followup/g_chw_visit/health_center_visit_date:label')"/>
+      </input>
+      <select1 ref="/pregnancy_referral_followup/g_chw_visit/why_was_followup_missed">
+        <label ref="jr:itext('/pregnancy_referral_followup/g_chw_visit/why_was_followup_missed:label')"/>
+        <item>
+          <label ref="jr:itext('/pregnancy_referral_followup/g_chw_visit/why_was_followup_missed/forgot:label')"/>
+          <value>forgot</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_referral_followup/g_chw_visit/why_was_followup_missed/lack_of_time:label')"/>
+          <value>lack_of_time</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_referral_followup/g_chw_visit/why_was_followup_missed/no_money:label')"/>
+          <value>no_money</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_referral_followup/g_chw_visit/why_was_followup_missed/not_motivated:label')"/>
+          <value>not_motivated</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_referral_followup/g_chw_visit/why_was_followup_missed/end_of_follow_up:label')"/>
+          <value>end_of_follow_up</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_referral_followup/g_chw_visit/why_was_followup_missed/husband_refusal:label')"/>
+          <value>husband_refusal</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_referral_followup/g_chw_visit/why_was_followup_missed/other:label')"/>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/pregnancy_referral_followup/g_chw_visit/chw_visit_other_reason">
+        <label ref="jr:itext('/pregnancy_referral_followup/g_chw_visit/chw_visit_other_reason:label')"/>
+      </input>
+      <input ref="/pregnancy_referral_followup/g_chw_visit/n_advise_about_health_center_visit">
+        <label ref="jr:itext('/pregnancy_referral_followup/g_chw_visit/n_advise_about_health_center_visit:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/pregnancy_referral_followup/g_woman_treatment">
+      <label ref="jr:itext('/pregnancy_referral_followup/g_woman_treatment:label')"/>
+      <input appearance="multiline" ref="/pregnancy_referral_followup/g_woman_treatment/what_was_the_diagnosis">
+        <label ref="jr:itext('/pregnancy_referral_followup/g_woman_treatment/what_was_the_diagnosis:label')"/>
+        <hint ref="jr:itext('/pregnancy_referral_followup/g_woman_treatment/what_was_the_diagnosis:hint')"/>
+      </input>
+      <input appearance="multiline" ref="/pregnancy_referral_followup/g_woman_treatment/what_was_the_treatment_done">
+        <label ref="jr:itext('/pregnancy_referral_followup/g_woman_treatment/what_was_the_treatment_done:label')"/>
+        <hint ref="jr:itext('/pregnancy_referral_followup/g_woman_treatment/what_was_the_treatment_done:hint')"/>
+      </input>
+      <select1 ref="/pregnancy_referral_followup/g_woman_treatment/has_the_issue_been_addressed">
+        <label ref="jr:itext('/pregnancy_referral_followup/g_woman_treatment/has_the_issue_been_addressed:label')"/>
+        <hint ref="jr:itext('/pregnancy_referral_followup/g_woman_treatment/has_the_issue_been_addressed:hint')"/>
+        <item>
+          <label ref="jr:itext('/pregnancy_referral_followup/g_woman_treatment/has_the_issue_been_addressed/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_referral_followup/g_woman_treatment/has_the_issue_been_addressed/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input appearance="multiline" ref="/pregnancy_referral_followup/g_woman_treatment/indicate_the_reason">
+        <label ref="jr:itext('/pregnancy_referral_followup/g_woman_treatment/indicate_the_reason:label')"/>
+        <hint ref="jr:itext('/pregnancy_referral_followup/g_woman_treatment/indicate_the_reason:hint')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/pregnancy_referral_followup/g_disease_progression">
+      <label ref="jr:itext('/pregnancy_referral_followup/g_disease_progression:label')"/>
+      <select1 ref="/pregnancy_referral_followup/g_disease_progression/disease_progression">
+        <label ref="jr:itext('/pregnancy_referral_followup/g_disease_progression/disease_progression:label')"/>
+        <item>
+          <label ref="jr:itext('/pregnancy_referral_followup/g_disease_progression/disease_progression/worsen:label')"/>
+          <value>worsen</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_referral_followup/g_disease_progression/disease_progression/improved:label')"/>
+          <value>improved</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_referral_followup/g_disease_progression/disease_progression/no_change:label')"/>
+          <value>no_change</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_referral_followup/g_disease_progression/disease_progression/healed:label')"/>
+          <value>healed</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/pregnancy_referral_followup/g_end_followup">
+      <label ref="jr:itext('/pregnancy_referral_followup/g_end_followup:label')"/>
+      <select1 ref="/pregnancy_referral_followup/g_end_followup/why_end_followup">
+        <label ref="jr:itext('/pregnancy_referral_followup/g_end_followup/why_end_followup:label')"/>
+        <item>
+          <label ref="jr:itext('/pregnancy_referral_followup/g_end_followup/why_end_followup/woman_gave_birth:label')"/>
+          <value>woman_gave_birth</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_referral_followup/g_end_followup/why_end_followup/death_of_the woman:label')"/>
+          <value>death_of_the woman</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_referral_followup/g_end_followup/why_end_followup/miscarriage:label')"/>
+          <value>miscarriage</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_referral_followup/g_end_followup/why_end_followup/abortion:label')"/>
+          <value>abortion</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_referral_followup/g_end_followup/why_end_followup/other:label')"/>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/pregnancy_referral_followup/g_end_followup/why_end_followup_other">
+        <label ref="jr:itext('/pregnancy_referral_followup/g_end_followup/why_end_followup_other:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list summary" ref="/pregnancy_referral_followup/g_summary">
+      <label ref="jr:itext('/pregnancy_referral_followup/g_summary:label')"/>
+      <input appearance="h1 yellow" ref="/pregnancy_referral_followup/g_summary/r_patient_details">
+        <label ref="jr:itext('/pregnancy_referral_followup/g_summary/r_patient_details:label')"/>
+      </input>
+      <input ref="/pregnancy_referral_followup/g_summary/r_patient_info">
+        <label ref="jr:itext('/pregnancy_referral_followup/g_summary/r_patient_info:label')"/>
+      </input>
+      <input appearance="h1 red" ref="/pregnancy_referral_followup/g_summary/r_refer_to_cscom">
+        <label ref="jr:itext('/pregnancy_referral_followup/g_summary/r_refer_to_cscom:label')"/>
+      </input>
+      <input appearance="h2 blue" ref="/pregnancy_referral_followup/g_summary/diagnosis_treatment">
+        <label ref="jr:itext('/pregnancy_referral_followup/g_summary/diagnosis_treatment:label')"/>
+      </input>
+      <input ref="/pregnancy_referral_followup/g_summary/n_did_not_come_to_health_center">
+        <label ref="jr:itext('/pregnancy_referral_followup/g_summary/n_did_not_come_to_health_center:label')"/>
+      </input>
+      <input ref="/pregnancy_referral_followup/g_summary/n_reason_not_go_to_health_center">
+        <label ref="jr:itext('/pregnancy_referral_followup/g_summary/n_reason_not_go_to_health_center:label')"/>
+      </input>
+      <input ref="/pregnancy_referral_followup/g_summary/n_what_diagnosis">
+        <label ref="jr:itext('/pregnancy_referral_followup/g_summary/n_what_diagnosis:label')"/>
+      </input>
+      <input ref="/pregnancy_referral_followup/g_summary/n_what_intervention_procedure">
+        <label ref="jr:itext('/pregnancy_referral_followup/g_summary/n_what_intervention_procedure:label')"/>
+      </input>
+      <input ref="/pregnancy_referral_followup/g_summary/n_problem_solved">
+        <label ref="jr:itext('/pregnancy_referral_followup/g_summary/n_problem_solved:label')"/>
+      </input>
+      <input ref="/pregnancy_referral_followup/g_summary/n_problem_not_solved">
+        <label ref="jr:itext('/pregnancy_referral_followup/g_summary/n_problem_not_solved:label')"/>
+      </input>
+      <input appearance="h1 blue" ref="/pregnancy_referral_followup/g_summary/special_instructions">
+        <label ref="jr:itext('/pregnancy_referral_followup/g_summary/special_instructions:label')"/>
+      </input>
+      <input ref="/pregnancy_referral_followup/g_summary/n_closing_the_followup_advise">
+        <label ref="jr:itext('/pregnancy_referral_followup/g_summary/n_closing_the_followup_advise:label')"/>
+      </input>
+      <input ref="/pregnancy_referral_followup/g_summary/n_next_48h_followup">
+        <label ref="jr:itext('/pregnancy_referral_followup/g_summary/n_next_48h_followup:label')"/>
+      </input>
+      <input ref="/pregnancy_referral_followup/g_summary/n_teach_danger_signs">
+        <label ref="jr:itext('/pregnancy_referral_followup/g_summary/n_teach_danger_signs:label')"/>
+      </input>
+      <input ref="/pregnancy_referral_followup/g_summary/n_recognize_danger_signs">
+        <label ref="jr:itext('/pregnancy_referral_followup/g_summary/n_recognize_danger_signs:label')"/>
+      </input>
+      <input ref="/pregnancy_referral_followup/g_summary/n_pnc_benefit_and_labor_signs">
+        <label ref="jr:itext('/pregnancy_referral_followup/g_summary/n_pnc_benefit_and_labor_signs:label')"/>
+      </input>
+      <input ref="/pregnancy_referral_followup/g_summary/n_family_planning">
+        <label ref="jr:itext('/pregnancy_referral_followup/g_summary/n_family_planning:label')"/>
+      </input>
+      <input appearance="h3 red" ref="/pregnancy_referral_followup/g_summary/n_accompany_to_health_center">
+        <label ref="jr:itext('/pregnancy_referral_followup/g_summary/n_accompany_to_health_center:label')"/>
+      </input>
+      <input ref="/pregnancy_referral_followup/g_summary/n_fill_death_form">
+        <label ref="jr:itext('/pregnancy_referral_followup/g_summary/n_fill_death_form:label')"/>
+      </input>
+      <input ref="/pregnancy_referral_followup/g_summary/n_fill_birth_form">
+        <label ref="jr:itext('/pregnancy_referral_followup/g_summary/n_fill_birth_form:label')"/>
+      </input>
+      <input appearance="h1 green" ref="/pregnancy_referral_followup/g_summary/follow_up">
+        <label ref="jr:itext('/pregnancy_referral_followup/g_summary/follow_up:label')"/>
+      </input>
+      <input ref="/pregnancy_referral_followup/g_summary/n_next_followup_appointment_in_7_days">
+        <label ref="jr:itext('/pregnancy_referral_followup/g_summary/n_next_followup_appointment_in_7_days:label')"/>
+      </input>
+      <input ref="/pregnancy_referral_followup/g_summary/n_no_further_followup">
+        <label ref="jr:itext('/pregnancy_referral_followup/g_summary/n_no_further_followup:label')"/>
+      </input>
+    </group>
+  </h:body>
+</h:html>

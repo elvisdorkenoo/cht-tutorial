@@ -1,0 +1,64 @@
+
+  <model>
+    <instance>
+        <data xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" id="contact:c70_village:edit" prefix="J1!contact:c70_village:edit!" delimiter="#" version="2022-05-09 19-21">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <user>
+              <contact_id/>
+              <facility_id/>
+              <name/>
+            </user>
+          </inputs>
+          <c70_village>
+            <parent/>
+            <type/>
+            <contact_name_note/>
+            <change_primary>false</change_primary>
+            <contact>
+              <name/>
+              <contact_name/>
+              <select_c12/>
+              <select_c72/>
+              <select_c82/>
+              <select_c92/>
+              <_id/>
+            </contact>
+            <name/>
+            <geolocation/>
+            <family_number/>
+            <family_geolocation>Cliquez sur ce point seulement lorsque vous êtes dans la concession</family_geolocation>
+            <meta tag="hidden">
+              <created_by/>
+              <created_by_person_uuid/>
+              <created_by_place_uuid/>
+              <last_edited_by/>
+              <last_edited_by_person_uuid/>
+              <last_edited_by_place_uuid/>
+            </meta>
+          </c70_village>
+          <init>
+            <place_type/>
+            <place_name_selector>c70_village</place_name_selector>
+            <place_name_label/>
+            <user_contact>
+              <contact_uuid/>
+              <role/>
+              <user_role/>
+              <n_edit/>
+            </user_contact>
+          </init>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+  </model>
+

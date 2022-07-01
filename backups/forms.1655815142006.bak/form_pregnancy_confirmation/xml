@@ -1,0 +1,2226 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>Pregnancy Confirmation</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/pregnancy_confirmation/g_cscom_visit/preg_go_to_cscom/no:label">
+            <value>No</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_cscom_visit/preg_go_to_cscom/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_cscom_visit/preg_go_to_cscom:label">
+            <value>Did <output value=" /pregnancy_confirmation/patient_name "/> go to the CSCOM?</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_cscom_visit/preg_why_didnt_go_to_cscom/forget:label">
+            <value>Forget</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_cscom_visit/preg_why_didnt_go_to_cscom/lack_money:label">
+            <value>Lack of money</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_cscom_visit/preg_why_didnt_go_to_cscom/lack_time:label">
+            <value>Lack of time</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_cscom_visit/preg_why_didnt_go_to_cscom/no_motivated:label">
+            <value>Not motivated</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_cscom_visit/preg_why_didnt_go_to_cscom/other_reason:label">
+            <value>Other</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_cscom_visit/preg_why_didnt_go_to_cscom/refusal:label">
+            <value>Refusal</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_cscom_visit/preg_why_didnt_go_to_cscom:label">
+            <value>Why did <output value=" /pregnancy_confirmation/patient_name "/> not go to the CSCOM?</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_cscom_visit/preg_why_didnt_go_to_cscom_other:label">
+            <value>Specify (Other)</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_cscom_visit:label">
+            <value>Vist of <output value=" /pregnancy_confirmation/patient_name "/> to the CSCOM</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/g_birth/child_gender/female:label">
+            <value>Female</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/g_birth/child_gender/male:label">
+            <value>Male</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/g_birth/child_gender:label">
+            <value>Child's gender</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/g_birth/child_weight:jr:constraintMsg">
+            <value>The weight must not be less than 1 kg and must not exceed 5 kg</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/g_birth/child_weight:label">
+            <value>Weight of the child at birth (Kg)</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/g_birth/status_of_child/alive:label">
+            <value>Alive</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/g_birth/status_of_child/dead:label">
+            <value>Dead</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/g_birth/status_of_child:label">
+            <value>Status of the child</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/g_birth:label">
+            <value>Birth</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/know_year_of_pregnancy/dont_know:label">
+            <value>Don't know</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/know_year_of_pregnancy/preg_date:label">
+            <value>Date</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/know_year_of_pregnancy:label">
+            <value>Do you know the year of pregnancy</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/number_of_child:jr:constraintMsg">
+            <value>This number must be between 1 and 10</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/number_of_child:label">
+            <value>Number of child(ren) in this pregnancy</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/other_type_of_birth:label">
+            <value>Specify (Other)</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/outcome_of_pregnancy/out_alive:label">
+            <value>Alive</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/outcome_of_pregnancy/out_stillborn:label">
+            <value>Stillborn</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/outcome_of_pregnancy:label">
+            <value>What is the outcome of the pregnancy?</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/place_of_delivery/health_center:label">
+            <value>Health Center</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/place_of_delivery/home:label">
+            <value>Home</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/place_of_delivery/other_place_of_delivery:label">
+            <value>Other</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/place_of_delivery/rural_maternity_hospital:label">
+            <value>Rural Maternity Hospital</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/place_of_delivery:label">
+            <value>Place of delivery</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/type_of_delivery/cesarean:label">
+            <value>Cesarean</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/type_of_delivery/d_dont_know:label">
+            <value>Don't know</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/type_of_delivery/normal:label">
+            <value>Normal</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/type_of_delivery:label">
+            <value>Type of delivery</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/year_of_pregnancy:label">
+            <value>Year of pregnancy</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number:label">
+            <value>Add a previous pregnancy</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/info_for_8_previous_successful_preg:label">
+            <value>Information about successful pregnancies. Take information about the last 8 successful pregnancies. Note from the oldest to the most recent.</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/number_of_abortion:hint">
+            <value>This number must be between 0 and 21</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/number_of_abortion:jr:constraintMsg">
+            <value>This number must be between 0 and 10</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/number_of_abortion:label">
+            <value>How many abortions has <output value=" /pregnancy_confirmation/patient_name "/> had?</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/previous_successful_preg_count:hint">
+            <value>This number must be between 0 and 20</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/previous_successful_preg_count:jr:constraintMsg">
+            <value>This number must be between 0 and 20</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/previous_successful_preg_count:label">
+            <value>How many previous successful pregnancy(s) <output value=" /pregnancy_confirmation/patient_name "/> has she had?</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies:label">
+            <value>Information on previous pregnancies</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_outputs/high_risk:label">
+            <value>Patient has High Risk Pregnancy</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_patient_info/g_lmp_date:label">
+            <value>LMP</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_patient_info/lmp_approx:hint">
+            <value>Date must be between 4 weeks and 45 weeks</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_patient_info/lmp_approx:jr:constraintMsg">
+            <value>The number must be between 4 and 45</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_patient_info/lmp_approx:label">
+            <value>Mark the approximate date of the last period in weeks</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_patient_info/lmp_calendar:jr:constraintMsg">
+            <value>The date must be in the past</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_patient_info/lmp_calendar:label">
+            <value>What is the date of the last period?</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_patient_info/s_has_reg_edd/no:label">
+            <value>No</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_patient_info/s_has_reg_edd/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_patient_info/s_has_reg_edd:hint">
+            <value>Look in the CPN booklet to see if this date is given.</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_patient_info/s_has_reg_edd:label">
+            <value><output value=" /pregnancy_confirmation/patient_name "/> does she have an estimated date of delivery?</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_patient_info/s_reg_edd:label">
+            <value>**The estimated (probable) date of delivery is:** <output value=" /pregnancy_confirmation/g_patient_info/g_edd "/></value>
+          </text>
+          <text id="/pregnancy_confirmation/g_patient_info/s_reg_edd_calendar:jr:constraintMsg">
+            <value>The date must be today or in the future</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_patient_info/s_reg_edd_calendar:label">
+            <value>What is the estimated date of delivery?</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_patient_info/s_reg_mother_lmp/no:label">
+            <value>No</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_patient_info/s_reg_mother_lmp/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_patient_info/s_reg_mother_lmp:label">
+            <value>Does <output value=" /pregnancy_confirmation/patient_name "/> know when her last period was?</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_patient_info/woman_height:jr:constraintMsg">
+            <value>The height should not be less than 50cm and should not exceed 250 cm</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_patient_info/woman_height:label">
+            <value>How tall is <output value=" /pregnancy_confirmation/patient_name "/> (in cm)?</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_patient_info/woman_weight:jr:constraintMsg">
+            <value>The weight must not be less than 20 kg and must not exceed 200 kg</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_patient_info/woman_weight:label">
+            <value>What is the weight of <output value=" /pregnancy_confirmation/patient_name "/> (in kg)?</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_patient_info:label">
+            <value>Information on <output value=" /pregnancy_confirmation/patient_name "/> pregnant</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_pregnancy_confirmation/how_pregnancy_confirmed/anc_card:label">
+            <value>ANC card</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_pregnancy_confirmation/how_pregnancy_confirmed/other_pregnancy_confirmed:label">
+            <value>Other</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_pregnancy_confirmation/how_pregnancy_confirmed/positif_test_result:label">
+            <value>Positive pregnancy test result</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_pregnancy_confirmation/how_pregnancy_confirmed/ultrasound:label">
+            <value>Ultrasound</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_pregnancy_confirmation/how_pregnancy_confirmed:label">
+            <value>How is the pregnancy confirmed?</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_pregnancy_confirmation/how_pregnancy_confirmed_other:label">
+            <value>Specify (Other)</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_pregnancy_confirmation/pregnancy_confirmed/no:label">
+            <value>No</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_pregnancy_confirmation/pregnancy_confirmed/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_pregnancy_confirmation/pregnancy_confirmed:label">
+            <value>Is the pregnancy confirmed?</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_pregnancy_confirmation:label">
+            <value>Confirmation of pregnancy</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_prenatal_visits/date_of_last_prenatal_visit:jr:constraintMsg">
+            <value>The date must be in the past</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_prenatal_visits/date_of_last_prenatal_visit:label">
+            <value>Date of last prenatal visit</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_prenatal_visits/date_of_next_prenatal_visit:jr:constraintMsg">
+            <value>The date must be in the future</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_prenatal_visits/date_of_next_prenatal_visit:label">
+            <value>Date of next prenatal visit</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_prenatal_visits/had_prenatal_visit/no:label">
+            <value>No</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_prenatal_visits/had_prenatal_visit/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_prenatal_visits/had_prenatal_visit:label">
+            <value><output value=" /pregnancy_confirmation/patient_name "/> has she had a prenatal visit for this pregnancy?</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_prenatal_visits/prenatal_visit_3m/3_visit_1:label">
+            <value>Visit 1: (0 - 3 months)</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_prenatal_visits/prenatal_visit_3m:label">
+            <value>Which one(s)?</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_prenatal_visits/prenatal_visit_4_6m/4_visit_1:label">
+            <value>Visit 1: (0 - 3 months)</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_prenatal_visits/prenatal_visit_4_6m/4_visit_2:label">
+            <value>Visit 2: (4 - 6 months)</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_prenatal_visits/prenatal_visit_4_6m:label">
+            <value>Which one(s)?</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_prenatal_visits/prenatal_visit_7_8m/7_visit_1:label">
+            <value>Visit 1: (0 - 3 months)</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_prenatal_visits/prenatal_visit_7_8m/7_visit_2:label">
+            <value>Visit 2: (4 - 6 months)</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_prenatal_visits/prenatal_visit_7_8m/7_visit_3:label">
+            <value>Visit 3: (7- 8 months)</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_prenatal_visits/prenatal_visit_7_8m:label">
+            <value>Which one(s)?</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_prenatal_visits/prenatal_visit_after_8m/8_visit_1:label">
+            <value>Visit 1: (0 - 3 months)</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_prenatal_visits/prenatal_visit_after_8m/8_visit_2:label">
+            <value>Visit 2: (4 - 6 months)</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_prenatal_visits/prenatal_visit_after_8m/8_visit_3:label">
+            <value>Visit 3: (7- 8 months)</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_prenatal_visits/prenatal_visit_after_8m/8_visit_4:label">
+            <value>Visit 4: after 8 months</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_prenatal_visits/prenatal_visit_after_8m:label">
+            <value>Which one(s)?</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_prenatal_visits/prenatal_visits_note_1:label">
+            <value>Before you finish recording, give some advice about the importance of prenatal visits to <output value=" /pregnancy_confirmation/patient_name "/></value>
+          </text>
+          <text id="/pregnancy_confirmation/g_prenatal_visits/prenatal_visits_note_2:label">
+            <value>Advice during pregnancy
+It is important to have prenatal visits
+Quality prenatal care is critical to improving health outcomes for you and your child
+They help reduce the risk of maternal death, miscarriage, birth defects, low birth weight, neonatal infections and other preventable health problems.</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_prenatal_visits/prenatal_visits_note_3:label">
+            <value>Tell <output value=" /pregnancy_confirmation/patient_name "/> that she needs to have at least 4 prenatal visits.
+Explain the chart below to her..</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_prenatal_visits/schedule_prenatal_visit:hint">
+            <value>It is recommended to go within 48 hours since no ANC visit was done beforehand.</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_prenatal_visits/schedule_prenatal_visit:jr:constraintMsg">
+            <value>The date must be in the future</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_prenatal_visits/schedule_prenatal_visit:label">
+            <value>When does <output value=" /pregnancy_confirmation/patient_name "/> schedule to go for the ANC visit?</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_prenatal_visits:label">
+            <value>Prenatal visits</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_reported/how_patient_found/during_home_visit:label">
+            <value>During the home visit</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_reported/how_patient_found/other_way:label">
+            <value>Other</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_reported/how_patient_found/woman_went_to_chw:label">
+            <value><output value=" /pregnancy_confirmation/patient_name "/> went to the CHW</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_reported/how_patient_found:label">
+            <value>How was <output value=" /pregnancy_confirmation/patient_name "/> found?</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_reported/how_patient_found_other:label">
+            <value>Specify (Other)</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_reported/reported_other_date:jr:constraintMsg">
+            <value>The date must be in the past</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_reported/reported_other_date:label">
+            <value>Enter the date when the follow-up was done</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_reported/reported_today/no:label">
+            <value>No</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_reported/reported_today/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_reported/reported_today:label">
+            <value>Has this follow-up been done today?</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_reported/s_has_located/no:label">
+            <value>No</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_reported/s_has_located/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_reported/s_has_located:label">
+            <value>Has <output value=" /pregnancy_confirmation/patient_name "/> been located?</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_reported/s_reported_date:label">
+            <value>reported date</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_reported/why_not_reported_today/lost_phone:label">
+            <value>Lost Phone</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_reported/why_not_reported_today/other_raison_not_reported:label">
+            <value>Other</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_reported/why_not_reported_today/phone_unloaded_broken:label">
+            <value>Phone Unloaded/Broken</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_reported/why_not_reported_today:label">
+            <value>Why wasn't the follow-up done today?</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_reported/why_not_reported_today_other:label">
+            <value>Specify (Other)</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_reported:label">
+            <value>Realization of the Follow-up</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_summary/follow_up:label">
+            <value>Follow-up &lt;i class="fa fa-flag"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_summary/g_diagnosis_and_treatment/diagnosis_and_treatment:label">
+            <value>Diagnosis and Treatment&lt;i class="fa fa-medkit"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_summary/g_diagnosis_and_treatment/n_approx_delivery:label">
+            <value>Estimated date of delivery: <output value=" /pregnancy_confirmation/g_patient_info/g_edd "/></value>
+          </text>
+          <text id="/pregnancy_confirmation/g_summary/g_diagnosis_and_treatment/n_date_lmp:label">
+            <value>Date of last menstrual period: <output value=" /pregnancy_confirmation/g_patient_info/g_lmp_date "/></value>
+          </text>
+          <text id="/pregnancy_confirmation/g_summary/g_diagnosis_and_treatment/n_is_pregnant:label">
+            <value><output value=" /pregnancy_confirmation/patient_name "/> is pregnant</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_summary/g_diagnosis_and_treatment/n_next_prenatal_visit:label">
+            <value>Next Prenatal Visit: <output value=" /pregnancy_confirmation/next_prenatal_visit_date "/></value>
+          </text>
+          <text id="/pregnancy_confirmation/g_summary/g_diagnosis_and_treatment/n_preg_high_risk:label">
+            <value>High Risk Pregnancy&lt;i class="fa fa-warning"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_summary/g_diagnosis_and_treatment/n_pregnancy_is_not_confirmed:label">
+            <value>The pregnancy is not confirmed.</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_summary/g_diagnosis_and_treatment/n_vaccination_not_uptodate:label">
+            <value>Vaccination not up to date</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_summary/g_diagnosis_and_treatment/n_vaccination_uptodate:label">
+            <value>Vaccination up to date</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_summary/n_inst_anc:label">
+            <value>Informez <output value=" /pregnancy_confirmation/patient_name "/> que vous allez ou qu'elle doit passer pour des visites régulières de suivi de la grossesse jusqu'à l'accouchement.</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_summary/n_inst_counseling_fp:label">
+            <value>Provide counseling to <output value=" /pregnancy_confirmation/patient_name "/> on Family Planning.
+If needed, use the Family Panning form for <output value=" /pregnancy_confirmation/patient_name "/>.</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_summary/n_inst_fp:label">
+            <value>Veuillez conseiller sur le planning familial car la grossesse est supérieure ou égale à 7 mois.</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_summary/n_inst_not_available:label">
+            <value>Rest assured that <output value=" /pregnancy_confirmation/patient_name "/> is not completely available.
+Submitting this form will close tracking for <output value=" /pregnancy_confirmation/patient_name "/>.
+There will be no more follow-up for <output value=" /pregnancy_confirmation/patient_name "/>.</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_summary/n_inst_pregnancy_confirmation:label">
+            <value>Discuss with <output value=" /pregnancy_confirmation/patient_name "/> to find a solution._x005F_x005F_x005F_x005F_x005F_x000D_
+Tell <output value=" /pregnancy_confirmation/patient_name "/> why it is important to do the urine pregnancy test soon to start monitoring the pregnancy and her child early._x005F_x005F_x005F_x005F_x005F_x000D_
+Advise <output value=" /pregnancy_confirmation/patient_name "/> to take the urine pregnancy test within the next 24 hours.</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_summary/n_inst_vaccination:label">
+            <value>Discutez avec <output value=" /pregnancy_confirmation/patient_name "/> sur la nécessité de faire le vaccin pour sa santé et le bien-être de son enfant</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_summary/n_next_followup:label">
+            <value>The next pregnancy visit will take place on: <output value=" /pregnancy_confirmation/pregnancy_followup_date "/></value>
+          </text>
+          <text id="/pregnancy_confirmation/g_summary/n_no_followup:label">
+            <value>There will be no follow-up for <output value=" /pregnancy_confirmation/patient_name "/>.</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_summary/n_referral_followup:label">
+            <value>Referral follow-up for pregnancy confirmation will be on: <output value=" /pregnancy_confirmation/referral_followup_date "/></value>
+          </text>
+          <text id="/pregnancy_confirmation/g_summary/n_referral_for_anc:label">
+            <value>Refer to the CSCOM for prenatal consultation&lt;i class="fa fa-warning"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_summary/n_referral_for_confirmation:label">
+            <value>Refer to CSCOM for confirmation of pregnancy&lt;i class="fa fa-warning"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_summary/n_sum_submission:label">
+            <value>&lt;h4 style="text-align:center;"&gt;Be sure you submit to complete this action&lt;/h4&gt;</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_summary/r_patient_info:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /pregnancy_confirmation/patient_name "/>&lt;/h4&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /pregnancy_confirmation/patient_age_display "/> &lt;/h5&gt;</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_summary/r_summary:label">
+            <value>Patient Summary&lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_summary/special_instructions:label">
+            <value>Special Instructions &lt;i class = "fa fa-hand-o-right"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_summary/visit_date_chosen:label">
+            <value>What date have you chosen?</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_summary/visit_plan/no:label">
+            <value>No</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_summary/visit_plan/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_summary/visit_plan:label">
+            <value><output value=" /pregnancy_confirmation/patient_name "/> planned to visit?</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_vaccination_status/days_since_vaccine_td1_date:label">
+            <value>Number of days since taking td1</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_vaccination_status/n_tetanus_dyphtheria:label">
+            <value>Has <output value=" /pregnancy_confirmation/patient_name "/> received the following Tetanus Dyphtheria vaccine(s)?</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_vaccination_status/vaccine_td1/no:label">
+            <value>No</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_vaccination_status/vaccine_td1/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_vaccination_status/vaccine_td1:label">
+            <value>Td1</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_vaccination_status/vaccine_td1_date:jr:constraintMsg">
+            <value>The date must be in the past</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_vaccination_status/vaccine_td1_date:label">
+            <value>Date of vaccination</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_vaccination_status/vaccine_td2/no:label">
+            <value>No</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_vaccination_status/vaccine_td2/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_vaccination_status/vaccine_td2:label">
+            <value>Td2</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_vaccination_status/vaccine_td2_date:jr:constraintMsg">
+            <value>The date must be in the past</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_vaccination_status/vaccine_td2_date:label">
+            <value>Date of vaccination</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_vaccination_status/vaccine_td_r1/no:label">
+            <value>No</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_vaccination_status/vaccine_td_r1/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_vaccination_status/vaccine_td_r1:label">
+            <value>Td- R1</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_vaccination_status/vaccine_td_r1_date:jr:constraintMsg">
+            <value>The date must be in the past</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_vaccination_status/vaccine_td_r1_date:label">
+            <value>Date of vaccination</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_vaccination_status/vaccine_td_r2/no:label">
+            <value>No</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_vaccination_status/vaccine_td_r2/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_vaccination_status/vaccine_td_r2:label">
+            <value>Td- R2</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_vaccination_status/vaccine_td_r2_date:jr:constraintMsg">
+            <value>The date must be in the past</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_vaccination_status/vaccine_td_r2_date:label">
+            <value>Date of vaccination</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_vaccination_status/vaccine_td_r3/no:label">
+            <value>No</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_vaccination_status/vaccine_td_r3/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_vaccination_status/vaccine_td_r3:label">
+            <value>Td- R3</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_vaccination_status/vaccine_td_r3_date:jr:constraintMsg">
+            <value>The date must be in the past</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_vaccination_status/vaccine_td_r3_date:label">
+            <value>Date of vaccination</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_vaccination_status:label">
+            <value>Vaccination status of <output value=" /pregnancy_confirmation/patient_name "/> pregnant</value>
+          </text>
+          <text id="/pregnancy_confirmation/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/pregnancy_confirmation/inputs/contact/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/pregnancy_confirmation/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/pregnancy_confirmation/inputs/contact/parent/_id:label">
+            <value>Household ID</value>
+          </text>
+          <text id="/pregnancy_confirmation/inputs/contact/parent/parent/_id:label">
+            <value>Area ID</value>
+          </text>
+          <text id="/pregnancy_confirmation/inputs/contact/parent/parent/contact/chw_name:label">
+            <value>CHW name</value>
+          </text>
+          <text id="/pregnancy_confirmation/inputs/contact/parent/parent/contact/phone:label">
+            <value>CHW phone</value>
+          </text>
+          <text id="/pregnancy_confirmation/inputs/contact/parent/parent/parent/_id:label">
+            <value>Health Facility ID</value>
+          </text>
+          <text id="/pregnancy_confirmation/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/pregnancy_confirmation/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/pregnancy_confirmation/inputs/contact/short_name:label">
+            <value>Short Name</value>
+          </text>
+          <text id="/pregnancy_confirmation/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/pregnancy_confirmation/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/pregnancy_confirmation/inputs/t_delivery_date:label">
+            <value>Delivery date</value>
+          </text>
+          <text id="/pregnancy_confirmation/inputs/t_follow_up_count:label">
+            <value>Follow up count</value>
+          </text>
+          <text id="/pregnancy_confirmation/inputs/t_follow_up_type:label">
+            <value>Follow up type</value>
+          </text>
+          <text id="/pregnancy_confirmation/inputs/user/contact_id:label">
+            <value>Contact ID</value>
+          </text>
+          <text id="/pregnancy_confirmation/inputs/user/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/pregnancy_confirmation/inputs/user/phone:label">
+            <value>Phone</value>
+          </text>
+          <text id="/pregnancy_confirmation/inputs/user:label">
+            <value>User</value>
+          </text>
+          <text id="/pregnancy_confirmation/next_prenatal_visit_date:label">
+            <value>The next pregnancy visit date</value>
+          </text>
+          <text id="/pregnancy_confirmation/patient_age_in_months:label">
+            <value>Months</value>
+          </text>
+          <text id="/pregnancy_confirmation/pregnancy_followup_date:label">
+            <value>date of the next pregnancy visit</value>
+          </text>
+          <text id="/pregnancy_confirmation/referral_followup_date:label">
+            <value>Date of reference follow-up</value>
+          </text>
+          <text id="/pregnancy_confirmation/visit_to_cscom_date_scheduled:label">
+            <value>date scheduled to go to cscom</value>
+          </text>
+        </translation>
+        <translation lang="fr">
+          <text id="/pregnancy_confirmation/g_cscom_visit/preg_go_to_cscom/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_cscom_visit/preg_go_to_cscom/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_cscom_visit/preg_go_to_cscom:label">
+            <value><output value=" /pregnancy_confirmation/patient_name "/> s'est-elle rendue au CSCOM?</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_cscom_visit/preg_why_didnt_go_to_cscom/forget:label">
+            <value>Oublie</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_cscom_visit/preg_why_didnt_go_to_cscom/lack_money:label">
+            <value>Manque d'argent</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_cscom_visit/preg_why_didnt_go_to_cscom/lack_time:label">
+            <value>Manque de temps</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_cscom_visit/preg_why_didnt_go_to_cscom/no_motivated:label">
+            <value>Non motivé</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_cscom_visit/preg_why_didnt_go_to_cscom/other_reason:label">
+            <value>Autre</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_cscom_visit/preg_why_didnt_go_to_cscom/refusal:label">
+            <value>Refus</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_cscom_visit/preg_why_didnt_go_to_cscom:label">
+            <value>Pourquoi <output value=" /pregnancy_confirmation/patient_name "/> s'est-elle pas rendue au CSCOM?</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_cscom_visit/preg_why_didnt_go_to_cscom_other:label">
+            <value>Précisez (Autre)</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_cscom_visit:label">
+            <value>Viste de <output value=" /pregnancy_confirmation/patient_name "/> au CSCOM</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/g_birth/child_gender/female:label">
+            <value>Féminin</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/g_birth/child_gender/male:label">
+            <value>Masculin</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/g_birth/child_gender:label">
+            <value>Sexe de l'enfant</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/g_birth/child_weight:jr:constraintMsg">
+            <value>Le poids ne doit pas être inférieur à 1 kg et ne doit pas dépasser 5 kg</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/g_birth/child_weight:label">
+            <value>Poids de l'enfant à la naissance (Kg)</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/g_birth/status_of_child/alive:label">
+            <value>Vivant</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/g_birth/status_of_child/dead:label">
+            <value>Mort</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/g_birth/status_of_child:label">
+            <value>Situation de l'enfant</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/g_birth:label">
+            <value>-</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/know_year_of_pregnancy/dont_know:label">
+            <value>Ne connait pas</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/know_year_of_pregnancy/preg_date:label">
+            <value>Date</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/know_year_of_pregnancy:label">
+            <value>Connaissez-vous l'année de la grossesse</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/number_of_child:jr:constraintMsg">
+            <value>Ce nombre doit être entre 1 et 10</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/number_of_child:label">
+            <value>Nombre d'enfant (s) pour cette grossesse</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/other_type_of_birth:label">
+            <value>Préciser (Autre)</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/outcome_of_pregnancy/out_alive:label">
+            <value>Vivant</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/outcome_of_pregnancy/out_stillborn:label">
+            <value>Mort-né</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/outcome_of_pregnancy:label">
+            <value>Quelle est l'issue de la grossesse ?</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/place_of_delivery/health_center:label">
+            <value>Centre de Santé</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/place_of_delivery/home:label">
+            <value>Domicile</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/place_of_delivery/other_place_of_delivery:label">
+            <value>Autre</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/place_of_delivery/rural_maternity_hospital:label">
+            <value>Maternité Rurale</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/place_of_delivery:label">
+            <value>Lieu d'accouchement</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/type_of_delivery/cesarean:label">
+            <value>Césarienne</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/type_of_delivery/d_dont_know:label">
+            <value>Ne sait pas</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/type_of_delivery/normal:label">
+            <value>Normale</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/type_of_delivery:label">
+            <value>Type d'accouchement</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/year_of_pregnancy:label">
+            <value>Année de la grossesse</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number:label">
+            <value>Ajouter une grossesse antérieure</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/info_for_8_previous_successful_preg:label">
+            <value>Informations sur les grossesses réussies. Prendre les informations sur les 8 dernières grossesses réussies. Notez de la plus ancienne à la plus récente</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/number_of_abortion:hint">
+            <value>Ce nombre doit être compris entre 0 et 20</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/number_of_abortion:jr:constraintMsg">
+            <value>Ce nombre doit être compris entre 0 et 10</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/number_of_abortion:label">
+            <value>Combien d'avortement <output value=" /pregnancy_confirmation/patient_name "/> a t-elle eue (s)?</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/previous_successful_preg_count:hint">
+            <value>Ce nombre doit être compris entre 0 et 20</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/previous_successful_preg_count:jr:constraintMsg">
+            <value>Ce nombre doit être compris entre 0 et 20</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies/previous_successful_preg_count:label">
+            <value>Combien de grossesse (s) antérieure (s) réussie (s) <output value=" /pregnancy_confirmation/patient_name "/> a t-elle eue (e) s?</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_info_previous_pregnancies:label">
+            <value>Informations sur les grossesses antérieures</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_outputs/high_risk:label">
+            <value>La patiente a une grossesse à haut risque</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_patient_info/g_lmp_date:label">
+            <value>-</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_patient_info/lmp_approx:hint">
+            <value>La date doit être comprise entre 4 et 45 semaines</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_patient_info/lmp_approx:jr:constraintMsg">
+            <value>Le nombre doit être compris entre 4 et 45</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_patient_info/lmp_approx:label">
+            <value>Marquez en semaine la date approximative des dernières règles</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_patient_info/lmp_calendar:jr:constraintMsg">
+            <value>La date doit être dans le passé</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_patient_info/lmp_calendar:label">
+            <value>Quelle est la date des dernières règles?</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_patient_info/s_has_reg_edd/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_patient_info/s_has_reg_edd/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_patient_info/s_has_reg_edd:hint">
+            <value>Regardez dans le carnet CPN si cette date est donnée.</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_patient_info/s_has_reg_edd:label">
+            <value><output value=" /pregnancy_confirmation/patient_name "/> a t-elle la date estimative de l'accouchement?</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_patient_info/s_reg_edd:label">
+            <value>**La date estimative (problable) de l'accouchement est le: ** <output value=" /pregnancy_confirmation/g_patient_info/g_edd "/></value>
+          </text>
+          <text id="/pregnancy_confirmation/g_patient_info/s_reg_edd_calendar:jr:constraintMsg">
+            <value>La date doit être aujourd'hui ou dans le futur</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_patient_info/s_reg_edd_calendar:label">
+            <value>Quelle est la date estimative de l'accouchement?</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_patient_info/s_reg_mother_lmp/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_patient_info/s_reg_mother_lmp/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_patient_info/s_reg_mother_lmp:label">
+            <value><output value=" /pregnancy_confirmation/patient_name "/> connait-elle la date de ses dernières règles?</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_patient_info/woman_height:jr:constraintMsg">
+            <value>La taille ne doit pas être inférieur à 50cm et ne doit pas dépasser 250 cm</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_patient_info/woman_height:label">
+            <value>Quelle est la taille de <output value=" /pregnancy_confirmation/patient_name "/> (en cm)?</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_patient_info/woman_weight:jr:constraintMsg">
+            <value>Le poids ne doit pas être inférieur à 20 kg et ne doit pas dépasser 200 kg</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_patient_info/woman_weight:label">
+            <value>Quel est le poids de <output value=" /pregnancy_confirmation/patient_name "/> (en kg)?</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_patient_info:label">
+            <value>Information sur <output value=" /pregnancy_confirmation/patient_name "/> enceinte</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_pregnancy_confirmation/how_pregnancy_confirmed/anc_card:label">
+            <value>Carte CPN</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_pregnancy_confirmation/how_pregnancy_confirmed/other_pregnancy_confirmed:label">
+            <value>Autre</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_pregnancy_confirmation/how_pregnancy_confirmed/positif_test_result:label">
+            <value>Résultat test de grossesse positif</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_pregnancy_confirmation/how_pregnancy_confirmed/ultrasound:label">
+            <value>Echographie</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_pregnancy_confirmation/how_pregnancy_confirmed:label">
+            <value>Comment la grossesse est-elle confirmée?</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_pregnancy_confirmation/how_pregnancy_confirmed_other:label">
+            <value>Précisez (Autre)</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_pregnancy_confirmation/pregnancy_confirmed/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_pregnancy_confirmation/pregnancy_confirmed/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_pregnancy_confirmation/pregnancy_confirmed:label">
+            <value>Est-ce que la grossesse est confirmée?</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_pregnancy_confirmation:label">
+            <value>Confirmation de la grossesse</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_prenatal_visits/date_of_last_prenatal_visit:jr:constraintMsg">
+            <value>La date doit être dans le passé</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_prenatal_visits/date_of_last_prenatal_visit:label">
+            <value>Date de la dernière Visite prénatale</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_prenatal_visits/date_of_next_prenatal_visit:jr:constraintMsg">
+            <value>La date doit être dans le futur</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_prenatal_visits/date_of_next_prenatal_visit:label">
+            <value>Date de la prochaine visite prénatale</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_prenatal_visits/had_prenatal_visit/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_prenatal_visits/had_prenatal_visit/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_prenatal_visits/had_prenatal_visit:label">
+            <value><output value=" /pregnancy_confirmation/patient_name "/> a t-elle faite une visite prénatale pour cette grossesse?</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_prenatal_visits/prenatal_visit_3m/3_visit_1:label">
+            <value>Visite 1 (0 - 3 mois)</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_prenatal_visits/prenatal_visit_3m:label">
+            <value>La (les) quelles?</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_prenatal_visits/prenatal_visit_4_6m/4_visit_1:label">
+            <value>Visite 1 (0 - 3 mois)</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_prenatal_visits/prenatal_visit_4_6m/4_visit_2:label">
+            <value>Visite 2 (4 - 6 mois)</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_prenatal_visits/prenatal_visit_4_6m:label">
+            <value>La (les) quelles?</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_prenatal_visits/prenatal_visit_7_8m/7_visit_1:label">
+            <value>Visite 1 (0 - 3 mois)</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_prenatal_visits/prenatal_visit_7_8m/7_visit_2:label">
+            <value>Visite 2 (4 - 6 mois)</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_prenatal_visits/prenatal_visit_7_8m/7_visit_3:label">
+            <value>Visite 3: (7- 8 mois)</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_prenatal_visits/prenatal_visit_7_8m:label">
+            <value>La (les) quelles?</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_prenatal_visits/prenatal_visit_after_8m/8_visit_1:label">
+            <value>Visite 1 (0 - 3 mois)</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_prenatal_visits/prenatal_visit_after_8m/8_visit_2:label">
+            <value>Visite 2 (4 - 6 mois)</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_prenatal_visits/prenatal_visit_after_8m/8_visit_3:label">
+            <value>Visite 3: (7- 8 mois)</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_prenatal_visits/prenatal_visit_after_8m/8_visit_4:label">
+            <value>Visite 4: Après 8 mois</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_prenatal_visits/prenatal_visit_after_8m:label">
+            <value>La (les) quelles?</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_prenatal_visits/prenatal_visits_note_1:label">
+            <value>Avant de terminer votre enregistrement, donnez quelques conseils sur l'importance des consultations prénatales à <output value=" /pregnancy_confirmation/patient_name "/></value>
+          </text>
+          <text id="/pregnancy_confirmation/g_prenatal_visits/prenatal_visits_note_2:label">
+            <value>Conseils pendant la grossesse
+Il est important de faire des consultations prénatales.
+Les soins prénataux de qualité sont essentiels pour améliorer les résultats de santé pour vous et votre enfant.
+Ils permettent de réduire le risque de décès maternel, de fausses couches, de malformations congénitales, d'insuffisance pondérale à la naissance, d'infections néonatales et d'autres problèmes de santé évitables.</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_prenatal_visits/prenatal_visits_note_3:label">
+            <value>Dites à <output value=" /pregnancy_confirmation/patient_name "/> qu'elle doit faire au moins 4 visites prénatales.
+Expliquez lui le tableau ci-dessous..</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_prenatal_visits/schedule_prenatal_visit:hint">
+            <value>Il est recommandé d'y aller dans les 48h puisqu'aucune visite CPN a été faite au préalabre.</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_prenatal_visits/schedule_prenatal_visit:jr:constraintMsg">
+            <value>La date doit être dans le futur</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_prenatal_visits/schedule_prenatal_visit:label">
+            <value>Quand <output value=" /pregnancy_confirmation/patient_name "/> programme t-elle aller pour la visite CPN?</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_prenatal_visits:label">
+            <value>Visites prénatales</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_reported/how_patient_found/during_home_visit:label">
+            <value>Au cours de la visite à domicile</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_reported/how_patient_found/other_way:label">
+            <value>Autre</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_reported/how_patient_found/woman_went_to_chw:label">
+            <value><output value=" /pregnancy_confirmation/patient_name "/> s'est rendue chez l'ASC</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_reported/how_patient_found:label">
+            <value>Comment <output value=" /pregnancy_confirmation/patient_name "/> a t-elle été retrouvée?</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_reported/how_patient_found_other:label">
+            <value>Précisez (Autre)</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_reported/reported_other_date:jr:constraintMsg">
+            <value>La date doit être dans le passé</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_reported/reported_other_date:label">
+            <value>Entrez la date où le suivi a été fait</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_reported/reported_today/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_reported/reported_today/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_reported/reported_today:label">
+            <value>Ce suivi a t-il été fait aujourd'hui?</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_reported/s_has_located/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_reported/s_has_located/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_reported/s_has_located:label">
+            <value><output value=" /pregnancy_confirmation/patient_name "/> a t-elle été retrouvée?</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_reported/s_reported_date:label">
+            <value>date d'enregistrement</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_reported/why_not_reported_today/lost_phone:label">
+            <value>Téléphone Perdu</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_reported/why_not_reported_today/other_raison_not_reported:label">
+            <value>Autre</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_reported/why_not_reported_today/phone_unloaded_broken:label">
+            <value>Téléphone Déchargé/Cassé</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_reported/why_not_reported_today:label">
+            <value>Pourquoi le suivi n'a pas été fait aujourd'hui?</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_reported/why_not_reported_today_other:label">
+            <value>Précisez (Autre)</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_reported:label">
+            <value>Réalisation du Suivi</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_summary/follow_up:label">
+            <value>Suivi &lt;i class="fa fa-flag"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_summary/g_diagnosis_and_treatment/diagnosis_and_treatment:label">
+            <value>Diagnostic et Traitement&lt;i class="fa fa-medkit"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_summary/g_diagnosis_and_treatment/n_approx_delivery:label">
+            <value>Date Estimative de l'accouchement : <output value=" /pregnancy_confirmation/g_patient_info/g_edd "/></value>
+          </text>
+          <text id="/pregnancy_confirmation/g_summary/g_diagnosis_and_treatment/n_date_lmp:label">
+            <value>Date des dernières règles : <output value=" /pregnancy_confirmation/g_patient_info/g_lmp_date "/></value>
+          </text>
+          <text id="/pregnancy_confirmation/g_summary/g_diagnosis_and_treatment/n_is_pregnant:label">
+            <value><output value=" /pregnancy_confirmation/patient_name "/> est enceinte</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_summary/g_diagnosis_and_treatment/n_next_prenatal_visit:label">
+            <value>Prochaine Visite prénatale : <output value=" /pregnancy_confirmation/next_prenatal_visit_date "/></value>
+          </text>
+          <text id="/pregnancy_confirmation/g_summary/g_diagnosis_and_treatment/n_preg_high_risk:label">
+            <value>Grossesse à Haut Risque&lt;i class="fa fa-warning"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_summary/g_diagnosis_and_treatment/n_pregnancy_is_not_confirmed:label">
+            <value>La grossesse n'est pas confirmée.</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_summary/g_diagnosis_and_treatment/n_vaccination_not_uptodate:label">
+            <value>Vaccination non à jour</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_summary/g_diagnosis_and_treatment/n_vaccination_uptodate:label">
+            <value>Vaccination à jour</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_summary/n_inst_anc:label">
+            <value>Informez <output value=" /pregnancy_confirmation/patient_name "/> que vous allez ou qu'elle doit passer pour des visites régulières de suivi de la grossesse jusqu'à l'accouchement.</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_summary/n_inst_counseling_fp:label">
+            <value>Donnez des conseils à <output value=" /pregnancy_confirmation/patient_name "/>sur la Plannification Familiale.
+Au besoin, utilisez le formulaire de Panning Familial pour <output value=" /pregnancy_confirmation/patient_name "/>.</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_summary/n_inst_fp:label">
+            <value>Veuillez conseiller sur le planning familial car la grossesse est supérieure ou égale à 7 mois.</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_summary/n_inst_not_available:label">
+            <value>Rassurez vous de la non disponibilité totale de <output value=" /pregnancy_confirmation/patient_name "/>.
+Soumettre ce formulaire va fermer le suivi de <output value=" /pregnancy_confirmation/patient_name "/>.
+Il n'y aura plus de suivi pour <output value=" /pregnancy_confirmation/patient_name "/>.</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_summary/n_inst_pregnancy_confirmation:label">
+            <value>Discuter avec <output value=" /pregnancy_confirmation/patient_name "/> pour trouver une solution.
+Dites à <output value=" /pregnancy_confirmation/patient_name "/> en quoi il est important de vite faire le test urinaire de grossesse pour commecer très tôt le suivi de la grossesse et de son enfant.
+Consiellez à <output value=" /pregnancy_confirmation/patient_name "/> de faire le test urinaire de grosssesse dans les prochaines 24 heures.</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_summary/n_inst_vaccination:label">
+            <value>Discutez avec <output value=" /pregnancy_confirmation/patient_name "/> sur la nécessité de faire le vaccin pour sa santé et le bien-être de son enfant</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_summary/n_next_followup:label">
+            <value>La prochaine visite de la grossesse aura lieu le : <output value=" /pregnancy_confirmation/pregnancy_followup_date "/></value>
+          </text>
+          <text id="/pregnancy_confirmation/g_summary/n_no_followup:label">
+            <value>Il n'y aura plus de suivi pour <output value=" /pregnancy_confirmation/patient_name "/>.</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_summary/n_referral_followup:label">
+            <value>Le suivi de référence pour la confirmation de la grossesse se fera le : <output value=" /pregnancy_confirmation/referral_followup_date "/></value>
+          </text>
+          <text id="/pregnancy_confirmation/g_summary/n_referral_for_anc:label">
+            <value>Référer au CSCOM pour la consultation prénatale&lt;i class="fa fa-warning"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_summary/n_referral_for_confirmation:label">
+            <value>Référer au CSCOM pour confirmation de la grossesse&lt;i class="fa fa-warning"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_summary/n_sum_submission:label">
+            <value>&lt;h4 style="text-align:center;"&gt;Soyez sûr que vous avez soumis le formulaire pour compléter cette action&lt;/h4&gt;</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_summary/r_patient_info:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /pregnancy_confirmation/patient_name "/>&lt;/h4&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /pregnancy_confirmation/patient_age_display_fr "/> &lt;/h5&gt;</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_summary/r_summary:label">
+            <value>Détails du Patient &lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_summary/special_instructions:label">
+            <value>Instructions Spéciales &lt;i class = "fa fa-hand-o-right"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_summary/visit_date_chosen:label">
+            <value>Quelle date avez-vous retenue?</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_summary/visit_plan/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_summary/visit_plan/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_summary/visit_plan:label">
+            <value><output value=" /pregnancy_confirmation/patient_name "/> a t-elle prévue se rendre?</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_vaccination_status/days_since_vaccine_td1_date:label">
+            <value>Nombre de jours depuis la prise de td1</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_vaccination_status/n_tetanus_dyphtheria:label">
+            <value><output value=" /pregnancy_confirmation/patient_name "/> a-t-elle recu le (s) vaccin (s) de Tetanos Dyphterie suivants?</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_vaccination_status/vaccine_td1/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_vaccination_status/vaccine_td1/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_vaccination_status/vaccine_td1:label">
+            <value>Td1</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_vaccination_status/vaccine_td1_date:jr:constraintMsg">
+            <value>La date doit être dans le passé</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_vaccination_status/vaccine_td1_date:label">
+            <value>Date de la vaccination</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_vaccination_status/vaccine_td2/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_vaccination_status/vaccine_td2/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_vaccination_status/vaccine_td2:label">
+            <value>Td2</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_vaccination_status/vaccine_td2_date:jr:constraintMsg">
+            <value>La date doit être dans le passé</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_vaccination_status/vaccine_td2_date:label">
+            <value>Date de la vaccination</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_vaccination_status/vaccine_td_r1/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_vaccination_status/vaccine_td_r1/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_vaccination_status/vaccine_td_r1:label">
+            <value>Td- R1</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_vaccination_status/vaccine_td_r1_date:jr:constraintMsg">
+            <value>La date doit être dans le passé</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_vaccination_status/vaccine_td_r1_date:label">
+            <value>Date de la vaccination</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_vaccination_status/vaccine_td_r2/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_vaccination_status/vaccine_td_r2/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_vaccination_status/vaccine_td_r2:label">
+            <value>Td- R2</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_vaccination_status/vaccine_td_r2_date:jr:constraintMsg">
+            <value>La date doit être dans le passé</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_vaccination_status/vaccine_td_r2_date:label">
+            <value>Date de la vaccination</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_vaccination_status/vaccine_td_r3/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_vaccination_status/vaccine_td_r3/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_vaccination_status/vaccine_td_r3:label">
+            <value>Td- R3</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_vaccination_status/vaccine_td_r3_date:jr:constraintMsg">
+            <value>La date doit être dans le passé</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_vaccination_status/vaccine_td_r3_date:label">
+            <value>Date de la vaccination</value>
+          </text>
+          <text id="/pregnancy_confirmation/g_vaccination_status:label">
+            <value>Etat Vaccinal de <output value=" /pregnancy_confirmation/patient_name "/> enceinte</value>
+          </text>
+          <text id="/pregnancy_confirmation/inputs/contact/_id:label">
+            <value>Quel est le nom de la patiente ?</value>
+          </text>
+          <text id="/pregnancy_confirmation/inputs/contact/date_of_birth:label">
+            <value>Date de naissance</value>
+          </text>
+          <text id="/pregnancy_confirmation/inputs/contact/name:label">
+            <value>Nom</value>
+          </text>
+          <text id="/pregnancy_confirmation/inputs/contact/parent/_id:label">
+            <value>ID du Menage</value>
+          </text>
+          <text id="/pregnancy_confirmation/inputs/contact/parent/parent/_id:label">
+            <value>ID de la concession</value>
+          </text>
+          <text id="/pregnancy_confirmation/inputs/contact/parent/parent/contact/chw_name:label">
+            <value>Nom de l'ASC</value>
+          </text>
+          <text id="/pregnancy_confirmation/inputs/contact/parent/parent/contact/phone:label">
+            <value>Téléphone de l'ASC</value>
+          </text>
+          <text id="/pregnancy_confirmation/inputs/contact/parent/parent/parent/_id:label">
+            <value>ID du village</value>
+          </text>
+          <text id="/pregnancy_confirmation/inputs/contact/patient_id:label">
+            <value>ID de patiente</value>
+          </text>
+          <text id="/pregnancy_confirmation/inputs/contact/sex:label">
+            <value>Sexe</value>
+          </text>
+          <text id="/pregnancy_confirmation/inputs/contact/short_name:label">
+            <value>Nom Court</value>
+          </text>
+          <text id="/pregnancy_confirmation/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/pregnancy_confirmation/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/pregnancy_confirmation/inputs/t_delivery_date:label">
+            <value>Date d'accouchement</value>
+          </text>
+          <text id="/pregnancy_confirmation/inputs/t_follow_up_count:label">
+            <value>Nombre de suivi</value>
+          </text>
+          <text id="/pregnancy_confirmation/inputs/t_follow_up_type:label">
+            <value>Type de suivi</value>
+          </text>
+          <text id="/pregnancy_confirmation/inputs/user/contact_id:label">
+            <value>Contact ID</value>
+          </text>
+          <text id="/pregnancy_confirmation/inputs/user/name:label">
+            <value>Nom</value>
+          </text>
+          <text id="/pregnancy_confirmation/inputs/user/phone:label">
+            <value>Téléphone</value>
+          </text>
+          <text id="/pregnancy_confirmation/inputs/user:label">
+            <value>Utilisateur</value>
+          </text>
+          <text id="/pregnancy_confirmation/next_prenatal_visit_date:label">
+            <value>La date de la prochaine visite de grossesse</value>
+          </text>
+          <text id="/pregnancy_confirmation/patient_age_display:label">
+            <value>-</value>
+          </text>
+          <text id="/pregnancy_confirmation/patient_age_in_months:label">
+            <value>-</value>
+          </text>
+          <text id="/pregnancy_confirmation/pregnancy_followup_date:label">
+            <value>date de la prochaine visite de la grossesse</value>
+          </text>
+          <text id="/pregnancy_confirmation/referral_followup_date:label">
+            <value>Date du suivi de référence</value>
+          </text>
+          <text id="/pregnancy_confirmation/visit_to_cscom_date_scheduled:label">
+            <value>date prévue pour se rendre au cscom</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <pregnancy_confirmation id="pregnancy_confirmation" prefix="J1!pregnancy_confirmation!" delimiter="#" version="2022-05-13 12-20">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <t_follow_up_type/>
+            <t_follow_up_count/>
+            <t_delivery_date/>
+            <user>
+              <contact_id/>
+              <name/>
+              <phone/>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <short_name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <_id/>
+                <parent>
+                  <_id/>
+                  <parent>
+                    <_id/>
+                  </parent>
+                  <contact>
+                    <chw_name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <household_id/>
+          <area_id/>
+          <facility_id/>
+          <patient_age_in_years/>
+          <patient_age_in_months/>
+          <patient_uuid/>
+          <patient_id tag="hidden"/>
+          <patient_name tag="hidden"/>
+          <patient_age_display_fr/>
+          <patient_age_display/>
+          <g_reported>
+            <reported_today/>
+            <reported_other_date/>
+            <why_not_reported_today/>
+            <why_not_reported_today_other/>
+            <s_has_located/>
+            <how_patient_found/>
+            <how_patient_found_other/>
+            <s_reported_date/>
+            <s_reported_date_time/>
+          </g_reported>
+          <g_cscom_visit>
+            <preg_go_to_cscom/>
+            <preg_why_didnt_go_to_cscom/>
+            <preg_why_didnt_go_to_cscom_other/>
+          </g_cscom_visit>
+          <g_pregnancy_confirmation>
+            <pregnancy_confirmed/>
+            <how_pregnancy_confirmed/>
+            <how_pregnancy_confirmed_other/>
+          </g_pregnancy_confirmation>
+          <g_patient_info>
+            <woman_weight/>
+            <woman_height/>
+            <s_reg_mother_lmp/>
+            <lmp_calendar/>
+            <lmp_approx/>
+            <lmp_approx_days/>
+            <g_lmp_date_raw/>
+            <g_lmp_date_8601/>
+            <g_lmp_date/>
+            <g_lmp_approx_month/>
+            <s_has_reg_edd/>
+            <s_reg_edd_calendar/>
+            <g_edd_8601/>
+            <g_edd/>
+            <s_reg_edd/>
+          </g_patient_info>
+          <g_info_previous_pregnancies>
+            <previous_successful_preg_count/>
+            <number_of_abortion/>
+            <info_for_8_previous_successful_preg/>
+            <g_previous_successful_preg_number_count/>
+            <g_previous_successful_preg_number jr:template="">
+              <know_year_of_pregnancy/>
+              <year_of_pregnancy/>
+              <type_of_delivery/>
+              <place_of_delivery/>
+              <other_type_of_birth/>
+              <number_of_child/>
+              <outcome_of_pregnancy/>
+              <g_birth_count/>
+              <g_birth jr:template="">
+                <child_gender/>
+                <child_weight/>
+                <status_of_child/>
+              </g_birth>
+            </g_previous_successful_preg_number>
+          </g_info_previous_pregnancies>
+          <g_vaccination_status>
+            <n_tetanus_dyphtheria/>
+            <vaccine_td1/>
+            <vaccine_td1_date/>
+            <days_since_vaccine_td1_date/>
+            <vaccine_td2/>
+            <vaccine_td2_date/>
+            <vaccine_td_r1/>
+            <vaccine_td_r1_date/>
+            <vaccine_td_r2/>
+            <vaccine_td_r2_date/>
+            <vaccine_td_r3/>
+            <vaccine_td_r3_date/>
+          </g_vaccination_status>
+          <g_prenatal_visits>
+            <prenatal_visits_note_1/>
+            <prenatal_visits_note_2/>
+            <prenatal_visits_note_3/>
+            <had_prenatal_visit/>
+            <prenatal_visit_3m/>
+            <prenatal_visit_4_6m/>
+            <prenatal_visit_7_8m/>
+            <prenatal_visit_after_8m/>
+            <date_of_last_prenatal_visit/>
+            <date_of_next_prenatal_visit/>
+            <schedule_prenatal_visit/>
+          </g_prenatal_visits>
+          <g_outputs>
+            <lmp/>
+            <estimated_delivery/>
+            <high_risk/>
+          </g_outputs>
+          <next_prenatal_visit_date/>
+          <referral_followup_date/>
+          <pregnancy_followup_date/>
+          <visit_to_cscom_date_scheduled/>
+          <g_summary>
+            <n_sum_submission/>
+            <r_summary/>
+            <r_patient_info/>
+            <n_referral_for_confirmation/>
+            <n_referral_for_anc/>
+            <g_diagnosis_and_treatment>
+              <diagnosis_and_treatment/>
+              <n_pregnancy_is_not_confirmed/>
+              <n_is_pregnant/>
+              <n_date_lmp/>
+              <n_approx_delivery/>
+              <n_next_prenatal_visit/>
+              <n_vaccination_not_uptodate/>
+              <n_vaccination_uptodate/>
+              <n_preg_high_risk/>
+            </g_diagnosis_and_treatment>
+            <special_instructions/>
+            <n_inst_pregnancy_confirmation/>
+            <visit_plan/>
+            <visit_date_chosen/>
+            <n_inst_not_available/>
+            <n_inst_counseling_fp/>
+            <n_inst_vaccination/>
+            <n_inst_anc/>
+            <n_inst_fp/>
+            <follow_up/>
+            <n_referral_followup/>
+            <n_no_followup/>
+            <n_next_followup/>
+          </g_summary>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </pregnancy_confirmation>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/pregnancy_confirmation/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/pregnancy_confirmation/inputs/source" type="string"/>
+      <bind nodeset="/pregnancy_confirmation/inputs/source_id" type="string"/>
+      <bind nodeset="/pregnancy_confirmation/inputs/t_follow_up_type" type="string"/>
+      <bind nodeset="/pregnancy_confirmation/inputs/t_follow_up_count" type="string"/>
+      <bind nodeset="/pregnancy_confirmation/inputs/t_delivery_date" type="string"/>
+      <bind nodeset="/pregnancy_confirmation/inputs/user/contact_id" type="db:person"/>
+      <bind nodeset="/pregnancy_confirmation/inputs/user/name" type="string"/>
+      <bind nodeset="/pregnancy_confirmation/inputs/user/phone" type="string"/>
+      <bind nodeset="/pregnancy_confirmation/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/pregnancy_confirmation/inputs/contact/name" type="string"/>
+      <bind nodeset="/pregnancy_confirmation/inputs/contact/short_name" type="string"/>
+      <bind nodeset="/pregnancy_confirmation/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/pregnancy_confirmation/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/pregnancy_confirmation/inputs/contact/sex" type="string"/>
+      <bind nodeset="/pregnancy_confirmation/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/pregnancy_confirmation/inputs/contact/parent/parent/_id" type="string"/>
+      <bind nodeset="/pregnancy_confirmation/inputs/contact/parent/parent/parent/_id" type="string"/>
+      <bind nodeset="/pregnancy_confirmation/inputs/contact/parent/parent/contact/chw_name" type="string"/>
+      <bind nodeset="/pregnancy_confirmation/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind nodeset="/pregnancy_confirmation/household_id" type="string" calculate="../inputs/contact/parent/_id"/>
+      <bind nodeset="/pregnancy_confirmation/area_id" type="string" calculate="../inputs/contact/parent/parent/_id"/>
+      <bind nodeset="/pregnancy_confirmation/facility_id" type="string" calculate="../inputs/contact/parent/parent/parent/_id"/>
+      <bind nodeset="/pregnancy_confirmation/patient_age_in_years" type="string" calculate="floor( difference-in-months( ../inputs/contact/date_of_birth, today() ) div 12 )"/>
+      <bind nodeset="/pregnancy_confirmation/patient_age_in_months" type="string" calculate="difference-in-months(  /pregnancy_confirmation/inputs/contact/date_of_birth , today() )"/>
+      <bind nodeset="/pregnancy_confirmation/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/pregnancy_confirmation/patient_id" type="string" calculate="../inputs/contact/patient_id"/>
+      <bind nodeset="/pregnancy_confirmation/patient_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/pregnancy_confirmation/patient_age_display_fr" type="string" calculate="concat(concat( /pregnancy_confirmation/patient_age_in_years , if( /pregnancy_confirmation/patient_age_in_years =1,' an et ',' ans et ')),concat( /pregnancy_confirmation/patient_age_in_months  mod 12, if(( /pregnancy_confirmation/patient_age_in_months  mod 12)=1,' mois',' mois')))"/>
+      <bind nodeset="/pregnancy_confirmation/patient_age_display" type="string" calculate="concat(concat( /pregnancy_confirmation/patient_age_in_years , if( /pregnancy_confirmation/patient_age_in_years =1,' year and ',' years and ')),concat( /pregnancy_confirmation/patient_age_in_months  mod 12, if(( /pregnancy_confirmation/patient_age_in_months  mod 12)=1,' month old',' months old')))"/>
+      <bind nodeset="/pregnancy_confirmation/g_reported/reported_today" type="select1" required="true()"/>
+      <bind nodeset="/pregnancy_confirmation/g_reported/reported_other_date" type="date" jr:constraintMsg="jr:itext('/pregnancy_confirmation/g_reported/reported_other_date:jr:constraintMsg')" required="true()" relevant=" /pregnancy_confirmation/g_reported/reported_today ='no'" constraint=". &lt; today()-1"/>
+      <bind nodeset="/pregnancy_confirmation/g_reported/why_not_reported_today" type="select1" required="true()" relevant=" /pregnancy_confirmation/g_reported/reported_today ='no'"/>
+      <bind nodeset="/pregnancy_confirmation/g_reported/why_not_reported_today_other" type="string" required="true()" relevant=" /pregnancy_confirmation/g_reported/why_not_reported_today ='other_raison_not_reported'"/>
+      <bind nodeset="/pregnancy_confirmation/g_reported/s_has_located" type="select1" required="true()"/>
+      <bind nodeset="/pregnancy_confirmation/g_reported/how_patient_found" type="select1" required="true()" relevant=" /pregnancy_confirmation/g_reported/s_has_located ='yes'"/>
+      <bind nodeset="/pregnancy_confirmation/g_reported/how_patient_found_other" type="string" required="true()" relevant=" /pregnancy_confirmation/g_reported/how_patient_found ='other_way'"/>
+      <bind nodeset="/pregnancy_confirmation/g_reported/s_reported_date" type="string" calculate="if(  /pregnancy_confirmation/g_reported/reported_today ='yes' , today(),  /pregnancy_confirmation/g_reported/reported_other_date )"/>
+      <bind nodeset="/pregnancy_confirmation/g_reported/s_reported_date_time" type="string" calculate="if(  /pregnancy_confirmation/g_reported/reported_today ='yes' , today(),  /pregnancy_confirmation/g_reported/reported_other_date )"/>
+      <bind nodeset="/pregnancy_confirmation/g_cscom_visit" relevant=" /pregnancy_confirmation/g_reported/s_has_located ='yes'"/>
+      <bind nodeset="/pregnancy_confirmation/g_cscom_visit/preg_go_to_cscom" type="select1" required="true()"/>
+      <bind nodeset="/pregnancy_confirmation/g_cscom_visit/preg_why_didnt_go_to_cscom" type="select1" required="true()" relevant=" /pregnancy_confirmation/g_cscom_visit/preg_go_to_cscom ='no'"/>
+      <bind nodeset="/pregnancy_confirmation/g_cscom_visit/preg_why_didnt_go_to_cscom_other" type="string" required="true()" relevant=" /pregnancy_confirmation/g_cscom_visit/preg_why_didnt_go_to_cscom  = 'other_reason'"/>
+      <bind nodeset="/pregnancy_confirmation/g_pregnancy_confirmation" relevant=" /pregnancy_confirmation/g_cscom_visit/preg_go_to_cscom ='yes'"/>
+      <bind nodeset="/pregnancy_confirmation/g_pregnancy_confirmation/pregnancy_confirmed" type="select1" required="true()"/>
+      <bind nodeset="/pregnancy_confirmation/g_pregnancy_confirmation/how_pregnancy_confirmed" type="select" required="true()" relevant="selected( /pregnancy_confirmation/g_pregnancy_confirmation/pregnancy_confirmed , 'yes')"/>
+      <bind nodeset="/pregnancy_confirmation/g_pregnancy_confirmation/how_pregnancy_confirmed_other" type="string" required="true()" relevant="selected( /pregnancy_confirmation/g_pregnancy_confirmation/how_pregnancy_confirmed , 'other_pregnancy_confirmed')"/>
+      <bind nodeset="/pregnancy_confirmation/g_patient_info" relevant=" /pregnancy_confirmation/g_pregnancy_confirmation/pregnancy_confirmed ='yes'"/>
+      <bind nodeset="/pregnancy_confirmation/g_patient_info/woman_weight" type="decimal" required="true()" jr:constraintMsg="jr:itext('/pregnancy_confirmation/g_patient_info/woman_weight:jr:constraintMsg')" constraint=".&gt; 20 and .&lt;=200"/>
+      <bind nodeset="/pregnancy_confirmation/g_patient_info/woman_height" type="int" required="true()" jr:constraintMsg="jr:itext('/pregnancy_confirmation/g_patient_info/woman_height:jr:constraintMsg')" constraint=".&gt; 50 and .&lt;=250"/>
+      <bind nodeset="/pregnancy_confirmation/g_patient_info/s_reg_mother_lmp" type="select1" required="true()"/>
+      <bind nodeset="/pregnancy_confirmation/g_patient_info/lmp_calendar" type="date" jr:constraintMsg="jr:itext('/pregnancy_confirmation/g_patient_info/lmp_calendar:jr:constraintMsg')" required="true()" relevant=" /pregnancy_confirmation/g_patient_info/s_reg_mother_lmp ='yes'" constraint=". &lt; today()-1"/>
+      <bind nodeset="/pregnancy_confirmation/g_patient_info/lmp_approx" type="int" jr:constraintMsg="jr:itext('/pregnancy_confirmation/g_patient_info/lmp_approx:jr:constraintMsg')" required="true()" relevant=" /pregnancy_confirmation/g_patient_info/s_reg_mother_lmp ='no'" constraint=".&gt;= 4 and .&lt;=45"/>
+      <bind nodeset="/pregnancy_confirmation/g_patient_info/lmp_approx_days" type="string" calculate="if(selected( /pregnancy_confirmation/g_patient_info/s_reg_mother_lmp ,'yes'), round(decimal-date-time(today()) - decimal-date-time( /pregnancy_confirmation/g_patient_info/lmp_calendar ), 2),  /pregnancy_confirmation/g_patient_info/lmp_approx *7)"/>
+      <bind nodeset="/pregnancy_confirmation/g_patient_info/g_lmp_date_raw" type="string" calculate="if(selected(  /pregnancy_confirmation/g_patient_info/s_reg_mother_lmp ,'yes'),  /pregnancy_confirmation/g_patient_info/lmp_calendar ,date-time(decimal-date-time(today()- /pregnancy_confirmation/g_patient_info/lmp_approx_days )))"/>
+      <bind nodeset="/pregnancy_confirmation/g_patient_info/g_lmp_date_8601" type="string" calculate="format-date-time(if(selected( /pregnancy_confirmation/g_patient_info/s_reg_mother_lmp ,'yes'),  /pregnancy_confirmation/g_patient_info/lmp_calendar , date-time(decimal-date-time(today()- /pregnancy_confirmation/g_patient_info/lmp_approx_days ))),&quot;%Y-%m-%d&quot;)"/>
+      <bind nodeset="/pregnancy_confirmation/g_patient_info/g_lmp_date" type="string" calculate="format-date-time(if(selected( /pregnancy_confirmation/g_patient_info/s_reg_mother_lmp ,'yes'),  /pregnancy_confirmation/g_patient_info/lmp_calendar , date-time(decimal-date-time(today()- /pregnancy_confirmation/g_patient_info/lmp_approx_days ))),&quot;%d/%m/%Y&quot;)"/>
+      <bind nodeset="/pregnancy_confirmation/g_patient_info/g_lmp_approx_month" type="string" calculate="round( /pregnancy_confirmation/g_patient_info/lmp_approx_days  div 30,0)"/>
+      <bind nodeset="/pregnancy_confirmation/g_patient_info/s_has_reg_edd" type="select1" required="true()"/>
+      <bind nodeset="/pregnancy_confirmation/g_patient_info/s_reg_edd_calendar" type="date" jr:constraintMsg="jr:itext('/pregnancy_confirmation/g_patient_info/s_reg_edd_calendar:jr:constraintMsg')" required="true()" relevant=" /pregnancy_confirmation/g_patient_info/s_has_reg_edd ='yes'" constraint=".&gt;= today()"/>
+      <bind nodeset="/pregnancy_confirmation/g_patient_info/g_edd_8601" type="string" calculate="format-date-time(date-time(decimal-date-time( /pregnancy_confirmation/g_patient_info/g_lmp_date_8601 )+280),&quot;%Y-%m-%d&quot;)" required="true()" relevant=" /pregnancy_confirmation/g_patient_info/s_has_reg_edd ='no'"/>
+      <bind nodeset="/pregnancy_confirmation/g_patient_info/g_edd" type="string" calculate="if(selected( /pregnancy_confirmation/g_patient_info/s_has_reg_edd ,'yes'), format-date-time( /pregnancy_confirmation/g_patient_info/s_reg_edd_calendar ,&quot;%d/%m/%Y&quot;),format-date-time(date-time(decimal-date-time( /pregnancy_confirmation/g_patient_info/g_lmp_date_8601 )+280),&quot;%d/%m/%Y&quot;))" required="true()"/>
+      <bind nodeset="/pregnancy_confirmation/g_patient_info/s_reg_edd" readonly="true()" type="string" required="true()" relevant=" /pregnancy_confirmation/g_patient_info/s_has_reg_edd ='no'"/>
+      <bind nodeset="/pregnancy_confirmation/g_info_previous_pregnancies" relevant=" /pregnancy_confirmation/g_pregnancy_confirmation/pregnancy_confirmed ='yes'"/>
+      <bind nodeset="/pregnancy_confirmation/g_info_previous_pregnancies/previous_successful_preg_count" type="int" required="true()" jr:constraintMsg="jr:itext('/pregnancy_confirmation/g_info_previous_pregnancies/previous_successful_preg_count:jr:constraintMsg')" constraint=".&gt;=0 and . &lt;=20"/>
+      <bind nodeset="/pregnancy_confirmation/g_info_previous_pregnancies/number_of_abortion" type="int" required="true()" jr:constraintMsg="jr:itext('/pregnancy_confirmation/g_info_previous_pregnancies/number_of_abortion:jr:constraintMsg')" constraint=".&gt;=0 and . &lt;=10"/>
+      <bind nodeset="/pregnancy_confirmation/g_info_previous_pregnancies/info_for_8_previous_successful_preg" readonly="true()" type="string" relevant=" /pregnancy_confirmation/g_info_previous_pregnancies/previous_successful_preg_count  &gt;1"/>
+      <bind nodeset="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number_count" type="string" readonly="true()" calculate=" /pregnancy_confirmation/g_info_previous_pregnancies/previous_successful_preg_count "/>
+      <bind nodeset="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number" relevant=" /pregnancy_confirmation/g_info_previous_pregnancies/previous_successful_preg_count  &gt; 0"/>
+      <bind nodeset="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/know_year_of_pregnancy" type="select1" required="true()"/>
+      <bind nodeset="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/year_of_pregnancy" type="date" required="true()" relevant="selected( /pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/know_year_of_pregnancy , 'preg_date')"/>
+      <bind nodeset="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/type_of_delivery" type="select1" required="true()"/>
+      <bind nodeset="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/place_of_delivery" type="select1" required="true()"/>
+      <bind nodeset="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/other_type_of_birth" type="string" required="true()" relevant="selected( /pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/place_of_delivery , 'other_place_of_delivery')"/>
+      <bind nodeset="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/number_of_child" type="int" required="true()" jr:constraintMsg="jr:itext('/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/number_of_child:jr:constraintMsg')" constraint=".&gt;= 1 and .&lt;= 10"/>
+      <bind nodeset="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/outcome_of_pregnancy" type="select1" required="true()"/>
+      <bind nodeset="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/g_birth_count" type="string" readonly="true()" calculate=" /pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/number_of_child "/>
+      <bind nodeset="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/g_birth" relevant=" /pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/number_of_child  &gt; 0"/>
+      <bind nodeset="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/g_birth/child_gender" type="select1" required="true()"/>
+      <bind nodeset="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/g_birth/child_weight" type="decimal" required="true()" jr:constraintMsg="jr:itext('/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/g_birth/child_weight:jr:constraintMsg')" constraint=".&gt;= 1 and .&lt;= 5"/>
+      <bind nodeset="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/g_birth/status_of_child" type="select1" required="true()" relevant="selected( /pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/outcome_of_pregnancy ,'out_alive')"/>
+      <bind nodeset="/pregnancy_confirmation/g_vaccination_status" relevant=" /pregnancy_confirmation/g_pregnancy_confirmation/pregnancy_confirmed ='yes'"/>
+      <bind nodeset="/pregnancy_confirmation/g_vaccination_status/n_tetanus_dyphtheria" readonly="true()" type="string"/>
+      <bind nodeset="/pregnancy_confirmation/g_vaccination_status/vaccine_td1" type="select1" required="true()" relevant=" /pregnancy_confirmation/g_info_previous_pregnancies/previous_successful_preg_count  = 0"/>
+      <bind nodeset="/pregnancy_confirmation/g_vaccination_status/vaccine_td1_date" type="date" jr:constraintMsg="jr:itext('/pregnancy_confirmation/g_vaccination_status/vaccine_td1_date:jr:constraintMsg')" required="true()" relevant="selected( /pregnancy_confirmation/g_vaccination_status/vaccine_td1 , 'yes')" constraint=". &lt; today()"/>
+      <bind nodeset="/pregnancy_confirmation/g_vaccination_status/days_since_vaccine_td1_date" type="string" calculate="decimal-date-time( /pregnancy_confirmation/g_reported/s_reported_date_time ) - decimal-date-time( /pregnancy_confirmation/g_vaccination_status/vaccine_td1_date )"/>
+      <bind nodeset="/pregnancy_confirmation/g_vaccination_status/vaccine_td2" type="select1" required="true()" relevant="selected( /pregnancy_confirmation/g_vaccination_status/vaccine_td1 , 'yes') and  /pregnancy_confirmation/g_vaccination_status/days_since_vaccine_td1_date  &gt;=30"/>
+      <bind nodeset="/pregnancy_confirmation/g_vaccination_status/vaccine_td2_date" type="date" jr:constraintMsg="jr:itext('/pregnancy_confirmation/g_vaccination_status/vaccine_td2_date:jr:constraintMsg')" required="true()" relevant="selected( /pregnancy_confirmation/g_vaccination_status/vaccine_td2 , 'yes')" constraint=". &lt; today()"/>
+      <bind nodeset="/pregnancy_confirmation/g_vaccination_status/vaccine_td_r1" type="select1" required="true()" relevant=" /pregnancy_confirmation/g_info_previous_pregnancies/previous_successful_preg_count  &gt;=1"/>
+      <bind nodeset="/pregnancy_confirmation/g_vaccination_status/vaccine_td_r1_date" type="date" jr:constraintMsg="jr:itext('/pregnancy_confirmation/g_vaccination_status/vaccine_td_r1_date:jr:constraintMsg')" required="true()" relevant="selected( /pregnancy_confirmation/g_vaccination_status/vaccine_td_r1 , 'yes')" constraint=". &lt; today()"/>
+      <bind nodeset="/pregnancy_confirmation/g_vaccination_status/vaccine_td_r2" type="select1" required="true()" relevant=" /pregnancy_confirmation/g_info_previous_pregnancies/previous_successful_preg_count  &gt;=2"/>
+      <bind nodeset="/pregnancy_confirmation/g_vaccination_status/vaccine_td_r2_date" type="date" jr:constraintMsg="jr:itext('/pregnancy_confirmation/g_vaccination_status/vaccine_td_r2_date:jr:constraintMsg')" required="true()" relevant="selected( /pregnancy_confirmation/g_vaccination_status/vaccine_td_r2 , 'yes')" constraint=". &lt; today()"/>
+      <bind nodeset="/pregnancy_confirmation/g_vaccination_status/vaccine_td_r3" type="select1" required="true()" relevant=" /pregnancy_confirmation/g_info_previous_pregnancies/previous_successful_preg_count  &gt;=3"/>
+      <bind nodeset="/pregnancy_confirmation/g_vaccination_status/vaccine_td_r3_date" type="date" jr:constraintMsg="jr:itext('/pregnancy_confirmation/g_vaccination_status/vaccine_td_r3_date:jr:constraintMsg')" required="true()" relevant="selected( /pregnancy_confirmation/g_vaccination_status/vaccine_td_r3 , 'yes')" constraint=". &lt; today()"/>
+      <bind nodeset="/pregnancy_confirmation/g_prenatal_visits" relevant=" /pregnancy_confirmation/g_pregnancy_confirmation/pregnancy_confirmed ='yes'"/>
+      <bind nodeset="/pregnancy_confirmation/g_prenatal_visits/prenatal_visits_note_1" readonly="true()" type="string"/>
+      <bind nodeset="/pregnancy_confirmation/g_prenatal_visits/prenatal_visits_note_2" readonly="true()" type="string"/>
+      <bind nodeset="/pregnancy_confirmation/g_prenatal_visits/prenatal_visits_note_3" readonly="true()" type="string"/>
+      <bind nodeset="/pregnancy_confirmation/g_prenatal_visits/had_prenatal_visit" type="select1" required="true()"/>
+      <bind nodeset="/pregnancy_confirmation/g_prenatal_visits/prenatal_visit_3m" type="select" required="true()" relevant=" /pregnancy_confirmation/g_prenatal_visits/had_prenatal_visit ='yes' and  /pregnancy_confirmation/g_patient_info/g_lmp_approx_month  &gt; 0 and  /pregnancy_confirmation/g_patient_info/g_lmp_approx_month  &lt;= 3"/>
+      <bind nodeset="/pregnancy_confirmation/g_prenatal_visits/prenatal_visit_4_6m" type="select" required="true()" relevant=" /pregnancy_confirmation/g_prenatal_visits/had_prenatal_visit ='yes' and  /pregnancy_confirmation/g_patient_info/g_lmp_approx_month  &gt; 3 and  /pregnancy_confirmation/g_patient_info/g_lmp_approx_month  &lt;= 6"/>
+      <bind nodeset="/pregnancy_confirmation/g_prenatal_visits/prenatal_visit_7_8m" type="select" required="true()" relevant=" /pregnancy_confirmation/g_prenatal_visits/had_prenatal_visit ='yes' and  /pregnancy_confirmation/g_patient_info/g_lmp_approx_month  &gt; 6 and  /pregnancy_confirmation/g_patient_info/g_lmp_approx_month  &lt;= 8"/>
+      <bind nodeset="/pregnancy_confirmation/g_prenatal_visits/prenatal_visit_after_8m" type="select" required="true()" relevant=" /pregnancy_confirmation/g_prenatal_visits/had_prenatal_visit ='yes' and  /pregnancy_confirmation/g_patient_info/g_lmp_approx_month  &gt; 8"/>
+      <bind nodeset="/pregnancy_confirmation/g_prenatal_visits/date_of_last_prenatal_visit" type="date" jr:constraintMsg="jr:itext('/pregnancy_confirmation/g_prenatal_visits/date_of_last_prenatal_visit:jr:constraintMsg')" required="true()" relevant="count-selected( /pregnancy_confirmation/g_prenatal_visits/prenatal_visit_3m ) &gt; 0 or count-selected( /pregnancy_confirmation/g_prenatal_visits/prenatal_visit_4_6m )&gt;0 or count-selected( /pregnancy_confirmation/g_prenatal_visits/prenatal_visit_7_8m )&gt;0 or count-selected( /pregnancy_confirmation/g_prenatal_visits/prenatal_visit_after_8m )&gt;0" constraint=". &lt; today()"/>
+      <bind nodeset="/pregnancy_confirmation/g_prenatal_visits/date_of_next_prenatal_visit" type="date" jr:constraintMsg="jr:itext('/pregnancy_confirmation/g_prenatal_visits/date_of_next_prenatal_visit:jr:constraintMsg')" required="true()" relevant="selected( /pregnancy_confirmation/g_prenatal_visits/had_prenatal_visit , 'yes')" constraint=".&gt; today()"/>
+      <bind nodeset="/pregnancy_confirmation/g_prenatal_visits/schedule_prenatal_visit" type="date" jr:constraintMsg="jr:itext('/pregnancy_confirmation/g_prenatal_visits/schedule_prenatal_visit:jr:constraintMsg')" required="true()" relevant="selected( /pregnancy_confirmation/g_prenatal_visits/had_prenatal_visit , 'no')" constraint=".&gt; today()"/>
+      <bind nodeset="/pregnancy_confirmation/g_outputs/lmp" type="string" calculate=" /pregnancy_confirmation/g_patient_info/g_lmp_date_8601 "/>
+      <bind nodeset="/pregnancy_confirmation/g_outputs/estimated_delivery" type="string" calculate=" /pregnancy_confirmation/g_patient_info/g_edd_8601 "/>
+      <bind nodeset="/pregnancy_confirmation/g_outputs/high_risk" type="string" calculate="if( /pregnancy_confirmation/patient_age_in_years  &lt;= 16 or  /pregnancy_confirmation/patient_age_in_years  &gt; 30 or  /pregnancy_confirmation/g_info_previous_pregnancies/previous_successful_preg_count  &gt; 6 or indexed-repeat( /pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/outcome_of_pregnancy ,  /pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number , 1) = 'out_stillborn' or selected( /pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/type_of_delivery , 'cesarean') or  /pregnancy_confirmation/g_patient_info/woman_weight  &lt; 45 or  /pregnancy_confirmation/g_patient_info/woman_height  &lt; 150 , 'true', 'false')"/>
+      <bind nodeset="/pregnancy_confirmation/next_prenatal_visit_date" type="string" calculate="format-date-time(if( /pregnancy_confirmation/g_prenatal_visits/had_prenatal_visit ='no',  /pregnancy_confirmation/g_prenatal_visits/schedule_prenatal_visit , /pregnancy_confirmation/g_prenatal_visits/date_of_next_prenatal_visit ),&quot;%d/%m/%Y&quot;)"/>
+      <bind nodeset="/pregnancy_confirmation/referral_followup_date" type="string" calculate="format-date(date(decimal-date-time(today())+2),&quot;%d/%m/%Y&quot;)"/>
+      <bind nodeset="/pregnancy_confirmation/pregnancy_followup_date" type="string" calculate="format-date-time(decimal-date-time(today() + (30 - round( /pregnancy_confirmation/g_patient_info/lmp_approx_days  mod 30,0))),&quot;%d/%m/%Y&quot;)"/>
+      <bind nodeset="/pregnancy_confirmation/visit_to_cscom_date_scheduled" type="string" calculate="date-time(../g_summary/visit_date_chosen,&quot;%Y-%m-%d&quot;)"/>
+      <bind nodeset="/pregnancy_confirmation/g_summary/n_sum_submission" readonly="true()" type="string"/>
+      <bind nodeset="/pregnancy_confirmation/g_summary/r_summary" readonly="true()" type="string"/>
+      <bind nodeset="/pregnancy_confirmation/g_summary/r_patient_info" readonly="true()" type="string"/>
+      <bind nodeset="/pregnancy_confirmation/g_summary/n_referral_for_confirmation" readonly="true()" type="string" relevant=" /pregnancy_confirmation/g_cscom_visit/preg_go_to_cscom ='no'"/>
+      <bind nodeset="/pregnancy_confirmation/g_summary/n_referral_for_anc" readonly="true()" type="string" relevant="selected( /pregnancy_confirmation/g_prenatal_visits/had_prenatal_visit , 'no')"/>
+      <bind nodeset="/pregnancy_confirmation/g_summary/g_diagnosis_and_treatment" relevant=" /pregnancy_confirmation/g_cscom_visit/preg_go_to_cscom ='yes'"/>
+      <bind nodeset="/pregnancy_confirmation/g_summary/g_diagnosis_and_treatment/diagnosis_and_treatment" readonly="true()" type="string"/>
+      <bind nodeset="/pregnancy_confirmation/g_summary/g_diagnosis_and_treatment/n_pregnancy_is_not_confirmed" readonly="true()" type="string" relevant=" /pregnancy_confirmation/g_pregnancy_confirmation/pregnancy_confirmed ='no'"/>
+      <bind nodeset="/pregnancy_confirmation/g_summary/g_diagnosis_and_treatment/n_is_pregnant" readonly="true()" type="string" relevant=" /pregnancy_confirmation/g_pregnancy_confirmation/pregnancy_confirmed ='yes'"/>
+      <bind nodeset="/pregnancy_confirmation/g_summary/g_diagnosis_and_treatment/n_date_lmp" readonly="true()" type="string" relevant=" /pregnancy_confirmation/g_patient_info/g_lmp_date !=''"/>
+      <bind nodeset="/pregnancy_confirmation/g_summary/g_diagnosis_and_treatment/n_approx_delivery" readonly="true()" type="string" relevant=" /pregnancy_confirmation/g_patient_info/g_edd !=''"/>
+      <bind nodeset="/pregnancy_confirmation/g_summary/g_diagnosis_and_treatment/n_next_prenatal_visit" readonly="true()" type="string" relevant=" /pregnancy_confirmation/next_prenatal_visit_date  !=''"/>
+      <bind nodeset="/pregnancy_confirmation/g_summary/g_diagnosis_and_treatment/n_vaccination_not_uptodate" readonly="true()" type="string" relevant=" /pregnancy_confirmation/g_vaccination_status/vaccine_td1 = 'no' or  /pregnancy_confirmation/g_vaccination_status/vaccine_td2 = 'no' or  /pregnancy_confirmation/g_vaccination_status/vaccine_td_r1 = 'no' or  /pregnancy_confirmation/g_vaccination_status/vaccine_td_r2 = 'no' or  /pregnancy_confirmation/g_vaccination_status/vaccine_td_r3 = 'no'"/>
+      <bind nodeset="/pregnancy_confirmation/g_summary/g_diagnosis_and_treatment/n_vaccination_uptodate" readonly="true()" type="string" relevant=" /pregnancy_confirmation/g_vaccination_status/vaccine_td1 = 'yes' and  /pregnancy_confirmation/g_vaccination_status/vaccine_td2 = 'yes' and  /pregnancy_confirmation/g_vaccination_status/vaccine_td_r1 = 'yes' and  /pregnancy_confirmation/g_vaccination_status/vaccine_td_r2 = 'yes' and  /pregnancy_confirmation/g_vaccination_status/vaccine_td_r3 = 'yes'"/>
+      <bind nodeset="/pregnancy_confirmation/g_summary/g_diagnosis_and_treatment/n_preg_high_risk" readonly="true()" type="string" relevant=" /pregnancy_confirmation/g_outputs/high_risk  ='true' and  /pregnancy_confirmation/g_pregnancy_confirmation/pregnancy_confirmed ='yes'"/>
+      <bind nodeset="/pregnancy_confirmation/g_summary/special_instructions" readonly="true()" type="string"/>
+      <bind nodeset="/pregnancy_confirmation/g_summary/n_inst_pregnancy_confirmation" readonly="true()" type="string" relevant=" /pregnancy_confirmation/g_cscom_visit/preg_go_to_cscom ='no'"/>
+      <bind nodeset="/pregnancy_confirmation/g_summary/visit_plan" type="select1" relevant=" /pregnancy_confirmation/g_reported/s_has_located = 'yes' and  /pregnancy_confirmation/g_cscom_visit/preg_go_to_cscom ='no'"/>
+      <bind nodeset="/pregnancy_confirmation/g_summary/visit_date_chosen" type="date" relevant=" /pregnancy_confirmation/g_summary/visit_plan ='yes'"/>
+      <bind nodeset="/pregnancy_confirmation/g_summary/n_inst_not_available" readonly="true()" type="string" relevant=" /pregnancy_confirmation/g_reported/s_has_located = 'no'"/>
+      <bind nodeset="/pregnancy_confirmation/g_summary/n_inst_counseling_fp" readonly="true()" type="string" relevant=" /pregnancy_confirmation/g_pregnancy_confirmation/pregnancy_confirmed ='no'"/>
+      <bind nodeset="/pregnancy_confirmation/g_summary/n_inst_vaccination" readonly="true()" type="string" relevant=" /pregnancy_confirmation/g_vaccination_status/vaccine_td1 = 'no' or  /pregnancy_confirmation/g_vaccination_status/vaccine_td2 = 'no' or  /pregnancy_confirmation/g_vaccination_status/vaccine_td_r1 = 'no' or  /pregnancy_confirmation/g_vaccination_status/vaccine_td_r2 = 'no' or  /pregnancy_confirmation/g_vaccination_status/vaccine_td_r3 = 'no'"/>
+      <bind nodeset="/pregnancy_confirmation/g_summary/n_inst_anc" readonly="true()" type="string" relevant=" /pregnancy_confirmation/g_pregnancy_confirmation/pregnancy_confirmed ='yes'"/>
+      <bind nodeset="/pregnancy_confirmation/g_summary/n_inst_fp" readonly="true()" type="string" relevant=" /pregnancy_confirmation/g_patient_info/g_lmp_approx_month  &gt;=7"/>
+      <bind nodeset="/pregnancy_confirmation/g_summary/follow_up" readonly="true()" type="string" relevant=" /pregnancy_confirmation/g_cscom_visit/preg_go_to_cscom ='yes'"/>
+      <bind nodeset="/pregnancy_confirmation/g_summary/n_referral_followup" readonly="true()" type="string" relevant=" /pregnancy_confirmation/g_pregnancy_confirmation/pregnancy_confirmed ='no'"/>
+      <bind nodeset="/pregnancy_confirmation/g_summary/n_no_followup" readonly="true()" type="string" relevant=" /pregnancy_confirmation/g_pregnancy_confirmation/pregnancy_confirmed = 'no' or  /pregnancy_confirmation/g_reported/s_has_located = 'no'"/>
+      <bind nodeset="/pregnancy_confirmation/g_summary/n_next_followup" readonly="true()" type="string" relevant=" /pregnancy_confirmation/g_pregnancy_confirmation/pregnancy_confirmed ='yes'"/>
+      <bind nodeset="/pregnancy_confirmation/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/pregnancy_confirmation/inputs">
+      <input ref="/pregnancy_confirmation/inputs/t_follow_up_type">
+        <label ref="jr:itext('/pregnancy_confirmation/inputs/t_follow_up_type:label')"/>
+      </input>
+      <input ref="/pregnancy_confirmation/inputs/t_follow_up_count">
+        <label ref="jr:itext('/pregnancy_confirmation/inputs/t_follow_up_count:label')"/>
+      </input>
+      <input ref="/pregnancy_confirmation/inputs/t_delivery_date">
+        <label ref="jr:itext('/pregnancy_confirmation/inputs/t_delivery_date:label')"/>
+      </input>
+      <group ref="/pregnancy_confirmation/inputs/user">
+        <label ref="jr:itext('/pregnancy_confirmation/inputs/user:label')"/>
+        <input appearance="db-object" ref="/pregnancy_confirmation/inputs/user/contact_id">
+          <label ref="jr:itext('/pregnancy_confirmation/inputs/user/contact_id:label')"/>
+        </input>
+      </group>
+      <group ref="/pregnancy_confirmation/inputs/contact">
+        <input appearance="db-object" ref="/pregnancy_confirmation/inputs/contact/_id">
+          <label ref="jr:itext('/pregnancy_confirmation/inputs/contact/_id:label')"/>
+        </input>
+        <group ref="/pregnancy_confirmation/inputs/contact/parent">
+          <input appearance="hidden" ref="/pregnancy_confirmation/inputs/contact/parent/_id">
+            <label ref="jr:itext('/pregnancy_confirmation/inputs/contact/parent/_id:label')"/>
+          </input>
+          <group ref="/pregnancy_confirmation/inputs/contact/parent/parent">
+            <input appearance="hidden" ref="/pregnancy_confirmation/inputs/contact/parent/parent/_id">
+              <label ref="jr:itext('/pregnancy_confirmation/inputs/contact/parent/parent/_id:label')"/>
+            </input>
+            <group ref="/pregnancy_confirmation/inputs/contact/parent/parent/parent">
+              <input appearance="hidden" ref="/pregnancy_confirmation/inputs/contact/parent/parent/parent/_id">
+                <label ref="jr:itext('/pregnancy_confirmation/inputs/contact/parent/parent/parent/_id:label')"/>
+              </input>
+            </group>
+            <group ref="/pregnancy_confirmation/inputs/contact/parent/parent/contact"/>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/pregnancy_confirmation/g_reported">
+      <label ref="jr:itext('/pregnancy_confirmation/g_reported:label')"/>
+      <select1 ref="/pregnancy_confirmation/g_reported/reported_today">
+        <label ref="jr:itext('/pregnancy_confirmation/g_reported/reported_today:label')"/>
+        <item>
+          <label ref="jr:itext('/pregnancy_confirmation/g_reported/reported_today/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_confirmation/g_reported/reported_today/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/pregnancy_confirmation/g_reported/reported_other_date">
+        <label ref="jr:itext('/pregnancy_confirmation/g_reported/reported_other_date:label')"/>
+      </input>
+      <select1 ref="/pregnancy_confirmation/g_reported/why_not_reported_today">
+        <label ref="jr:itext('/pregnancy_confirmation/g_reported/why_not_reported_today:label')"/>
+        <item>
+          <label ref="jr:itext('/pregnancy_confirmation/g_reported/why_not_reported_today/phone_unloaded_broken:label')"/>
+          <value>phone_unloaded_broken</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_confirmation/g_reported/why_not_reported_today/lost_phone:label')"/>
+          <value>lost_phone</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_confirmation/g_reported/why_not_reported_today/other_raison_not_reported:label')"/>
+          <value>other_raison_not_reported</value>
+        </item>
+      </select1>
+      <input ref="/pregnancy_confirmation/g_reported/why_not_reported_today_other">
+        <label ref="jr:itext('/pregnancy_confirmation/g_reported/why_not_reported_today_other:label')"/>
+      </input>
+      <select1 ref="/pregnancy_confirmation/g_reported/s_has_located">
+        <label ref="jr:itext('/pregnancy_confirmation/g_reported/s_has_located:label')"/>
+        <item>
+          <label ref="jr:itext('/pregnancy_confirmation/g_reported/s_has_located/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_confirmation/g_reported/s_has_located/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/pregnancy_confirmation/g_reported/how_patient_found">
+        <label ref="jr:itext('/pregnancy_confirmation/g_reported/how_patient_found:label')"/>
+        <item>
+          <label ref="jr:itext('/pregnancy_confirmation/g_reported/how_patient_found/during_home_visit:label')"/>
+          <value>during_home_visit</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_confirmation/g_reported/how_patient_found/woman_went_to_chw:label')"/>
+          <value>woman_went_to_chw</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_confirmation/g_reported/how_patient_found/other_way:label')"/>
+          <value>other_way</value>
+        </item>
+      </select1>
+      <input ref="/pregnancy_confirmation/g_reported/how_patient_found_other">
+        <label ref="jr:itext('/pregnancy_confirmation/g_reported/how_patient_found_other:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/pregnancy_confirmation/g_cscom_visit">
+      <label ref="jr:itext('/pregnancy_confirmation/g_cscom_visit:label')"/>
+      <select1 ref="/pregnancy_confirmation/g_cscom_visit/preg_go_to_cscom">
+        <label ref="jr:itext('/pregnancy_confirmation/g_cscom_visit/preg_go_to_cscom:label')"/>
+        <item>
+          <label ref="jr:itext('/pregnancy_confirmation/g_cscom_visit/preg_go_to_cscom/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_confirmation/g_cscom_visit/preg_go_to_cscom/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/pregnancy_confirmation/g_cscom_visit/preg_why_didnt_go_to_cscom">
+        <label ref="jr:itext('/pregnancy_confirmation/g_cscom_visit/preg_why_didnt_go_to_cscom:label')"/>
+        <item>
+          <label ref="jr:itext('/pregnancy_confirmation/g_cscom_visit/preg_why_didnt_go_to_cscom/forget:label')"/>
+          <value>forget</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_confirmation/g_cscom_visit/preg_why_didnt_go_to_cscom/no_motivated:label')"/>
+          <value>no_motivated</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_confirmation/g_cscom_visit/preg_why_didnt_go_to_cscom/lack_time:label')"/>
+          <value>lack_time</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_confirmation/g_cscom_visit/preg_why_didnt_go_to_cscom/lack_money:label')"/>
+          <value>lack_money</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_confirmation/g_cscom_visit/preg_why_didnt_go_to_cscom/refusal:label')"/>
+          <value>refusal</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_confirmation/g_cscom_visit/preg_why_didnt_go_to_cscom/other_reason:label')"/>
+          <value>other_reason</value>
+        </item>
+      </select1>
+      <input ref="/pregnancy_confirmation/g_cscom_visit/preg_why_didnt_go_to_cscom_other">
+        <label ref="jr:itext('/pregnancy_confirmation/g_cscom_visit/preg_why_didnt_go_to_cscom_other:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/pregnancy_confirmation/g_pregnancy_confirmation">
+      <label ref="jr:itext('/pregnancy_confirmation/g_pregnancy_confirmation:label')"/>
+      <select1 ref="/pregnancy_confirmation/g_pregnancy_confirmation/pregnancy_confirmed">
+        <label ref="jr:itext('/pregnancy_confirmation/g_pregnancy_confirmation/pregnancy_confirmed:label')"/>
+        <item>
+          <label ref="jr:itext('/pregnancy_confirmation/g_pregnancy_confirmation/pregnancy_confirmed/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_confirmation/g_pregnancy_confirmation/pregnancy_confirmed/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select ref="/pregnancy_confirmation/g_pregnancy_confirmation/how_pregnancy_confirmed">
+        <label ref="jr:itext('/pregnancy_confirmation/g_pregnancy_confirmation/how_pregnancy_confirmed:label')"/>
+        <item>
+          <label ref="jr:itext('/pregnancy_confirmation/g_pregnancy_confirmation/how_pregnancy_confirmed/positif_test_result:label')"/>
+          <value>positif_test_result</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_confirmation/g_pregnancy_confirmation/how_pregnancy_confirmed/anc_card:label')"/>
+          <value>anc_card</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_confirmation/g_pregnancy_confirmation/how_pregnancy_confirmed/ultrasound:label')"/>
+          <value>ultrasound</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_confirmation/g_pregnancy_confirmation/how_pregnancy_confirmed/other_pregnancy_confirmed:label')"/>
+          <value>other_pregnancy_confirmed</value>
+        </item>
+      </select>
+      <input ref="/pregnancy_confirmation/g_pregnancy_confirmation/how_pregnancy_confirmed_other">
+        <label ref="jr:itext('/pregnancy_confirmation/g_pregnancy_confirmation/how_pregnancy_confirmed_other:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/pregnancy_confirmation/g_patient_info">
+      <label ref="jr:itext('/pregnancy_confirmation/g_patient_info:label')"/>
+      <input ref="/pregnancy_confirmation/g_patient_info/woman_weight">
+        <label ref="jr:itext('/pregnancy_confirmation/g_patient_info/woman_weight:label')"/>
+      </input>
+      <input ref="/pregnancy_confirmation/g_patient_info/woman_height">
+        <label ref="jr:itext('/pregnancy_confirmation/g_patient_info/woman_height:label')"/>
+      </input>
+      <select1 ref="/pregnancy_confirmation/g_patient_info/s_reg_mother_lmp">
+        <label ref="jr:itext('/pregnancy_confirmation/g_patient_info/s_reg_mother_lmp:label')"/>
+        <item>
+          <label ref="jr:itext('/pregnancy_confirmation/g_patient_info/s_reg_mother_lmp/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_confirmation/g_patient_info/s_reg_mother_lmp/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/pregnancy_confirmation/g_patient_info/lmp_calendar">
+        <label ref="jr:itext('/pregnancy_confirmation/g_patient_info/lmp_calendar:label')"/>
+      </input>
+      <input ref="/pregnancy_confirmation/g_patient_info/lmp_approx">
+        <label ref="jr:itext('/pregnancy_confirmation/g_patient_info/lmp_approx:label')"/>
+        <hint ref="jr:itext('/pregnancy_confirmation/g_patient_info/lmp_approx:hint')"/>
+      </input>
+      <select1 ref="/pregnancy_confirmation/g_patient_info/s_has_reg_edd">
+        <label ref="jr:itext('/pregnancy_confirmation/g_patient_info/s_has_reg_edd:label')"/>
+        <hint ref="jr:itext('/pregnancy_confirmation/g_patient_info/s_has_reg_edd:hint')"/>
+        <item>
+          <label ref="jr:itext('/pregnancy_confirmation/g_patient_info/s_has_reg_edd/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_confirmation/g_patient_info/s_has_reg_edd/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/pregnancy_confirmation/g_patient_info/s_reg_edd_calendar">
+        <label ref="jr:itext('/pregnancy_confirmation/g_patient_info/s_reg_edd_calendar:label')"/>
+      </input>
+      <input ref="/pregnancy_confirmation/g_patient_info/s_reg_edd">
+        <label ref="jr:itext('/pregnancy_confirmation/g_patient_info/s_reg_edd:label')"/>
+      </input>
+    </group>
+    <group ref="/pregnancy_confirmation/g_info_previous_pregnancies">
+      <label ref="jr:itext('/pregnancy_confirmation/g_info_previous_pregnancies:label')"/>
+      <input ref="/pregnancy_confirmation/g_info_previous_pregnancies/previous_successful_preg_count">
+        <label ref="jr:itext('/pregnancy_confirmation/g_info_previous_pregnancies/previous_successful_preg_count:label')"/>
+        <hint ref="jr:itext('/pregnancy_confirmation/g_info_previous_pregnancies/previous_successful_preg_count:hint')"/>
+      </input>
+      <input ref="/pregnancy_confirmation/g_info_previous_pregnancies/number_of_abortion">
+        <label ref="jr:itext('/pregnancy_confirmation/g_info_previous_pregnancies/number_of_abortion:label')"/>
+        <hint ref="jr:itext('/pregnancy_confirmation/g_info_previous_pregnancies/number_of_abortion:hint')"/>
+      </input>
+      <input ref="/pregnancy_confirmation/g_info_previous_pregnancies/info_for_8_previous_successful_preg">
+        <label ref="jr:itext('/pregnancy_confirmation/g_info_previous_pregnancies/info_for_8_previous_successful_preg:label')"/>
+      </input>
+      <group ref="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number">
+        <label ref="jr:itext('/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number:label')"/>
+        <repeat nodeset="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number" jr:count=" /pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number_count " appearance="field-list">
+          <select1 ref="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/know_year_of_pregnancy">
+            <label ref="jr:itext('/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/know_year_of_pregnancy:label')"/>
+            <item>
+              <label ref="jr:itext('/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/know_year_of_pregnancy/preg_date:label')"/>
+              <value>preg_date</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/know_year_of_pregnancy/dont_know:label')"/>
+              <value>dont_know</value>
+            </item>
+          </select1>
+          <input ref="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/year_of_pregnancy">
+            <label ref="jr:itext('/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/year_of_pregnancy:label')"/>
+          </input>
+          <select1 ref="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/type_of_delivery">
+            <label ref="jr:itext('/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/type_of_delivery:label')"/>
+            <item>
+              <label ref="jr:itext('/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/type_of_delivery/normal:label')"/>
+              <value>normal</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/type_of_delivery/cesarean:label')"/>
+              <value>cesarean</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/type_of_delivery/d_dont_know:label')"/>
+              <value>d_dont_know</value>
+            </item>
+          </select1>
+          <select1 ref="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/place_of_delivery">
+            <label ref="jr:itext('/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/place_of_delivery:label')"/>
+            <item>
+              <label ref="jr:itext('/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/place_of_delivery/health_center:label')"/>
+              <value>health_center</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/place_of_delivery/home:label')"/>
+              <value>home</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/place_of_delivery/rural_maternity_hospital:label')"/>
+              <value>rural_maternity_hospital</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/place_of_delivery/other_place_of_delivery:label')"/>
+              <value>other_place_of_delivery</value>
+            </item>
+          </select1>
+          <input ref="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/other_type_of_birth">
+            <label ref="jr:itext('/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/other_type_of_birth:label')"/>
+          </input>
+          <input ref="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/number_of_child">
+            <label ref="jr:itext('/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/number_of_child:label')"/>
+          </input>
+          <select1 ref="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/outcome_of_pregnancy">
+            <label ref="jr:itext('/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/outcome_of_pregnancy:label')"/>
+            <item>
+              <label ref="jr:itext('/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/outcome_of_pregnancy/out_alive:label')"/>
+              <value>out_alive</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/outcome_of_pregnancy/out_stillborn:label')"/>
+              <value>out_stillborn</value>
+            </item>
+          </select1>
+          <group ref="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/g_birth">
+            <label ref="jr:itext('/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/g_birth:label')"/>
+            <repeat nodeset="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/g_birth" jr:count=" /pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/g_birth_count " appearance="field-list">
+              <select1 ref="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/g_birth/child_gender">
+                <label ref="jr:itext('/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/g_birth/child_gender:label')"/>
+                <item>
+                  <label ref="jr:itext('/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/g_birth/child_gender/male:label')"/>
+                  <value>male</value>
+                </item>
+                <item>
+                  <label ref="jr:itext('/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/g_birth/child_gender/female:label')"/>
+                  <value>female</value>
+                </item>
+              </select1>
+              <input ref="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/g_birth/child_weight">
+                <label ref="jr:itext('/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/g_birth/child_weight:label')"/>
+              </input>
+              <select1 ref="/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/g_birth/status_of_child">
+                <label ref="jr:itext('/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/g_birth/status_of_child:label')"/>
+                <item>
+                  <label ref="jr:itext('/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/g_birth/status_of_child/alive:label')"/>
+                  <value>alive</value>
+                </item>
+                <item>
+                  <label ref="jr:itext('/pregnancy_confirmation/g_info_previous_pregnancies/g_previous_successful_preg_number/g_birth/status_of_child/dead:label')"/>
+                  <value>dead</value>
+                </item>
+              </select1>
+            </repeat>
+          </group>
+        </repeat>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/pregnancy_confirmation/g_vaccination_status">
+      <label ref="jr:itext('/pregnancy_confirmation/g_vaccination_status:label')"/>
+      <input ref="/pregnancy_confirmation/g_vaccination_status/n_tetanus_dyphtheria">
+        <label ref="jr:itext('/pregnancy_confirmation/g_vaccination_status/n_tetanus_dyphtheria:label')"/>
+      </input>
+      <select1 ref="/pregnancy_confirmation/g_vaccination_status/vaccine_td1">
+        <label ref="jr:itext('/pregnancy_confirmation/g_vaccination_status/vaccine_td1:label')"/>
+        <item>
+          <label ref="jr:itext('/pregnancy_confirmation/g_vaccination_status/vaccine_td1/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_confirmation/g_vaccination_status/vaccine_td1/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/pregnancy_confirmation/g_vaccination_status/vaccine_td1_date">
+        <label ref="jr:itext('/pregnancy_confirmation/g_vaccination_status/vaccine_td1_date:label')"/>
+      </input>
+      <select1 ref="/pregnancy_confirmation/g_vaccination_status/vaccine_td2">
+        <label ref="jr:itext('/pregnancy_confirmation/g_vaccination_status/vaccine_td2:label')"/>
+        <item>
+          <label ref="jr:itext('/pregnancy_confirmation/g_vaccination_status/vaccine_td2/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_confirmation/g_vaccination_status/vaccine_td2/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/pregnancy_confirmation/g_vaccination_status/vaccine_td2_date">
+        <label ref="jr:itext('/pregnancy_confirmation/g_vaccination_status/vaccine_td2_date:label')"/>
+      </input>
+      <select1 ref="/pregnancy_confirmation/g_vaccination_status/vaccine_td_r1">
+        <label ref="jr:itext('/pregnancy_confirmation/g_vaccination_status/vaccine_td_r1:label')"/>
+        <item>
+          <label ref="jr:itext('/pregnancy_confirmation/g_vaccination_status/vaccine_td_r1/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_confirmation/g_vaccination_status/vaccine_td_r1/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/pregnancy_confirmation/g_vaccination_status/vaccine_td_r1_date">
+        <label ref="jr:itext('/pregnancy_confirmation/g_vaccination_status/vaccine_td_r1_date:label')"/>
+      </input>
+      <select1 ref="/pregnancy_confirmation/g_vaccination_status/vaccine_td_r2">
+        <label ref="jr:itext('/pregnancy_confirmation/g_vaccination_status/vaccine_td_r2:label')"/>
+        <item>
+          <label ref="jr:itext('/pregnancy_confirmation/g_vaccination_status/vaccine_td_r2/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_confirmation/g_vaccination_status/vaccine_td_r2/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/pregnancy_confirmation/g_vaccination_status/vaccine_td_r2_date">
+        <label ref="jr:itext('/pregnancy_confirmation/g_vaccination_status/vaccine_td_r2_date:label')"/>
+      </input>
+      <select1 ref="/pregnancy_confirmation/g_vaccination_status/vaccine_td_r3">
+        <label ref="jr:itext('/pregnancy_confirmation/g_vaccination_status/vaccine_td_r3:label')"/>
+        <item>
+          <label ref="jr:itext('/pregnancy_confirmation/g_vaccination_status/vaccine_td_r3/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_confirmation/g_vaccination_status/vaccine_td_r3/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/pregnancy_confirmation/g_vaccination_status/vaccine_td_r3_date">
+        <label ref="jr:itext('/pregnancy_confirmation/g_vaccination_status/vaccine_td_r3_date:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/pregnancy_confirmation/g_prenatal_visits">
+      <label ref="jr:itext('/pregnancy_confirmation/g_prenatal_visits:label')"/>
+      <input ref="/pregnancy_confirmation/g_prenatal_visits/prenatal_visits_note_1">
+        <label ref="jr:itext('/pregnancy_confirmation/g_prenatal_visits/prenatal_visits_note_1:label')"/>
+      </input>
+      <input ref="/pregnancy_confirmation/g_prenatal_visits/prenatal_visits_note_2">
+        <label ref="jr:itext('/pregnancy_confirmation/g_prenatal_visits/prenatal_visits_note_2:label')"/>
+      </input>
+      <input ref="/pregnancy_confirmation/g_prenatal_visits/prenatal_visits_note_3">
+        <label ref="jr:itext('/pregnancy_confirmation/g_prenatal_visits/prenatal_visits_note_3:label')"/>
+      </input>
+      <select1 ref="/pregnancy_confirmation/g_prenatal_visits/had_prenatal_visit">
+        <label ref="jr:itext('/pregnancy_confirmation/g_prenatal_visits/had_prenatal_visit:label')"/>
+        <item>
+          <label ref="jr:itext('/pregnancy_confirmation/g_prenatal_visits/had_prenatal_visit/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_confirmation/g_prenatal_visits/had_prenatal_visit/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select ref="/pregnancy_confirmation/g_prenatal_visits/prenatal_visit_3m">
+        <label ref="jr:itext('/pregnancy_confirmation/g_prenatal_visits/prenatal_visit_3m:label')"/>
+        <item>
+          <label ref="jr:itext('/pregnancy_confirmation/g_prenatal_visits/prenatal_visit_3m/3_visit_1:label')"/>
+          <value>3_visit_1</value>
+        </item>
+      </select>
+      <select ref="/pregnancy_confirmation/g_prenatal_visits/prenatal_visit_4_6m">
+        <label ref="jr:itext('/pregnancy_confirmation/g_prenatal_visits/prenatal_visit_4_6m:label')"/>
+        <item>
+          <label ref="jr:itext('/pregnancy_confirmation/g_prenatal_visits/prenatal_visit_4_6m/4_visit_1:label')"/>
+          <value>4_visit_1</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_confirmation/g_prenatal_visits/prenatal_visit_4_6m/4_visit_2:label')"/>
+          <value>4_visit_2</value>
+        </item>
+      </select>
+      <select ref="/pregnancy_confirmation/g_prenatal_visits/prenatal_visit_7_8m">
+        <label ref="jr:itext('/pregnancy_confirmation/g_prenatal_visits/prenatal_visit_7_8m:label')"/>
+        <item>
+          <label ref="jr:itext('/pregnancy_confirmation/g_prenatal_visits/prenatal_visit_7_8m/7_visit_1:label')"/>
+          <value>7_visit_1</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_confirmation/g_prenatal_visits/prenatal_visit_7_8m/7_visit_2:label')"/>
+          <value>7_visit_2</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_confirmation/g_prenatal_visits/prenatal_visit_7_8m/7_visit_3:label')"/>
+          <value>7_visit_3</value>
+        </item>
+      </select>
+      <select ref="/pregnancy_confirmation/g_prenatal_visits/prenatal_visit_after_8m">
+        <label ref="jr:itext('/pregnancy_confirmation/g_prenatal_visits/prenatal_visit_after_8m:label')"/>
+        <item>
+          <label ref="jr:itext('/pregnancy_confirmation/g_prenatal_visits/prenatal_visit_after_8m/8_visit_1:label')"/>
+          <value>8_visit_1</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_confirmation/g_prenatal_visits/prenatal_visit_after_8m/8_visit_2:label')"/>
+          <value>8_visit_2</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_confirmation/g_prenatal_visits/prenatal_visit_after_8m/8_visit_3:label')"/>
+          <value>8_visit_3</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_confirmation/g_prenatal_visits/prenatal_visit_after_8m/8_visit_4:label')"/>
+          <value>8_visit_4</value>
+        </item>
+      </select>
+      <input ref="/pregnancy_confirmation/g_prenatal_visits/date_of_last_prenatal_visit">
+        <label ref="jr:itext('/pregnancy_confirmation/g_prenatal_visits/date_of_last_prenatal_visit:label')"/>
+      </input>
+      <input ref="/pregnancy_confirmation/g_prenatal_visits/date_of_next_prenatal_visit">
+        <label ref="jr:itext('/pregnancy_confirmation/g_prenatal_visits/date_of_next_prenatal_visit:label')"/>
+      </input>
+      <input ref="/pregnancy_confirmation/g_prenatal_visits/schedule_prenatal_visit">
+        <label ref="jr:itext('/pregnancy_confirmation/g_prenatal_visits/schedule_prenatal_visit:label')"/>
+        <hint ref="jr:itext('/pregnancy_confirmation/g_prenatal_visits/schedule_prenatal_visit:hint')"/>
+      </input>
+    </group>
+    <group ref="/pregnancy_confirmation/g_outputs"/>
+    <group appearance="field-list summary" ref="/pregnancy_confirmation/g_summary">
+      <input ref="/pregnancy_confirmation/g_summary/n_sum_submission">
+        <label ref="jr:itext('/pregnancy_confirmation/g_summary/n_sum_submission:label')"/>
+      </input>
+      <input appearance="h1 yellow" ref="/pregnancy_confirmation/g_summary/r_summary">
+        <label ref="jr:itext('/pregnancy_confirmation/g_summary/r_summary:label')"/>
+      </input>
+      <input ref="/pregnancy_confirmation/g_summary/r_patient_info">
+        <label ref="jr:itext('/pregnancy_confirmation/g_summary/r_patient_info:label')"/>
+      </input>
+      <input appearance="h1 red" ref="/pregnancy_confirmation/g_summary/n_referral_for_confirmation">
+        <label ref="jr:itext('/pregnancy_confirmation/g_summary/n_referral_for_confirmation:label')"/>
+      </input>
+      <input appearance="h1 red" ref="/pregnancy_confirmation/g_summary/n_referral_for_anc">
+        <label ref="jr:itext('/pregnancy_confirmation/g_summary/n_referral_for_anc:label')"/>
+      </input>
+      <group ref="/pregnancy_confirmation/g_summary/g_diagnosis_and_treatment">
+        <input appearance="h1 green" ref="/pregnancy_confirmation/g_summary/g_diagnosis_and_treatment/diagnosis_and_treatment">
+          <label ref="jr:itext('/pregnancy_confirmation/g_summary/g_diagnosis_and_treatment/diagnosis_and_treatment:label')"/>
+        </input>
+        <input ref="/pregnancy_confirmation/g_summary/g_diagnosis_and_treatment/n_pregnancy_is_not_confirmed">
+          <label ref="jr:itext('/pregnancy_confirmation/g_summary/g_diagnosis_and_treatment/n_pregnancy_is_not_confirmed:label')"/>
+        </input>
+        <input ref="/pregnancy_confirmation/g_summary/g_diagnosis_and_treatment/n_is_pregnant">
+          <label ref="jr:itext('/pregnancy_confirmation/g_summary/g_diagnosis_and_treatment/n_is_pregnant:label')"/>
+        </input>
+        <input ref="/pregnancy_confirmation/g_summary/g_diagnosis_and_treatment/n_date_lmp">
+          <label ref="jr:itext('/pregnancy_confirmation/g_summary/g_diagnosis_and_treatment/n_date_lmp:label')"/>
+        </input>
+        <input ref="/pregnancy_confirmation/g_summary/g_diagnosis_and_treatment/n_approx_delivery">
+          <label ref="jr:itext('/pregnancy_confirmation/g_summary/g_diagnosis_and_treatment/n_approx_delivery:label')"/>
+        </input>
+        <input ref="/pregnancy_confirmation/g_summary/g_diagnosis_and_treatment/n_next_prenatal_visit">
+          <label ref="jr:itext('/pregnancy_confirmation/g_summary/g_diagnosis_and_treatment/n_next_prenatal_visit:label')"/>
+        </input>
+        <input ref="/pregnancy_confirmation/g_summary/g_diagnosis_and_treatment/n_vaccination_not_uptodate">
+          <label ref="jr:itext('/pregnancy_confirmation/g_summary/g_diagnosis_and_treatment/n_vaccination_not_uptodate:label')"/>
+        </input>
+        <input ref="/pregnancy_confirmation/g_summary/g_diagnosis_and_treatment/n_vaccination_uptodate">
+          <label ref="jr:itext('/pregnancy_confirmation/g_summary/g_diagnosis_and_treatment/n_vaccination_uptodate:label')"/>
+        </input>
+        <input appearance="h1 red" ref="/pregnancy_confirmation/g_summary/g_diagnosis_and_treatment/n_preg_high_risk">
+          <label ref="jr:itext('/pregnancy_confirmation/g_summary/g_diagnosis_and_treatment/n_preg_high_risk:label')"/>
+        </input>
+      </group>
+      <input appearance="h1 blue" ref="/pregnancy_confirmation/g_summary/special_instructions">
+        <label ref="jr:itext('/pregnancy_confirmation/g_summary/special_instructions:label')"/>
+      </input>
+      <input ref="/pregnancy_confirmation/g_summary/n_inst_pregnancy_confirmation">
+        <label ref="jr:itext('/pregnancy_confirmation/g_summary/n_inst_pregnancy_confirmation:label')"/>
+      </input>
+      <select1 ref="/pregnancy_confirmation/g_summary/visit_plan">
+        <label ref="jr:itext('/pregnancy_confirmation/g_summary/visit_plan:label')"/>
+        <item>
+          <label ref="jr:itext('/pregnancy_confirmation/g_summary/visit_plan/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_confirmation/g_summary/visit_plan/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/pregnancy_confirmation/g_summary/visit_date_chosen">
+        <label ref="jr:itext('/pregnancy_confirmation/g_summary/visit_date_chosen:label')"/>
+      </input>
+      <input ref="/pregnancy_confirmation/g_summary/n_inst_not_available">
+        <label ref="jr:itext('/pregnancy_confirmation/g_summary/n_inst_not_available:label')"/>
+      </input>
+      <input ref="/pregnancy_confirmation/g_summary/n_inst_counseling_fp">
+        <label ref="jr:itext('/pregnancy_confirmation/g_summary/n_inst_counseling_fp:label')"/>
+      </input>
+      <input ref="/pregnancy_confirmation/g_summary/n_inst_vaccination">
+        <label ref="jr:itext('/pregnancy_confirmation/g_summary/n_inst_vaccination:label')"/>
+      </input>
+      <input ref="/pregnancy_confirmation/g_summary/n_inst_anc">
+        <label ref="jr:itext('/pregnancy_confirmation/g_summary/n_inst_anc:label')"/>
+      </input>
+      <input ref="/pregnancy_confirmation/g_summary/n_inst_fp">
+        <label ref="jr:itext('/pregnancy_confirmation/g_summary/n_inst_fp:label')"/>
+      </input>
+      <input appearance="h1 green" ref="/pregnancy_confirmation/g_summary/follow_up">
+        <label ref="jr:itext('/pregnancy_confirmation/g_summary/follow_up:label')"/>
+      </input>
+      <input ref="/pregnancy_confirmation/g_summary/n_referral_followup">
+        <label ref="jr:itext('/pregnancy_confirmation/g_summary/n_referral_followup:label')"/>
+      </input>
+      <input ref="/pregnancy_confirmation/g_summary/n_no_followup">
+        <label ref="jr:itext('/pregnancy_confirmation/g_summary/n_no_followup:label')"/>
+      </input>
+      <input ref="/pregnancy_confirmation/g_summary/n_next_followup">
+        <label ref="jr:itext('/pregnancy_confirmation/g_summary/n_next_followup:label')"/>
+      </input>
+    </group>
+  </h:body>
+</h:html>

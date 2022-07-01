@@ -1,0 +1,54 @@
+
+  <model>
+    <instance>
+        <data xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" id="contact:c30_district:edit" prefix="J1!contact:c30_district:edit!" delimiter="#" version="2022-05-06 12-36">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <user>
+              <contact_id/>
+              <facility_id/>
+              <name/>
+            </user>
+          </inputs>
+          <c30_district>
+            <parent/>
+            <type/>
+            <parent_place_id/>
+            <contact>
+              <name/>
+              <contact_name/>
+              <_id/>
+            </contact>
+            <name/>
+            <geolocation/>
+            <meta tag="hidden">
+              <created_by/>
+              <created_by_person_uuid/>
+              <created_by_place_uuid/>
+              <last_edited_by/>
+              <last_edited_by_person_uuid/>
+              <last_edited_by_place_uuid/>
+            </meta>
+          </c30_district>
+          <init>
+            <parent>
+              <parent_id/>
+              <region/>
+              <name/>
+              <region_name/>
+            </parent>
+          </init>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+  </model>
+

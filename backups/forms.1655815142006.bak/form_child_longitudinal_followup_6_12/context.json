@@ -1,0 +1,5 @@
+{
+  "place": false,
+  "person": false,
+  "expression": "ageInYears(contact) >= 6 && ageInYears(contact) <= 12 && contact.contact_type === 'c92_household'"
+}

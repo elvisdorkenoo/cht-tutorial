@@ -1,0 +1,59 @@
+
+  <model>
+    <instance>
+        <data xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" id="contact:c20_region:create" prefix="J1!contact:c20_region:create!" delimiter="#" version="2022-05-06 15-15">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <user>
+              <contact_id/>
+              <facility_id/>
+              <name/>
+            </user>
+          </inputs>
+          <c20_region>
+            <parent>PARENT</parent>
+            <type/>
+            <name/>
+            <contact/>
+            <geolocation/>
+            <meta tag="hidden">
+              <created_by/>
+              <created_by_person_uuid/>
+              <created_by_place_uuid/>
+            </meta>
+          </c20_region>
+          <init/>
+          <contact>
+            <parent>PARENT</parent>
+            <type>contact</type>
+            <contact_type/>
+            <membership_structure/>
+            <first_name/>
+            <last_name/>
+            <name/>
+            <date_of_birth/>
+            <date_of_birth_method/>
+            <phone/>
+            <email/>
+            <username/>
+            <role/>
+            <meta tag="hidden">
+              <created_by/>
+              <created_by_person_uuid/>
+              <created_by_place_uuid/>
+            </meta>
+          </contact>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+  </model>
+

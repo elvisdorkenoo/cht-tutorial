@@ -1,0 +1,1936 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>Delivery Registration</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/delivery_registration/g_delivery_info/g_delivery_children/delivery_note:label">
+            <value>Please submit this form and submit the death report form for <output value=" /delivery_registration/patient_name "/></value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_delivery_children/number_of_children:jr:constraintMsg">
+            <value>The number of children must be between 1 and 17</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_delivery_children/number_of_children:label">
+            <value>Number of children born</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_delivery_date/delivery_has_assist/no:label">
+            <value>No</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_delivery_date/delivery_has_assist/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_delivery_date/delivery_has_assist:label">
+            <value>Was the birth attended by qualified personnel?</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_delivery_date/delivery_location/health_center:label">
+            <value>Health center</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_delivery_date/delivery_location/home:label">
+            <value>Residence</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_delivery_date/delivery_location/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_delivery_date/delivery_location/rural_maternity:label">
+            <value>Rural Maternity</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_delivery_date/delivery_location:label">
+            <value>What is the place of birth?</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_delivery_date/delivery_location_other:label">
+            <value>Specify (Other)</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_delivery_date/delivery_mother_state/no:label">
+            <value>No</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_delivery_date/delivery_mother_state/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_delivery_date/delivery_mother_state:label">
+            <value>Is the mother alive?</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_delivery_date/delivery_type/caesarean:label">
+            <value>caesarean section</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_delivery_date/delivery_type/normal:label">
+            <value>Normal</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_delivery_date/delivery_type/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_delivery_date/delivery_type:label">
+            <value>What is the type of childbirth?</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_delivery_date/delivery_type_other:label">
+            <value>Specify (Other)</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_delivery_date/s_delivery_date:jr:constraintMsg">
+            <value>The date shouldn't be in the future</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_delivery_date/s_delivery_date:label">
+            <value>What is the due date?</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_abdominal_pain/no:label">
+            <value>No</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_abdominal_pain/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_abdominal_pain:label">
+            <value>Abdominal pain</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_bleeding/no:label">
+            <value>No</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_bleeding/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_bleeding:label">
+            <value>Vaginal spotting/bleeding</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_blurry_vision_loss/no:label">
+            <value>No</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_blurry_vision_loss/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_blurry_vision_loss:label">
+            <value>Blurry or loss of vision</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_breathing/no:label">
+            <value>No</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_breathing/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_breathing:label">
+            <value>Difficulty breathing</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_chest_pain/no:label">
+            <value>No</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_chest_pain/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_chest_pain:label">
+            <value>Chest pain</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_headaches/no:label">
+            <value>No</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_headaches/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_headaches:label">
+            <value>severe headaches</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_pallor/no:label">
+            <value>No</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_pallor/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_pallor:label">
+            <value>Paleness or pallor</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_seizures/no:label">
+            <value>No</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_seizures/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_seizures:label">
+            <value>Seizures/loss of consciousness</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_vomitting/no:label">
+            <value>No</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_vomitting/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_vomitting:label">
+            <value>Vomiting</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_mother_danger_signs/n_mother_danger_sign:label">
+            <value>Does the mother show any of the following signs?</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_mother_danger_signs:label">
+            <value>Mother Danger signs</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info:label">
+            <value>Childbirth Information</value>
+          </text>
+          <text id="/delivery_registration/g_registration_recording/how_patient_found/during_home_visit:label">
+            <value>During the home visit</value>
+          </text>
+          <text id="/delivery_registration/g_registration_recording/how_patient_found/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/delivery_registration/g_registration_recording/how_patient_found/patient_to_chw:label">
+            <value><output value=" /delivery_registration/patient_name "/> went to ASC</value>
+          </text>
+          <text id="/delivery_registration/g_registration_recording/how_patient_found:label">
+            <value>How was <output value=" /delivery_registration/patient_name "/> found?</value>
+          </text>
+          <text id="/delivery_registration/g_registration_recording/how_patient_found_other_reason:label">
+            <value>Specify (Other)</value>
+          </text>
+          <text id="/delivery_registration/g_registration_recording/registration_date:jr:constraintMsg">
+            <value>The date shouldn't be in the future</value>
+          </text>
+          <text id="/delivery_registration/g_registration_recording/registration_date:label">
+            <value>Enter the date the birth registration was made</value>
+          </text>
+          <text id="/delivery_registration/g_registration_recording/registration_done_today/no:label">
+            <value>No</value>
+          </text>
+          <text id="/delivery_registration/g_registration_recording/registration_done_today/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/delivery_registration/g_registration_recording/registration_done_today:label">
+            <value>Was birth registration done today?</value>
+          </text>
+          <text id="/delivery_registration/g_registration_recording/registration_other_reason:label">
+            <value>Specify (Other)</value>
+          </text>
+          <text id="/delivery_registration/g_registration_recording/why_not_today/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/delivery_registration/g_registration_recording/why_not_today/phone_discharged:label">
+            <value>Discharged/Broken Phone</value>
+          </text>
+          <text id="/delivery_registration/g_registration_recording/why_not_today/phone_lost:label">
+            <value>Lost Phone</value>
+          </text>
+          <text id="/delivery_registration/g_registration_recording/why_not_today:label">
+            <value>Why was the recording not made today?</value>
+          </text>
+          <text id="/delivery_registration/g_registration_recording:label">
+            <value>Recording Registration</value>
+          </text>
+          <text id="/delivery_registration/g_summary/n_accepted_date:label">
+            <value>Please indicate the date on which <output value=" /delivery_registration/patient_name "/> agreed to come to the health center</value>
+          </text>
+          <text id="/delivery_registration/g_summary/n_children:label">
+            <value>Number of children born : <output value=" /delivery_registration/g_delivery_info/g_delivery_children/number_of_children "/></value>
+          </text>
+          <text id="/delivery_registration/g_summary/n_danger_signs:label">
+            <value>Presence of danger sign : &lt;b&gt;<output value=" /delivery_registration/m_danger_signs "/>&lt;/b&gt;</value>
+          </text>
+          <text id="/delivery_registration/g_summary/n_date_of_birth:label">
+            <value>Date of Birth : <output value=" /delivery_registration/g_delivery_info/g_delivery_date/s_delivery_date "/></value>
+          </text>
+          <text id="/delivery_registration/g_summary/n_mother:label">
+            <value>Mother : {patient_name}</value>
+          </text>
+          <text id="/delivery_registration/g_summary/n_mother_intro:label">
+            <value>Briefly introduce the mother or guardian to exclusive breastfeeding with breast milk.</value>
+          </text>
+          <text id="/delivery_registration/g_summary/n_next_chw:label">
+            <value>The next referral follow-up visit with the CHW is scheduled: <output value=" /delivery_registration/first_referral_day "/></value>
+          </text>
+          <text id="/delivery_registration/g_summary/n_place_of_birth:label">
+            <value>Place of birth : <output value=" /delivery_registration/delivery_location_label "/></value>
+          </text>
+          <text id="/delivery_registration/g_summary/n_pregnancy_followup:label">
+            <value>The next postnatal followup is scheduled on: <output value=" /delivery_registration/first_delivery_followup_day "/></value>
+          </text>
+          <text id="/delivery_registration/g_summary/n_refer_cscom_child:label">
+            <value>Refer the Children to the CSOM</value>
+          </text>
+          <text id="/delivery_registration/g_summary/n_refer_cscom_mother:label">
+            <value>Refer the Mother to the CSOM</value>
+          </text>
+          <text id="/delivery_registration/g_summary/n_refer_patient:label">
+            <value>Please refer <output value=" /delivery_registration/patient_name "/> to the Health Center for CPoN consultations</value>
+          </text>
+          <text id="/delivery_registration/g_summary/r_followup:label">
+            <value>Next visit&lt;i class="fa fa-flag"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/delivery_registration/g_summary/r_instructions:label">
+            <value>Diagnosis and treatment&lt;i class = "fa fa-stethoscope"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/delivery_registration/g_summary/r_special_instructions:label">
+            <value>Special Instructions&lt;i class = "fa fa-hand-o-right"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/delivery_registration/g_summary/r_summary:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /delivery_registration/patient_name "/>&lt;/h4&gt; &lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /delivery_registration/patient_age_in_years "/> years old&lt;/h5&gt;</value>
+          </text>
+          <text id="/delivery_registration/g_summary:label">
+            <value>Summary</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_care/child_exclusively_breastfed/no:label">
+            <value>No</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_care/child_exclusively_breastfed/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_care/child_exclusively_breastfed:label">
+            <value>Is the newborn exclusively breastfed?</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_care/child_vaccine/bcg_only:label">
+            <value>BCG only</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_care/child_vaccine/bcg_polio:label">
+            <value>BCG and Polio</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_care/child_vaccine/polio_only:label">
+            <value>Polio Only</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_care/child_vaccine/unknown:label">
+            <value>Nothing</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_care/child_vaccine:label">
+            <value>What vaccine has the newborn received?</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_care/mother_breastfeeding_introduced/no:label">
+            <value>No</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_care/mother_breastfeeding_introduced/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_care/mother_breastfeeding_introduced:label">
+            <value>Has the mother or guardian been introduced to breastfeeding within an hour of giving birth?</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_care/n_child_vaccine_advice:label">
+            <value>Please advise/direct the mother or caregiver to the nearest health center where the newborn can be vaccinated.</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_danger_signs/child_temperature:jr:constraintMsg">
+            <value>The temperature must be between 30 and 45 degrees</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_danger_signs/child_temperature:label">
+            <value>What is the newborn's temperature?</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_danger_signs/n_child_has_fever:label">
+            <value>Presence of fever in the child</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_danger_signs/n_child_has_hypothermia:label">
+            <value>Hypothermia in children</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_danger_signs/n_disinfect_thermometer:label">
+            <value>Properly disinfect the thermometer before storing it.</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_danger_signs:label">
+            <value>Danger signs of the Newborn</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_bleeding/no:label">
+            <value>No</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_bleeding/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_bleeding:label">
+            <value>Hemorrhage/bleeding.</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_chest_indrawing/no:label">
+            <value>No</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_chest_indrawing/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_chest_indrawing:label">
+            <value>Severe chest indrawing</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_jaundice/no:label">
+            <value>No</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_jaundice/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_jaundice:label">
+            <value>presence of jaundice on the palms of the hands and soles of the feet</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_lethargy/no:label">
+            <value>No</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_lethargy/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_lethargy:label">
+            <value>Lethargy (lack of spontaneous movement)</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_refusal_to_feed/no:label">
+            <value>No</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_refusal_to_feed/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_refusal_to_feed:label">
+            <value>Refusal to suck/feed</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_seizures/no:label">
+            <value>No</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_seizures/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_seizures:label">
+            <value>History of seizure or convulsion</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_whine/no:label">
+            <value>No</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_whine/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_whine:label">
+            <value>whine</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_yellowing/no:label">
+            <value>No</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_yellowing/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_yellowing:label">
+            <value>Yellowing during the first 24 hours of life presence</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_other_danger_signs/n_child_other_danger_signs_1:label">
+            <value>Does the newborn have one or more of these danger signs?</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_other_danger_signs/n_child_other_danger_signs_2:label">
+            <value>Rapid breathing (more than 60 respiratory movements/min);</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_other_danger_signs/n_child_other_danger_signs_3:label">
+            <value>Fever (temperature above 37.5C);</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_other_danger_signs/n_child_other_danger_signs_4:label">
+            <value>Hypothermia (temperature below 35.5C);</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_other_danger_signs:label">
+            <value>Other newborn danger signs</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_profile_creation/child_alive/no:label">
+            <value>No</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_profile_creation/child_alive/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_profile_creation/child_alive:label">
+            <value>Is the newborn alive?</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_profile_creation/child_firstname:label">
+            <value>First Name</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_profile_creation/child_lastname:label">
+            <value>Last name</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_profile_creation/child_sex/female:label">
+            <value>Female</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_profile_creation/child_sex/male:label">
+            <value>Male</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_profile_creation/child_sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_profile_creation/child_weight:jr:constraintMsg">
+            <value>The newborn must weigh between 1000 and 5000 grams</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_profile_creation/child_weight:label">
+            <value>What is the birth weight (in grams)?</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_profile_creation:label">
+            <value>Creation of the newborn profile</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_respiratory_frequency/child_respiratory_frequency:jr:constraintMsg">
+            <value>The Frequency must be between 30 and 70 degrees</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_respiratory_frequency/child_respiratory_frequency:label">
+            <value>What is the breathing rate of the new?</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_respiratory_frequency/n_child_frequency_rate:label">
+            <value>The frequency is: <output value=" /delivery_registration/gr_child_info/g_child_respiratory_frequency/child_frequency_rate "/></value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_respiratory_frequency/n_child_frequency_rate_advice:label">
+            <value>Referer to the Health Center</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_respiratory_frequency/n_child_respiratory:label">
+            <value>**Press the timer and count the number of breaths for 6 to 30 seconds**</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_respiratory_frequency:label">
+            <value>Breathing Rate</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/r_child_summary/n_child_danger_signs:label">
+            <value>Danger Signs of this newborn: &lt;b&gt;<output value=" /delivery_registration/gr_child_info/g_child_other_danger_signs/m_child_danger_signs "/>&lt;/b&gt;</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/r_child_summary/n_child_firstname:label">
+            <value>Firstname of the Newborn : &lt;b&gt;<output value=" /delivery_registration/gr_child_info/g_child_profile_creation/child_firstname "/>&lt;/b&gt;</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/r_child_summary/n_child_lastname:label">
+            <value>Lastname of the newborn: &lt;b&gt;<output value=" /delivery_registration/gr_child_info/g_child_profile_creation/child_lastname "/>&lt;/b&gt;</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/r_child_summary/n_child_sex:label">
+            <value>Sex : &lt;b&gt;<output value=" /delivery_registration/gr_child_info/g_child_profile_creation/child_sex_label "/>&lt;/b&gt;</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/r_child_summary:label">
+            <value>CHILD SUMMARY</value>
+          </text>
+          <text id="/delivery_registration/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/delivery_registration/inputs/contact/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/delivery_registration/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/delivery_registration/inputs/contact/parent/_id:label">
+            <value>Household ID</value>
+          </text>
+          <text id="/delivery_registration/inputs/contact/parent/parent/_id:label">
+            <value>Area ID</value>
+          </text>
+          <text id="/delivery_registration/inputs/contact/parent/parent/contact/chw_name:label">
+            <value>CHW name</value>
+          </text>
+          <text id="/delivery_registration/inputs/contact/parent/parent/contact/phone:label">
+            <value>CHW phone</value>
+          </text>
+          <text id="/delivery_registration/inputs/contact/parent/parent/parent/_id:label">
+            <value>Health Facility ID</value>
+          </text>
+          <text id="/delivery_registration/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/delivery_registration/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/delivery_registration/inputs/contact/short_name:label">
+            <value>Short Name</value>
+          </text>
+          <text id="/delivery_registration/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/delivery_registration/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/delivery_registration/inputs/user/language:label">
+            <value>Language</value>
+          </text>
+          <text id="/delivery_registration/inputs/user/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/delivery_registration/inputs/user/phone:label">
+            <value>Phone</value>
+          </text>
+          <text id="/delivery_registration/inputs/user:label">
+            <value>User</value>
+          </text>
+        </translation>
+        <translation lang="fr">
+          <text id="/delivery_registration/g_delivery_info/g_delivery_children/delivery_note:label">
+            <value>Veuillez soumettre ce formulaire et soumettre le formulaire rapport de décès pour <output value=" /delivery_registration/patient_name "/></value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_delivery_children/number_of_children:jr:constraintMsg">
+            <value>Le nombre d'enfants doit etre compris entre 1 et 17</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_delivery_children/number_of_children:label">
+            <value>Nombre d'enfant (s) né (s)</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_delivery_date/delivery_has_assist/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_delivery_date/delivery_has_assist/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_delivery_date/delivery_has_assist:label">
+            <value>L'accouchement a-t-il été assisté par du personnel qualifié ?</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_delivery_date/delivery_location/health_center:label">
+            <value>Centre de Santé</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_delivery_date/delivery_location/home:label">
+            <value>Domicile</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_delivery_date/delivery_location/other:label">
+            <value>Autre</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_delivery_date/delivery_location/rural_maternity:label">
+            <value>Maternité Rurale</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_delivery_date/delivery_location:label">
+            <value>Quel est le lieu d'accouchement?</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_delivery_date/delivery_location_other:label">
+            <value>Précisez (Autre)</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_delivery_date/delivery_mother_state/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_delivery_date/delivery_mother_state/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_delivery_date/delivery_mother_state:label">
+            <value>La maman est-elle vivante?</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_delivery_date/delivery_type/caesarean:label">
+            <value>Cesarienne</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_delivery_date/delivery_type/normal:label">
+            <value>Normal</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_delivery_date/delivery_type/other:label">
+            <value>Autre</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_delivery_date/delivery_type:label">
+            <value>Quel est le type d'accouchement?</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_delivery_date/delivery_type_other:label">
+            <value>Précisez (Autre)</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_delivery_date/s_delivery_date:jr:constraintMsg">
+            <value>La date ne doit pas être au future</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_delivery_date/s_delivery_date:label">
+            <value>Quelle est la date d'accouchement?</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_abdominal_pain/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_abdominal_pain/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_abdominal_pain:label">
+            <value>Douleur abdominale</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_bleeding/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_bleeding/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_bleeding:label">
+            <value>Taches vaginales/saignements</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_blurry_vision_loss/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_blurry_vision_loss/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_blurry_vision_loss:label">
+            <value>Flou ou perte de vision</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_breathing/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_breathing/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_breathing:label">
+            <value>Difficulté à respirer</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_chest_pain/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_chest_pain/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_chest_pain:label">
+            <value>Douleur thoracique</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_headaches/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_headaches/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_headaches:label">
+            <value>Maux de tête sévères</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_pallor/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_pallor/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_pallor:label">
+            <value>Pâleur ou pâleur</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_seizures/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_seizures/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_seizures:label">
+            <value>Convulsions/perte de conscience</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_vomitting/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_vomitting/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_vomitting:label">
+            <value>Vomissement</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_mother_danger_signs/n_mother_danger_sign:label">
+            <value>La maman présente t-elle l'un des signes suivants?</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info/g_mother_danger_signs:label">
+            <value>Signes de danger chez la maman</value>
+          </text>
+          <text id="/delivery_registration/g_delivery_info:label">
+            <value>Information sur l'accouchement</value>
+          </text>
+          <text id="/delivery_registration/g_registration_recording/how_patient_found/during_home_visit:label">
+            <value>Au cours de la visite à domicile</value>
+          </text>
+          <text id="/delivery_registration/g_registration_recording/how_patient_found/other:label">
+            <value>Autre</value>
+          </text>
+          <text id="/delivery_registration/g_registration_recording/how_patient_found/patient_to_chw:label">
+            <value><output value=" /delivery_registration/patient_name "/> s'est rendue chez l'ASC</value>
+          </text>
+          <text id="/delivery_registration/g_registration_recording/how_patient_found:label">
+            <value>Comment <output value=" /delivery_registration/patient_name "/> a t-elle été retrouvée?</value>
+          </text>
+          <text id="/delivery_registration/g_registration_recording/how_patient_found_other_reason:label">
+            <value>Précisez (Autre)</value>
+          </text>
+          <text id="/delivery_registration/g_registration_recording/registration_date:jr:constraintMsg">
+            <value>La date ne doit pas être au future</value>
+          </text>
+          <text id="/delivery_registration/g_registration_recording/registration_date:label">
+            <value>Entrez la date à laquelle l'enregistrement de naissance a été fait</value>
+          </text>
+          <text id="/delivery_registration/g_registration_recording/registration_done_today/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/delivery_registration/g_registration_recording/registration_done_today/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/delivery_registration/g_registration_recording/registration_done_today:label">
+            <value>L'enregistrement de naissance a t-il été fait aujourd'hui?</value>
+          </text>
+          <text id="/delivery_registration/g_registration_recording/registration_other_reason:label">
+            <value>Précisez (Autre)</value>
+          </text>
+          <text id="/delivery_registration/g_registration_recording/why_not_today/other:label">
+            <value>Autre</value>
+          </text>
+          <text id="/delivery_registration/g_registration_recording/why_not_today/phone_discharged:label">
+            <value>Téléphone Déchargé/Cassé</value>
+          </text>
+          <text id="/delivery_registration/g_registration_recording/why_not_today/phone_lost:label">
+            <value>Téléphone Perdu</value>
+          </text>
+          <text id="/delivery_registration/g_registration_recording/why_not_today:label">
+            <value>Pourquoi l'enregistrement n'a pas été fait aujourd'hui?</value>
+          </text>
+          <text id="/delivery_registration/g_registration_recording:label">
+            <value>Réalisation de l'enregistrement</value>
+          </text>
+          <text id="/delivery_registration/g_summary/n_accepted_date:label">
+            <value>Veuillez indiquer la date à laquelle <output value=" /delivery_registration/patient_name "/> a accepté de se rendre au centre de santé</value>
+          </text>
+          <text id="/delivery_registration/g_summary/n_children:label">
+            <value>Nombre d'enfant (s) né (s) : <output value=" /delivery_registration/g_delivery_info/g_delivery_children/number_of_children "/></value>
+          </text>
+          <text id="/delivery_registration/g_summary/n_danger_signs:label">
+            <value>Présence de signe de danger : &lt;b&gt;<output value=" /delivery_registration/m_danger_signs "/>&lt;/b&gt;</value>
+          </text>
+          <text id="/delivery_registration/g_summary/n_date_of_birth:label">
+            <value>Date de l'accouchement : <output value=" /delivery_registration/delivery_date_french "/></value>
+          </text>
+          <text id="/delivery_registration/g_summary/n_mother:label">
+            <value>Mère : <output value=" /delivery_registration/patient_name "/></value>
+          </text>
+          <text id="/delivery_registration/g_summary/n_mother_intro:label">
+            <value>Initiez sommairement la maman ou la tutrice sur l'allaitement exclusive au lait maternel.</value>
+          </text>
+          <text id="/delivery_registration/g_summary/n_next_chw:label">
+            <value>La prochaine visite de suivi référence avec l'ASC est prévue: <output value=" /delivery_registration/first_referral_day "/></value>
+          </text>
+          <text id="/delivery_registration/g_summary/n_place_of_birth:label">
+            <value>Lieu de l'accouchement : <output value=" /delivery_registration/delivery_location_label "/></value>
+          </text>
+          <text id="/delivery_registration/g_summary/n_pregnancy_followup:label">
+            <value>La prochaine visite après naissance est prévue le : <output value=" /delivery_registration/first_delivery_followup_day "/></value>
+          </text>
+          <text id="/delivery_registration/g_summary/n_refer_cscom_child:label">
+            <value>Référer la maman au CSCOM pour le nouveau né</value>
+          </text>
+          <text id="/delivery_registration/g_summary/n_refer_cscom_mother:label">
+            <value>Référer la maman au CSCOM</value>
+          </text>
+          <text id="/delivery_registration/g_summary/n_refer_patient:label">
+            <value>Veuillez orienter <output value=" /delivery_registration/patient_name "/> vers le Centre de Santé pour les consultations CPoN</value>
+          </text>
+          <text id="/delivery_registration/g_summary/r_followup:label">
+            <value>Suivi&lt;i class="fa fa-flag"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/delivery_registration/g_summary/r_instructions:label">
+            <value>Diagnostic et traitement&lt;i class = "fa fa-stethoscope"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/delivery_registration/g_summary/r_special_instructions:label">
+            <value>Instructions spéciales&lt;i class = "fa fa-hand-o-right"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/delivery_registration/g_summary/r_summary:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /delivery_registration/patient_name "/>&lt;/h4&gt; &lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /delivery_registration/patient_age_in_years "/> years old&lt;/h5&gt;</value>
+          </text>
+          <text id="/delivery_registration/g_summary:label">
+            <value>Résumé</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_care/child_exclusively_breastfed/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_care/child_exclusively_breastfed/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_care/child_exclusively_breastfed:label">
+            <value>Le nouveau-né est-il exclusivement allaité au lait maternel ?</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_care/child_vaccine/bcg_only:label">
+            <value>BCG uniquement</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_care/child_vaccine/bcg_polio:label">
+            <value>BCG et Polio</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_care/child_vaccine/polio_only:label">
+            <value>Polio Uniquement</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_care/child_vaccine/unknown:label">
+            <value>Aucun</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_care/child_vaccine:label">
+            <value>Quel vaccin le nouveau-né a t-il recu?</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_care/mother_breastfeeding_introduced/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_care/mother_breastfeeding_introduced/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_care/mother_breastfeeding_introduced:label">
+            <value>La maman ou la tutrice a -elle été initiée à l'allaitement dans l'heure suivant l'accouchement ?</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_care/n_child_vaccine_advice:label">
+            <value>Veuillez conseiller/orienter la maman ou la tutrice vers le centre de santé le plus proche où le nouveau-né peut être vacciné.</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_danger_signs/child_temperature:jr:constraintMsg">
+            <value>La temperature doit etre entre 30 et 45 degres</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_danger_signs/child_temperature:label">
+            <value>Quelle est la température du nouveau-né?</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_danger_signs/n_child_has_fever:label">
+            <value>Présence de Fièvre chez l'enfant</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_danger_signs/n_child_has_hypothermia:label">
+            <value>Hypothermie chez l'enfant</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_danger_signs/n_disinfect_thermometer:label">
+            <value>Désinfecter correctement le thermomètre avant de le ranger.</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_danger_signs:label">
+            <value>Signes de danger du nouveau-né</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_bleeding/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_bleeding/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_bleeding:label">
+            <value>Hémorragie/ saignement.</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_chest_indrawing/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_chest_indrawing/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_chest_indrawing:label">
+            <value>Tirage sous-costal sévère</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_jaundice/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_jaundice/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_jaundice:label">
+            <value>présence de jaunisse sur les paumes de la main et les plantes des pieds</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_lethargy/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_lethargy/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_lethargy:label">
+            <value>Léthargie (absence de mouvement spontané)</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_refusal_to_feed/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_refusal_to_feed/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_refusal_to_feed:label">
+            <value>Refus de téter/s'alimenter</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_seizures/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_seizures/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_seizures:label">
+            <value>Antécédents de convulsion ou convulsion</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_whine/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_whine/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_whine:label">
+            <value>Geignement</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_yellowing/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_yellowing/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_yellowing:label">
+            <value>Jaunissement pendant les 24 premières heures de vie présence</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_other_danger_signs/n_child_other_danger_signs_1:label">
+            <value>Le nouveau né présente-t-il un ou plusieurs de ces signes de danger?</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_other_danger_signs/n_child_other_danger_signs_2:label">
+            <value>Respiration rapide (plus de 60 mouvements respiratoires/min) ;</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_other_danger_signs/n_child_other_danger_signs_3:label">
+            <value>Fièvre (température supérieure à 37.5C) ;</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_other_danger_signs/n_child_other_danger_signs_4:label">
+            <value>Hypothermie (température inférieure à 35.5C) ;</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_other_danger_signs:label">
+            <value>Autres signes de dangers chez le nouveau né</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_profile_creation/child_alive/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_profile_creation/child_alive/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_profile_creation/child_alive:label">
+            <value>Le nouveau-né est-il en vie ?</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_profile_creation/child_firstname:label">
+            <value>Prénom de l'enfant</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_profile_creation/child_lastname:label">
+            <value>Nom de l'enfant</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_profile_creation/child_sex/female:label">
+            <value>Feminin</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_profile_creation/child_sex/male:label">
+            <value>Masculin</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_profile_creation/child_sex:label">
+            <value>Sexe</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_profile_creation/child_weight:jr:constraintMsg">
+            <value>Le nouveau-ne doit peser entre 1000 et 5000 grammes</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_profile_creation/child_weight:label">
+            <value>Quel est le poids à la naissance (en grammes)?</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_profile_creation:label">
+            <value>Création du profil du nouveau-né</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_respiratory_frequency/child_respiratory_frequency:jr:constraintMsg">
+            <value>La Frequence doit etre entre 30 et 70 degres</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_respiratory_frequency/child_respiratory_frequency:label">
+            <value>Quelle est la fréquence respiratoire du nouveau?</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_respiratory_frequency/n_child_frequency_rate:label">
+            <value>La fréquence est : <output value=" /delivery_registration/gr_child_info/g_child_respiratory_frequency/child_frequency_rate "/></value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_respiratory_frequency/n_child_frequency_rate_advice:label">
+            <value>Reférer au Centre de Santé</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_respiratory_frequency/n_child_respiratory:label">
+            <value>**Appuyer sur le minuteur et compter le nombre de respirations durant 6 à 30 secondes**</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/g_child_respiratory_frequency:label">
+            <value>Fréquence Respiratoire</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/r_child_summary/n_child_danger_signs:label">
+            <value>Signes de Danger chez l'enfant: &lt;b&gt;<output value=" /delivery_registration/gr_child_info/g_child_other_danger_signs/m_child_danger_signs "/>&lt;/b&gt;</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/r_child_summary/n_child_firstname:label">
+            <value>Prénom de l'enfant : &lt;b&gt;<output value=" /delivery_registration/gr_child_info/g_child_profile_creation/child_firstname "/>&lt;/b&gt;</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/r_child_summary/n_child_lastname:label">
+            <value>Nom de l'enfant : &lt;b&gt;<output value=" /delivery_registration/gr_child_info/g_child_profile_creation/child_lastname "/>&lt;/b&gt;</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/r_child_summary/n_child_sex:label">
+            <value>Sexe : &lt;b&gt;<output value=" /delivery_registration/gr_child_info/g_child_profile_creation/child_sex_label "/>&lt;/b&gt;</value>
+          </text>
+          <text id="/delivery_registration/gr_child_info/r_child_summary:label">
+            <value>RESUME DE L'ENFANT</value>
+          </text>
+          <text id="/delivery_registration/inputs/contact/_id:label">
+            <value>Quel est le nom du Patient ?</value>
+          </text>
+          <text id="/delivery_registration/inputs/contact/date_of_birth:label">
+            <value>Date de naissance</value>
+          </text>
+          <text id="/delivery_registration/inputs/contact/name:label">
+            <value>Nom</value>
+          </text>
+          <text id="/delivery_registration/inputs/contact/parent/_id:label">
+            <value>ID du Menage</value>
+          </text>
+          <text id="/delivery_registration/inputs/contact/parent/parent/_id:label">
+            <value>ID de la Zone</value>
+          </text>
+          <text id="/delivery_registration/inputs/contact/parent/parent/contact/chw_name:label">
+            <value>Nom de l'ASC</value>
+          </text>
+          <text id="/delivery_registration/inputs/contact/parent/parent/contact/phone:label">
+            <value>Telephone de l'ASC</value>
+          </text>
+          <text id="/delivery_registration/inputs/contact/parent/parent/parent/_id:label">
+            <value>Health Facility ID</value>
+          </text>
+          <text id="/delivery_registration/inputs/contact/patient_id:label">
+            <value>ID du Patient</value>
+          </text>
+          <text id="/delivery_registration/inputs/contact/sex:label">
+            <value>Sexe</value>
+          </text>
+          <text id="/delivery_registration/inputs/contact/short_name:label">
+            <value>Nom Court</value>
+          </text>
+          <text id="/delivery_registration/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/delivery_registration/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/delivery_registration/inputs/user/language:label">
+            <value>Langue</value>
+          </text>
+          <text id="/delivery_registration/inputs/user/name:label">
+            <value>Nom</value>
+          </text>
+          <text id="/delivery_registration/inputs/user/phone:label">
+            <value>Telephone</value>
+          </text>
+          <text id="/delivery_registration/inputs/user:label">
+            <value>Utilisateur</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <delivery_registration id="delivery_registration" prefix="J1!delivery_registration!" delimiter="#" version="2022-05-13  16-21">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <name/>
+              <phone/>
+              <language/>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <short_name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <_id/>
+                <parent>
+                  <_id/>
+                  <parent>
+                    <_id/>
+                  </parent>
+                  <contact>
+                    <chw_name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <household_id tag="hidden"/>
+          <area_id tag="hidden"/>
+          <facility_id tag="hidden"/>
+          <patient_age_in_years tag="hidden"/>
+          <patient_uuid tag="hidden"/>
+          <patient_id tag="hidden"/>
+          <patient_name tag="hidden"/>
+          <has_mother_danger_signs/>
+          <m_danger_sign_vaginal/>
+          <m_danger_sign_headache/>
+          <m_danger_sign_abdominal/>
+          <m_danger_sign_vomiting/>
+          <m_mother_danger_sign_pallor/>
+          <m_danger_sign_blurry/>
+          <m_mother_danger_sign_breathing/>
+          <m_mother_danger_sign_seizures/>
+          <m_mother_danger_sign_chest_pain/>
+          <m_danger_signs/>
+          <first_referral_day/>
+          <first_delivery_followup_day/>
+          <delivery_date/>
+          <delivery_date_french/>
+          <delivery_location_label/>
+          <number_of_newborn/>
+          <one_child_has_danger_signs/>
+          <g_registration_recording>
+            <registration_done_today/>
+            <registration_date/>
+            <why_not_today/>
+            <registration_other_reason/>
+            <how_patient_found/>
+            <how_patient_found_other_reason/>
+          </g_registration_recording>
+          <g_delivery_info>
+            <g_delivery_date>
+              <s_delivery_date/>
+              <delivery_location/>
+              <delivery_location_other/>
+              <delivery_has_assist/>
+              <delivery_type/>
+              <delivery_type_other/>
+              <delivery_mother_state/>
+            </g_delivery_date>
+            <g_delivery_children>
+              <number_of_children/>
+              <delivery_note/>
+            </g_delivery_children>
+            <g_mother_danger_signs>
+              <n_mother_danger_sign/>
+              <mother_danger_sign_bleeding/>
+              <mother_danger_sign_headaches/>
+              <mother_danger_sign_abdominal_pain/>
+              <mother_danger_sign_vomitting/>
+              <mother_danger_sign_pallor/>
+              <mother_danger_sign_blurry_vision_loss/>
+              <mother_danger_sign_breathing/>
+              <mother_danger_sign_seizures/>
+              <mother_danger_sign_chest_pain/>
+            </g_mother_danger_signs>
+          </g_delivery_info>
+          <gr_child_info_count/>
+          <gr_child_info jr:template="">
+            <g_child_profile_creation>
+              <child_alive/>
+              <child_firstname/>
+              <child_lastname/>
+              <child_sex/>
+              <child_sex_label/>
+              <child_weight/>
+            </g_child_profile_creation>
+            <g_child_danger_signs>
+              <child_temperature/>
+              <n_disinfect_thermometer/>
+              <n_child_has_fever/>
+              <n_child_has_hypothermia/>
+            </g_child_danger_signs>
+            <g_child_respiratory_frequency>
+              <n_child_respiratory>30</n_child_respiratory>
+              <child_respiratory_frequency/>
+              <child_frequency_rate/>
+              <n_child_frequency_rate/>
+              <n_child_frequency_rate_advice/>
+            </g_child_respiratory_frequency>
+            <g_child_other_danger_signs>
+              <n_child_other_danger_signs_1/>
+              <n_child_other_danger_signs_2/>
+              <n_child_other_danger_signs_3/>
+              <n_child_other_danger_signs_4/>
+              <child_danger_sign_refusal_to_feed/>
+              <c_child_danger_sign_refusal_to_feed/>
+              <child_danger_sign_seizures/>
+              <c_child_danger_sign_seizures/>
+              <child_danger_sign_chest_indrawing/>
+              <c_child_danger_sign_chest_indrawing/>
+              <child_danger_sign_whine/>
+              <c_child_danger_sign_whine/>
+              <child_danger_sign_yellowing/>
+              <c_child_danger_sign_yellowing/>
+              <child_danger_sign_bleeding/>
+              <c_child_danger_sign_bleeding/>
+              <child_danger_sign_lethargy/>
+              <c_child_danger_sign_lethargy/>
+              <child_danger_sign_jaundice/>
+              <c_child_danger_sign_jaundice/>
+              <child_has_danger_signs/>
+              <m_child_danger_signs/>
+              <child_has_danger_signs_boolean/>
+            </g_child_other_danger_signs>
+            <g_child_care>
+              <child_vaccine/>
+              <n_child_vaccine_advice/>
+              <child_exclusively_breastfed/>
+              <child_is_exclusively_breastfed/>
+              <mother_breastfeeding_introduced/>
+              <mother_is_breastfeeding_introduced/>
+            </g_child_care>
+            <r_child_summary_count/>
+            <r_child_summary>
+              <n_child_firstname/>
+              <n_child_lastname/>
+              <n_child_sex/>
+              <n_child_danger_signs/>
+            </r_child_summary>
+          </gr_child_info>
+          <g_summary>
+            <r_summary/>
+            <n_refer_cscom_mother/>
+            <n_refer_cscom_child/>
+            <r_instructions/>
+            <n_mother/>
+            <n_date_of_birth/>
+            <n_place_of_birth/>
+            <n_children/>
+            <n_danger_signs/>
+            <r_special_instructions/>
+            <n_refer_patient/>
+            <n_accepted_date/>
+            <n_mother_intro/>
+            <r_followup/>
+            <n_next_chw/>
+            <n_pregnancy_followup/>
+          </g_summary>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </delivery_registration>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/delivery_registration/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/delivery_registration/inputs/source" type="string"/>
+      <bind nodeset="/delivery_registration/inputs/source_id" type="string"/>
+      <bind nodeset="/delivery_registration/inputs/user/name" type="string"/>
+      <bind nodeset="/delivery_registration/inputs/user/phone" type="string"/>
+      <bind nodeset="/delivery_registration/inputs/user/language" type="string"/>
+      <bind nodeset="/delivery_registration/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/delivery_registration/inputs/contact/name" type="string"/>
+      <bind nodeset="/delivery_registration/inputs/contact/short_name" type="string"/>
+      <bind nodeset="/delivery_registration/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/delivery_registration/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/delivery_registration/inputs/contact/sex" type="string"/>
+      <bind nodeset="/delivery_registration/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/delivery_registration/inputs/contact/parent/parent/_id" type="string"/>
+      <bind nodeset="/delivery_registration/inputs/contact/parent/parent/parent/_id" type="string"/>
+      <bind nodeset="/delivery_registration/inputs/contact/parent/parent/contact/chw_name" type="string"/>
+      <bind nodeset="/delivery_registration/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind nodeset="/delivery_registration/household_id" type="string" calculate="../inputs/contact/parent/_id"/>
+      <bind nodeset="/delivery_registration/area_id" type="string" calculate="../inputs/contact/parent/parent/_id"/>
+      <bind nodeset="/delivery_registration/facility_id" type="string" calculate="../inputs/contact/parent/parent/parent/_id"/>
+      <bind nodeset="/delivery_registration/patient_age_in_years" type="string" calculate="floor( difference-in-months( ../inputs/contact/date_of_birth, today() ) div 12 )"/>
+      <bind nodeset="/delivery_registration/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/delivery_registration/patient_id" type="string" calculate="../inputs/contact/patient_id"/>
+      <bind nodeset="/delivery_registration/patient_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/delivery_registration/has_mother_danger_signs" type="string" calculate="if( /delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_bleeding ='yes' or  /delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_headaches ='yes' or  /delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_abdominal_pain ='yes' or  /delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_vomitting ='yes' or  /delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_pallor ='yes' or  /delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_blurry_vision_loss ='yes' or  /delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_breathing ='yes' or  /delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_seizures ='yes' or  /delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_chest_pain ='yes', 'yes', 'no')"/>
+      <bind nodeset="/delivery_registration/m_danger_sign_vaginal" type="string" calculate="if( /delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_bleeding ='yes',if( /delivery_registration/inputs/user/language ='en', 'Vaginal spotting/bleeding', 'Taches vaginales/saignements'), '')"/>
+      <bind nodeset="/delivery_registration/m_danger_sign_headache" type="string" calculate="if( /delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_headaches ='yes',if( /delivery_registration/inputs/user/language ='en', 'severe headaches', 'Maux de tête sévères'), '')"/>
+      <bind nodeset="/delivery_registration/m_danger_sign_abdominal" type="string" calculate="if( /delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_abdominal_pain ='yes',if( /delivery_registration/inputs/user/language ='en', 'Abdominal pain', 'Douleur abdominale'), '')"/>
+      <bind nodeset="/delivery_registration/m_danger_sign_vomiting" type="string" calculate="if( /delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_vomitting ='yes',if( /delivery_registration/inputs/user/language ='en', 'Vomiting', 'Vomissement'), '')"/>
+      <bind nodeset="/delivery_registration/m_mother_danger_sign_pallor" type="string" calculate="if( /delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_pallor ='yes',if( /delivery_registration/inputs/user/language ='en', 'Paleness or pallor', 'Pâleur ou pâleur'), '')"/>
+      <bind nodeset="/delivery_registration/m_danger_sign_blurry" type="string" calculate="if( /delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_blurry_vision_loss ='yes',if( /delivery_registration/inputs/user/language ='en', 'Blurry or loss of vision', 'Flou ou perte de vision'), '')"/>
+      <bind nodeset="/delivery_registration/m_mother_danger_sign_breathing" type="string" calculate="if( /delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_breathing ='yes',if( /delivery_registration/inputs/user/language ='en', 'Difficulty breathing', 'Difficulté à respirer'), '')"/>
+      <bind nodeset="/delivery_registration/m_mother_danger_sign_seizures" type="string" calculate="if( /delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_seizures ='yes',if( /delivery_registration/inputs/user/language ='en', 'Seizures/loss of consciousness', 'Convulsions/perte de conscience'), '')"/>
+      <bind nodeset="/delivery_registration/m_mother_danger_sign_chest_pain" type="string" calculate="if( /delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_chest_pain ='yes',if( /delivery_registration/inputs/user/language ='en', 'Chest pain', 'Douleur thoracique'), '')"/>
+      <bind nodeset="/delivery_registration/m_danger_signs" type="string" calculate="if( /delivery_registration/has_mother_danger_signs ='yes',
+concat( /delivery_registration/m_danger_sign_vaginal ,
+concat(if( /delivery_registration/m_danger_sign_vaginal !='', ',',''),  /delivery_registration/m_danger_sign_abdominal ),
+concat(if( /delivery_registration/m_danger_sign_abdominal !='', ',',''),  /delivery_registration/m_danger_sign_vomiting ),
+concat(if( /delivery_registration/m_danger_sign_vomiting !='', ',',''),  /delivery_registration/m_mother_danger_sign_pallor ),
+concat(if( /delivery_registration/m_mother_danger_sign_pallor !='', ',',''),  /delivery_registration/m_danger_sign_blurry ),
+concat(if( /delivery_registration/m_danger_sign_blurry !='', ',',''),  /delivery_registration/m_mother_danger_sign_breathing ),
+concat(if( /delivery_registration/m_mother_danger_sign_breathing !='', ',',''),  /delivery_registration/m_mother_danger_sign_seizures ),
+concat(if( /delivery_registration/m_mother_danger_sign_seizures !='', ',',''),  /delivery_registration/m_mother_danger_sign_chest_pain )
+),'')"/>
+      <bind nodeset="/delivery_registration/first_referral_day" type="string" calculate="format-date-time(date-time(decimal-date-time(today())+ 1),&quot;%d/%m/%Y&quot;)"/>
+      <bind nodeset="/delivery_registration/first_delivery_followup_day" type="string" calculate="format-date-time(date-time(decimal-date-time( /delivery_registration/g_delivery_info/g_delivery_date/s_delivery_date )+ 1),&quot;%d/%m/%Y&quot;)"/>
+      <bind nodeset="/delivery_registration/delivery_date" type="string" calculate=" /delivery_registration/g_delivery_info/g_delivery_date/s_delivery_date "/>
+      <bind nodeset="/delivery_registration/delivery_date_french" type="string" calculate="format-date-time( /delivery_registration/g_delivery_info/g_delivery_date/s_delivery_date ,&quot;%d/%m/%Y&quot;)"/>
+      <bind nodeset="/delivery_registration/delivery_location_label" type="string" calculate="jr:choice-name( /delivery_registration/g_delivery_info/g_delivery_date/delivery_location , ' /delivery_registration/g_delivery_info/g_delivery_date/delivery_location ')"/>
+      <bind nodeset="/delivery_registration/number_of_newborn" type="string" calculate=" /delivery_registration/g_delivery_info/g_delivery_children/number_of_children "/>
+      <bind nodeset="/delivery_registration/one_child_has_danger_signs" type="string" calculate="if(max( /delivery_registration/gr_child_info/g_child_other_danger_signs/child_has_danger_signs_boolean )=1, 'yes', 'no')"/>
+      <bind nodeset="/delivery_registration/g_registration_recording/registration_done_today" type="select1"/>
+      <bind nodeset="/delivery_registration/g_registration_recording/registration_date" type="date" jr:constraintMsg="jr:itext('/delivery_registration/g_registration_recording/registration_date:jr:constraintMsg')" constraint=".&lt;today()" relevant=" /delivery_registration/g_registration_recording/registration_done_today ='no'"/>
+      <bind nodeset="/delivery_registration/g_registration_recording/why_not_today" type="select1" relevant=" /delivery_registration/g_registration_recording/registration_done_today ='no'"/>
+      <bind nodeset="/delivery_registration/g_registration_recording/registration_other_reason" type="string" relevant=" /delivery_registration/g_registration_recording/why_not_today ='other'"/>
+      <bind nodeset="/delivery_registration/g_registration_recording/how_patient_found" type="select1"/>
+      <bind nodeset="/delivery_registration/g_registration_recording/how_patient_found_other_reason" type="string" relevant=" /delivery_registration/g_registration_recording/how_patient_found ='other'"/>
+      <bind nodeset="/delivery_registration/g_delivery_info/g_delivery_date/s_delivery_date" type="date" jr:constraintMsg="jr:itext('/delivery_registration/g_delivery_info/g_delivery_date/s_delivery_date:jr:constraintMsg')" required="true()" constraint=".&lt;=today()"/>
+      <bind nodeset="/delivery_registration/g_delivery_info/g_delivery_date/delivery_location" type="select1" required="true()"/>
+      <bind nodeset="/delivery_registration/g_delivery_info/g_delivery_date/delivery_location_other" type="string" relevant=" /delivery_registration/g_delivery_info/g_delivery_date/delivery_location ='other'" required="true()"/>
+      <bind nodeset="/delivery_registration/g_delivery_info/g_delivery_date/delivery_has_assist" type="select1" relevant=" /delivery_registration/g_delivery_info/g_delivery_date/delivery_location ='health_center' or  /delivery_registration/g_delivery_info/g_delivery_date/delivery_location ='rural_maternity' or  /delivery_registration/g_delivery_info/g_delivery_date/delivery_location ='other'" required="true()"/>
+      <bind nodeset="/delivery_registration/g_delivery_info/g_delivery_date/delivery_type" type="select1" required="true()"/>
+      <bind nodeset="/delivery_registration/g_delivery_info/g_delivery_date/delivery_type_other" type="string" relevant=" /delivery_registration/g_delivery_info/g_delivery_date/delivery_type ='other'"/>
+      <bind nodeset="/delivery_registration/g_delivery_info/g_delivery_date/delivery_mother_state" type="select1" required="true()"/>
+      <bind nodeset="/delivery_registration/g_delivery_info/g_delivery_children/number_of_children" type="int" jr:constraintMsg="jr:itext('/delivery_registration/g_delivery_info/g_delivery_children/number_of_children:jr:constraintMsg')" required="true()" constraint=".&gt;=1 and .&lt;=17"/>
+      <bind nodeset="/delivery_registration/g_delivery_info/g_delivery_children/delivery_note" readonly="true()" type="string" relevant=" /delivery_registration/g_delivery_info/g_delivery_date/delivery_mother_state ='no'"/>
+      <bind nodeset="/delivery_registration/g_delivery_info/g_mother_danger_signs" relevant=" /delivery_registration/g_delivery_info/g_delivery_date/delivery_mother_state ='yes'"/>
+      <bind nodeset="/delivery_registration/g_delivery_info/g_mother_danger_signs/n_mother_danger_sign" readonly="true()" type="string"/>
+      <bind nodeset="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_bleeding" type="select1" required="true()"/>
+      <bind nodeset="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_headaches" type="select1" required="true()"/>
+      <bind nodeset="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_abdominal_pain" type="select1" required="true()"/>
+      <bind nodeset="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_vomitting" type="select1" required="true()"/>
+      <bind nodeset="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_pallor" type="select1" required="true()"/>
+      <bind nodeset="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_blurry_vision_loss" type="select1" required="true()"/>
+      <bind nodeset="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_breathing" type="select1" required="true()"/>
+      <bind nodeset="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_seizures" type="select1" required="true()"/>
+      <bind nodeset="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_chest_pain" type="select1" required="true()"/>
+      <bind nodeset="/delivery_registration/gr_child_info_count" type="string" readonly="true()" calculate=" /delivery_registration/g_delivery_info/g_delivery_children/number_of_children "/>
+      <bind nodeset="/delivery_registration/gr_child_info/g_child_profile_creation/child_alive" type="select1" required="true()"/>
+      <bind nodeset="/delivery_registration/gr_child_info/g_child_profile_creation/child_firstname" type="string" relevant=" /delivery_registration/gr_child_info/g_child_profile_creation/child_alive ='yes'" required="true()"/>
+      <bind nodeset="/delivery_registration/gr_child_info/g_child_profile_creation/child_lastname" type="string" relevant=" /delivery_registration/gr_child_info/g_child_profile_creation/child_alive ='yes'" required="true()"/>
+      <bind nodeset="/delivery_registration/gr_child_info/g_child_profile_creation/child_sex" type="select1" relevant=" /delivery_registration/gr_child_info/g_child_profile_creation/child_alive ='yes'" required="true()"/>
+      <bind nodeset="/delivery_registration/gr_child_info/g_child_profile_creation/child_sex_label" type="string" calculate="if( /delivery_registration/gr_child_info/g_child_profile_creation/child_sex ='male', if( /delivery_registration/inputs/user/language ='en', 'Male', 'Masculin'), if( /delivery_registration/inputs/user/language ='en', 'Female', 'Feminin'))"/>
+      <bind nodeset="/delivery_registration/gr_child_info/g_child_profile_creation/child_weight" type="int" relevant=" /delivery_registration/gr_child_info/g_child_profile_creation/child_alive ='yes'" required="true()" jr:constraintMsg="jr:itext('/delivery_registration/gr_child_info/g_child_profile_creation/child_weight:jr:constraintMsg')" constraint=".&gt;=1000 and .&lt;=5000"/>
+      <bind nodeset="/delivery_registration/gr_child_info/g_child_danger_signs" relevant=" /delivery_registration/gr_child_info/g_child_profile_creation/child_alive ='yes'"/>
+      <bind nodeset="/delivery_registration/gr_child_info/g_child_danger_signs/child_temperature" type="decimal" jr:constraintMsg="jr:itext('/delivery_registration/gr_child_info/g_child_danger_signs/child_temperature:jr:constraintMsg')" required="true()" constraint=".&gt;=30 and .&lt;=45"/>
+      <bind nodeset="/delivery_registration/gr_child_info/g_child_danger_signs/n_disinfect_thermometer" readonly="true()" type="string"/>
+      <bind nodeset="/delivery_registration/gr_child_info/g_child_danger_signs/n_child_has_fever" readonly="true()" type="string" relevant=" /delivery_registration/gr_child_info/g_child_danger_signs/child_temperature &gt;=37.5"/>
+      <bind nodeset="/delivery_registration/gr_child_info/g_child_danger_signs/n_child_has_hypothermia" readonly="true()" type="string" relevant=" /delivery_registration/gr_child_info/g_child_danger_signs/child_temperature  != '' and  /delivery_registration/gr_child_info/g_child_danger_signs/child_temperature  &lt;= 35.5"/>
+      <bind nodeset="/delivery_registration/gr_child_info/g_child_respiratory_frequency" relevant=" /delivery_registration/gr_child_info/g_child_profile_creation/child_alive ='yes'"/>
+      <bind nodeset="/delivery_registration/gr_child_info/g_child_respiratory_frequency/n_child_respiratory" readonly="true()" type="string"/>
+      <bind nodeset="/delivery_registration/gr_child_info/g_child_respiratory_frequency/child_respiratory_frequency" type="int" jr:constraintMsg="jr:itext('/delivery_registration/gr_child_info/g_child_respiratory_frequency/child_respiratory_frequency:jr:constraintMsg')" required="true()" constraint=".&gt;=30 and .&lt;=70"/>
+      <bind nodeset="/delivery_registration/gr_child_info/g_child_respiratory_frequency/child_frequency_rate" type="string" calculate="if( /delivery_registration/gr_child_info/g_child_respiratory_frequency/child_respiratory_frequency  &gt;=60, 'Rapide', 'Normale')"/>
+      <bind nodeset="/delivery_registration/gr_child_info/g_child_respiratory_frequency/n_child_frequency_rate" readonly="true()" type="string" relevant=" /delivery_registration/gr_child_info/g_child_respiratory_frequency/child_respiratory_frequency  != '' and ( /delivery_registration/gr_child_info/g_child_respiratory_frequency/child_respiratory_frequency  &gt;=30 and  /delivery_registration/gr_child_info/g_child_respiratory_frequency/child_respiratory_frequency  &lt;=70)"/>
+      <bind nodeset="/delivery_registration/gr_child_info/g_child_respiratory_frequency/n_child_frequency_rate_advice" readonly="true()" type="string" relevant=" /delivery_registration/gr_child_info/g_child_respiratory_frequency/child_frequency_rate ='Rapide'"/>
+      <bind nodeset="/delivery_registration/gr_child_info/g_child_other_danger_signs" relevant=" /delivery_registration/gr_child_info/g_child_profile_creation/child_alive ='yes'" required="true()"/>
+      <bind nodeset="/delivery_registration/gr_child_info/g_child_other_danger_signs/n_child_other_danger_signs_1" readonly="true()" type="string"/>
+      <bind nodeset="/delivery_registration/gr_child_info/g_child_other_danger_signs/n_child_other_danger_signs_2" readonly="true()" type="string" relevant=" /delivery_registration/gr_child_info/g_child_respiratory_frequency/child_frequency_rate ='Rapide'"/>
+      <bind nodeset="/delivery_registration/gr_child_info/g_child_other_danger_signs/n_child_other_danger_signs_3" readonly="true()" type="string" relevant=" /delivery_registration/gr_child_info/g_child_danger_signs/child_temperature &gt;=37.5"/>
+      <bind nodeset="/delivery_registration/gr_child_info/g_child_other_danger_signs/n_child_other_danger_signs_4" readonly="true()" type="string" relevant=" /delivery_registration/gr_child_info/g_child_danger_signs/child_temperature  &lt;= 35.5"/>
+      <bind nodeset="/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_refusal_to_feed" type="select1" required="true()"/>
+      <bind nodeset="/delivery_registration/gr_child_info/g_child_other_danger_signs/c_child_danger_sign_refusal_to_feed" type="string" calculate="if( /delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_refusal_to_feed ='yes',if( /delivery_registration/inputs/user/language ='en', 'Refusal to suck/feed','Refus de téter/salimenter ' ), '')"/>
+      <bind nodeset="/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_seizures" type="select1" required="true()"/>
+      <bind nodeset="/delivery_registration/gr_child_info/g_child_other_danger_signs/c_child_danger_sign_seizures" type="string" calculate="if( /delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_seizures ='yes',if( /delivery_registration/inputs/user/language ='en', 'History of seizure or convulsion','Antécédents de convulsion ou convulsion ' ), '')"/>
+      <bind nodeset="/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_chest_indrawing" type="select1" required="true()"/>
+      <bind nodeset="/delivery_registration/gr_child_info/g_child_other_danger_signs/c_child_danger_sign_chest_indrawing" type="string" calculate="if( /delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_chest_indrawing ='yes',if( /delivery_registration/inputs/user/language ='en', 'Severe chest indrawing','Tirage sous-costal sévère ' ), '')"/>
+      <bind nodeset="/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_whine" type="select1" required="true()"/>
+      <bind nodeset="/delivery_registration/gr_child_info/g_child_other_danger_signs/c_child_danger_sign_whine" type="string" calculate="if( /delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_whine ='yes',if( /delivery_registration/inputs/user/language ='en', 'Whine','Geignement' ), '')"/>
+      <bind nodeset="/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_yellowing" type="select1" relevant=" /delivery_registration/patient_age_in_years  &lt;= 0.000228311" required="true()"/>
+      <bind nodeset="/delivery_registration/gr_child_info/g_child_other_danger_signs/c_child_danger_sign_yellowing" type="string" calculate="if( /delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_yellowing ='yes',if( /delivery_registration/inputs/user/language ='en', 'Yellowing during the first 24 hours of life presence','Jaunissement pendant les 24 premières heures de vie présence ' ), '')"/>
+      <bind nodeset="/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_bleeding" type="select1" required="true()"/>
+      <bind nodeset="/delivery_registration/gr_child_info/g_child_other_danger_signs/c_child_danger_sign_bleeding" type="string" calculate="if( /delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_bleeding ='yes',if( /delivery_registration/inputs/user/language ='en', 'Hemorrhage/bleeding.','Hémorragie/ saignement. ' ), '')"/>
+      <bind nodeset="/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_lethargy" type="select1" required="true()"/>
+      <bind nodeset="/delivery_registration/gr_child_info/g_child_other_danger_signs/c_child_danger_sign_lethargy" type="string" calculate="if( /delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_lethargy ='yes',if( /delivery_registration/inputs/user/language ='en', 'Lethargy (lack of spontaneous movement)','Léthargie (absence de mouvement spontané)' ), '')"/>
+      <bind nodeset="/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_jaundice" type="select1" relevant=" /delivery_registration/patient_age_in_years  &gt;=0.00547945 and  /delivery_registration/patient_age_in_years &lt;=0.0767123" required="true()"/>
+      <bind nodeset="/delivery_registration/gr_child_info/g_child_other_danger_signs/c_child_danger_sign_jaundice" type="string" calculate="if( /delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_jaundice ='yes',if( /delivery_registration/inputs/user/language ='en', 'presence of jaundice on the palms of the hands and soles of the feet','présence de jaunisse sur les paumes de la main et les plantes des pieds' ), '')"/>
+      <bind nodeset="/delivery_registration/gr_child_info/g_child_other_danger_signs/child_has_danger_signs" type="string" calculate="if( /delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_refusal_to_feed ='yes' or  /delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_seizures ='yes' or  /delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_chest_indrawing ='yes' or  /delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_whine ='yes' or  /delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_yellowing ='yes' or  /delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_bleeding ='yes' or  /delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_lethargy ='yes' or  /delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_jaundice ='yes', 'yes', 'no')"/>
+      <bind nodeset="/delivery_registration/gr_child_info/g_child_other_danger_signs/m_child_danger_signs" type="string" calculate="if( /delivery_registration/gr_child_info/g_child_other_danger_signs/child_has_danger_signs ='yes',
+concat( /delivery_registration/gr_child_info/g_child_other_danger_signs/c_child_danger_sign_refusal_to_feed ,
+concat(if( /delivery_registration/gr_child_info/g_child_other_danger_signs/c_child_danger_sign_seizures !='', ',',''),  /delivery_registration/gr_child_info/g_child_other_danger_signs/c_child_danger_sign_seizures ),
+concat(if( /delivery_registration/gr_child_info/g_child_other_danger_signs/c_child_danger_sign_chest_indrawing !='', ',',''),  /delivery_registration/gr_child_info/g_child_other_danger_signs/c_child_danger_sign_chest_indrawing ),
+concat(if( /delivery_registration/gr_child_info/g_child_other_danger_signs/c_child_danger_sign_whine !='', ',',''),  /delivery_registration/gr_child_info/g_child_other_danger_signs/c_child_danger_sign_whine ),
+concat(if( /delivery_registration/gr_child_info/g_child_other_danger_signs/c_child_danger_sign_yellowing !='', ',',''),  /delivery_registration/gr_child_info/g_child_other_danger_signs/c_child_danger_sign_yellowing ),
+concat(if( /delivery_registration/gr_child_info/g_child_other_danger_signs/c_child_danger_sign_bleeding !='', ',',''),  /delivery_registration/gr_child_info/g_child_other_danger_signs/c_child_danger_sign_bleeding ),
+concat(if( /delivery_registration/gr_child_info/g_child_other_danger_signs/c_child_danger_sign_lethargy !='', ',',''),  /delivery_registration/gr_child_info/g_child_other_danger_signs/c_child_danger_sign_lethargy ),
+concat(if( /delivery_registration/gr_child_info/g_child_other_danger_signs/c_child_danger_sign_jaundice !='', ',',''),  /delivery_registration/gr_child_info/g_child_other_danger_signs/c_child_danger_sign_jaundice )
+),'')"/>
+      <bind nodeset="/delivery_registration/gr_child_info/g_child_other_danger_signs/child_has_danger_signs_boolean" type="string" calculate="if( /delivery_registration/gr_child_info/g_child_other_danger_signs/child_has_danger_signs ='yes', 1, 0)"/>
+      <bind nodeset="/delivery_registration/gr_child_info/g_child_care" relevant=" /delivery_registration/gr_child_info/g_child_profile_creation/child_alive ='yes'"/>
+      <bind nodeset="/delivery_registration/gr_child_info/g_child_care/child_vaccine" type="select1" required="true()"/>
+      <bind nodeset="/delivery_registration/gr_child_info/g_child_care/n_child_vaccine_advice" readonly="true()" type="string" relevant=" /delivery_registration/gr_child_info/g_child_care/child_vaccine ='unknown'"/>
+      <bind nodeset="/delivery_registration/gr_child_info/g_child_care/child_exclusively_breastfed" type="select1" required="true()"/>
+      <bind nodeset="/delivery_registration/gr_child_info/g_child_care/child_is_exclusively_breastfed" type="string" calculate="if( /delivery_registration/gr_child_info/g_child_care/child_exclusively_breastfed ='yes',1,0)"/>
+      <bind nodeset="/delivery_registration/gr_child_info/g_child_care/mother_breastfeeding_introduced" type="select1" required="true()"/>
+      <bind nodeset="/delivery_registration/gr_child_info/g_child_care/mother_is_breastfeeding_introduced" type="string" calculate="if( /delivery_registration/gr_child_info/g_child_care/mother_breastfeeding_introduced ='yes',1,0)"/>
+      <bind nodeset="/delivery_registration/gr_child_info/r_child_summary_count" type="string" readonly="true()" calculate=" /delivery_registration/g_delivery_info/g_delivery_children/number_of_children "/>
+      <bind nodeset="/delivery_registration/gr_child_info/r_child_summary/n_child_firstname" readonly="true()" type="string"/>
+      <bind nodeset="/delivery_registration/gr_child_info/r_child_summary/n_child_lastname" readonly="true()" type="string"/>
+      <bind nodeset="/delivery_registration/gr_child_info/r_child_summary/n_child_sex" readonly="true()" type="string"/>
+      <bind nodeset="/delivery_registration/gr_child_info/r_child_summary/n_child_danger_signs" readonly="true()" type="string" relevant=" /delivery_registration/gr_child_info/g_child_other_danger_signs/child_has_danger_signs  = 'yes'"/>
+      <bind nodeset="/delivery_registration/g_summary/r_summary" readonly="true()" type="string"/>
+      <bind nodeset="/delivery_registration/g_summary/n_refer_cscom_mother" readonly="true()" type="string" relevant=" /delivery_registration/has_mother_danger_signs  = 'yes'"/>
+      <bind nodeset="/delivery_registration/g_summary/n_refer_cscom_child" readonly="true()" type="string" relevant=" /delivery_registration/one_child_has_danger_signs  = 'yes'"/>
+      <bind nodeset="/delivery_registration/g_summary/r_instructions" readonly="true()" type="string"/>
+      <bind nodeset="/delivery_registration/g_summary/n_mother" readonly="true()" type="string"/>
+      <bind nodeset="/delivery_registration/g_summary/n_date_of_birth" readonly="true()" type="string"/>
+      <bind nodeset="/delivery_registration/g_summary/n_place_of_birth" readonly="true()" type="string"/>
+      <bind nodeset="/delivery_registration/g_summary/n_children" readonly="true()" type="string"/>
+      <bind nodeset="/delivery_registration/g_summary/n_danger_signs" readonly="true()" type="string" relevant=" /delivery_registration/has_mother_danger_signs  = 'yes'"/>
+      <bind nodeset="/delivery_registration/g_summary/r_special_instructions" readonly="true()" type="string"/>
+      <bind nodeset="/delivery_registration/g_summary/n_refer_patient" readonly="true()" type="string" relevant=" /delivery_registration/g_delivery_info/g_delivery_date/delivery_location ='home' or  /delivery_registration/g_delivery_info/g_delivery_date/delivery_location ='other'"/>
+      <bind nodeset="/delivery_registration/g_summary/n_accepted_date" readonly="true()" type="string"/>
+      <bind nodeset="/delivery_registration/g_summary/n_mother_intro" readonly="true()" type="string" relevant="sum( /delivery_registration/gr_child_info/g_child_care/child_is_exclusively_breastfed ) = 0 or sum( /delivery_registration/gr_child_info/g_child_care/mother_is_breastfeeding_introduced ) = 0"/>
+      <bind nodeset="/delivery_registration/g_summary/r_followup" readonly="true()" type="string"/>
+      <bind nodeset="/delivery_registration/g_summary/n_next_chw" readonly="true()" type="string" relevant=" /delivery_registration/has_mother_danger_signs  = 'yes' or  /delivery_registration/one_child_has_danger_signs ='yes'"/>
+      <bind nodeset="/delivery_registration/g_summary/n_pregnancy_followup" readonly="true()" type="string" relevant=" /delivery_registration/has_mother_danger_signs  != 'yes' and  /delivery_registration/one_child_has_danger_signs  != 'yes'"/>
+      <bind nodeset="/delivery_registration/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/delivery_registration/inputs">
+      <group ref="/delivery_registration/inputs/user">
+        <label ref="jr:itext('/delivery_registration/inputs/user:label')"/>
+        <input ref="/delivery_registration/inputs/user/language">
+          <label ref="jr:itext('/delivery_registration/inputs/user/language:label')"/>
+        </input>
+      </group>
+      <group ref="/delivery_registration/inputs/contact">
+        <input appearance="db-object" ref="/delivery_registration/inputs/contact/_id">
+          <label ref="jr:itext('/delivery_registration/inputs/contact/_id:label')"/>
+        </input>
+        <group ref="/delivery_registration/inputs/contact/parent">
+          <input appearance="hidden" ref="/delivery_registration/inputs/contact/parent/_id">
+            <label ref="jr:itext('/delivery_registration/inputs/contact/parent/_id:label')"/>
+          </input>
+          <group ref="/delivery_registration/inputs/contact/parent/parent">
+            <input appearance="hidden" ref="/delivery_registration/inputs/contact/parent/parent/_id">
+              <label ref="jr:itext('/delivery_registration/inputs/contact/parent/parent/_id:label')"/>
+            </input>
+            <group ref="/delivery_registration/inputs/contact/parent/parent/parent">
+              <input appearance="hidden" ref="/delivery_registration/inputs/contact/parent/parent/parent/_id">
+                <label ref="jr:itext('/delivery_registration/inputs/contact/parent/parent/parent/_id:label')"/>
+              </input>
+            </group>
+            <group ref="/delivery_registration/inputs/contact/parent/parent/contact"/>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/delivery_registration/g_registration_recording">
+      <label ref="jr:itext('/delivery_registration/g_registration_recording:label')"/>
+      <select1 ref="/delivery_registration/g_registration_recording/registration_done_today">
+        <label ref="jr:itext('/delivery_registration/g_registration_recording/registration_done_today:label')"/>
+        <item>
+          <label ref="jr:itext('/delivery_registration/g_registration_recording/registration_done_today/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/delivery_registration/g_registration_recording/registration_done_today/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/delivery_registration/g_registration_recording/registration_date">
+        <label ref="jr:itext('/delivery_registration/g_registration_recording/registration_date:label')"/>
+      </input>
+      <select1 ref="/delivery_registration/g_registration_recording/why_not_today">
+        <label ref="jr:itext('/delivery_registration/g_registration_recording/why_not_today:label')"/>
+        <item>
+          <label ref="jr:itext('/delivery_registration/g_registration_recording/why_not_today/phone_discharged:label')"/>
+          <value>phone_discharged</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/delivery_registration/g_registration_recording/why_not_today/phone_lost:label')"/>
+          <value>phone_lost</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/delivery_registration/g_registration_recording/why_not_today/other:label')"/>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/delivery_registration/g_registration_recording/registration_other_reason">
+        <label ref="jr:itext('/delivery_registration/g_registration_recording/registration_other_reason:label')"/>
+      </input>
+      <select1 ref="/delivery_registration/g_registration_recording/how_patient_found">
+        <label ref="jr:itext('/delivery_registration/g_registration_recording/how_patient_found:label')"/>
+        <item>
+          <label ref="jr:itext('/delivery_registration/g_registration_recording/how_patient_found/during_home_visit:label')"/>
+          <value>during_home_visit</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/delivery_registration/g_registration_recording/how_patient_found/patient_to_chw:label')"/>
+          <value>patient_to_chw</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/delivery_registration/g_registration_recording/how_patient_found/other:label')"/>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/delivery_registration/g_registration_recording/how_patient_found_other_reason">
+        <label ref="jr:itext('/delivery_registration/g_registration_recording/how_patient_found_other_reason:label')"/>
+      </input>
+    </group>
+    <group ref="/delivery_registration/g_delivery_info">
+      <label ref="jr:itext('/delivery_registration/g_delivery_info:label')"/>
+      <group appearance="field-list" ref="/delivery_registration/g_delivery_info/g_delivery_date">
+        <input ref="/delivery_registration/g_delivery_info/g_delivery_date/s_delivery_date">
+          <label ref="jr:itext('/delivery_registration/g_delivery_info/g_delivery_date/s_delivery_date:label')"/>
+        </input>
+        <select1 ref="/delivery_registration/g_delivery_info/g_delivery_date/delivery_location">
+          <label ref="jr:itext('/delivery_registration/g_delivery_info/g_delivery_date/delivery_location:label')"/>
+          <item>
+            <label ref="jr:itext('/delivery_registration/g_delivery_info/g_delivery_date/delivery_location/health_center:label')"/>
+            <value>health_center</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/delivery_registration/g_delivery_info/g_delivery_date/delivery_location/rural_maternity:label')"/>
+            <value>rural_maternity</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/delivery_registration/g_delivery_info/g_delivery_date/delivery_location/home:label')"/>
+            <value>home</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/delivery_registration/g_delivery_info/g_delivery_date/delivery_location/other:label')"/>
+            <value>other</value>
+          </item>
+        </select1>
+        <input ref="/delivery_registration/g_delivery_info/g_delivery_date/delivery_location_other">
+          <label ref="jr:itext('/delivery_registration/g_delivery_info/g_delivery_date/delivery_location_other:label')"/>
+        </input>
+        <select1 ref="/delivery_registration/g_delivery_info/g_delivery_date/delivery_has_assist">
+          <label ref="jr:itext('/delivery_registration/g_delivery_info/g_delivery_date/delivery_has_assist:label')"/>
+          <item>
+            <label ref="jr:itext('/delivery_registration/g_delivery_info/g_delivery_date/delivery_has_assist/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/delivery_registration/g_delivery_info/g_delivery_date/delivery_has_assist/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+        <select1 ref="/delivery_registration/g_delivery_info/g_delivery_date/delivery_type">
+          <label ref="jr:itext('/delivery_registration/g_delivery_info/g_delivery_date/delivery_type:label')"/>
+          <item>
+            <label ref="jr:itext('/delivery_registration/g_delivery_info/g_delivery_date/delivery_type/normal:label')"/>
+            <value>normal</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/delivery_registration/g_delivery_info/g_delivery_date/delivery_type/caesarean:label')"/>
+            <value>caesarean</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/delivery_registration/g_delivery_info/g_delivery_date/delivery_type/other:label')"/>
+            <value>other</value>
+          </item>
+        </select1>
+        <input ref="/delivery_registration/g_delivery_info/g_delivery_date/delivery_type_other">
+          <label ref="jr:itext('/delivery_registration/g_delivery_info/g_delivery_date/delivery_type_other:label')"/>
+        </input>
+        <select1 ref="/delivery_registration/g_delivery_info/g_delivery_date/delivery_mother_state">
+          <label ref="jr:itext('/delivery_registration/g_delivery_info/g_delivery_date/delivery_mother_state:label')"/>
+          <item>
+            <label ref="jr:itext('/delivery_registration/g_delivery_info/g_delivery_date/delivery_mother_state/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/delivery_registration/g_delivery_info/g_delivery_date/delivery_mother_state/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+      </group>
+      <group appearance="field-list" ref="/delivery_registration/g_delivery_info/g_delivery_children">
+        <input ref="/delivery_registration/g_delivery_info/g_delivery_children/number_of_children">
+          <label ref="jr:itext('/delivery_registration/g_delivery_info/g_delivery_children/number_of_children:label')"/>
+        </input>
+        <input ref="/delivery_registration/g_delivery_info/g_delivery_children/delivery_note">
+          <label ref="jr:itext('/delivery_registration/g_delivery_info/g_delivery_children/delivery_note:label')"/>
+        </input>
+      </group>
+      <group appearance="field-list" ref="/delivery_registration/g_delivery_info/g_mother_danger_signs">
+        <label ref="jr:itext('/delivery_registration/g_delivery_info/g_mother_danger_signs:label')"/>
+        <input ref="/delivery_registration/g_delivery_info/g_mother_danger_signs/n_mother_danger_sign">
+          <label ref="jr:itext('/delivery_registration/g_delivery_info/g_mother_danger_signs/n_mother_danger_sign:label')"/>
+        </input>
+        <select1 ref="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_bleeding">
+          <label ref="jr:itext('/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_bleeding:label')"/>
+          <item>
+            <label ref="jr:itext('/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_bleeding/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_bleeding/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+        <select1 ref="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_headaches">
+          <label ref="jr:itext('/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_headaches:label')"/>
+          <item>
+            <label ref="jr:itext('/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_headaches/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_headaches/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+        <select1 ref="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_abdominal_pain">
+          <label ref="jr:itext('/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_abdominal_pain:label')"/>
+          <item>
+            <label ref="jr:itext('/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_abdominal_pain/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_abdominal_pain/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+        <select1 ref="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_vomitting">
+          <label ref="jr:itext('/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_vomitting:label')"/>
+          <item>
+            <label ref="jr:itext('/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_vomitting/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_vomitting/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+        <select1 ref="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_pallor">
+          <label ref="jr:itext('/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_pallor:label')"/>
+          <item>
+            <label ref="jr:itext('/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_pallor/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_pallor/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+        <select1 ref="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_blurry_vision_loss">
+          <label ref="jr:itext('/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_blurry_vision_loss:label')"/>
+          <item>
+            <label ref="jr:itext('/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_blurry_vision_loss/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_blurry_vision_loss/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+        <select1 ref="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_breathing">
+          <label ref="jr:itext('/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_breathing:label')"/>
+          <item>
+            <label ref="jr:itext('/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_breathing/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_breathing/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+        <select1 ref="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_seizures">
+          <label ref="jr:itext('/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_seizures:label')"/>
+          <item>
+            <label ref="jr:itext('/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_seizures/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_seizures/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+        <select1 ref="/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_chest_pain">
+          <label ref="jr:itext('/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_chest_pain:label')"/>
+          <item>
+            <label ref="jr:itext('/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_chest_pain/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/delivery_registration/g_delivery_info/g_mother_danger_signs/mother_danger_sign_chest_pain/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+      </group>
+    </group>
+    <group ref="/delivery_registration/gr_child_info">
+      <label ref="jr:itext('/delivery_registration/gr_child_info:label')"/>
+      <repeat nodeset="/delivery_registration/gr_child_info" jr:count=" /delivery_registration/gr_child_info_count ">
+        <group appearance="field-list" ref="/delivery_registration/gr_child_info/g_child_profile_creation">
+          <label ref="jr:itext('/delivery_registration/gr_child_info/g_child_profile_creation:label')"/>
+          <select1 ref="/delivery_registration/gr_child_info/g_child_profile_creation/child_alive">
+            <label ref="jr:itext('/delivery_registration/gr_child_info/g_child_profile_creation/child_alive:label')"/>
+            <item>
+              <label ref="jr:itext('/delivery_registration/gr_child_info/g_child_profile_creation/child_alive/yes:label')"/>
+              <value>yes</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/delivery_registration/gr_child_info/g_child_profile_creation/child_alive/no:label')"/>
+              <value>no</value>
+            </item>
+          </select1>
+          <input ref="/delivery_registration/gr_child_info/g_child_profile_creation/child_firstname">
+            <label ref="jr:itext('/delivery_registration/gr_child_info/g_child_profile_creation/child_firstname:label')"/>
+          </input>
+          <input ref="/delivery_registration/gr_child_info/g_child_profile_creation/child_lastname">
+            <label ref="jr:itext('/delivery_registration/gr_child_info/g_child_profile_creation/child_lastname:label')"/>
+          </input>
+          <select1 ref="/delivery_registration/gr_child_info/g_child_profile_creation/child_sex">
+            <label ref="jr:itext('/delivery_registration/gr_child_info/g_child_profile_creation/child_sex:label')"/>
+            <item>
+              <label ref="jr:itext('/delivery_registration/gr_child_info/g_child_profile_creation/child_sex/male:label')"/>
+              <value>male</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/delivery_registration/gr_child_info/g_child_profile_creation/child_sex/female:label')"/>
+              <value>female</value>
+            </item>
+          </select1>
+          <input ref="/delivery_registration/gr_child_info/g_child_profile_creation/child_weight">
+            <label ref="jr:itext('/delivery_registration/gr_child_info/g_child_profile_creation/child_weight:label')"/>
+          </input>
+        </group>
+        <group appearance="field-list" ref="/delivery_registration/gr_child_info/g_child_danger_signs">
+          <label ref="jr:itext('/delivery_registration/gr_child_info/g_child_danger_signs:label')"/>
+          <input ref="/delivery_registration/gr_child_info/g_child_danger_signs/child_temperature">
+            <label ref="jr:itext('/delivery_registration/gr_child_info/g_child_danger_signs/child_temperature:label')"/>
+          </input>
+          <input ref="/delivery_registration/gr_child_info/g_child_danger_signs/n_disinfect_thermometer">
+            <label ref="jr:itext('/delivery_registration/gr_child_info/g_child_danger_signs/n_disinfect_thermometer:label')"/>
+          </input>
+          <input appearance="h3 red" ref="/delivery_registration/gr_child_info/g_child_danger_signs/n_child_has_fever">
+            <label ref="jr:itext('/delivery_registration/gr_child_info/g_child_danger_signs/n_child_has_fever:label')"/>
+          </input>
+          <input appearance="h3 red" ref="/delivery_registration/gr_child_info/g_child_danger_signs/n_child_has_hypothermia">
+            <label ref="jr:itext('/delivery_registration/gr_child_info/g_child_danger_signs/n_child_has_hypothermia:label')"/>
+          </input>
+        </group>
+        <group appearance="field-list" ref="/delivery_registration/gr_child_info/g_child_respiratory_frequency">
+          <label ref="jr:itext('/delivery_registration/gr_child_info/g_child_respiratory_frequency:label')"/>
+          <input appearance="countdown-timer" ref="/delivery_registration/gr_child_info/g_child_respiratory_frequency/n_child_respiratory">
+            <label ref="jr:itext('/delivery_registration/gr_child_info/g_child_respiratory_frequency/n_child_respiratory:label')"/>
+          </input>
+          <input ref="/delivery_registration/gr_child_info/g_child_respiratory_frequency/child_respiratory_frequency">
+            <label ref="jr:itext('/delivery_registration/gr_child_info/g_child_respiratory_frequency/child_respiratory_frequency:label')"/>
+          </input>
+          <input ref="/delivery_registration/gr_child_info/g_child_respiratory_frequency/n_child_frequency_rate">
+            <label ref="jr:itext('/delivery_registration/gr_child_info/g_child_respiratory_frequency/n_child_frequency_rate:label')"/>
+          </input>
+          <input ref="/delivery_registration/gr_child_info/g_child_respiratory_frequency/n_child_frequency_rate_advice">
+            <label ref="jr:itext('/delivery_registration/gr_child_info/g_child_respiratory_frequency/n_child_frequency_rate_advice:label')"/>
+          </input>
+        </group>
+        <group appearance="field-list" ref="/delivery_registration/gr_child_info/g_child_other_danger_signs">
+          <label ref="jr:itext('/delivery_registration/gr_child_info/g_child_other_danger_signs:label')"/>
+          <input ref="/delivery_registration/gr_child_info/g_child_other_danger_signs/n_child_other_danger_signs_1">
+            <label ref="jr:itext('/delivery_registration/gr_child_info/g_child_other_danger_signs/n_child_other_danger_signs_1:label')"/>
+          </input>
+          <input ref="/delivery_registration/gr_child_info/g_child_other_danger_signs/n_child_other_danger_signs_2">
+            <label ref="jr:itext('/delivery_registration/gr_child_info/g_child_other_danger_signs/n_child_other_danger_signs_2:label')"/>
+          </input>
+          <input ref="/delivery_registration/gr_child_info/g_child_other_danger_signs/n_child_other_danger_signs_3">
+            <label ref="jr:itext('/delivery_registration/gr_child_info/g_child_other_danger_signs/n_child_other_danger_signs_3:label')"/>
+          </input>
+          <input ref="/delivery_registration/gr_child_info/g_child_other_danger_signs/n_child_other_danger_signs_4">
+            <label ref="jr:itext('/delivery_registration/gr_child_info/g_child_other_danger_signs/n_child_other_danger_signs_4:label')"/>
+          </input>
+          <select1 ref="/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_refusal_to_feed">
+            <label ref="jr:itext('/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_refusal_to_feed:label')"/>
+            <item>
+              <label ref="jr:itext('/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_refusal_to_feed/yes:label')"/>
+              <value>yes</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_refusal_to_feed/no:label')"/>
+              <value>no</value>
+            </item>
+          </select1>
+          <select1 ref="/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_seizures">
+            <label ref="jr:itext('/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_seizures:label')"/>
+            <item>
+              <label ref="jr:itext('/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_seizures/yes:label')"/>
+              <value>yes</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_seizures/no:label')"/>
+              <value>no</value>
+            </item>
+          </select1>
+          <select1 ref="/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_chest_indrawing">
+            <label ref="jr:itext('/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_chest_indrawing:label')"/>
+            <item>
+              <label ref="jr:itext('/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_chest_indrawing/yes:label')"/>
+              <value>yes</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_chest_indrawing/no:label')"/>
+              <value>no</value>
+            </item>
+          </select1>
+          <select1 ref="/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_whine">
+            <label ref="jr:itext('/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_whine:label')"/>
+            <item>
+              <label ref="jr:itext('/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_whine/yes:label')"/>
+              <value>yes</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_whine/no:label')"/>
+              <value>no</value>
+            </item>
+          </select1>
+          <select1 ref="/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_yellowing">
+            <label ref="jr:itext('/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_yellowing:label')"/>
+            <item>
+              <label ref="jr:itext('/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_yellowing/yes:label')"/>
+              <value>yes</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_yellowing/no:label')"/>
+              <value>no</value>
+            </item>
+          </select1>
+          <select1 ref="/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_bleeding">
+            <label ref="jr:itext('/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_bleeding:label')"/>
+            <item>
+              <label ref="jr:itext('/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_bleeding/yes:label')"/>
+              <value>yes</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_bleeding/no:label')"/>
+              <value>no</value>
+            </item>
+          </select1>
+          <select1 ref="/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_lethargy">
+            <label ref="jr:itext('/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_lethargy:label')"/>
+            <item>
+              <label ref="jr:itext('/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_lethargy/yes:label')"/>
+              <value>yes</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_lethargy/no:label')"/>
+              <value>no</value>
+            </item>
+          </select1>
+          <select1 ref="/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_jaundice">
+            <label ref="jr:itext('/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_jaundice:label')"/>
+            <item>
+              <label ref="jr:itext('/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_jaundice/yes:label')"/>
+              <value>yes</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/delivery_registration/gr_child_info/g_child_other_danger_signs/child_danger_sign_jaundice/no:label')"/>
+              <value>no</value>
+            </item>
+          </select1>
+        </group>
+        <group appearance="field-list" ref="/delivery_registration/gr_child_info/g_child_care">
+          <select1 ref="/delivery_registration/gr_child_info/g_child_care/child_vaccine">
+            <label ref="jr:itext('/delivery_registration/gr_child_info/g_child_care/child_vaccine:label')"/>
+            <item>
+              <label ref="jr:itext('/delivery_registration/gr_child_info/g_child_care/child_vaccine/bcg_only:label')"/>
+              <value>bcg_only</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/delivery_registration/gr_child_info/g_child_care/child_vaccine/bcg_polio:label')"/>
+              <value>bcg_polio</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/delivery_registration/gr_child_info/g_child_care/child_vaccine/polio_only:label')"/>
+              <value>polio_only</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/delivery_registration/gr_child_info/g_child_care/child_vaccine/unknown:label')"/>
+              <value>unknown</value>
+            </item>
+          </select1>
+          <input ref="/delivery_registration/gr_child_info/g_child_care/n_child_vaccine_advice">
+            <label ref="jr:itext('/delivery_registration/gr_child_info/g_child_care/n_child_vaccine_advice:label')"/>
+          </input>
+          <select1 ref="/delivery_registration/gr_child_info/g_child_care/child_exclusively_breastfed">
+            <label ref="jr:itext('/delivery_registration/gr_child_info/g_child_care/child_exclusively_breastfed:label')"/>
+            <item>
+              <label ref="jr:itext('/delivery_registration/gr_child_info/g_child_care/child_exclusively_breastfed/yes:label')"/>
+              <value>yes</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/delivery_registration/gr_child_info/g_child_care/child_exclusively_breastfed/no:label')"/>
+              <value>no</value>
+            </item>
+          </select1>
+          <select1 ref="/delivery_registration/gr_child_info/g_child_care/mother_breastfeeding_introduced">
+            <label ref="jr:itext('/delivery_registration/gr_child_info/g_child_care/mother_breastfeeding_introduced:label')"/>
+            <item>
+              <label ref="jr:itext('/delivery_registration/gr_child_info/g_child_care/mother_breastfeeding_introduced/yes:label')"/>
+              <value>yes</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/delivery_registration/gr_child_info/g_child_care/mother_breastfeeding_introduced/no:label')"/>
+              <value>no</value>
+            </item>
+          </select1>
+        </group>
+        <group jr:count=" /delivery_registration/gr_child_info/r_child_summary_count " appearance="field-list summary" ref="/delivery_registration/gr_child_info/r_child_summary">
+          <label ref="jr:itext('/delivery_registration/gr_child_info/r_child_summary:label')"/>
+          <input ref="/delivery_registration/gr_child_info/r_child_summary/n_child_firstname">
+            <label ref="jr:itext('/delivery_registration/gr_child_info/r_child_summary/n_child_firstname:label')"/>
+          </input>
+          <input ref="/delivery_registration/gr_child_info/r_child_summary/n_child_lastname">
+            <label ref="jr:itext('/delivery_registration/gr_child_info/r_child_summary/n_child_lastname:label')"/>
+          </input>
+          <input ref="/delivery_registration/gr_child_info/r_child_summary/n_child_sex">
+            <label ref="jr:itext('/delivery_registration/gr_child_info/r_child_summary/n_child_sex:label')"/>
+          </input>
+          <input ref="/delivery_registration/gr_child_info/r_child_summary/n_child_danger_signs">
+            <label ref="jr:itext('/delivery_registration/gr_child_info/r_child_summary/n_child_danger_signs:label')"/>
+          </input>
+        </group>
+      </repeat>
+    </group>
+    <group appearance="field-list summary" ref="/delivery_registration/g_summary">
+      <label ref="jr:itext('/delivery_registration/g_summary:label')"/>
+      <input ref="/delivery_registration/g_summary/r_summary">
+        <label ref="jr:itext('/delivery_registration/g_summary/r_summary:label')"/>
+      </input>
+      <input appearance="h1 red" ref="/delivery_registration/g_summary/n_refer_cscom_mother">
+        <label ref="jr:itext('/delivery_registration/g_summary/n_refer_cscom_mother:label')"/>
+      </input>
+      <input appearance="h1 red" ref="/delivery_registration/g_summary/n_refer_cscom_child">
+        <label ref="jr:itext('/delivery_registration/g_summary/n_refer_cscom_child:label')"/>
+      </input>
+      <input appearance="h1 blue" ref="/delivery_registration/g_summary/r_instructions">
+        <label ref="jr:itext('/delivery_registration/g_summary/r_instructions:label')"/>
+      </input>
+      <input ref="/delivery_registration/g_summary/n_mother">
+        <label ref="jr:itext('/delivery_registration/g_summary/n_mother:label')"/>
+      </input>
+      <input ref="/delivery_registration/g_summary/n_date_of_birth">
+        <label ref="jr:itext('/delivery_registration/g_summary/n_date_of_birth:label')"/>
+      </input>
+      <input ref="/delivery_registration/g_summary/n_place_of_birth">
+        <label ref="jr:itext('/delivery_registration/g_summary/n_place_of_birth:label')"/>
+      </input>
+      <input ref="/delivery_registration/g_summary/n_children">
+        <label ref="jr:itext('/delivery_registration/g_summary/n_children:label')"/>
+      </input>
+      <input ref="/delivery_registration/g_summary/n_danger_signs">
+        <label ref="jr:itext('/delivery_registration/g_summary/n_danger_signs:label')"/>
+      </input>
+      <input appearance="h1 blue" ref="/delivery_registration/g_summary/r_special_instructions">
+        <label ref="jr:itext('/delivery_registration/g_summary/r_special_instructions:label')"/>
+      </input>
+      <input ref="/delivery_registration/g_summary/n_refer_patient">
+        <label ref="jr:itext('/delivery_registration/g_summary/n_refer_patient:label')"/>
+      </input>
+      <input ref="/delivery_registration/g_summary/n_accepted_date">
+        <label ref="jr:itext('/delivery_registration/g_summary/n_accepted_date:label')"/>
+      </input>
+      <input ref="/delivery_registration/g_summary/n_mother_intro">
+        <label ref="jr:itext('/delivery_registration/g_summary/n_mother_intro:label')"/>
+      </input>
+      <input appearance="h1 green" ref="/delivery_registration/g_summary/r_followup">
+        <label ref="jr:itext('/delivery_registration/g_summary/r_followup:label')"/>
+      </input>
+      <input ref="/delivery_registration/g_summary/n_next_chw">
+        <label ref="jr:itext('/delivery_registration/g_summary/n_next_chw:label')"/>
+      </input>
+      <input ref="/delivery_registration/g_summary/n_pregnancy_followup">
+        <label ref="jr:itext('/delivery_registration/g_summary/n_pregnancy_followup:label')"/>
+      </input>
+    </group>
+  </h:body>
+</h:html>

@@ -1,0 +1,57 @@
+
+  <model>
+    <instance>
+        <chw_site_gps_location xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" id="chw_site_gps_location" prefix="J1!chw_site_gps_location!" delimiter="#" version="2022-05-02 10:52:48">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+              <name/>
+              <phone/>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <parent>
+                <_id/>
+                <name/>
+                <parent>
+                  <_id/>
+                  <parent>
+                    <_id/>
+                  </parent>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <chw_site_id tag="hidden"/>
+          <chw_site_name/>
+          <supervisor_area_id tag="hidden"/>
+          <health_area_id tag="hidden"/>
+          <coordonnate_gps>
+            <chw_site_location/>
+          </coordonnate_gps>
+          <summary_instruction>
+            <r_special_icon/>
+            <site_name_note/>
+            <coordonnate_note/>
+            <instruction_after_first_submission/>
+            <instruction_to_submission/>
+          </summary_instruction>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </chw_site_gps_location>
+      </instance>
+    <instance id="contact-summary"/>
+  </model>
+

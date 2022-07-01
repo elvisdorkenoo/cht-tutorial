@@ -1,0 +1,260 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>CHW Site GPS location</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/chw_site_gps_location/coordonnate_gps/chw_site_location:label">
+            <value>Please locate your CHW site by pressing the GPS button</value>
+          </text>
+          <text id="/chw_site_gps_location/coordonnate_gps:label">
+            <value>GPS coordinates</value>
+          </text>
+          <text id="/chw_site_gps_location/inputs/contact/_id:label">
+            <value>CHW</value>
+          </text>
+          <text id="/chw_site_gps_location/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/chw_site_gps_location/inputs/contact/parent/_id:label">
+            <value>chw site ID</value>
+          </text>
+          <text id="/chw_site_gps_location/inputs/contact/parent/name:label">
+            <value>CHW site name</value>
+          </text>
+          <text id="/chw_site_gps_location/inputs/contact/parent/parent/_id:label">
+            <value>Supervisor Area ID</value>
+          </text>
+          <text id="/chw_site_gps_location/inputs/contact/parent/parent/parent/_id:label">
+            <value>Health Area ID</value>
+          </text>
+          <text id="/chw_site_gps_location/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/chw_site_gps_location/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/chw_site_gps_location/inputs/user/contact_id:label">
+            <value>Contact ID</value>
+          </text>
+          <text id="/chw_site_gps_location/inputs/user/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/chw_site_gps_location/inputs/user/phone:label">
+            <value>Phone</value>
+          </text>
+          <text id="/chw_site_gps_location/inputs/user:label">
+            <value>User</value>
+          </text>
+          <text id="/chw_site_gps_location/summary_instruction/coordonnate_note:label">
+            <value>GPS coordinates: <output value=" /chw_site_gps_location/coordonnate_gps/chw_site_location "/></value>
+          </text>
+          <text id="/chw_site_gps_location/summary_instruction/instruction_after_first_submission:label">
+            <value>After the first submission of this form, please do not modify it again unless there is a physical change to the ASC site</value>
+          </text>
+          <text id="/chw_site_gps_location/summary_instruction/instruction_to_submission:label">
+            <value>Before clicking submit, please make sure you are at the ASC site</value>
+          </text>
+          <text id="/chw_site_gps_location/summary_instruction/r_special_icon:label">
+            <value>Instructions&lt;i class = "fa fa-hand-o-right"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/chw_site_gps_location/summary_instruction/site_name_note:label">
+            <value><output value=" /chw_site_gps_location/chw_site_name "/></value>
+          </text>
+        </translation>
+        <translation lang="fr">
+          <text id="/chw_site_gps_location/coordonnate_gps/chw_site_location:label">
+            <value>Veuillez localiser votre site ASC en appuyant sur le bouton GPS</value>
+          </text>
+          <text id="/chw_site_gps_location/coordonnate_gps:label">
+            <value>Coordonnées GPS</value>
+          </text>
+          <text id="/chw_site_gps_location/inputs/contact/_id:label">
+            <value>ASC</value>
+          </text>
+          <text id="/chw_site_gps_location/inputs/contact/name:label">
+            <value>Nom</value>
+          </text>
+          <text id="/chw_site_gps_location/inputs/contact/parent/_id:label">
+            <value>ID du site de l'ASC</value>
+          </text>
+          <text id="/chw_site_gps_location/inputs/contact/parent/name:label">
+            <value>Nom du site de l'ASC</value>
+          </text>
+          <text id="/chw_site_gps_location/inputs/contact/parent/parent/_id:label">
+            <value>ID de la zone de supervision</value>
+          </text>
+          <text id="/chw_site_gps_location/inputs/contact/parent/parent/parent/_id:label">
+            <value>ID de la zone de santé</value>
+          </text>
+          <text id="/chw_site_gps_location/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/chw_site_gps_location/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/chw_site_gps_location/inputs/user/contact_id:label">
+            <value>Contact ID</value>
+          </text>
+          <text id="/chw_site_gps_location/inputs/user/name:label">
+            <value>Nom</value>
+          </text>
+          <text id="/chw_site_gps_location/inputs/user/phone:label">
+            <value>Téléphone</value>
+          </text>
+          <text id="/chw_site_gps_location/inputs/user:label">
+            <value>Utilisateur</value>
+          </text>
+          <text id="/chw_site_gps_location/summary_instruction/coordonnate_note:label">
+            <value>Coordonnées GPS : <output value=" /chw_site_gps_location/coordonnate_gps/chw_site_location "/></value>
+          </text>
+          <text id="/chw_site_gps_location/summary_instruction/instruction_after_first_submission:label">
+            <value>Après la première soumission de ce formulaire, veuillez ne plus le modifier sauf en cas de changement physique du site d'ASC</value>
+          </text>
+          <text id="/chw_site_gps_location/summary_instruction/instruction_to_submission:label">
+            <value>Avant de cliquez, sur soumettre, veuillez vous assurer que vous êtes bien au niveau du site d'ASC</value>
+          </text>
+          <text id="/chw_site_gps_location/summary_instruction/r_special_icon:label">
+            <value>Instructions &lt;i class = "fa fa-hand-o-right"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/chw_site_gps_location/summary_instruction/site_name_note:label">
+            <value><output value=" /chw_site_gps_location/chw_site_name "/></value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <chw_site_gps_location id="chw_site_gps_location" prefix="J1!chw_site_gps_location!" delimiter="#" version="2022-05-02 10:52:48">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+              <name/>
+              <phone/>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <parent>
+                <_id/>
+                <name/>
+                <parent>
+                  <_id/>
+                  <parent>
+                    <_id/>
+                  </parent>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <chw_site_id tag="hidden"/>
+          <chw_site_name/>
+          <supervisor_area_id tag="hidden"/>
+          <health_area_id tag="hidden"/>
+          <coordonnate_gps>
+            <chw_site_location/>
+          </coordonnate_gps>
+          <summary_instruction>
+            <r_special_icon/>
+            <site_name_note/>
+            <coordonnate_note/>
+            <instruction_after_first_submission/>
+            <instruction_to_submission/>
+          </summary_instruction>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </chw_site_gps_location>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/chw_site_gps_location/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/chw_site_gps_location/inputs/source" type="string"/>
+      <bind nodeset="/chw_site_gps_location/inputs/source_id" type="string"/>
+      <bind nodeset="/chw_site_gps_location/inputs/user/contact_id" type="db:person"/>
+      <bind nodeset="/chw_site_gps_location/inputs/user/name" type="string"/>
+      <bind nodeset="/chw_site_gps_location/inputs/user/phone" type="string"/>
+      <bind nodeset="/chw_site_gps_location/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/chw_site_gps_location/inputs/contact/name" type="string"/>
+      <bind nodeset="/chw_site_gps_location/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/chw_site_gps_location/inputs/contact/parent/name" type="string"/>
+      <bind nodeset="/chw_site_gps_location/inputs/contact/parent/parent/_id" type="string"/>
+      <bind nodeset="/chw_site_gps_location/inputs/contact/parent/parent/parent/_id" type="string"/>
+      <bind nodeset="/chw_site_gps_location/chw_site_id" type="string" calculate="../inputs/contact/parent/_id"/>
+      <bind nodeset="/chw_site_gps_location/chw_site_name" type="string" calculate="../inputs/contact/parent/name"/>
+      <bind nodeset="/chw_site_gps_location/supervisor_area_id" type="string" calculate="../inputs/contact/parent/parent/_id"/>
+      <bind nodeset="/chw_site_gps_location/health_area_id" type="string" calculate="../inputs/contact/parent/parent/parent/_id"/>
+      <bind nodeset="/chw_site_gps_location/coordonnate_gps/chw_site_location" type="geopoint" required="true()"/>
+      <bind nodeset="/chw_site_gps_location/summary_instruction/r_special_icon" readonly="true()" type="string"/>
+      <bind nodeset="/chw_site_gps_location/summary_instruction/site_name_note" readonly="true()" type="string"/>
+      <bind nodeset="/chw_site_gps_location/summary_instruction/coordonnate_note" readonly="true()" type="string"/>
+      <bind nodeset="/chw_site_gps_location/summary_instruction/instruction_after_first_submission" readonly="true()" type="string"/>
+      <bind nodeset="/chw_site_gps_location/summary_instruction/instruction_to_submission" readonly="true()" type="string"/>
+      <bind nodeset="/chw_site_gps_location/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/chw_site_gps_location/inputs">
+      <group ref="/chw_site_gps_location/inputs/user">
+        <label ref="jr:itext('/chw_site_gps_location/inputs/user:label')"/>
+        <input appearance="db-object" ref="/chw_site_gps_location/inputs/user/contact_id">
+          <label ref="jr:itext('/chw_site_gps_location/inputs/user/contact_id:label')"/>
+        </input>
+      </group>
+      <group ref="/chw_site_gps_location/inputs/contact">
+        <input appearance="db-object" ref="/chw_site_gps_location/inputs/contact/_id">
+          <label ref="jr:itext('/chw_site_gps_location/inputs/contact/_id:label')"/>
+        </input>
+        <group ref="/chw_site_gps_location/inputs/contact/parent">
+          <input appearance="hidden" ref="/chw_site_gps_location/inputs/contact/parent/_id">
+            <label ref="jr:itext('/chw_site_gps_location/inputs/contact/parent/_id:label')"/>
+          </input>
+          <input ref="/chw_site_gps_location/inputs/contact/parent/name">
+            <label ref="jr:itext('/chw_site_gps_location/inputs/contact/parent/name:label')"/>
+          </input>
+          <group ref="/chw_site_gps_location/inputs/contact/parent/parent">
+            <input appearance="hidden" ref="/chw_site_gps_location/inputs/contact/parent/parent/_id">
+              <label ref="jr:itext('/chw_site_gps_location/inputs/contact/parent/parent/_id:label')"/>
+            </input>
+            <group ref="/chw_site_gps_location/inputs/contact/parent/parent/parent">
+              <input appearance="hidden" ref="/chw_site_gps_location/inputs/contact/parent/parent/parent/_id">
+                <label ref="jr:itext('/chw_site_gps_location/inputs/contact/parent/parent/parent/_id:label')"/>
+              </input>
+            </group>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group ref="/chw_site_gps_location/coordonnate_gps">
+      <label ref="jr:itext('/chw_site_gps_location/coordonnate_gps:label')"/>
+      <input ref="/chw_site_gps_location/coordonnate_gps/chw_site_location">
+        <label ref="jr:itext('/chw_site_gps_location/coordonnate_gps/chw_site_location:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list summary" ref="/chw_site_gps_location/summary_instruction">
+      <input appearance="h1 blue" ref="/chw_site_gps_location/summary_instruction/r_special_icon">
+        <label ref="jr:itext('/chw_site_gps_location/summary_instruction/r_special_icon:label')"/>
+      </input>
+      <input ref="/chw_site_gps_location/summary_instruction/site_name_note">
+        <label ref="jr:itext('/chw_site_gps_location/summary_instruction/site_name_note:label')"/>
+      </input>
+      <input ref="/chw_site_gps_location/summary_instruction/coordonnate_note">
+        <label ref="jr:itext('/chw_site_gps_location/summary_instruction/coordonnate_note:label')"/>
+      </input>
+      <input ref="/chw_site_gps_location/summary_instruction/instruction_after_first_submission">
+        <label ref="jr:itext('/chw_site_gps_location/summary_instruction/instruction_after_first_submission:label')"/>
+      </input>
+      <input ref="/chw_site_gps_location/summary_instruction/instruction_to_submission">
+        <label ref="jr:itext('/chw_site_gps_location/summary_instruction/instruction_to_submission:label')"/>
+      </input>
+    </group>
+  </h:body>
+</h:html>

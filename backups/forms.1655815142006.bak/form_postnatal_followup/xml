@@ -1,0 +1,2760 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>Post Natal Followup</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/postnatal_followup/g_child_care_advice/n_child_changes_care:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/postnatal_followup/g_child_care_advice/n_child_changes_care:label">
+            <value>Changes should be done on average 7 to 8 times a day. 
+Cord care must be done at least once a day and as soon as it is soiled by urine or stool. 
+The purpose of cord care is to prevent infection, dry the cord and ensure proper healing of the insertion area.</value>
+          </text>
+          <text id="/postnatal_followup/g_child_care_advice/n_child_clothes_care:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/postnatal_followup/g_child_care_advice/n_child_clothes_care:label">
+            <value>Place the newborn in a bed with the mother so that he is warm and breastfed. 
+Hold the newborn against its mother, skin to skin.</value>
+          </text>
+          <text id="/postnatal_followup/g_child_care_advice/n_child_temperature_care:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/postnatal_followup/g_child_care_advice/n_child_temperature_care:label">
+            <value>Keep the room where the newborn is warm and free from drafts day and night.
+Dress the child in warm clothes (newborns need at least 1-2 more layers of clothing than an adult). 
+Cover the child's head with a cloth or hat.
+Tight clothes and blankets don't keep him warm as well</value>
+          </text>
+          <text id="/postnatal_followup/g_child_care_advice:label">
+            <value>Newborn Care Tips</value>
+          </text>
+          <text id="/postnatal_followup/g_end_followup/why_end_followup/mother_deceased:label">
+            <value><output value=" /postnatal_followup/patient_name "/> is deceased</value>
+          </text>
+          <text id="/postnatal_followup/g_end_followup/why_end_followup/newborn_deceased:label">
+            <value>Newborn is deceased</value>
+          </text>
+          <text id="/postnatal_followup/g_end_followup/why_end_followup/other:label">
+            <value>other</value>
+          </text>
+          <text id="/postnatal_followup/g_end_followup/why_end_followup:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/postnatal_followup/g_end_followup/why_end_followup:label">
+            <value>Why do you want to close this follow-up?</value>
+          </text>
+          <text id="/postnatal_followup/g_end_followup/why_end_followup_other:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/postnatal_followup/g_end_followup/why_end_followup_other:label">
+            <value>Specify (Other)</value>
+          </text>
+          <text id="/postnatal_followup/g_end_followup:label">
+            <value>Close Followup</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_bleeding/no:label">
+            <value>No</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_bleeding/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_bleeding:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_bleeding:label">
+            <value>non-stop bleeding</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_blurred_vision/no:label">
+            <value>No</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_blurred_vision/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_blurred_vision:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_blurred_vision:label">
+            <value>Blurred vision</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_breast_abscess/no:label">
+            <value>No</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_breast_abscess/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_breast_abscess:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_breast_abscess:label">
+            <value>breast abscess</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_calf_pain/no:label">
+            <value>No</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_calf_pain/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_calf_pain:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_calf_pain:label">
+            <value>Calf pain</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_fever/no:label">
+            <value>No</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_fever/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_fever:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_fever:label">
+            <value>Fever</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_headaches/no:label">
+            <value>No</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_headaches/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_headaches:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_headaches:label">
+            <value>Persistent headaches</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_stomach_ache/no:label">
+            <value>No</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_stomach_ache/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_stomach_ache:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_stomach_ache:label">
+            <value>Stomach ache</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_vaginal_discharge/no:label">
+            <value>No</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_vaginal_discharge/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_vaginal_discharge:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_vaginal_discharge:label">
+            <value>Foul-smelling or abnormal vaginal discharge</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/n_danger_sign:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/n_danger_sign:label">
+            <value>Does <output value=" /postnatal_followup/patient_name "/> show any of the following signs?</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs:label">
+            <value>Danger Signs of <output value=" /postnatal_followup/patient_name "/></value>
+          </text>
+          <text id="/postnatal_followup/g_mother_info/height_mother:jr:constraintMsg">
+            <value>The height should be between 10 and 250</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_info/height_mother:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_info/height_mother:label">
+            <value>Height of <output value=" /postnatal_followup/patient_name "/> in cm</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_info/weight_mother:jr:constraintMsg">
+            <value>The weight should be between 15 and 200</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_info/weight_mother:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_info/weight_mother:label">
+            <value>Weight of <output value=" /postnatal_followup/patient_name "/> in Kg</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_info:label">
+            <value>Mother Information</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_child_vaccination/bcg_vaccine_date:jr:constraintMsg">
+            <value>The date should be in the past</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_child_vaccination/bcg_vaccine_date:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_child_vaccination/bcg_vaccine_date:label">
+            <value>Enter the date on which the BCG vaccine was administered</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_child_vaccination/dtc_vaccine_date:jr:constraintMsg">
+            <value>The date should be in the past</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_child_vaccination/dtc_vaccine_date:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_child_vaccination/dtc_vaccine_date:label">
+            <value>Enter the date the DTP-Hib-Hep B1 (Penta 1) vaccine was administered</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_child_vaccination/has_child_vaccine:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_child_vaccination/has_child_vaccine:label">
+            <value>Has the new born been vaccinated?</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_child_vaccination/pneumo_vaccine_date:jr:constraintMsg">
+            <value>The date should be in the past</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_child_vaccination/pneumo_vaccine_date:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_child_vaccination/pneumo_vaccine_date:label">
+            <value>Enter the date the Pneumo 1 vaccine was administered</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_child_vaccination/polio_vaccine_date:jr:constraintMsg">
+            <value>The date should be in the past</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_child_vaccination/polio_vaccine_date:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_child_vaccination/polio_vaccine_date:label">
+            <value>Enter the date the Polio 0 vaccine was administered</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_child_vaccination/rota_vaccine_date:jr:constraintMsg">
+            <value>The date should be in the past</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_child_vaccination/rota_vaccine_date:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_child_vaccination/rota_vaccine_date:label">
+            <value>Enter the date the Rota 1 vaccine was administered</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_child_vaccination/vpo_vaccine_date:jr:constraintMsg">
+            <value>The date should be in the past</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_child_vaccination/vpo_vaccine_date:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_child_vaccination/vpo_vaccine_date:label">
+            <value>Enter the date the OPV 1 vaccine was administered</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_child_vaccination:label">
+            <value>Newborn vaccination</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_new_born_care/how_many_clean_per_day:jr:constraintMsg">
+            <value>The number should be between 0 and 20</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_new_born_care/how_many_clean_per_day:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_new_born_care/how_many_clean_per_day:label">
+            <value>How many times on average are changes made per day?</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_new_born_care/is_ombilical_cord_protected/no:label">
+            <value>No</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_new_born_care/is_ombilical_cord_protected/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_new_born_care/is_ombilical_cord_protected:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_new_born_care/is_ombilical_cord_protected:label">
+            <value>Is the newborn's umbrilical cord well protected?</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_new_born_care/n_follow_new_born_assurance:label">
+            <value>Accompany the newborn to the Health Center. You MUST reassure yourself that this newborn has received care within 24 hours.</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_new_born_care/n_follow_newborn:label">
+            <value>You must accompany the newborn to the Health Center. If his parents refuse for various reasons, immediately alert your supervisor</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_new_born_care/n_refer_cscom:label">
+            <value>Refer to Health Center for danger sign of newborn</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_new_born_care:jr:requiredMsg">
+            <value>-</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_new_born_care:label">
+            <value>child care</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_abdomen/no:label">
+            <value>No</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_abdomen/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_abdomen:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_abdomen:label">
+            <value>Distended abdomen</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_breathing/no:label">
+            <value>No</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_breathing/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_breathing:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_breathing:label">
+            <value>Difficulty breathing</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_cutaneous_pustules/no:label">
+            <value>No</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_cutaneous_pustules/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_cutaneous_pustules:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_cutaneous_pustules:label">
+            <value>Cutaneous pustules with abscess</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_refusal_to_feed/no:label">
+            <value>No</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_refusal_to_feed/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_refusal_to_feed:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_refusal_to_feed:label">
+            <value>refuse to eat</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_seizures/no:label">
+            <value>No</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_seizures/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_seizures:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_seizures:label">
+            <value>Seizures</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_umbilical_infection/no:label">
+            <value>No</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_umbilical_infection/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_umbilical_infection:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_umbilical_infection:label">
+            <value>Infected umbilical cord</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_unconscious/no:label">
+            <value>No</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_unconscious/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_unconscious:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_unconscious:label">
+            <value>Unconscious</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_vomit/no:label">
+            <value>No</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_vomit/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_vomit:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_vomit:label">
+            <value>vomit it all</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_weak_cry/no:label">
+            <value>No</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_weak_cry/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_weak_cry:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_weak_cry:label">
+            <value>It has a weak or absent cry</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_respiratory_frequency:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_respiratory_frequency:label">
+            <value>What is the breathing rate of the new?</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_temperature:jr:constraintMsg">
+            <value>Temperature should be between 30 and 45</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_temperature:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_temperature:label">
+            <value>What is the newborn's temperature?</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/n_child_danger_sign:label">
+            <value>Does the newborn show one or more of these immediate accompanying signs?</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/n_disinfect_thermometer:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/n_disinfect_thermometer:label">
+            <value>Properly disinfect the thermometer before storing it.</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/n_fever_presence:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/n_fever_presence:label">
+            <value>Presence of fever in the child</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/n_frequency_summary:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/n_frequency_summary:label">
+            <value>The frequency is: <output value=" /postnatal_followup/g_new_born_repeat/g_treatment/child_frequency_respiratory_rate "/></value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/n_how_measure_respiratory_freq:label">
+            <value>**Press the timer and count the number of breaths for 6 to 30 seconds**</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/n_hypothermia:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/n_hypothermia:label">
+            <value>Hypothermia in children</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/n_refer_health_center:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/n_refer_health_center:label">
+            <value>Referer to the Health Center</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment:label">
+            <value>Newborn danger sign</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/new_born_alive/no:label">
+            <value>No</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/new_born_alive/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/new_born_alive:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/new_born_alive:label">
+            <value>Is the newborn alive?</value>
+          </text>
+          <text id="/postnatal_followup/g_postnatal_consultation/next_visit_date:jr:constraintMsg">
+            <value>The Date should be in the future</value>
+          </text>
+          <text id="/postnatal_followup/g_postnatal_consultation/next_visit_date:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/postnatal_followup/g_postnatal_consultation/next_visit_date:label">
+            <value>When is the next visit date for <output value=" /postnatal_followup/patient_name "/> and the newborn?</value>
+          </text>
+          <text id="/postnatal_followup/g_postnatal_consultation/other_child_mother_did_not_go:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/postnatal_followup/g_postnatal_consultation/other_child_mother_did_not_go:label">
+            <value>Specify (Other)</value>
+          </text>
+          <text id="/postnatal_followup/g_postnatal_consultation/why_child_mother_consult/no:label">
+            <value>No</value>
+          </text>
+          <text id="/postnatal_followup/g_postnatal_consultation/why_child_mother_consult/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/postnatal_followup/g_postnatal_consultation/why_child_mother_consult:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/postnatal_followup/g_postnatal_consultation/why_child_mother_consult:label">
+            <value>Did the mother and the newborn go to the CSCOM for the consultation?</value>
+          </text>
+          <text id="/postnatal_followup/g_postnatal_consultation/why_child_mother_consult_second_time/busy:label">
+            <value>Busy</value>
+          </text>
+          <text id="/postnatal_followup/g_postnatal_consultation/why_child_mother_consult_second_time/follow:label">
+            <value>Follow</value>
+          </text>
+          <text id="/postnatal_followup/g_postnatal_consultation/why_child_mother_consult_second_time/ignore:label">
+            <value>Ignore</value>
+          </text>
+          <text id="/postnatal_followup/g_postnatal_consultation/why_child_mother_consult_second_time/mari_refuse:label">
+            <value>Mari Refusal</value>
+          </text>
+          <text id="/postnatal_followup/g_postnatal_consultation/why_child_mother_consult_second_time/not_important:label">
+            <value>Not important</value>
+          </text>
+          <text id="/postnatal_followup/g_postnatal_consultation/why_child_mother_consult_second_time/not_ready:label">
+            <value>Not Ready</value>
+          </text>
+          <text id="/postnatal_followup/g_postnatal_consultation/why_child_mother_consult_second_time/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/postnatal_followup/g_postnatal_consultation/why_child_mother_consult_second_time/tired:label">
+            <value>Tired</value>
+          </text>
+          <text id="/postnatal_followup/g_postnatal_consultation/why_child_mother_consult_second_time:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/postnatal_followup/g_postnatal_consultation/why_child_mother_consult_second_time:label">
+            <value>Why didn't the mother and child leave for the second consultation?</value>
+          </text>
+          <text id="/postnatal_followup/g_postnatal_consultation:label">
+            <value>Postnatal consultations</value>
+          </text>
+          <text id="/postnatal_followup/g_realisation/followup_date:jr:constraintMsg">
+            <value>Date should be in the past</value>
+          </text>
+          <text id="/postnatal_followup/g_realisation/followup_date:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/postnatal_followup/g_realisation/followup_date:label">
+            <value>Enter the date of followup:</value>
+          </text>
+          <text id="/postnatal_followup/g_realisation/followup_done_today/no:label">
+            <value>No</value>
+          </text>
+          <text id="/postnatal_followup/g_realisation/followup_done_today/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/postnatal_followup/g_realisation/followup_done_today:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/postnatal_followup/g_realisation/followup_done_today:label">
+            <value>Was the followup done today?</value>
+          </text>
+          <text id="/postnatal_followup/g_realisation/how_patient_found/during_home_visit:label">
+            <value>During a home visit</value>
+          </text>
+          <text id="/postnatal_followup/g_realisation/how_patient_found/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/postnatal_followup/g_realisation/how_patient_found/patient_to_chw:label">
+            <value>Patient when to CHW</value>
+          </text>
+          <text id="/postnatal_followup/g_realisation/how_patient_found:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/postnatal_followup/g_realisation/how_patient_found:label">
+            <value>How was <output value=" /postnatal_followup/patient_name "/> found?</value>
+          </text>
+          <text id="/postnatal_followup/g_realisation/not_done_today/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/postnatal_followup/g_realisation/not_done_today/phone_discharged:label">
+            <value>Phone discharged/broken</value>
+          </text>
+          <text id="/postnatal_followup/g_realisation/not_done_today/phone_lost:label">
+            <value>Phone lost</value>
+          </text>
+          <text id="/postnatal_followup/g_realisation/not_done_today:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/postnatal_followup/g_realisation/not_done_today:label">
+            <value>Why wasn't the followup done today?</value>
+          </text>
+          <text id="/postnatal_followup/g_realisation/other_followup_reason:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/postnatal_followup/g_realisation/other_followup_reason:label">
+            <value>Specify (Other)</value>
+          </text>
+          <text id="/postnatal_followup/g_realisation/other_patient_found_reason:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/postnatal_followup/g_realisation/other_patient_found_reason:label">
+            <value>Specify (Other)</value>
+          </text>
+          <text id="/postnatal_followup/g_realisation:label">
+            <value>Realisation date</value>
+          </text>
+          <text id="/postnatal_followup/g_summary/n_close_out:label">
+            <value>There is no more followup for this woman</value>
+          </text>
+          <text id="/postnatal_followup/g_summary/n_delivery_date:label">
+            <value>Delivery date: <output value=" /postnatal_followup/inputs/t_delivery_date "/></value>
+          </text>
+          <text id="/postnatal_followup/g_summary/n_delivery_info:label">
+            <value>Delivery Information</value>
+          </text>
+          <text id="/postnatal_followup/g_summary/n_followup:label">
+            <value>You must accompany <output value=" /postnatal_followup/patient_name "/> to the Health Center.</value>
+          </text>
+          <text id="/postnatal_followup/g_summary/n_next_cpon_date:label">
+            <value>Next CPON date: <output value=" /postnatal_followup/g_postnatal_consultation/next_visit_date "/></value>
+          </text>
+          <text id="/postnatal_followup/g_summary/n_next_followup:label">
+            <value>Next CHW visit is : <output value=" /postnatal_followup/inputs/t_next_followup_date "/></value>
+          </text>
+          <text id="/postnatal_followup/g_summary/n_next_followup_summary:label">
+            <value>Next visit&lt;i class="fa fa-flag"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/postnatal_followup/g_summary/n_next_request:label">
+            <value>Next followup visit will be in 24 h: <output value=" /postnatal_followup/next_followup_1day "/></value>
+          </text>
+          <text id="/postnatal_followup/g_summary/n_presence_mother_danger_signs:label">
+            <value>Danger Signs from the mother</value>
+          </text>
+          <text id="/postnatal_followup/g_summary/n_refer_cscom:label">
+            <value>Refer to the CSCOM for mother danger signs</value>
+          </text>
+          <text id="/postnatal_followup/g_summary/n_visits:label">
+            <value>Also let <output value=" /postnatal_followup/patient_name "/> know that if she notices any minor issues that she will contact you IMMEDIATELY. Submitting this form will close <output value=" /postnatal_followup/patient_name "/>'s postpartum follow-up. There will be no more follow-up reminders for <output value=" /postnatal_followup/patient_name "/>.</value>
+          </text>
+          <text id="/postnatal_followup/g_summary/r_instructions:label">
+            <value>Special Instructions&lt;i class = "fa fa-hand-o-right"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/postnatal_followup/g_summary/r_patient_info:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /postnatal_followup/patient_name "/>&lt;/h4&gt; &lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /postnatal_followup/patient_age_in_years "/> years old&lt;/h5&gt;</value>
+          </text>
+          <text id="/postnatal_followup/g_summary/r_summary:label">
+            <value>Patient summary&lt;i class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/postnatal_followup/g_summary:label">
+            <value>Summary</value>
+          </text>
+          <text id="/postnatal_followup/g_task/task_to_perform/close_followup:label">
+            <value>Close</value>
+          </text>
+          <text id="/postnatal_followup/g_task/task_to_perform/postnatal_followup:label">
+            <value>Followup</value>
+          </text>
+          <text id="/postnatal_followup/g_task/task_to_perform:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/postnatal_followup/g_task/task_to_perform:label">
+            <value>What do you want to do?</value>
+          </text>
+          <text id="/postnatal_followup/g_task:label">
+            <value>Follow-up realisation</value>
+          </text>
+          <text id="/postnatal_followup/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/postnatal_followup/inputs/contact/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/postnatal_followup/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/postnatal_followup/inputs/contact/parent/_id:label">
+            <value>Household ID</value>
+          </text>
+          <text id="/postnatal_followup/inputs/contact/parent/parent/_id:label">
+            <value>Area ID</value>
+          </text>
+          <text id="/postnatal_followup/inputs/contact/parent/parent/contact/chw_name:label">
+            <value>CHW name</value>
+          </text>
+          <text id="/postnatal_followup/inputs/contact/parent/parent/contact/phone:label">
+            <value>CHW phone</value>
+          </text>
+          <text id="/postnatal_followup/inputs/contact/parent/parent/parent/_id:label">
+            <value>Health Facility ID</value>
+          </text>
+          <text id="/postnatal_followup/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/postnatal_followup/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/postnatal_followup/inputs/contact/short_name:label">
+            <value>Short Name</value>
+          </text>
+          <text id="/postnatal_followup/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/postnatal_followup/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/postnatal_followup/inputs/t_delivery_date:label">
+            <value>Delivery date</value>
+          </text>
+          <text id="/postnatal_followup/inputs/t_delivery_location:label">
+            <value>Delivery Location</value>
+          </text>
+          <text id="/postnatal_followup/inputs/t_follow_up_count:label">
+            <value>PostNatal Visit Number</value>
+          </text>
+          <text id="/postnatal_followup/inputs/t_next_followup_date:label">
+            <value>Next PostNatal Followup</value>
+          </text>
+          <text id="/postnatal_followup/inputs/t_number_of_children:label">
+            <value>Number of children</value>
+          </text>
+          <text id="/postnatal_followup/inputs/user/contact_id:label">
+            <value>Contact ID</value>
+          </text>
+          <text id="/postnatal_followup/inputs/user/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/postnatal_followup/inputs/user/phone:label">
+            <value>Phone</value>
+          </text>
+          <text id="/postnatal_followup/inputs/user:label">
+            <value>User</value>
+          </text>
+          <text id="static_instance-c_did_not_go_second_consultation-0">
+            <value>Ignore</value>
+          </text>
+          <text id="static_instance-c_did_not_go_second_consultation-1">
+            <value>Tired</value>
+          </text>
+          <text id="static_instance-c_did_not_go_second_consultation-2">
+            <value>Follow</value>
+          </text>
+          <text id="static_instance-c_did_not_go_second_consultation-3">
+            <value>Mari Refusal</value>
+          </text>
+          <text id="static_instance-c_did_not_go_second_consultation-4">
+            <value>Not important</value>
+          </text>
+          <text id="static_instance-c_did_not_go_second_consultation-5">
+            <value>Busy</value>
+          </text>
+          <text id="static_instance-c_did_not_go_second_consultation-6">
+            <value>Not Ready</value>
+          </text>
+          <text id="static_instance-c_did_not_go_second_consultation-7">
+            <value>Other</value>
+          </text>
+          <text id="static_instance-c_how_patient_found-0">
+            <value>During a home visit</value>
+          </text>
+          <text id="static_instance-c_how_patient_found-1">
+            <value>Patient when to CHW</value>
+          </text>
+          <text id="static_instance-c_how_patient_found-2">
+            <value>Other</value>
+          </text>
+          <text id="static_instance-c_not_done_today-0">
+            <value>Phone discharged/broken</value>
+          </text>
+          <text id="static_instance-c_not_done_today-1">
+            <value>Phone lost</value>
+          </text>
+          <text id="static_instance-c_not_done_today-2">
+            <value>Other</value>
+          </text>
+          <text id="static_instance-c_task_to_perform-0">
+            <value>Followup</value>
+          </text>
+          <text id="static_instance-c_task_to_perform-1">
+            <value>Close</value>
+          </text>
+          <text id="static_instance-c_why_close_out-0">
+            <value><output value=" /postnatal_followup/patient_name "/> is deceased</value>
+          </text>
+          <text id="static_instance-c_why_close_out-1">
+            <value>Newborn is deceased</value>
+          </text>
+          <text id="static_instance-c_why_close_out-2">
+            <value>other</value>
+          </text>
+          <text id="static_instance-child_vaccines-0">
+            <value>BCG</value>
+          </text>
+          <text id="static_instance-child_vaccines-1">
+            <value>DTC-Hib-Hep B1 (Penta 1)</value>
+          </text>
+          <text id="static_instance-child_vaccines-2">
+            <value>VPO 0</value>
+          </text>
+          <text id="static_instance-child_vaccines-3">
+            <value>Polio_0 (VPO)</value>
+          </text>
+          <text id="static_instance-child_vaccines-4">
+            <value>Pneumo 0</value>
+          </text>
+          <text id="static_instance-child_vaccines-5">
+            <value>Rota 0</value>
+          </text>
+          <text id="static_instance-knows_length-0">
+            <value>I don't know</value>
+          </text>
+          <text id="static_instance-knows_length-1">
+            <value>Length in cm</value>
+          </text>
+          <text id="static_instance-knows_weight-0">
+            <value>I don't know</value>
+          </text>
+          <text id="static_instance-knows_weight-1">
+            <value>Weight in grams</value>
+          </text>
+          <text id="static_instance-male_female-0">
+            <value>Male</value>
+          </text>
+          <text id="static_instance-male_female-1">
+            <value>Female</value>
+          </text>
+          <text id="static_instance-pnc_visits-0">
+            <value>Within 24 hours (check this box if facility delivery)</value>
+          </text>
+          <text id="static_instance-pnc_visits-1">
+            <value>3 days</value>
+          </text>
+          <text id="static_instance-pnc_visits-2">
+            <value>7 days</value>
+          </text>
+          <text id="static_instance-pnc_visits-3">
+            <value>6 weeks</value>
+          </text>
+          <text id="static_instance-pnc_visits-4">
+            <value>None of the above</value>
+          </text>
+          <text id="static_instance-translate_woman_label-0">
+            <value>the woman</value>
+          </text>
+          <text id="static_instance-translate_woman_start_label-0">
+            <value>Woman</value>
+          </text>
+          <text id="static_instance-vaccines-0">
+            <value>BCG only</value>
+          </text>
+          <text id="static_instance-vaccines-1">
+            <value>Birth Polio only</value>
+          </text>
+          <text id="static_instance-vaccines-2">
+            <value>BCG and Birth Polio</value>
+          </text>
+          <text id="static_instance-vaccines-3">
+            <value>None</value>
+          </text>
+          <text id="static_instance-yes_no-0">
+            <value>Yes</value>
+          </text>
+          <text id="static_instance-yes_no-1">
+            <value>No</value>
+          </text>
+        </translation>
+        <translation lang="fr">
+          <text id="/postnatal_followup/g_child_care_advice/n_child_changes_care:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/postnatal_followup/g_child_care_advice/n_child_changes_care:label">
+            <value>Les changes doivent être faits en moyenne 7 à 8 fois par jour.
+
+Les soins du cordon doivent être faits au moins 1 fois par jour et dès qu'il est souillé par des urines ou des selles.
+
+Les soins du cordon ont pour but la prévention de l'infection, le séchage du cordon et la bonne cicatrisation de la zone d'insertion</value>
+          </text>
+          <text id="/postnatal_followup/g_child_care_advice/n_child_clothes_care:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/postnatal_followup/g_child_care_advice/n_child_clothes_care:label">
+            <value>Placez le nouveau-né dans un lit avec la mère pour qu'il soit au chaud et allaité. 
+
+ Maintenez le nouveau-né contre sa mère, peau contre peau.</value>
+          </text>
+          <text id="/postnatal_followup/g_child_care_advice/n_child_temperature_care:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/postnatal_followup/g_child_care_advice/n_child_temperature_care:label">
+            <value>Maintenez la pièce où se trouve le nouveau-né chaude et exempte de courants d'air de jour comme de nuit. 
+
+Habillez le bébé de vêtements chauds (le nouveau-né a besoin d'au moins 1 à 2 couches de vêtements de plus qu'un adulte).
+
+Couvrez la tête du bébé d'une étoffe ou d'un chapeau. 
+
+Des vêtements et des couvertures serrés ne le gardent pas aussi bien au chaud</value>
+          </text>
+          <text id="/postnatal_followup/g_child_care_advice:label">
+            <value>Conseils sur l'entretien du nouveau-né</value>
+          </text>
+          <text id="/postnatal_followup/g_end_followup/why_end_followup/mother_deceased:label">
+            <value>Décès de <output value=" /postnatal_followup/patient_name "/></value>
+          </text>
+          <text id="/postnatal_followup/g_end_followup/why_end_followup/newborn_deceased:label">
+            <value>Décès du/des Nouveau (x) Né (s)</value>
+          </text>
+          <text id="/postnatal_followup/g_end_followup/why_end_followup/other:label">
+            <value>Autre</value>
+          </text>
+          <text id="/postnatal_followup/g_end_followup/why_end_followup:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/postnatal_followup/g_end_followup/why_end_followup:label">
+            <value>Pourquoi voulez-vous clôturer ce suivi?</value>
+          </text>
+          <text id="/postnatal_followup/g_end_followup/why_end_followup_other:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/postnatal_followup/g_end_followup/why_end_followup_other:label">
+            <value>Précisez (Autre)</value>
+          </text>
+          <text id="/postnatal_followup/g_end_followup:label">
+            <value>Clôture</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_bleeding/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_bleeding/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_bleeding:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_bleeding:label">
+            <value>Saignement non-stop</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_blurred_vision/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_blurred_vision/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_blurred_vision:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_blurred_vision:label">
+            <value>Vision floue</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_breast_abscess/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_breast_abscess/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_breast_abscess:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_breast_abscess:label">
+            <value>Abcès mammaire</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_calf_pain/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_calf_pain/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_calf_pain:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_calf_pain:label">
+            <value>Douleur au mollet</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_fever/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_fever/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_fever:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_fever:label">
+            <value>Fièvre</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_headaches/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_headaches/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_headaches:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_headaches:label">
+            <value>Maux de tête persistants</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_stomach_ache/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_stomach_ache/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_stomach_ache:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_stomach_ache:label">
+            <value>Maux d'estomac</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_vaginal_discharge/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_vaginal_discharge/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_vaginal_discharge:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_vaginal_discharge:label">
+            <value>Écoulement vaginal malodorant ou anormal</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/n_danger_sign:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs/n_danger_sign:label">
+            <value><output value=" /postnatal_followup/patient_name "/> présente t-elle l'un des signes suivants?</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_danger_signs:label">
+            <value>Signes de danger chez <output value=" /postnatal_followup/patient_name "/></value>
+          </text>
+          <text id="/postnatal_followup/g_mother_info/height_mother:jr:constraintMsg">
+            <value>La taille doit etre entre 10 et 250</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_info/height_mother:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_info/height_mother:label">
+            <value>Taille de <output value=" /postnatal_followup/patient_name "/> en cm</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_info/weight_mother:jr:constraintMsg">
+            <value>Le poids doit etre entre 15 et 200 kg</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_info/weight_mother:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_info/weight_mother:label">
+            <value>Poids de <output value=" /postnatal_followup/patient_name "/> en Kg</value>
+          </text>
+          <text id="/postnatal_followup/g_mother_info:label">
+            <value>Informations sur la mère</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_child_vaccination/bcg_vaccine_date:jr:constraintMsg">
+            <value>La date doit être dans le passé</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_child_vaccination/bcg_vaccine_date:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_child_vaccination/bcg_vaccine_date:label">
+            <value>Entrez la date à laquelle le vaccin BCG a été administré</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_child_vaccination/dtc_vaccine_date:jr:constraintMsg">
+            <value>La date doit être dans le passé</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_child_vaccination/dtc_vaccine_date:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_child_vaccination/dtc_vaccine_date:label">
+            <value>Entrez la date à laquelle le vaccin DTC-Hib-Hep B1 (Penta 1) a été administré</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_child_vaccination/has_child_vaccine:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_child_vaccination/has_child_vaccine:label">
+            <value>Le nouveau-né a t-il été vacciné?</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_child_vaccination/pneumo_vaccine_date:jr:constraintMsg">
+            <value>La date doit être dans le passé</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_child_vaccination/pneumo_vaccine_date:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_child_vaccination/pneumo_vaccine_date:label">
+            <value>Entrez la date à laquelle le vaccin Pneumo 1 a été administré</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_child_vaccination/polio_vaccine_date:jr:constraintMsg">
+            <value>La date doit être dans le passé</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_child_vaccination/polio_vaccine_date:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_child_vaccination/polio_vaccine_date:label">
+            <value>Entrez la date à laquelle le vaccin Polio 0 a été administré</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_child_vaccination/rota_vaccine_date:jr:constraintMsg">
+            <value>La date doit être dans le passé</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_child_vaccination/rota_vaccine_date:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_child_vaccination/rota_vaccine_date:label">
+            <value>Entrez la date à laquelle le vaccin Rota 1 a été administré</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_child_vaccination/vpo_vaccine_date:jr:constraintMsg">
+            <value>La date doit être dans le passé</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_child_vaccination/vpo_vaccine_date:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_child_vaccination/vpo_vaccine_date:label">
+            <value>Entrez la date à laquelle le vaccin VPO 1 a été administré</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_child_vaccination:label">
+            <value>Vaccination du nouveau-né</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_new_born_care/how_many_clean_per_day:jr:constraintMsg">
+            <value>Le nombre doit etre entre 0 et 20</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_new_born_care/how_many_clean_per_day:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_new_born_care/how_many_clean_per_day:label">
+            <value>Combien de fois en moyenne les changes sont faits par jr ?</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_new_born_care/is_ombilical_cord_protected/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_new_born_care/is_ombilical_cord_protected/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_new_born_care/is_ombilical_cord_protected:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_new_born_care/is_ombilical_cord_protected:label">
+            <value>Le cordon ombrilical du nouveau-né est il bien protégé?</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_new_born_care/n_follow_new_born_assurance:label">
+            <value>Accompagner le nouveau né au Centre de Santé. OBLIGATOIREMENT vous devez vous rassurez que ce nouveau né a reçu les soins dans les 24 heures.</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_new_born_care/n_follow_newborn:label">
+            <value>Vous devez accompagner le nouveau-né au Centre de Santé. Si ses parents refusent pour diverses raisons, alerter immédiatement votre superviseur</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_new_born_care/n_refer_cscom:label">
+            <value>Référer au Centre de Santé pour signe de danger du nouveau né</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_new_born_care:jr:requiredMsg">
+            <value>Entretien de l'enfant</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_new_born_care:label">
+            <value>Entretien de l'enfant</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_abdomen/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_abdomen/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_abdomen:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_abdomen:label">
+            <value>Abdomen distendu</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_breathing/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_breathing/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_breathing:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_breathing:label">
+            <value>Difficulté à respirer</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_cutaneous_pustules/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_cutaneous_pustules/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_cutaneous_pustules:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_cutaneous_pustules:label">
+            <value>Pustules cutanées avec abcès</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_refusal_to_feed/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_refusal_to_feed/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_refusal_to_feed:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_refusal_to_feed:label">
+            <value>Refuse de manger</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_seizures/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_seizures/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_seizures:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_seizures:label">
+            <value>Convulsions</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_umbilical_infection/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_umbilical_infection/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_umbilical_infection:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_umbilical_infection:label">
+            <value>Cordon ombilical infecté</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_unconscious/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_unconscious/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_unconscious:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_unconscious:label">
+            <value>Inconscient</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_vomit/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_vomit/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_vomit:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_vomit:label">
+            <value>Vomit tout</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_weak_cry/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_weak_cry/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_weak_cry:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_weak_cry:label">
+            <value>Il a un cri faible ou absent</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_respiratory_frequency:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_respiratory_frequency:label">
+            <value>Quelle est la fréquence respiratoire du nouveau?</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_temperature:jr:constraintMsg">
+            <value>La temperature doit etre entre 30 et 45 degres</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_temperature:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/child_temperature:label">
+            <value>Quelle est la température du nouveau-né?</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/n_child_danger_sign:label">
+            <value>Le nouveau né présente-t-il un ou plusieurs de ces signes d'accompagnement immédiat?</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/n_disinfect_thermometer:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/n_disinfect_thermometer:label">
+            <value>Désinfecter correctement le thermomètre avant de le ranger.</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/n_fever_presence:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/n_fever_presence:label">
+            <value>Présence de Fièvre chez l'enfant</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/n_frequency_summary:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/n_frequency_summary:label">
+            <value>La fréquence est : <output value=" /postnatal_followup/g_new_born_repeat/g_treatment/child_frequency_respiratory_rate "/></value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/n_how_measure_respiratory_freq:label">
+            <value>**Appuyer sur le minuteur et compter le nombre de respirations durant 6 à 30 secondes**</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/n_hypothermia:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/n_hypothermia:label">
+            <value>Hypothermie chez l'enfant</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/n_refer_health_center:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment/n_refer_health_center:label">
+            <value>Referer au Centre de Sante</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/g_treatment:label">
+            <value>Signe de danger du nouveau-né</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/new_born_alive/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/new_born_alive/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/new_born_alive:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/postnatal_followup/g_new_born_repeat/new_born_alive:label">
+            <value>Le nouveau-né est-il en vie?</value>
+          </text>
+          <text id="/postnatal_followup/g_postnatal_consultation/next_visit_date:jr:constraintMsg">
+            <value>La date doit être dans le futur</value>
+          </text>
+          <text id="/postnatal_followup/g_postnatal_consultation/next_visit_date:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/postnatal_followup/g_postnatal_consultation/next_visit_date:label">
+            <value>Quelle est la date de la prochaine visite pour <output value=" /postnatal_followup/patient_name "/> et le nouveau-né ?</value>
+          </text>
+          <text id="/postnatal_followup/g_postnatal_consultation/other_child_mother_did_not_go:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/postnatal_followup/g_postnatal_consultation/other_child_mother_did_not_go:label">
+            <value>Préciser (Autre)</value>
+          </text>
+          <text id="/postnatal_followup/g_postnatal_consultation/why_child_mother_consult/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/postnatal_followup/g_postnatal_consultation/why_child_mother_consult/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/postnatal_followup/g_postnatal_consultation/why_child_mother_consult:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/postnatal_followup/g_postnatal_consultation/why_child_mother_consult:label">
+            <value>La mère et le nouveau-né sont-ils allés au CSCOM pour la consultation ?</value>
+          </text>
+          <text id="/postnatal_followup/g_postnatal_consultation/why_child_mother_consult_second_time/busy:label">
+            <value>Occupée</value>
+          </text>
+          <text id="/postnatal_followup/g_postnatal_consultation/why_child_mother_consult_second_time/follow:label">
+            <value>Surveillance</value>
+          </text>
+          <text id="/postnatal_followup/g_postnatal_consultation/why_child_mother_consult_second_time/ignore:label">
+            <value>Ignorer</value>
+          </text>
+          <text id="/postnatal_followup/g_postnatal_consultation/why_child_mother_consult_second_time/mari_refuse:label">
+            <value>Refus du mari</value>
+          </text>
+          <text id="/postnatal_followup/g_postnatal_consultation/why_child_mother_consult_second_time/not_important:label">
+            <value>Pas Important</value>
+          </text>
+          <text id="/postnatal_followup/g_postnatal_consultation/why_child_mother_consult_second_time/not_ready:label">
+            <value>Pas prête</value>
+          </text>
+          <text id="/postnatal_followup/g_postnatal_consultation/why_child_mother_consult_second_time/other:label">
+            <value>Autre</value>
+          </text>
+          <text id="/postnatal_followup/g_postnatal_consultation/why_child_mother_consult_second_time/tired:label">
+            <value>Fatigué</value>
+          </text>
+          <text id="/postnatal_followup/g_postnatal_consultation/why_child_mother_consult_second_time:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/postnatal_followup/g_postnatal_consultation/why_child_mother_consult_second_time:label">
+            <value>Pourquoi la mère et le nouveau-né ne sont-ils pas partis pour la deuxième consultation ?</value>
+          </text>
+          <text id="/postnatal_followup/g_postnatal_consultation:label">
+            <value>Consultations postnatales</value>
+          </text>
+          <text id="/postnatal_followup/g_realisation/followup_date:jr:constraintMsg">
+            <value>La date doit être dans le passé</value>
+          </text>
+          <text id="/postnatal_followup/g_realisation/followup_date:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/postnatal_followup/g_realisation/followup_date:label">
+            <value>Entrez la date où le suivi a été fait:</value>
+          </text>
+          <text id="/postnatal_followup/g_realisation/followup_done_today/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/postnatal_followup/g_realisation/followup_done_today/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/postnatal_followup/g_realisation/followup_done_today:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/postnatal_followup/g_realisation/followup_done_today:label">
+            <value>Ce suivi a-t-il été fait aujourd'hui?</value>
+          </text>
+          <text id="/postnatal_followup/g_realisation/how_patient_found/during_home_visit:label">
+            <value>Au cours de la visite à domicile</value>
+          </text>
+          <text id="/postnatal_followup/g_realisation/how_patient_found/other:label">
+            <value>Autre</value>
+          </text>
+          <text id="/postnatal_followup/g_realisation/how_patient_found/patient_to_chw:label">
+            <value>La patiente s'est rendue chez l'ASC</value>
+          </text>
+          <text id="/postnatal_followup/g_realisation/how_patient_found:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/postnatal_followup/g_realisation/how_patient_found:label">
+            <value>Comment <output value=" /postnatal_followup/patient_name "/> a été retrouvée?</value>
+          </text>
+          <text id="/postnatal_followup/g_realisation/not_done_today/other:label">
+            <value>Autre</value>
+          </text>
+          <text id="/postnatal_followup/g_realisation/not_done_today/phone_discharged:label">
+            <value>Téléphone Déchargé/Cassé</value>
+          </text>
+          <text id="/postnatal_followup/g_realisation/not_done_today/phone_lost:label">
+            <value>Téléphone perdu</value>
+          </text>
+          <text id="/postnatal_followup/g_realisation/not_done_today:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/postnatal_followup/g_realisation/not_done_today:label">
+            <value>Pourquoi le suivi n'a pas été fait aujourd'hui?</value>
+          </text>
+          <text id="/postnatal_followup/g_realisation/other_followup_reason:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/postnatal_followup/g_realisation/other_followup_reason:label">
+            <value>Préciser (Autre)</value>
+          </text>
+          <text id="/postnatal_followup/g_realisation/other_patient_found_reason:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/postnatal_followup/g_realisation/other_patient_found_reason:label">
+            <value>Préciser (Autre)</value>
+          </text>
+          <text id="/postnatal_followup/g_realisation:label">
+            <value>Date de réalisation</value>
+          </text>
+          <text id="/postnatal_followup/g_summary/n_close_out:label">
+            <value>Il n'y a plus de suivi pour cette femme.</value>
+          </text>
+          <text id="/postnatal_followup/g_summary/n_delivery_date:label">
+            <value>Date d'accouchement: <output value=" /postnatal_followup/delivery_date_french "/></value>
+          </text>
+          <text id="/postnatal_followup/g_summary/n_delivery_info:label">
+            <value>Informations sur l'accouchement</value>
+          </text>
+          <text id="/postnatal_followup/g_summary/n_followup:label">
+            <value>Vous devez accompagner <output value=" /postnatal_followup/patient_name "/> au Centre de santé.</value>
+          </text>
+          <text id="/postnatal_followup/g_summary/n_next_cpon_date:label">
+            <value>Date de la prochaine CPON : <output value=" /postnatal_followup/next_visit_date_french "/></value>
+          </text>
+          <text id="/postnatal_followup/g_summary/n_next_followup:label">
+            <value>La prochaine visite de l'ASC est : <output value=" /postnatal_followup/inputs/t_next_followup_date "/></value>
+          </text>
+          <text id="/postnatal_followup/g_summary/n_next_followup_summary:label">
+            <value>Suivi&lt;i class="fa fa-flag"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/postnatal_followup/g_summary/n_next_request:label">
+            <value>La prochaine visite de suivi est pour 24 h : <output value=" /postnatal_followup/next_followup_1day "/></value>
+          </text>
+          <text id="/postnatal_followup/g_summary/n_presence_mother_danger_signs:label">
+            <value>Signes de danger chez la mere</value>
+          </text>
+          <text id="/postnatal_followup/g_summary/n_refer_cscom:label">
+            <value>Référer au CSCOM pour signes de danger chez la maman</value>
+          </text>
+          <text id="/postnatal_followup/g_summary/n_visits:label">
+            <value>Informer <output value=" /postnatal_followup/patient_name "/> que aujourd'hui prend fin les visites de suivi. Informer également <output value=" /postnatal_followup/patient_name "/> que si elle constate un problème minime que soit qu'elle vous contactes IMMÉDIATEMENT. Soumettre ce formulaire va fermer le suivi de <output value=" /postnatal_followup/patient_name "/> après accouchement . Il n'y aura plus de rappels de suivi pour <output value=" /postnatal_followup/patient_name "/>.</value>
+          </text>
+          <text id="/postnatal_followup/g_summary/r_instructions:label">
+            <value>Instructions spéciales&lt;i class = "fa fa-hand-o-right"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/postnatal_followup/g_summary/r_patient_info:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /postnatal_followup/patient_name "/>&lt;/h4&gt; &lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /postnatal_followup/patient_age_in_years "/> years old&lt;/h5&gt;</value>
+          </text>
+          <text id="/postnatal_followup/g_summary/r_summary:label">
+            <value>Détail de la patiente &lt;i class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/postnatal_followup/g_summary:label">
+            <value>Résumé</value>
+          </text>
+          <text id="/postnatal_followup/g_task/task_to_perform/close_followup:label">
+            <value>Clôture</value>
+          </text>
+          <text id="/postnatal_followup/g_task/task_to_perform/postnatal_followup:label">
+            <value>Suivi</value>
+          </text>
+          <text id="/postnatal_followup/g_task/task_to_perform:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/postnatal_followup/g_task/task_to_perform:label">
+            <value>Que voulez-vous faire?</value>
+          </text>
+          <text id="/postnatal_followup/g_task:label">
+            <value>Réalisation du Suivi</value>
+          </text>
+          <text id="/postnatal_followup/inputs/contact/_id:label">
+            <value>Quel est le nom de la patiente ?</value>
+          </text>
+          <text id="/postnatal_followup/inputs/contact/date_of_birth:label">
+            <value>Date de naissance</value>
+          </text>
+          <text id="/postnatal_followup/inputs/contact/name:label">
+            <value>Nom</value>
+          </text>
+          <text id="/postnatal_followup/inputs/contact/parent/_id:label">
+            <value>ID du Menage</value>
+          </text>
+          <text id="/postnatal_followup/inputs/contact/parent/parent/_id:label">
+            <value>ID de la concession</value>
+          </text>
+          <text id="/postnatal_followup/inputs/contact/parent/parent/contact/chw_name:label">
+            <value>Nom de l'ASC</value>
+          </text>
+          <text id="/postnatal_followup/inputs/contact/parent/parent/contact/phone:label">
+            <value>Téléphone de l'ASC</value>
+          </text>
+          <text id="/postnatal_followup/inputs/contact/parent/parent/parent/_id:label">
+            <value>ID du village</value>
+          </text>
+          <text id="/postnatal_followup/inputs/contact/patient_id:label">
+            <value>ID de patiente</value>
+          </text>
+          <text id="/postnatal_followup/inputs/contact/sex:label">
+            <value>Sexe</value>
+          </text>
+          <text id="/postnatal_followup/inputs/contact/short_name:label">
+            <value>Nom Court</value>
+          </text>
+          <text id="/postnatal_followup/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/postnatal_followup/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/postnatal_followup/inputs/t_delivery_date:label">
+            <value>Date d'accouchement</value>
+          </text>
+          <text id="/postnatal_followup/inputs/t_delivery_location:label">
+            <value>Lieu d'accouchement</value>
+          </text>
+          <text id="/postnatal_followup/inputs/t_follow_up_count:label">
+            <value>Nombre de visites postnatales</value>
+          </text>
+          <text id="/postnatal_followup/inputs/t_next_followup_date:label">
+            <value>Prochaine Date de Suivi</value>
+          </text>
+          <text id="/postnatal_followup/inputs/t_number_of_children:label">
+            <value>Nombre d'enfants</value>
+          </text>
+          <text id="/postnatal_followup/inputs/user/contact_id:label">
+            <value>Contact ID</value>
+          </text>
+          <text id="/postnatal_followup/inputs/user/name:label">
+            <value>Nom</value>
+          </text>
+          <text id="/postnatal_followup/inputs/user/phone:label">
+            <value>Téléphone</value>
+          </text>
+          <text id="/postnatal_followup/inputs/user:label">
+            <value>Utilisateur</value>
+          </text>
+          <text id="static_instance-c_did_not_go_second_consultation-0">
+            <value>Ignorer</value>
+          </text>
+          <text id="static_instance-c_did_not_go_second_consultation-1">
+            <value>Fatigué</value>
+          </text>
+          <text id="static_instance-c_did_not_go_second_consultation-2">
+            <value>Surveillance</value>
+          </text>
+          <text id="static_instance-c_did_not_go_second_consultation-3">
+            <value>Refus du mari</value>
+          </text>
+          <text id="static_instance-c_did_not_go_second_consultation-4">
+            <value>Pas Important</value>
+          </text>
+          <text id="static_instance-c_did_not_go_second_consultation-5">
+            <value>Occupée</value>
+          </text>
+          <text id="static_instance-c_did_not_go_second_consultation-6">
+            <value>Pas prête</value>
+          </text>
+          <text id="static_instance-c_did_not_go_second_consultation-7">
+            <value>Autre</value>
+          </text>
+          <text id="static_instance-c_how_patient_found-0">
+            <value>Au cours de la visite à domicile</value>
+          </text>
+          <text id="static_instance-c_how_patient_found-1">
+            <value>La patiente s'est rendue chez l'ASC</value>
+          </text>
+          <text id="static_instance-c_how_patient_found-2">
+            <value>Autre</value>
+          </text>
+          <text id="static_instance-c_not_done_today-0">
+            <value>Téléphone Déchargé/Cassé</value>
+          </text>
+          <text id="static_instance-c_not_done_today-1">
+            <value>Téléphone perdu</value>
+          </text>
+          <text id="static_instance-c_not_done_today-2">
+            <value>Autre</value>
+          </text>
+          <text id="static_instance-c_task_to_perform-0">
+            <value>Suivi</value>
+          </text>
+          <text id="static_instance-c_task_to_perform-1">
+            <value>Clôture</value>
+          </text>
+          <text id="static_instance-c_why_close_out-0">
+            <value>Décès de <output value=" /postnatal_followup/patient_name "/></value>
+          </text>
+          <text id="static_instance-c_why_close_out-1">
+            <value>Décès du/des Nouveau (x) Né (s)</value>
+          </text>
+          <text id="static_instance-c_why_close_out-2">
+            <value>Autre</value>
+          </text>
+          <text id="static_instance-child_vaccines-0">
+            <value>BCG</value>
+          </text>
+          <text id="static_instance-child_vaccines-1">
+            <value>DTC-Hib-Hep B1 (Penta 1)</value>
+          </text>
+          <text id="static_instance-child_vaccines-2">
+            <value>VPO 1</value>
+          </text>
+          <text id="static_instance-child_vaccines-3">
+            <value>Polio_0 (VPO)</value>
+          </text>
+          <text id="static_instance-child_vaccines-4">
+            <value>Pneumo 1</value>
+          </text>
+          <text id="static_instance-child_vaccines-5">
+            <value>Rota 1</value>
+          </text>
+          <text id="static_instance-knows_length-0">
+            <value>-</value>
+          </text>
+          <text id="static_instance-knows_length-1">
+            <value>-</value>
+          </text>
+          <text id="static_instance-knows_weight-0">
+            <value>-</value>
+          </text>
+          <text id="static_instance-knows_weight-1">
+            <value>-</value>
+          </text>
+          <text id="static_instance-male_female-0">
+            <value>-</value>
+          </text>
+          <text id="static_instance-male_female-1">
+            <value>-</value>
+          </text>
+          <text id="static_instance-pnc_visits-0">
+            <value>-</value>
+          </text>
+          <text id="static_instance-pnc_visits-1">
+            <value>-</value>
+          </text>
+          <text id="static_instance-pnc_visits-2">
+            <value>-</value>
+          </text>
+          <text id="static_instance-pnc_visits-3">
+            <value>-</value>
+          </text>
+          <text id="static_instance-pnc_visits-4">
+            <value>-</value>
+          </text>
+          <text id="static_instance-translate_woman_label-0">
+            <value>-</value>
+          </text>
+          <text id="static_instance-translate_woman_start_label-0">
+            <value>-</value>
+          </text>
+          <text id="static_instance-vaccines-0">
+            <value>-</value>
+          </text>
+          <text id="static_instance-vaccines-1">
+            <value>-</value>
+          </text>
+          <text id="static_instance-vaccines-2">
+            <value>-</value>
+          </text>
+          <text id="static_instance-vaccines-3">
+            <value>-</value>
+          </text>
+          <text id="static_instance-yes_no-0">
+            <value>Oui</value>
+          </text>
+          <text id="static_instance-yes_no-1">
+            <value>Non</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <postnatal_followup id="postnatal_followup" prefix="J1!postnatal_followup!" delimiter="#" version="2022-05-11  13-42">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <t_follow_up_count/>
+            <t_number_of_children/>
+            <t_delivery_date/>
+            <t_next_followup_date/>
+            <t_delivery_location/>
+            <user>
+              <contact_id/>
+              <name/>
+              <phone/>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <short_name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <_id/>
+                <parent>
+                  <_id/>
+                  <parent>
+                    <_id/>
+                  </parent>
+                  <contact>
+                    <chw_name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <household_id tag="hidden"/>
+          <area_id tag="hidden"/>
+          <facility_id tag="hidden"/>
+          <patient_age_in_years tag="hidden"/>
+          <patient_uuid tag="hidden"/>
+          <patient_id tag="hidden"/>
+          <patient_name tag="hidden"/>
+          <patient_short_name tag="hidden"/>
+          <patient_short_name_start tag="hidden"/>
+          <has_mother_danger_signs/>
+          <next_visit_date_french/>
+          <delivery_date_french/>
+          <next_followup_1day/>
+          <has_child_danger_signs/>
+          <one_alive_child_exists/>
+          <g_task>
+            <task_to_perform/>
+          </g_task>
+          <g_realisation>
+            <followup_done_today/>
+            <followup_date/>
+            <not_done_today/>
+            <other_followup_reason/>
+            <how_patient_found/>
+            <other_patient_found_reason/>
+          </g_realisation>
+          <g_postnatal_consultation>
+            <why_child_mother_consult/>
+            <why_child_mother_consult_second_time/>
+            <other_child_mother_did_not_go/>
+            <next_visit_date/>
+          </g_postnatal_consultation>
+          <g_mother_info>
+            <weight_mother/>
+            <height_mother/>
+          </g_mother_info>
+          <g_mother_danger_signs>
+            <n_danger_sign/>
+            <mother_danger_sign_bleeding/>
+            <mother_danger_sign_headaches/>
+            <mother_danger_sign_stomach_ache/>
+            <mother_danger_sign_fever/>
+            <mother_danger_sign_vaginal_discharge/>
+            <mother_danger_sign_breast_abscess/>
+            <mother_danger_sign_blurred_vision/>
+            <mother_danger_sign_calf_pain/>
+          </g_mother_danger_signs>
+          <g_new_born_repeat_count/>
+          <g_new_born_repeat jr:template="">
+            <new_born_alive/>
+            <new_born_alive_boolean/>
+            <g_treatment>
+              <n_child_danger_sign/>
+              <child_danger_sign_refusal_to_feed/>
+              <child_danger_sign_vomit/>
+              <child_danger_sign_breathing/>
+              <child_danger_sign_umbilical_infection/>
+              <child_danger_sign_cutaneous_pustules/>
+              <child_danger_sign_abdomen/>
+              <child_danger_sign_weak_cry/>
+              <child_danger_sign_unconscious/>
+              <child_danger_sign_seizures/>
+              <child_has_danger_signs/>
+              <child_has_danger_signs_boolean/>
+              <child_temperature/>
+              <n_disinfect_thermometer/>
+              <n_fever_presence/>
+              <n_hypothermia/>
+              <child_respiratory_frequency/>
+              <n_how_measure_respiratory_freq>30</n_how_measure_respiratory_freq>
+              <child_frequency_respiratory_rate/>
+              <n_frequency_summary/>
+              <n_refer_health_center/>
+            </g_treatment>
+            <g_child_vaccination>
+              <delivery_period_elapsed/>
+              <time_vaccination/>
+              <has_child_vaccine/>
+              <bcg_vaccine_date/>
+              <polio_vaccine_date/>
+              <dtc_vaccine_date/>
+              <pneumo_vaccine_date/>
+              <vpo_vaccine_date/>
+              <rota_vaccine_date/>
+            </g_child_vaccination>
+            <g_new_born_care>
+              <is_ombilical_cord_protected/>
+              <how_many_clean_per_day/>
+              <n_refer_cscom/>
+              <n_follow_newborn/>
+              <n_follow_new_born_assurance/>
+            </g_new_born_care>
+          </g_new_born_repeat>
+          <g_child_care_advice>
+            <n_child_changes_care/>
+            <n_child_temperature_care/>
+            <n_child_clothes_care/>
+          </g_child_care_advice>
+          <g_end_followup>
+            <why_end_followup/>
+            <why_end_followup_other/>
+          </g_end_followup>
+          <g_summary>
+            <r_summary/>
+            <r_patient_info/>
+            <n_presence_mother_danger_signs/>
+            <n_refer_cscom/>
+            <n_delivery_info/>
+            <n_delivery_date/>
+            <n_next_cpon_date/>
+            <r_instructions/>
+            <n_visits/>
+            <n_followup/>
+            <n_next_followup_summary/>
+            <n_next_followup/>
+            <n_next_request/>
+            <n_close_out/>
+          </g_summary>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </postnatal_followup>
+      </instance>
+      <instance id="contact-summary"/>
+      <instance id="c_task_to_perform">
+        <root>
+          <item>
+            <itextId>static_instance-c_task_to_perform-0</itextId>
+            <name>postnatal_followup</name>
+          </item>
+          <item>
+            <itextId>static_instance-c_task_to_perform-1</itextId>
+            <name>close_followup</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="yes_no">
+        <root>
+          <item>
+            <itextId>static_instance-yes_no-0</itextId>
+            <name>yes</name>
+          </item>
+          <item>
+            <itextId>static_instance-yes_no-1</itextId>
+            <name>no</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="c_not_done_today">
+        <root>
+          <item>
+            <itextId>static_instance-c_not_done_today-0</itextId>
+            <name>phone_discharged</name>
+          </item>
+          <item>
+            <itextId>static_instance-c_not_done_today-1</itextId>
+            <name>phone_lost</name>
+          </item>
+          <item>
+            <itextId>static_instance-c_not_done_today-2</itextId>
+            <name>other</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="c_how_patient_found">
+        <root>
+          <item>
+            <itextId>static_instance-c_how_patient_found-0</itextId>
+            <name>during_home_visit</name>
+          </item>
+          <item>
+            <itextId>static_instance-c_how_patient_found-1</itextId>
+            <name>patient_to_chw</name>
+          </item>
+          <item>
+            <itextId>static_instance-c_how_patient_found-2</itextId>
+            <name>other</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="c_did_not_go_second_consultation">
+        <root>
+          <item>
+            <itextId>static_instance-c_did_not_go_second_consultation-0</itextId>
+            <name>ignore</name>
+          </item>
+          <item>
+            <itextId>static_instance-c_did_not_go_second_consultation-1</itextId>
+            <name>tired</name>
+          </item>
+          <item>
+            <itextId>static_instance-c_did_not_go_second_consultation-2</itextId>
+            <name>follow</name>
+          </item>
+          <item>
+            <itextId>static_instance-c_did_not_go_second_consultation-3</itextId>
+            <name>mari_refuse</name>
+          </item>
+          <item>
+            <itextId>static_instance-c_did_not_go_second_consultation-4</itextId>
+            <name>not_important</name>
+          </item>
+          <item>
+            <itextId>static_instance-c_did_not_go_second_consultation-5</itextId>
+            <name>busy</name>
+          </item>
+          <item>
+            <itextId>static_instance-c_did_not_go_second_consultation-6</itextId>
+            <name>not_ready</name>
+          </item>
+          <item>
+            <itextId>static_instance-c_did_not_go_second_consultation-7</itextId>
+            <name>other</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="child_vaccines">
+        <root>
+          <item>
+            <itextId>static_instance-child_vaccines-0</itextId>
+            <name>bcg</name>
+            <category>new_vaccine</category>
+          </item>
+          <item>
+            <itextId>static_instance-child_vaccines-1</itextId>
+            <name>dtc</name>
+            <category>old_vaccine</category>
+          </item>
+          <item>
+            <itextId>static_instance-child_vaccines-2</itextId>
+            <name>vpo</name>
+            <category>old_vaccine</category>
+          </item>
+          <item>
+            <itextId>static_instance-child_vaccines-3</itextId>
+            <name>polio</name>
+            <category>new_vaccine</category>
+          </item>
+          <item>
+            <itextId>static_instance-child_vaccines-4</itextId>
+            <name>pneumo</name>
+            <category>old_vaccine</category>
+          </item>
+          <item>
+            <itextId>static_instance-child_vaccines-5</itextId>
+            <name>rota</name>
+            <category>old_vaccine</category>
+          </item>
+        </root>
+      </instance>
+      <instance id="c_why_close_out">
+        <root>
+          <item>
+            <itextId>static_instance-c_why_close_out-0</itextId>
+            <name>mother_deceased</name>
+          </item>
+          <item>
+            <itextId>static_instance-c_why_close_out-1</itextId>
+            <name>newborn_deceased</name>
+          </item>
+          <item>
+            <itextId>static_instance-c_why_close_out-2</itextId>
+            <name>other</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="male_female">
+        <root>
+          <item>
+            <itextId>static_instance-male_female-0</itextId>
+            <name>male</name>
+          </item>
+          <item>
+            <itextId>static_instance-male_female-1</itextId>
+            <name>female</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="knows_weight">
+        <root>
+          <item>
+            <itextId>static_instance-knows_weight-0</itextId>
+            <name>no</name>
+          </item>
+          <item>
+            <itextId>static_instance-knows_weight-1</itextId>
+            <name>yes</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="knows_length">
+        <root>
+          <item>
+            <itextId>static_instance-knows_length-0</itextId>
+            <name>no</name>
+          </item>
+          <item>
+            <itextId>static_instance-knows_length-1</itextId>
+            <name>yes</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="vaccines">
+        <root>
+          <item>
+            <itextId>static_instance-vaccines-0</itextId>
+            <name>bcg_only</name>
+          </item>
+          <item>
+            <itextId>static_instance-vaccines-1</itextId>
+            <name>birth_polio_only</name>
+          </item>
+          <item>
+            <itextId>static_instance-vaccines-2</itextId>
+            <name>bcg_and_birth_polio</name>
+          </item>
+          <item>
+            <itextId>static_instance-vaccines-3</itextId>
+            <name>none</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="pnc_visits">
+        <root>
+          <item>
+            <itextId>static_instance-pnc_visits-0</itextId>
+            <name>within_24_hrs</name>
+            <category>0</category>
+          </item>
+          <item>
+            <itextId>static_instance-pnc_visits-1</itextId>
+            <name>3_days</name>
+            <category>3</category>
+          </item>
+          <item>
+            <itextId>static_instance-pnc_visits-2</itextId>
+            <name>7_days</name>
+            <category>7</category>
+          </item>
+          <item>
+            <itextId>static_instance-pnc_visits-3</itextId>
+            <name>6_weeks</name>
+            <category>42</category>
+          </item>
+          <item>
+            <itextId>static_instance-pnc_visits-4</itextId>
+            <name>none</name>
+            <category>0</category>
+          </item>
+        </root>
+      </instance>
+      <instance id="translate_woman_label">
+        <root>
+          <item>
+            <itextId>static_instance-translate_woman_label-0</itextId>
+            <name>woman</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="translate_woman_start_label">
+        <root>
+          <item>
+            <itextId>static_instance-translate_woman_start_label-0</itextId>
+            <name>woman-start</name>
+          </item>
+        </root>
+      </instance>
+      <bind nodeset="/postnatal_followup/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/postnatal_followup/inputs/source" type="string"/>
+      <bind nodeset="/postnatal_followup/inputs/source_id" type="string"/>
+      <bind nodeset="/postnatal_followup/inputs/t_follow_up_count" type="string"/>
+      <bind nodeset="/postnatal_followup/inputs/t_number_of_children" type="string"/>
+      <bind nodeset="/postnatal_followup/inputs/t_delivery_date" type="string"/>
+      <bind nodeset="/postnatal_followup/inputs/t_next_followup_date" type="string"/>
+      <bind nodeset="/postnatal_followup/inputs/t_delivery_location" type="string"/>
+      <bind nodeset="/postnatal_followup/inputs/user/contact_id" type="db:person"/>
+      <bind nodeset="/postnatal_followup/inputs/user/name" type="string"/>
+      <bind nodeset="/postnatal_followup/inputs/user/phone" type="string"/>
+      <bind nodeset="/postnatal_followup/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/postnatal_followup/inputs/contact/name" type="string"/>
+      <bind nodeset="/postnatal_followup/inputs/contact/short_name" type="string"/>
+      <bind nodeset="/postnatal_followup/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/postnatal_followup/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/postnatal_followup/inputs/contact/sex" type="string"/>
+      <bind nodeset="/postnatal_followup/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/postnatal_followup/inputs/contact/parent/parent/_id" type="string"/>
+      <bind nodeset="/postnatal_followup/inputs/contact/parent/parent/parent/_id" type="string"/>
+      <bind nodeset="/postnatal_followup/inputs/contact/parent/parent/contact/chw_name" type="string"/>
+      <bind nodeset="/postnatal_followup/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind nodeset="/postnatal_followup/household_id" type="string" calculate="../inputs/contact/parent/_id"/>
+      <bind nodeset="/postnatal_followup/area_id" type="string" calculate="../inputs/contact/parent/parent/_id"/>
+      <bind nodeset="/postnatal_followup/facility_id" type="string" calculate="../inputs/contact/parent/parent/parent/_id"/>
+      <bind nodeset="/postnatal_followup/patient_age_in_years" type="string" calculate="floor( difference-in-months( ../inputs/contact/date_of_birth, today() ) div 12 )"/>
+      <bind nodeset="/postnatal_followup/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/postnatal_followup/patient_id" type="string" calculate="../inputs/contact/patient_id"/>
+      <bind nodeset="/postnatal_followup/patient_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/postnatal_followup/patient_short_name" type="string" calculate="coalesce(../inputs/contact/short_name, ../summary/custom_translations/custom_woman_label)"/>
+      <bind nodeset="/postnatal_followup/patient_short_name_start" type="string" calculate="coalesce(../inputs/contact/short_name, ../summary/custom_translations/custom_woman_start_label)"/>
+      <bind nodeset="/postnatal_followup/has_mother_danger_signs" type="string" calculate="if( /postnatal_followup/g_mother_danger_signs/mother_danger_sign_bleeding ='yes' or  /postnatal_followup/g_mother_danger_signs/mother_danger_sign_headaches ='yes' or  /postnatal_followup/g_mother_danger_signs/mother_danger_sign_stomach_ache ='yes' or  /postnatal_followup/g_mother_danger_signs/mother_danger_sign_fever ='yes' or  /postnatal_followup/g_mother_danger_signs/mother_danger_sign_vaginal_discharge ='yes' or  /postnatal_followup/g_mother_danger_signs/mother_danger_sign_breast_abscess ='yes' or  /postnatal_followup/g_mother_danger_signs/mother_danger_sign_blurred_vision ='yes' or  /postnatal_followup/g_mother_danger_signs/mother_danger_sign_calf_pain ='yes', 'yes', 'no')"/>
+      <bind nodeset="/postnatal_followup/next_visit_date_french" type="string" calculate="format-date-time( /postnatal_followup/g_postnatal_consultation/next_visit_date ,&quot;%d/%m/%Y&quot;)"/>
+      <bind nodeset="/postnatal_followup/delivery_date_french" type="string" calculate="format-date-time( /postnatal_followup/inputs/t_delivery_date ,&quot;%d/%m/%Y&quot;)"/>
+      <bind nodeset="/postnatal_followup/next_followup_1day" type="string" calculate="format-date-time(date-time(decimal-date-time(today())+ 1),&quot;%d/%m/%Y&quot;)"/>
+      <bind nodeset="/postnatal_followup/has_child_danger_signs" type="string" calculate="max( /postnatal_followup/g_new_born_repeat/g_treatment/child_has_danger_signs_boolean )"/>
+      <bind nodeset="/postnatal_followup/one_alive_child_exists" type="string" calculate="if(max( /postnatal_followup/g_new_born_repeat/new_born_alive_boolean )=1, 'yes', 'no')"/>
+      <bind nodeset="/postnatal_followup/g_task/task_to_perform" type="select1" required="true()" jr:requiredMsg="jr:itext('/postnatal_followup/g_task/task_to_perform:jr:requiredMsg')"/>
+      <bind nodeset="/postnatal_followup/g_realisation" relevant=" /postnatal_followup/g_task/task_to_perform ='postnatal_followup'"/>
+      <bind nodeset="/postnatal_followup/g_realisation/followup_done_today" type="select1" required="true()" jr:requiredMsg="jr:itext('/postnatal_followup/g_realisation/followup_done_today:jr:requiredMsg')"/>
+      <bind nodeset="/postnatal_followup/g_realisation/followup_date" type="date" required="true()" constraint=".&lt; today()-1" jr:requiredMsg="jr:itext('/postnatal_followup/g_realisation/followup_date:jr:requiredMsg')" relevant=" /postnatal_followup/g_realisation/followup_done_today ='no'" jr:constraintMsg="jr:itext('/postnatal_followup/g_realisation/followup_date:jr:constraintMsg')"/>
+      <bind nodeset="/postnatal_followup/g_realisation/not_done_today" type="select1" required="true()" relevant=" /postnatal_followup/g_realisation/followup_done_today ='no'" jr:requiredMsg="jr:itext('/postnatal_followup/g_realisation/not_done_today:jr:requiredMsg')"/>
+      <bind nodeset="/postnatal_followup/g_realisation/other_followup_reason" type="string" required="true()" relevant=" /postnatal_followup/g_realisation/not_done_today ='other'" jr:requiredMsg="jr:itext('/postnatal_followup/g_realisation/other_followup_reason:jr:requiredMsg')"/>
+      <bind nodeset="/postnatal_followup/g_realisation/how_patient_found" type="select1" required="true()" jr:requiredMsg="jr:itext('/postnatal_followup/g_realisation/how_patient_found:jr:requiredMsg')"/>
+      <bind nodeset="/postnatal_followup/g_realisation/other_patient_found_reason" type="string" required="true()" relevant=" /postnatal_followup/g_realisation/how_patient_found ='other'" jr:requiredMsg="jr:itext('/postnatal_followup/g_realisation/other_patient_found_reason:jr:requiredMsg')"/>
+      <bind nodeset="/postnatal_followup/g_postnatal_consultation" relevant=" /postnatal_followup/g_task/task_to_perform ='postnatal_followup' and  /postnatal_followup/inputs/t_follow_up_count  &lt;= 3"/>
+      <bind nodeset="/postnatal_followup/g_postnatal_consultation/why_child_mother_consult" type="select1" required="true()" jr:requiredMsg="jr:itext('/postnatal_followup/g_postnatal_consultation/why_child_mother_consult:jr:requiredMsg')"/>
+      <bind nodeset="/postnatal_followup/g_postnatal_consultation/why_child_mother_consult_second_time" type="select1" required="true()" relevant=" /postnatal_followup/g_postnatal_consultation/why_child_mother_consult  = 'no'" jr:requiredMsg="jr:itext('/postnatal_followup/g_postnatal_consultation/why_child_mother_consult_second_time:jr:requiredMsg')"/>
+      <bind nodeset="/postnatal_followup/g_postnatal_consultation/other_child_mother_did_not_go" type="string" required="true()" relevant=" /postnatal_followup/g_postnatal_consultation/why_child_mother_consult_second_time ='other'" jr:requiredMsg="jr:itext('/postnatal_followup/g_postnatal_consultation/other_child_mother_did_not_go:jr:requiredMsg')"/>
+      <bind nodeset="/postnatal_followup/g_postnatal_consultation/next_visit_date" type="date" required="true()" constraint=".&gt;today()" jr:requiredMsg="jr:itext('/postnatal_followup/g_postnatal_consultation/next_visit_date:jr:requiredMsg')" jr:constraintMsg="jr:itext('/postnatal_followup/g_postnatal_consultation/next_visit_date:jr:constraintMsg')"/>
+      <bind nodeset="/postnatal_followup/g_mother_info" relevant=" /postnatal_followup/g_task/task_to_perform ='postnatal_followup'"/>
+      <bind nodeset="/postnatal_followup/g_mother_info/weight_mother" type="int" required="true()" constraint=".&gt;=15 and .&lt;=200" jr:requiredMsg="jr:itext('/postnatal_followup/g_mother_info/weight_mother:jr:requiredMsg')" jr:constraintMsg="jr:itext('/postnatal_followup/g_mother_info/weight_mother:jr:constraintMsg')"/>
+      <bind nodeset="/postnatal_followup/g_mother_info/height_mother" type="int" required="true()" constraint=".&gt;=10 and .&lt;=250" jr:requiredMsg="jr:itext('/postnatal_followup/g_mother_info/height_mother:jr:requiredMsg')" jr:constraintMsg="jr:itext('/postnatal_followup/g_mother_info/height_mother:jr:constraintMsg')"/>
+      <bind nodeset="/postnatal_followup/g_mother_danger_signs" relevant=" /postnatal_followup/g_task/task_to_perform ='postnatal_followup'"/>
+      <bind nodeset="/postnatal_followup/g_mother_danger_signs/n_danger_sign" readonly="true()" type="string" required="true()" jr:requiredMsg="jr:itext('/postnatal_followup/g_mother_danger_signs/n_danger_sign:jr:requiredMsg')"/>
+      <bind nodeset="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_bleeding" type="select1" required="true()" jr:requiredMsg="jr:itext('/postnatal_followup/g_mother_danger_signs/mother_danger_sign_bleeding:jr:requiredMsg')"/>
+      <bind nodeset="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_headaches" type="select1" required="true()" jr:requiredMsg="jr:itext('/postnatal_followup/g_mother_danger_signs/mother_danger_sign_headaches:jr:requiredMsg')"/>
+      <bind nodeset="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_stomach_ache" type="select1" required="true()" jr:requiredMsg="jr:itext('/postnatal_followup/g_mother_danger_signs/mother_danger_sign_stomach_ache:jr:requiredMsg')"/>
+      <bind nodeset="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_fever" type="select1" required="true()" jr:requiredMsg="jr:itext('/postnatal_followup/g_mother_danger_signs/mother_danger_sign_fever:jr:requiredMsg')"/>
+      <bind nodeset="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_vaginal_discharge" type="select1" required="true()" jr:requiredMsg="jr:itext('/postnatal_followup/g_mother_danger_signs/mother_danger_sign_vaginal_discharge:jr:requiredMsg')"/>
+      <bind nodeset="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_breast_abscess" type="select1" required="true()" jr:requiredMsg="jr:itext('/postnatal_followup/g_mother_danger_signs/mother_danger_sign_breast_abscess:jr:requiredMsg')"/>
+      <bind nodeset="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_blurred_vision" type="select1" required="true()" jr:requiredMsg="jr:itext('/postnatal_followup/g_mother_danger_signs/mother_danger_sign_blurred_vision:jr:requiredMsg')"/>
+      <bind nodeset="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_calf_pain" type="select1" required="true()" jr:requiredMsg="jr:itext('/postnatal_followup/g_mother_danger_signs/mother_danger_sign_calf_pain:jr:requiredMsg')"/>
+      <bind nodeset="/postnatal_followup/g_new_born_repeat_count" type="string" readonly="true()" calculate=" /postnatal_followup/inputs/t_number_of_children "/>
+      <bind nodeset="/postnatal_followup/g_new_born_repeat" relevant=" /postnatal_followup/g_task/task_to_perform ='postnatal_followup'"/>
+      <bind nodeset="/postnatal_followup/g_new_born_repeat/new_born_alive" type="select1" required="true()" jr:requiredMsg="jr:itext('/postnatal_followup/g_new_born_repeat/new_born_alive:jr:requiredMsg')"/>
+      <bind nodeset="/postnatal_followup/g_new_born_repeat/new_born_alive_boolean" type="string" calculate="if( /postnatal_followup/g_new_born_repeat/new_born_alive ='yes',1,0)"/>
+      <bind nodeset="/postnatal_followup/g_new_born_repeat/g_treatment" relevant=" /postnatal_followup/g_new_born_repeat/new_born_alive  = 'yes'"/>
+      <bind nodeset="/postnatal_followup/g_new_born_repeat/g_treatment/n_child_danger_sign" readonly="true()" type="string"/>
+      <bind nodeset="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_refusal_to_feed" type="select1" required="true()" jr:requiredMsg="jr:itext('/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_refusal_to_feed:jr:requiredMsg')"/>
+      <bind nodeset="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_vomit" type="select1" required="true()" jr:requiredMsg="jr:itext('/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_vomit:jr:requiredMsg')"/>
+      <bind nodeset="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_breathing" type="select1" required="true()" jr:requiredMsg="jr:itext('/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_breathing:jr:requiredMsg')"/>
+      <bind nodeset="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_umbilical_infection" type="select1" required="true()" jr:requiredMsg="jr:itext('/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_umbilical_infection:jr:requiredMsg')"/>
+      <bind nodeset="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_cutaneous_pustules" type="select1" required="true()" jr:requiredMsg="jr:itext('/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_cutaneous_pustules:jr:requiredMsg')"/>
+      <bind nodeset="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_abdomen" type="select1" required="true()" jr:requiredMsg="jr:itext('/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_abdomen:jr:requiredMsg')"/>
+      <bind nodeset="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_weak_cry" type="select1" required="true()" jr:requiredMsg="jr:itext('/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_weak_cry:jr:requiredMsg')"/>
+      <bind nodeset="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_unconscious" type="select1" required="true()" jr:requiredMsg="jr:itext('/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_unconscious:jr:requiredMsg')"/>
+      <bind nodeset="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_seizures" type="select1" required="true()" jr:requiredMsg="jr:itext('/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_seizures:jr:requiredMsg')"/>
+      <bind nodeset="/postnatal_followup/g_new_born_repeat/g_treatment/child_has_danger_signs" type="string" calculate="if( /postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_refusal_to_feed ='yes' or  /postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_vomit ='yes' or  /postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_breathing ='yes' or  /postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_umbilical_infection ='yes' or  /postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_cutaneous_pustules ='yes' or  /postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_abdomen ='yes' or  /postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_weak_cry ='yes' or  /postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_unconscious ='yes' or  /postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_seizures , 'yes', 'no')"/>
+      <bind nodeset="/postnatal_followup/g_new_born_repeat/g_treatment/child_has_danger_signs_boolean" type="string" calculate="if( /postnatal_followup/g_new_born_repeat/g_treatment/child_has_danger_signs ='yes',1,0)"/>
+      <bind nodeset="/postnatal_followup/g_new_born_repeat/g_treatment/child_temperature" type="decimal" required="true()" constraint=".&gt;30 and .&lt;= 45" jr:requiredMsg="jr:itext('/postnatal_followup/g_new_born_repeat/g_treatment/child_temperature:jr:requiredMsg')" jr:constraintMsg="jr:itext('/postnatal_followup/g_new_born_repeat/g_treatment/child_temperature:jr:constraintMsg')"/>
+      <bind nodeset="/postnatal_followup/g_new_born_repeat/g_treatment/n_disinfect_thermometer" readonly="true()" type="string" jr:requiredMsg="jr:itext('/postnatal_followup/g_new_born_repeat/g_treatment/n_disinfect_thermometer:jr:requiredMsg')"/>
+      <bind nodeset="/postnatal_followup/g_new_born_repeat/g_treatment/n_fever_presence" readonly="true()" type="string" relevant=" /postnatal_followup/g_new_born_repeat/g_treatment/child_temperature  &gt; 37.5" jr:requiredMsg="jr:itext('/postnatal_followup/g_new_born_repeat/g_treatment/n_fever_presence:jr:requiredMsg')"/>
+      <bind nodeset="/postnatal_followup/g_new_born_repeat/g_treatment/n_hypothermia" readonly="true()" type="string" relevant=" /postnatal_followup/g_new_born_repeat/g_treatment/child_temperature  != '' and  /postnatal_followup/g_new_born_repeat/g_treatment/child_temperature  &lt; 35.5" jr:requiredMsg="jr:itext('/postnatal_followup/g_new_born_repeat/g_treatment/n_hypothermia:jr:requiredMsg')"/>
+      <bind nodeset="/postnatal_followup/g_new_born_repeat/g_treatment/child_respiratory_frequency" type="int" required="true()" jr:requiredMsg="jr:itext('/postnatal_followup/g_new_born_repeat/g_treatment/child_respiratory_frequency:jr:requiredMsg')"/>
+      <bind nodeset="/postnatal_followup/g_new_born_repeat/g_treatment/n_how_measure_respiratory_freq" readonly="true()" type="string"/>
+      <bind nodeset="/postnatal_followup/g_new_born_repeat/g_treatment/child_frequency_respiratory_rate" type="string" calculate="if( /postnatal_followup/g_new_born_repeat/g_treatment/child_respiratory_frequency  &gt;=50, 'Rapide', 'Normale')"/>
+      <bind nodeset="/postnatal_followup/g_new_born_repeat/g_treatment/n_frequency_summary" readonly="true()" type="string" relevant=" /postnatal_followup/g_new_born_repeat/g_treatment/child_respiratory_frequency  != ''" jr:requiredMsg="jr:itext('/postnatal_followup/g_new_born_repeat/g_treatment/n_frequency_summary:jr:requiredMsg')"/>
+      <bind nodeset="/postnatal_followup/g_new_born_repeat/g_treatment/n_refer_health_center" readonly="true()" type="string" relevant=" /postnatal_followup/g_new_born_repeat/g_treatment/child_frequency_respiratory_rate ='Rapide'" jr:requiredMsg="jr:itext('/postnatal_followup/g_new_born_repeat/g_treatment/n_refer_health_center:jr:requiredMsg')"/>
+      <bind nodeset="/postnatal_followup/g_new_born_repeat/g_child_vaccination" relevant=" /postnatal_followup/g_new_born_repeat/new_born_alive  = 'yes'"/>
+      <bind nodeset="/postnatal_followup/g_new_born_repeat/g_child_vaccination/delivery_period_elapsed" type="string" calculate="floor( decimal-date-time(today()) - decimal-date-time( /postnatal_followup/inputs/t_delivery_date ))"/>
+      <bind nodeset="/postnatal_followup/g_new_born_repeat/g_child_vaccination/time_vaccination" type="string" calculate="if( /postnatal_followup/g_new_born_repeat/g_child_vaccination/delivery_period_elapsed &lt;42, 'new_vaccine', 'old_vaccine')"/>
+      <bind nodeset="/postnatal_followup/g_new_born_repeat/g_child_vaccination/has_child_vaccine" type="select1" required="true()" jr:requiredMsg="jr:itext('/postnatal_followup/g_new_born_repeat/g_child_vaccination/has_child_vaccine:jr:requiredMsg')"/>
+      <bind nodeset="/postnatal_followup/g_new_born_repeat/g_child_vaccination/bcg_vaccine_date" type="date" required="true()" constraint=".&lt;today()" jr:requiredMsg="jr:itext('/postnatal_followup/g_new_born_repeat/g_child_vaccination/bcg_vaccine_date:jr:requiredMsg')" relevant="selected ( /postnatal_followup/g_new_born_repeat/g_child_vaccination/has_child_vaccine , 'bcg')" jr:constraintMsg="jr:itext('/postnatal_followup/g_new_born_repeat/g_child_vaccination/bcg_vaccine_date:jr:constraintMsg')"/>
+      <bind nodeset="/postnatal_followup/g_new_born_repeat/g_child_vaccination/polio_vaccine_date" type="date" required="true()" constraint=".&lt;today()" jr:requiredMsg="jr:itext('/postnatal_followup/g_new_born_repeat/g_child_vaccination/polio_vaccine_date:jr:requiredMsg')" relevant="selected ( /postnatal_followup/g_new_born_repeat/g_child_vaccination/has_child_vaccine , 'polio')" jr:constraintMsg="jr:itext('/postnatal_followup/g_new_born_repeat/g_child_vaccination/polio_vaccine_date:jr:constraintMsg')"/>
+      <bind nodeset="/postnatal_followup/g_new_born_repeat/g_child_vaccination/dtc_vaccine_date" type="date" required="true()" constraint=".&lt;today()" jr:requiredMsg="jr:itext('/postnatal_followup/g_new_born_repeat/g_child_vaccination/dtc_vaccine_date:jr:requiredMsg')" relevant="selected ( /postnatal_followup/g_new_born_repeat/g_child_vaccination/has_child_vaccine , 'dtc')" jr:constraintMsg="jr:itext('/postnatal_followup/g_new_born_repeat/g_child_vaccination/dtc_vaccine_date:jr:constraintMsg')"/>
+      <bind nodeset="/postnatal_followup/g_new_born_repeat/g_child_vaccination/pneumo_vaccine_date" type="date" required="true()" constraint=".&lt;today()" jr:requiredMsg="jr:itext('/postnatal_followup/g_new_born_repeat/g_child_vaccination/pneumo_vaccine_date:jr:requiredMsg')" relevant="selected ( /postnatal_followup/g_new_born_repeat/g_child_vaccination/has_child_vaccine , 'pneumo')" jr:constraintMsg="jr:itext('/postnatal_followup/g_new_born_repeat/g_child_vaccination/pneumo_vaccine_date:jr:constraintMsg')"/>
+      <bind nodeset="/postnatal_followup/g_new_born_repeat/g_child_vaccination/vpo_vaccine_date" type="date" required="true()" constraint=".&lt;today()" jr:requiredMsg="jr:itext('/postnatal_followup/g_new_born_repeat/g_child_vaccination/vpo_vaccine_date:jr:requiredMsg')" relevant="selected ( /postnatal_followup/g_new_born_repeat/g_child_vaccination/has_child_vaccine , 'vpo')" jr:constraintMsg="jr:itext('/postnatal_followup/g_new_born_repeat/g_child_vaccination/vpo_vaccine_date:jr:constraintMsg')"/>
+      <bind nodeset="/postnatal_followup/g_new_born_repeat/g_child_vaccination/rota_vaccine_date" type="date" required="true()" constraint=".&lt;today()" jr:requiredMsg="jr:itext('/postnatal_followup/g_new_born_repeat/g_child_vaccination/rota_vaccine_date:jr:requiredMsg')" relevant="selected ( /postnatal_followup/g_new_born_repeat/g_child_vaccination/has_child_vaccine , 'rota')" jr:constraintMsg="jr:itext('/postnatal_followup/g_new_born_repeat/g_child_vaccination/rota_vaccine_date:jr:constraintMsg')"/>
+      <bind nodeset="/postnatal_followup/g_new_born_repeat/g_new_born_care" relevant=" /postnatal_followup/g_new_born_repeat/new_born_alive  = 'yes'" jr:requiredMsg="jr:itext('/postnatal_followup/g_new_born_repeat/g_new_born_care:jr:requiredMsg')"/>
+      <bind nodeset="/postnatal_followup/g_new_born_repeat/g_new_born_care/is_ombilical_cord_protected" type="select1" required="true()" jr:requiredMsg="jr:itext('/postnatal_followup/g_new_born_repeat/g_new_born_care/is_ombilical_cord_protected:jr:requiredMsg')"/>
+      <bind nodeset="/postnatal_followup/g_new_born_repeat/g_new_born_care/how_many_clean_per_day" type="int" required="true()" constraint=".&gt;=0 and .&lt;=20" jr:requiredMsg="jr:itext('/postnatal_followup/g_new_born_repeat/g_new_born_care/how_many_clean_per_day:jr:requiredMsg')" jr:constraintMsg="jr:itext('/postnatal_followup/g_new_born_repeat/g_new_born_care/how_many_clean_per_day:jr:constraintMsg')"/>
+      <bind nodeset="/postnatal_followup/g_new_born_repeat/g_new_born_care/n_refer_cscom" readonly="true()" type="string" relevant=" /postnatal_followup/g_new_born_repeat/g_treatment/child_has_danger_signs "/>
+      <bind nodeset="/postnatal_followup/g_new_born_repeat/g_new_born_care/n_follow_newborn" readonly="true()" type="string" relevant=" /postnatal_followup/g_new_born_repeat/g_treatment/child_has_danger_signs "/>
+      <bind nodeset="/postnatal_followup/g_new_born_repeat/g_new_born_care/n_follow_new_born_assurance" readonly="true()" type="string" relevant=" /postnatal_followup/g_new_born_repeat/g_treatment/child_has_danger_signs "/>
+      <bind nodeset="/postnatal_followup/g_child_care_advice" relevant=" /postnatal_followup/inputs/t_number_of_children  &gt; 0 and  /postnatal_followup/one_alive_child_exists ='yes' and  /postnatal_followup/g_task/task_to_perform ='postnatal_followup'"/>
+      <bind nodeset="/postnatal_followup/g_child_care_advice/n_child_changes_care" readonly="true()" type="string" jr:requiredMsg="jr:itext('/postnatal_followup/g_child_care_advice/n_child_changes_care:jr:requiredMsg')"/>
+      <bind nodeset="/postnatal_followup/g_child_care_advice/n_child_temperature_care" readonly="true()" type="string" jr:requiredMsg="jr:itext('/postnatal_followup/g_child_care_advice/n_child_temperature_care:jr:requiredMsg')"/>
+      <bind nodeset="/postnatal_followup/g_child_care_advice/n_child_clothes_care" readonly="true()" type="string" jr:requiredMsg="jr:itext('/postnatal_followup/g_child_care_advice/n_child_clothes_care:jr:requiredMsg')"/>
+      <bind nodeset="/postnatal_followup/g_end_followup" relevant=" /postnatal_followup/g_task/task_to_perform ='close_followup'"/>
+      <bind nodeset="/postnatal_followup/g_end_followup/why_end_followup" type="select1" required="true()" jr:requiredMsg="jr:itext('/postnatal_followup/g_end_followup/why_end_followup:jr:requiredMsg')"/>
+      <bind nodeset="/postnatal_followup/g_end_followup/why_end_followup_other" type="string" relevant=" /postnatal_followup/g_end_followup/why_end_followup  = 'other'" jr:requiredMsg="jr:itext('/postnatal_followup/g_end_followup/why_end_followup_other:jr:requiredMsg')"/>
+      <bind nodeset="/postnatal_followup/g_summary/r_summary" readonly="true()" type="string"/>
+      <bind nodeset="/postnatal_followup/g_summary/r_patient_info" readonly="true()" type="string"/>
+      <bind nodeset="/postnatal_followup/g_summary/n_presence_mother_danger_signs" readonly="true()" type="string" relevant=" /postnatal_followup/has_mother_danger_signs  = 'yes'"/>
+      <bind nodeset="/postnatal_followup/g_summary/n_refer_cscom" readonly="true()" type="string" relevant=" /postnatal_followup/has_mother_danger_signs  = 'yes'"/>
+      <bind nodeset="/postnatal_followup/g_summary/n_delivery_info" readonly="true()" type="string"/>
+      <bind nodeset="/postnatal_followup/g_summary/n_delivery_date" readonly="true()" type="string"/>
+      <bind nodeset="/postnatal_followup/g_summary/n_next_cpon_date" readonly="true()" type="string" relevant=" /postnatal_followup/g_postnatal_consultation/next_visit_date !=''"/>
+      <bind nodeset="/postnatal_followup/g_summary/r_instructions" readonly="true()" type="string"/>
+      <bind nodeset="/postnatal_followup/g_summary/n_visits" readonly="true()" type="string"/>
+      <bind nodeset="/postnatal_followup/g_summary/n_followup" readonly="true()" type="string" relevant=" /postnatal_followup/has_mother_danger_signs  = 'yes'"/>
+      <bind nodeset="/postnatal_followup/g_summary/n_next_followup_summary" readonly="true()" type="string"/>
+      <bind nodeset="/postnatal_followup/g_summary/n_next_followup" readonly="true()" type="string" relevant="( /postnatal_followup/has_mother_danger_signs  != 'yes' or ( /postnatal_followup/inputs/t_delivery_location  != 'home' and  /postnatal_followup/inputs/t_delivery_location  != 'other') or  /postnatal_followup/inputs/t_number_of_children  &lt; 4) and  /postnatal_followup/inputs/t_next_followup_date "/>
+      <bind nodeset="/postnatal_followup/g_summary/n_next_request" readonly="true()" type="string" relevant=" /postnatal_followup/has_mother_danger_signs  = 'yes' or  /postnatal_followup/inputs/t_delivery_location  = 'home' or  /postnatal_followup/inputs/t_delivery_location  = 'other' or  /postnatal_followup/inputs/t_number_of_children  &gt;= 4"/>
+      <bind nodeset="/postnatal_followup/g_summary/n_close_out" readonly="true()" type="string" relevant=" /postnatal_followup/g_task/task_to_perform ='close_followup'"/>
+      <bind nodeset="/postnatal_followup/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/postnatal_followup/inputs">
+      <group ref="/postnatal_followup/inputs/user">
+        <label ref="jr:itext('/postnatal_followup/inputs/user:label')"/>
+        <input appearance="db-object" ref="/postnatal_followup/inputs/user/contact_id">
+          <label ref="jr:itext('/postnatal_followup/inputs/user/contact_id:label')"/>
+        </input>
+      </group>
+      <group ref="/postnatal_followup/inputs/contact">
+        <input appearance="db-object" ref="/postnatal_followup/inputs/contact/_id">
+          <label ref="jr:itext('/postnatal_followup/inputs/contact/_id:label')"/>
+        </input>
+        <group ref="/postnatal_followup/inputs/contact/parent">
+          <input appearance="hidden" ref="/postnatal_followup/inputs/contact/parent/_id">
+            <label ref="jr:itext('/postnatal_followup/inputs/contact/parent/_id:label')"/>
+          </input>
+          <group ref="/postnatal_followup/inputs/contact/parent/parent">
+            <input appearance="hidden" ref="/postnatal_followup/inputs/contact/parent/parent/_id">
+              <label ref="jr:itext('/postnatal_followup/inputs/contact/parent/parent/_id:label')"/>
+            </input>
+            <group ref="/postnatal_followup/inputs/contact/parent/parent/parent">
+              <input appearance="hidden" ref="/postnatal_followup/inputs/contact/parent/parent/parent/_id">
+                <label ref="jr:itext('/postnatal_followup/inputs/contact/parent/parent/parent/_id:label')"/>
+              </input>
+            </group>
+            <group ref="/postnatal_followup/inputs/contact/parent/parent/contact"/>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/postnatal_followup/g_task">
+      <label ref="jr:itext('/postnatal_followup/g_task:label')"/>
+      <select1 ref="/postnatal_followup/g_task/task_to_perform">
+        <label ref="jr:itext('/postnatal_followup/g_task/task_to_perform:label')"/>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/g_task/task_to_perform/postnatal_followup:label')"/>
+          <value>postnatal_followup</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/g_task/task_to_perform/close_followup:label')"/>
+          <value>close_followup</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/postnatal_followup/g_realisation">
+      <label ref="jr:itext('/postnatal_followup/g_realisation:label')"/>
+      <select1 ref="/postnatal_followup/g_realisation/followup_done_today">
+        <label ref="jr:itext('/postnatal_followup/g_realisation/followup_done_today:label')"/>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/g_realisation/followup_done_today/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/g_realisation/followup_done_today/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/postnatal_followup/g_realisation/followup_date">
+        <label ref="jr:itext('/postnatal_followup/g_realisation/followup_date:label')"/>
+      </input>
+      <select1 ref="/postnatal_followup/g_realisation/not_done_today">
+        <label ref="jr:itext('/postnatal_followup/g_realisation/not_done_today:label')"/>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/g_realisation/not_done_today/phone_discharged:label')"/>
+          <value>phone_discharged</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/g_realisation/not_done_today/phone_lost:label')"/>
+          <value>phone_lost</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/g_realisation/not_done_today/other:label')"/>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/postnatal_followup/g_realisation/other_followup_reason">
+        <label ref="jr:itext('/postnatal_followup/g_realisation/other_followup_reason:label')"/>
+      </input>
+      <select1 ref="/postnatal_followup/g_realisation/how_patient_found">
+        <label ref="jr:itext('/postnatal_followup/g_realisation/how_patient_found:label')"/>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/g_realisation/how_patient_found/during_home_visit:label')"/>
+          <value>during_home_visit</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/g_realisation/how_patient_found/patient_to_chw:label')"/>
+          <value>patient_to_chw</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/g_realisation/how_patient_found/other:label')"/>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/postnatal_followup/g_realisation/other_patient_found_reason">
+        <label ref="jr:itext('/postnatal_followup/g_realisation/other_patient_found_reason:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/postnatal_followup/g_postnatal_consultation">
+      <label ref="jr:itext('/postnatal_followup/g_postnatal_consultation:label')"/>
+      <select1 ref="/postnatal_followup/g_postnatal_consultation/why_child_mother_consult">
+        <label ref="jr:itext('/postnatal_followup/g_postnatal_consultation/why_child_mother_consult:label')"/>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/g_postnatal_consultation/why_child_mother_consult/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/g_postnatal_consultation/why_child_mother_consult/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/postnatal_followup/g_postnatal_consultation/why_child_mother_consult_second_time">
+        <label ref="jr:itext('/postnatal_followup/g_postnatal_consultation/why_child_mother_consult_second_time:label')"/>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/g_postnatal_consultation/why_child_mother_consult_second_time/ignore:label')"/>
+          <value>ignore</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/g_postnatal_consultation/why_child_mother_consult_second_time/tired:label')"/>
+          <value>tired</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/g_postnatal_consultation/why_child_mother_consult_second_time/follow:label')"/>
+          <value>follow</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/g_postnatal_consultation/why_child_mother_consult_second_time/mari_refuse:label')"/>
+          <value>mari_refuse</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/g_postnatal_consultation/why_child_mother_consult_second_time/not_important:label')"/>
+          <value>not_important</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/g_postnatal_consultation/why_child_mother_consult_second_time/busy:label')"/>
+          <value>busy</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/g_postnatal_consultation/why_child_mother_consult_second_time/not_ready:label')"/>
+          <value>not_ready</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/g_postnatal_consultation/why_child_mother_consult_second_time/other:label')"/>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/postnatal_followup/g_postnatal_consultation/other_child_mother_did_not_go">
+        <label ref="jr:itext('/postnatal_followup/g_postnatal_consultation/other_child_mother_did_not_go:label')"/>
+      </input>
+      <input ref="/postnatal_followup/g_postnatal_consultation/next_visit_date">
+        <label ref="jr:itext('/postnatal_followup/g_postnatal_consultation/next_visit_date:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/postnatal_followup/g_mother_info">
+      <label ref="jr:itext('/postnatal_followup/g_mother_info:label')"/>
+      <input ref="/postnatal_followup/g_mother_info/weight_mother">
+        <label ref="jr:itext('/postnatal_followup/g_mother_info/weight_mother:label')"/>
+      </input>
+      <input ref="/postnatal_followup/g_mother_info/height_mother">
+        <label ref="jr:itext('/postnatal_followup/g_mother_info/height_mother:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/postnatal_followup/g_mother_danger_signs">
+      <label ref="jr:itext('/postnatal_followup/g_mother_danger_signs:label')"/>
+      <input ref="/postnatal_followup/g_mother_danger_signs/n_danger_sign">
+        <label ref="jr:itext('/postnatal_followup/g_mother_danger_signs/n_danger_sign:label')"/>
+      </input>
+      <select1 ref="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_bleeding">
+        <label ref="jr:itext('/postnatal_followup/g_mother_danger_signs/mother_danger_sign_bleeding:label')"/>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/g_mother_danger_signs/mother_danger_sign_bleeding/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/g_mother_danger_signs/mother_danger_sign_bleeding/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_headaches">
+        <label ref="jr:itext('/postnatal_followup/g_mother_danger_signs/mother_danger_sign_headaches:label')"/>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/g_mother_danger_signs/mother_danger_sign_headaches/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/g_mother_danger_signs/mother_danger_sign_headaches/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_stomach_ache">
+        <label ref="jr:itext('/postnatal_followup/g_mother_danger_signs/mother_danger_sign_stomach_ache:label')"/>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/g_mother_danger_signs/mother_danger_sign_stomach_ache/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/g_mother_danger_signs/mother_danger_sign_stomach_ache/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_fever">
+        <label ref="jr:itext('/postnatal_followup/g_mother_danger_signs/mother_danger_sign_fever:label')"/>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/g_mother_danger_signs/mother_danger_sign_fever/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/g_mother_danger_signs/mother_danger_sign_fever/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_vaginal_discharge">
+        <label ref="jr:itext('/postnatal_followup/g_mother_danger_signs/mother_danger_sign_vaginal_discharge:label')"/>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/g_mother_danger_signs/mother_danger_sign_vaginal_discharge/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/g_mother_danger_signs/mother_danger_sign_vaginal_discharge/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_breast_abscess">
+        <label ref="jr:itext('/postnatal_followup/g_mother_danger_signs/mother_danger_sign_breast_abscess:label')"/>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/g_mother_danger_signs/mother_danger_sign_breast_abscess/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/g_mother_danger_signs/mother_danger_sign_breast_abscess/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_blurred_vision">
+        <label ref="jr:itext('/postnatal_followup/g_mother_danger_signs/mother_danger_sign_blurred_vision:label')"/>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/g_mother_danger_signs/mother_danger_sign_blurred_vision/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/g_mother_danger_signs/mother_danger_sign_blurred_vision/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/postnatal_followup/g_mother_danger_signs/mother_danger_sign_calf_pain">
+        <label ref="jr:itext('/postnatal_followup/g_mother_danger_signs/mother_danger_sign_calf_pain:label')"/>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/g_mother_danger_signs/mother_danger_sign_calf_pain/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/g_mother_danger_signs/mother_danger_sign_calf_pain/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+    </group>
+    <group ref="/postnatal_followup/g_new_born_repeat">
+      <label ref="jr:itext('/postnatal_followup/g_new_born_repeat:label')"/>
+      <repeat nodeset="/postnatal_followup/g_new_born_repeat" jr:count=" /postnatal_followup/g_new_born_repeat_count ">
+        <select1 ref="/postnatal_followup/g_new_born_repeat/new_born_alive">
+          <label ref="jr:itext('/postnatal_followup/g_new_born_repeat/new_born_alive:label')"/>
+          <item>
+            <label ref="jr:itext('/postnatal_followup/g_new_born_repeat/new_born_alive/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/postnatal_followup/g_new_born_repeat/new_born_alive/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+        <group appearance="field-list" ref="/postnatal_followup/g_new_born_repeat/g_treatment">
+          <label ref="jr:itext('/postnatal_followup/g_new_born_repeat/g_treatment:label')"/>
+          <input ref="/postnatal_followup/g_new_born_repeat/g_treatment/n_child_danger_sign">
+            <label ref="jr:itext('/postnatal_followup/g_new_born_repeat/g_treatment/n_child_danger_sign:label')"/>
+          </input>
+          <select1 ref="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_refusal_to_feed">
+            <label ref="jr:itext('/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_refusal_to_feed:label')"/>
+            <item>
+              <label ref="jr:itext('/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_refusal_to_feed/yes:label')"/>
+              <value>yes</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_refusal_to_feed/no:label')"/>
+              <value>no</value>
+            </item>
+          </select1>
+          <select1 ref="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_vomit">
+            <label ref="jr:itext('/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_vomit:label')"/>
+            <item>
+              <label ref="jr:itext('/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_vomit/yes:label')"/>
+              <value>yes</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_vomit/no:label')"/>
+              <value>no</value>
+            </item>
+          </select1>
+          <select1 ref="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_breathing">
+            <label ref="jr:itext('/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_breathing:label')"/>
+            <item>
+              <label ref="jr:itext('/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_breathing/yes:label')"/>
+              <value>yes</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_breathing/no:label')"/>
+              <value>no</value>
+            </item>
+          </select1>
+          <select1 ref="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_umbilical_infection">
+            <label ref="jr:itext('/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_umbilical_infection:label')"/>
+            <item>
+              <label ref="jr:itext('/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_umbilical_infection/yes:label')"/>
+              <value>yes</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_umbilical_infection/no:label')"/>
+              <value>no</value>
+            </item>
+          </select1>
+          <select1 ref="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_cutaneous_pustules">
+            <label ref="jr:itext('/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_cutaneous_pustules:label')"/>
+            <item>
+              <label ref="jr:itext('/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_cutaneous_pustules/yes:label')"/>
+              <value>yes</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_cutaneous_pustules/no:label')"/>
+              <value>no</value>
+            </item>
+          </select1>
+          <select1 ref="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_abdomen">
+            <label ref="jr:itext('/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_abdomen:label')"/>
+            <item>
+              <label ref="jr:itext('/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_abdomen/yes:label')"/>
+              <value>yes</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_abdomen/no:label')"/>
+              <value>no</value>
+            </item>
+          </select1>
+          <select1 ref="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_weak_cry">
+            <label ref="jr:itext('/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_weak_cry:label')"/>
+            <item>
+              <label ref="jr:itext('/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_weak_cry/yes:label')"/>
+              <value>yes</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_weak_cry/no:label')"/>
+              <value>no</value>
+            </item>
+          </select1>
+          <select1 ref="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_unconscious">
+            <label ref="jr:itext('/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_unconscious:label')"/>
+            <item>
+              <label ref="jr:itext('/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_unconscious/yes:label')"/>
+              <value>yes</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_unconscious/no:label')"/>
+              <value>no</value>
+            </item>
+          </select1>
+          <select1 ref="/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_seizures">
+            <label ref="jr:itext('/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_seizures:label')"/>
+            <item>
+              <label ref="jr:itext('/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_seizures/yes:label')"/>
+              <value>yes</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/postnatal_followup/g_new_born_repeat/g_treatment/child_danger_sign_seizures/no:label')"/>
+              <value>no</value>
+            </item>
+          </select1>
+          <input ref="/postnatal_followup/g_new_born_repeat/g_treatment/child_temperature">
+            <label ref="jr:itext('/postnatal_followup/g_new_born_repeat/g_treatment/child_temperature:label')"/>
+          </input>
+          <input ref="/postnatal_followup/g_new_born_repeat/g_treatment/n_disinfect_thermometer">
+            <label ref="jr:itext('/postnatal_followup/g_new_born_repeat/g_treatment/n_disinfect_thermometer:label')"/>
+          </input>
+          <input ref="/postnatal_followup/g_new_born_repeat/g_treatment/n_fever_presence">
+            <label ref="jr:itext('/postnatal_followup/g_new_born_repeat/g_treatment/n_fever_presence:label')"/>
+          </input>
+          <input ref="/postnatal_followup/g_new_born_repeat/g_treatment/n_hypothermia">
+            <label ref="jr:itext('/postnatal_followup/g_new_born_repeat/g_treatment/n_hypothermia:label')"/>
+          </input>
+          <input ref="/postnatal_followup/g_new_born_repeat/g_treatment/child_respiratory_frequency">
+            <label ref="jr:itext('/postnatal_followup/g_new_born_repeat/g_treatment/child_respiratory_frequency:label')"/>
+          </input>
+          <input appearance="countdown-timer" ref="/postnatal_followup/g_new_born_repeat/g_treatment/n_how_measure_respiratory_freq">
+            <label ref="jr:itext('/postnatal_followup/g_new_born_repeat/g_treatment/n_how_measure_respiratory_freq:label')"/>
+          </input>
+          <input ref="/postnatal_followup/g_new_born_repeat/g_treatment/n_frequency_summary">
+            <label ref="jr:itext('/postnatal_followup/g_new_born_repeat/g_treatment/n_frequency_summary:label')"/>
+          </input>
+          <input appearance="h3 red" ref="/postnatal_followup/g_new_born_repeat/g_treatment/n_refer_health_center">
+            <label ref="jr:itext('/postnatal_followup/g_new_born_repeat/g_treatment/n_refer_health_center:label')"/>
+          </input>
+        </group>
+        <group appearance="field-list" ref="/postnatal_followup/g_new_born_repeat/g_child_vaccination">
+          <label ref="jr:itext('/postnatal_followup/g_new_born_repeat/g_child_vaccination:label')"/>
+          <select1 ref="/postnatal_followup/g_new_born_repeat/g_child_vaccination/has_child_vaccine">
+            <label ref="jr:itext('/postnatal_followup/g_new_born_repeat/g_child_vaccination/has_child_vaccine:label')"/>
+            <itemset nodeset="instance('child_vaccines')/root/item[category= /postnatal_followup/g_new_born_repeat/g_child_vaccination/time_vaccination ]">
+              <value ref="name"/>
+              <label ref="jr:itext(itextId)"/>
+            </itemset>
+          </select1>
+          <input ref="/postnatal_followup/g_new_born_repeat/g_child_vaccination/bcg_vaccine_date">
+            <label ref="jr:itext('/postnatal_followup/g_new_born_repeat/g_child_vaccination/bcg_vaccine_date:label')"/>
+          </input>
+          <input ref="/postnatal_followup/g_new_born_repeat/g_child_vaccination/polio_vaccine_date">
+            <label ref="jr:itext('/postnatal_followup/g_new_born_repeat/g_child_vaccination/polio_vaccine_date:label')"/>
+          </input>
+          <input ref="/postnatal_followup/g_new_born_repeat/g_child_vaccination/dtc_vaccine_date">
+            <label ref="jr:itext('/postnatal_followup/g_new_born_repeat/g_child_vaccination/dtc_vaccine_date:label')"/>
+          </input>
+          <input ref="/postnatal_followup/g_new_born_repeat/g_child_vaccination/pneumo_vaccine_date">
+            <label ref="jr:itext('/postnatal_followup/g_new_born_repeat/g_child_vaccination/pneumo_vaccine_date:label')"/>
+          </input>
+          <input ref="/postnatal_followup/g_new_born_repeat/g_child_vaccination/vpo_vaccine_date">
+            <label ref="jr:itext('/postnatal_followup/g_new_born_repeat/g_child_vaccination/vpo_vaccine_date:label')"/>
+          </input>
+          <input ref="/postnatal_followup/g_new_born_repeat/g_child_vaccination/rota_vaccine_date">
+            <label ref="jr:itext('/postnatal_followup/g_new_born_repeat/g_child_vaccination/rota_vaccine_date:label')"/>
+          </input>
+        </group>
+        <group appearance="field-list" ref="/postnatal_followup/g_new_born_repeat/g_new_born_care">
+          <label ref="jr:itext('/postnatal_followup/g_new_born_repeat/g_new_born_care:label')"/>
+          <select1 ref="/postnatal_followup/g_new_born_repeat/g_new_born_care/is_ombilical_cord_protected">
+            <label ref="jr:itext('/postnatal_followup/g_new_born_repeat/g_new_born_care/is_ombilical_cord_protected:label')"/>
+            <item>
+              <label ref="jr:itext('/postnatal_followup/g_new_born_repeat/g_new_born_care/is_ombilical_cord_protected/yes:label')"/>
+              <value>yes</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/postnatal_followup/g_new_born_repeat/g_new_born_care/is_ombilical_cord_protected/no:label')"/>
+              <value>no</value>
+            </item>
+          </select1>
+          <input ref="/postnatal_followup/g_new_born_repeat/g_new_born_care/how_many_clean_per_day">
+            <label ref="jr:itext('/postnatal_followup/g_new_born_repeat/g_new_born_care/how_many_clean_per_day:label')"/>
+          </input>
+          <input ref="/postnatal_followup/g_new_born_repeat/g_new_born_care/n_refer_cscom">
+            <label ref="jr:itext('/postnatal_followup/g_new_born_repeat/g_new_born_care/n_refer_cscom:label')"/>
+          </input>
+          <input ref="/postnatal_followup/g_new_born_repeat/g_new_born_care/n_follow_newborn">
+            <label ref="jr:itext('/postnatal_followup/g_new_born_repeat/g_new_born_care/n_follow_newborn:label')"/>
+          </input>
+          <input ref="/postnatal_followup/g_new_born_repeat/g_new_born_care/n_follow_new_born_assurance">
+            <label ref="jr:itext('/postnatal_followup/g_new_born_repeat/g_new_born_care/n_follow_new_born_assurance:label')"/>
+          </input>
+        </group>
+      </repeat>
+    </group>
+    <group appearance="field-list" ref="/postnatal_followup/g_child_care_advice">
+      <label ref="jr:itext('/postnatal_followup/g_child_care_advice:label')"/>
+      <input ref="/postnatal_followup/g_child_care_advice/n_child_changes_care">
+        <label ref="jr:itext('/postnatal_followup/g_child_care_advice/n_child_changes_care:label')"/>
+      </input>
+      <input ref="/postnatal_followup/g_child_care_advice/n_child_temperature_care">
+        <label ref="jr:itext('/postnatal_followup/g_child_care_advice/n_child_temperature_care:label')"/>
+      </input>
+      <input ref="/postnatal_followup/g_child_care_advice/n_child_clothes_care">
+        <label ref="jr:itext('/postnatal_followup/g_child_care_advice/n_child_clothes_care:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/postnatal_followup/g_end_followup">
+      <label ref="jr:itext('/postnatal_followup/g_end_followup:label')"/>
+      <select1 ref="/postnatal_followup/g_end_followup/why_end_followup">
+        <label ref="jr:itext('/postnatal_followup/g_end_followup/why_end_followup:label')"/>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/g_end_followup/why_end_followup/mother_deceased:label')"/>
+          <value>mother_deceased</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/g_end_followup/why_end_followup/newborn_deceased:label')"/>
+          <value>newborn_deceased</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/postnatal_followup/g_end_followup/why_end_followup/other:label')"/>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/postnatal_followup/g_end_followup/why_end_followup_other">
+        <label ref="jr:itext('/postnatal_followup/g_end_followup/why_end_followup_other:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list summary" ref="/postnatal_followup/g_summary">
+      <label ref="jr:itext('/postnatal_followup/g_summary:label')"/>
+      <input appearance="h1 yellow" ref="/postnatal_followup/g_summary/r_summary">
+        <label ref="jr:itext('/postnatal_followup/g_summary/r_summary:label')"/>
+      </input>
+      <input ref="/postnatal_followup/g_summary/r_patient_info">
+        <label ref="jr:itext('/postnatal_followup/g_summary/r_patient_info:label')"/>
+      </input>
+      <input appearance="h2 red" ref="/postnatal_followup/g_summary/n_presence_mother_danger_signs">
+        <label ref="jr:itext('/postnatal_followup/g_summary/n_presence_mother_danger_signs:label')"/>
+      </input>
+      <input appearance="h3 red" ref="/postnatal_followup/g_summary/n_refer_cscom">
+        <label ref="jr:itext('/postnatal_followup/g_summary/n_refer_cscom:label')"/>
+      </input>
+      <input ref="/postnatal_followup/g_summary/n_delivery_info">
+        <label ref="jr:itext('/postnatal_followup/g_summary/n_delivery_info:label')"/>
+      </input>
+      <input ref="/postnatal_followup/g_summary/n_delivery_date">
+        <label ref="jr:itext('/postnatal_followup/g_summary/n_delivery_date:label')"/>
+      </input>
+      <input ref="/postnatal_followup/g_summary/n_next_cpon_date">
+        <label ref="jr:itext('/postnatal_followup/g_summary/n_next_cpon_date:label')"/>
+      </input>
+      <input appearance="h1 blue" ref="/postnatal_followup/g_summary/r_instructions">
+        <label ref="jr:itext('/postnatal_followup/g_summary/r_instructions:label')"/>
+      </input>
+      <input ref="/postnatal_followup/g_summary/n_visits">
+        <label ref="jr:itext('/postnatal_followup/g_summary/n_visits:label')"/>
+      </input>
+      <input ref="/postnatal_followup/g_summary/n_followup">
+        <label ref="jr:itext('/postnatal_followup/g_summary/n_followup:label')"/>
+      </input>
+      <input appearance="h1 green" ref="/postnatal_followup/g_summary/n_next_followup_summary">
+        <label ref="jr:itext('/postnatal_followup/g_summary/n_next_followup_summary:label')"/>
+      </input>
+      <input ref="/postnatal_followup/g_summary/n_next_followup">
+        <label ref="jr:itext('/postnatal_followup/g_summary/n_next_followup:label')"/>
+      </input>
+      <input ref="/postnatal_followup/g_summary/n_next_request">
+        <label ref="jr:itext('/postnatal_followup/g_summary/n_next_request:label')"/>
+      </input>
+      <input ref="/postnatal_followup/g_summary/n_close_out">
+        <label ref="jr:itext('/postnatal_followup/g_summary/n_close_out:label')"/>
+      </input>
+    </group>
+  </h:body>
+</h:html>

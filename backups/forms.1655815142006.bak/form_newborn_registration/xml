@@ -1,0 +1,785 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>Création Profil Enfant</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/newborn_registration/days_since_delivery:label">
+            <value>Days since delivery</value>
+          </text>
+          <text id="/newborn_registration/delivery_date:label">
+            <value>Delivery date</value>
+          </text>
+          <text id="/newborn_registration/format_delivery_date:label">
+            <value>Delivery date</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/advice_for_birth_certificate:label">
+            <value>Advise the child's parent about the need for a birth certificate.
+Advise the mother of the reporting agent near her place of residence.&lt;i class="fa fa-flag"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/birth_certificate/no:label">
+            <value>No</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/birth_certificate/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/birth_certificate:label">
+            <value>Does the child have a birth certificate?</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/date_of_issue_birth_certificate:jr:constraintMsg">
+            <value>Date must be in the past</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/date_of_issue_birth_certificate:label">
+            <value>What is the date of issue of the birth certificate?</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/declaration_within_the_legal_time/no:label">
+            <value>No</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/declaration_within_the_legal_time/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/declaration_within_the_legal_time:label">
+            <value>Was the declaration made within the legal time (1 month)?</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/age_days:hint">
+            <value>Put "0" if there is no Days</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/age_days:jr:constraintMsg">
+            <value>Days must between 0 and 30</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/age_days:label">
+            <value>Jours</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/age_label:label">
+            <value>**Age**</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/age_months:hint">
+            <value>Put "0" if newborn's age is in Days</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/age_months:jr:constraintMsg">
+            <value>Months must between 0 and 11</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/age_months:label">
+            <value>Months</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/age_years:hint">
+            <value>Put "0" if newborn's age is in Months</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/age_years:jr:constraintMsg">
+            <value>Age must be between 0 and 130</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/age_years:label">
+            <value>Years</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/dob:label">
+            <value>**Born on**: <output value=" /newborn_registration/delivery_date "/></value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/dob_approx:label">
+            <value>DOB</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/dob_calendar:hint">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/dob_calendar:jr:constraintMsg">
+            <value>Date must be before today</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/dob_calendar:label">
+            <value>Age</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/dob_debug:label">
+            <value>Months: <output value=" /newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/ephemeral_months "/>
+Year: <output value=" /newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/ephemeral_years "/>
+DOB Approx: <output value=" /newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/dob_approx "/>
+DOB Calendar: <output value=" /newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/dob_calendar "/>
+DOB ISO: <output value=" /newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/dob_iso "/></value></text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/dob_iso:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/first_name:label">
+            <value>First name</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/last_name:label">
+            <value>Last name</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/parent/_id:label">
+            <value>Household ID</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/parent/parent/_id:label">
+            <value>Area ID</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/parent/parent/parent/_id:label">
+            <value>Health Facility ID</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/select_role:label">
+            <value>Role</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/sex/female:label">
+            <value>Female</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/sex/male:label">
+            <value>Male</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration:label">
+            <value>Newborn registration</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_creation_info/n_create_profile:label">
+            <value>You must create a profile for the each of the newborn(s) of <output value=" /newborn_registration/patient_name "/></value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_creation_info/newborn_to_create:jr:constraintMsg">
+            <value>Should be between 0 and the number of children registered at delivery</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_creation_info/newborn_to_create:label">
+            <value>How many newborn profile do you want to create?</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation:label">
+            <value>Profile creation</value>
+          </text>
+          <text id="/newborn_registration/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/newborn_registration/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/newborn_registration/inputs/contact/parent/_id:label">
+            <value>Household ID</value>
+          </text>
+          <text id="/newborn_registration/inputs/contact/parent/parent/_id:label">
+            <value>Area ID</value>
+          </text>
+          <text id="/newborn_registration/inputs/contact/parent/parent/contact/chw_name:label">
+            <value>CHW name</value>
+          </text>
+          <text id="/newborn_registration/inputs/contact/parent/parent/contact/phone:label">
+            <value>CHW phone</value>
+          </text>
+          <text id="/newborn_registration/inputs/contact/parent/parent/parent/_id:label">
+            <value>Health Facility ID</value>
+          </text>
+          <text id="/newborn_registration/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/newborn_registration/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/newborn_registration/inputs/contact/short_name:label">
+            <value>Short Name</value>
+          </text>
+          <text id="/newborn_registration/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/newborn_registration/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/newborn_registration/inputs/t_delivery_date:label">
+            <value>Delivery date</value>
+          </text>
+          <text id="/newborn_registration/inputs/t_newborn_at_delivery:label">
+            <value>Number of newborn at delivery</value>
+          </text>
+          <text id="/newborn_registration/inputs/user/contact_id:label">
+            <value>Contact ID</value>
+          </text>
+          <text id="/newborn_registration/inputs/user/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/newborn_registration/inputs/user/phone:label">
+            <value>Phone</value>
+          </text>
+          <text id="/newborn_registration/inputs/user:label">
+            <value>User</value>
+          </text>
+          <text id="/newborn_registration/months_since_delivery:label">
+            <value>Pregnancy age in months</value>
+          </text>
+          <text id="/newborn_registration/newborn_at_delivery:label">
+            <value>Number of newborn at delivery</value>
+          </text>
+          <text id="/newborn_registration/newborn_at_delivery_number:label">
+            <value>Number of newborn at delivery</value>
+          </text>
+          <text id="/newborn_registration/weeks_since_delivery:label">
+            <value>Pregnancy age in weeks</value>
+          </text>
+        </translation>
+        <translation lang="fr">
+          <text id="/newborn_registration/days_since_delivery:label">
+            <value>Nombre de jours depuis l'accouchement</value>
+          </text>
+          <text id="/newborn_registration/delivery_date:label">
+            <value>Date d'accouchement</value>
+          </text>
+          <text id="/newborn_registration/format_delivery_date:label">
+            <value>Date d'accouchement</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/ID:label">
+            <value>-</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/advice_for_birth_certificate:label">
+            <value>Conseillez le parent de l'enfant sur la nécessité d'avoir un acte de naissance.
+Indiquer à la mère l'agent de déclaration proche de son lieu de résidence. &lt;i class="fa fa-flag"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/auto_role:label">
+            <value>-</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/birth_certificate/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/birth_certificate/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/birth_certificate:label">
+            <value>L'enfant a t-il un acte de naissance?</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/contact_type:label">
+            <value>-</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/created_by:label">
+            <value>-</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/date_of_birth:label">
+            <value>-</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/date_of_issue_birth_certificate:jr:constraintMsg">
+            <value>La date doit être dans le passé</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/date_of_issue_birth_certificate:label">
+            <value>Quelle est la date de délivrance de l'acte de naissance?</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/declaration_within_the_legal_time/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/declaration_within_the_legal_time/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/declaration_within_the_legal_time:label">
+            <value>La déclaration a t-elle été faite dans le délai légal (1 mois)?</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/age_days:hint">
+            <value>Mettre "0" s'il n'ya pas de jours</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/age_days:jr:constraintMsg">
+            <value>Age doit être entre 0 et 30</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/age_days:label">
+            <value>Jours</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/age_label:label">
+            <value>**Age**</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/age_months:hint">
+            <value>Mettre "0" si l'âge de l'enfant est en jours</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/age_months:jr:constraintMsg">
+            <value>Age doit être entre 0 et 11</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/age_months:label">
+            <value>Mois</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/age_years:hint">
+            <value>Mettre "0" si l'âge de l'enfant est en mois</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/age_years:jr:constraintMsg">
+            <value>Age doit être entre 0 et 130</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/age_years:label">
+            <value>Age</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/dob:label">
+            <value>**Date de naissance** : <output value=" /newborn_registration/format_delivery_date "/></value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/dob_approx:label">
+            <value>-</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/dob_calendar:hint">
+            <value>Date de naissance</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/dob_calendar:jr:constraintMsg">
+            <value>-</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/dob_calendar:label">
+            <value>Date de naissance</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/dob_debug:label">
+            <value>-</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/dob_iso:label">
+            <value>-</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/dob_raw:label">
+            <value>-</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/ephemeral_months:label">
+            <value>-</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/ephemeral_years:label">
+            <value>-</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/first_name:label">
+            <value>Prénom (s)</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/last_name:label">
+            <value>Nom</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/mother_id:label">
+            <value>-</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/mother_name:label">
+            <value>-</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/mother_uuid:label">
+            <value>-</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/parent/_id:label">
+            <value>ID du Menage</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/parent/parent/_id:label">
+            <value>ID de la concession</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/parent/parent/parent/_id:label">
+            <value>ID du village</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/person_age_in_days:label">
+            <value>-</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/person_age_in_months:label">
+            <value>-</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/place_type:label">
+            <value>-</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/role:label">
+            <value>-</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/select_role:label">
+            <value>Rôle</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/sex/female:label">
+            <value>Féminin</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/sex/male:label">
+            <value>Masculin</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/sex:label">
+            <value>Sexe</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration/c92_household/type:label">
+            <value>-</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_child_registration:label">
+            <value>Enregistrement nouveau-né</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_creation_info/n_create_profile:label">
+            <value>Vous devez créer un profil pour chacun des nouveau(x) né(s) de <output value=" /newborn_registration/patient_name "/></value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_creation_info/newborn_to_create:jr:constraintMsg">
+            <value>Doit compris entre 0 et le nombre d'enfants enregistrés à l'accouchement</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation/g_creation_info/newborn_to_create:label">
+            <value>Combien de profils d'enfants voulez-vous créer?</value>
+          </text>
+          <text id="/newborn_registration/g_profil_creation:label">
+            <value>Création de profil</value>
+          </text>
+          <text id="/newborn_registration/inputs/contact/_id:label">
+            <value>Quel est le nom de la patiente ?</value>
+          </text>
+          <text id="/newborn_registration/inputs/contact/name:label">
+            <value>Nom</value>
+          </text>
+          <text id="/newborn_registration/inputs/contact/parent/_id:label">
+            <value>ID du Menage</value>
+          </text>
+          <text id="/newborn_registration/inputs/contact/parent/parent/_id:label">
+            <value>ID de la concession</value>
+          </text>
+          <text id="/newborn_registration/inputs/contact/parent/parent/contact/chw_name:label">
+            <value>Nom de l'ASC</value>
+          </text>
+          <text id="/newborn_registration/inputs/contact/parent/parent/contact/phone:label">
+            <value>Téléphone de l'ASC</value>
+          </text>
+          <text id="/newborn_registration/inputs/contact/parent/parent/parent/_id:label">
+            <value>ID du village</value>
+          </text>
+          <text id="/newborn_registration/inputs/contact/patient_id:label">
+            <value>ID de patiente</value>
+          </text>
+          <text id="/newborn_registration/inputs/contact/sex:label">
+            <value>Sexe</value>
+          </text>
+          <text id="/newborn_registration/inputs/contact/short_name:label">
+            <value>Nom Court</value>
+          </text>
+          <text id="/newborn_registration/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/newborn_registration/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/newborn_registration/inputs/t_delivery_date:label">
+            <value>Date d'accouchement</value>
+          </text>
+          <text id="/newborn_registration/inputs/t_newborn_at_delivery:label">
+            <value>Nombre d'enfants nés à l'accouchement</value>
+          </text>
+          <text id="/newborn_registration/inputs/user/contact_id:label">
+            <value>Contact ID</value>
+          </text>
+          <text id="/newborn_registration/inputs/user/name:label">
+            <value>Nom</value>
+          </text>
+          <text id="/newborn_registration/inputs/user/phone:label">
+            <value>Téléphone</value>
+          </text>
+          <text id="/newborn_registration/inputs/user:label">
+            <value>Utilisateur</value>
+          </text>
+          <text id="/newborn_registration/months_since_delivery:label">
+            <value>Nombre de mois depuis l'accouchement</value>
+          </text>
+          <text id="/newborn_registration/newborn_at_delivery:label">
+            <value>Nombre d'enfants nés à l'accouchement</value>
+          </text>
+          <text id="/newborn_registration/newborn_at_delivery_number:label">
+            <value>Nombre d'enfants nés à l'accouchement</value>
+          </text>
+          <text id="/newborn_registration/weeks_since_delivery:label">
+            <value>Nombre de semaines depuis l'accouchement</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <newborn_registration id="newborn_registration" prefix="J1!newborn_registration!" delimiter="#" version="2022-05-13  10-43">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <t_newborn_at_delivery/>
+            <t_delivery_date/>
+            <user>
+              <contact_id/>
+              <name/>
+              <phone/>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <short_name/>
+              <patient_id/>
+              <sex/>
+              <parent>
+                <_id/>
+                <parent>
+                  <_id/>
+                  <parent>
+                    <_id/>
+                  </parent>
+                  <contact>
+                    <chw_name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <household_id tag="hidden"/>
+          <area_id tag="hidden"/>
+          <facility_id tag="hidden"/>
+          <patient_age_in_years tag="hidden"/>
+          <patient_uuid tag="hidden"/>
+          <patient_id tag="hidden"/>
+          <patient_name tag="hidden"/>
+          <patient_short_name tag="hidden"/>
+          <patient_short_name_start tag="hidden"/>
+          <delivery_date/>
+          <format_delivery_date/>
+          <days_since_delivery/>
+          <months_since_delivery/>
+          <weeks_since_delivery/>
+          <newborn_at_delivery/>
+          <newborn_at_delivery_number/>
+          <g_profil_creation>
+            <g_creation_info>
+              <n_create_profile/>
+              <newborn_to_create/>
+            </g_creation_info>
+            <g_child_registration_count/>
+            <g_child_registration jr:template="">
+              <c92_household db-doc="true">
+                <first_name/>
+                <last_name/>
+                <name/>
+                <parent>
+                  <_id/>
+                  <parent>
+                    <_id/>
+                    <parent>
+                      <_id/>
+                    </parent>
+                  </parent>
+                </parent>
+                <type>contact</type>
+                <contact_type>c92_household</contact_type>
+                <place_type>c90_household</place_type>
+                <ID/>
+                <date_of_birth/>
+                <date_of_birth_method/>
+                <person_age_in_years/>
+                <person_age_in_months/>
+                <person_age_in_days/>
+                <ephemeral_dob>
+                  <dob/>
+                  <dob_calendar/>
+                  <age_label/>
+                  <age_years/>
+                  <age_months/>
+                  <age_days/>
+                  <ephemeral_months/>
+                  <ephemeral_years/>
+                  <dob_approx/>
+                  <dob_raw/>
+                  <dob_iso/>
+                  <dob_debug/>
+                </ephemeral_dob>
+                <sex/>
+                <select_role>patient</select_role>
+                <auto_role>patient</auto_role>
+                <role>patient</role>
+                <birth_certificate/>
+                <declaration_within_the_legal_time/>
+                <date_of_issue_birth_certificate/>
+                <advice_for_birth_certificate/>
+                <mother_id/>
+                <mother_uuid/>
+                <mother_name/>
+                <created_by/>
+                <created_from db-doc-ref="/newborn_registration"/>
+              </c92_household>
+            </g_child_registration>
+          </g_profil_creation>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </newborn_registration>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/newborn_registration/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/newborn_registration/inputs/source" type="string"/>
+      <bind nodeset="/newborn_registration/inputs/source_id" type="string"/>
+      <bind nodeset="/newborn_registration/inputs/t_newborn_at_delivery" type="string"/>
+      <bind nodeset="/newborn_registration/inputs/t_delivery_date" type="string"/>
+      <bind nodeset="/newborn_registration/inputs/user/contact_id" type="db:person"/>
+      <bind nodeset="/newborn_registration/inputs/user/name" type="string"/>
+      <bind nodeset="/newborn_registration/inputs/user/phone" type="string"/>
+      <bind nodeset="/newborn_registration/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/newborn_registration/inputs/contact/name" type="string"/>
+      <bind nodeset="/newborn_registration/inputs/contact/short_name" type="string"/>
+      <bind nodeset="/newborn_registration/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/newborn_registration/inputs/contact/sex" type="string"/>
+      <bind nodeset="/newborn_registration/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/newborn_registration/inputs/contact/parent/parent/_id" type="string"/>
+      <bind nodeset="/newborn_registration/inputs/contact/parent/parent/parent/_id" type="string"/>
+      <bind nodeset="/newborn_registration/inputs/contact/parent/parent/contact/chw_name" type="string"/>
+      <bind nodeset="/newborn_registration/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind nodeset="/newborn_registration/household_id" type="string" calculate="../inputs/contact/parent/_id"/>
+      <bind nodeset="/newborn_registration/area_id" type="string" calculate="../inputs/contact/parent/parent/_id"/>
+      <bind nodeset="/newborn_registration/facility_id" type="string" calculate="../inputs/contact/parent/parent/parent/_id"/>
+      <bind nodeset="/newborn_registration/patient_age_in_years" type="string" calculate="floor( difference-in-months( ../inputs/contact/date_of_birth, today() ) div 12 )"/>
+      <bind nodeset="/newborn_registration/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/newborn_registration/patient_id" type="string" calculate="../inputs/contact/patient_id"/>
+      <bind nodeset="/newborn_registration/patient_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/newborn_registration/patient_short_name" type="string" calculate="coalesce(../inputs/contact/short_name, ../summary/custom_translations/custom_woman_label)"/>
+      <bind nodeset="/newborn_registration/patient_short_name_start" type="string" calculate="coalesce(../inputs/contact/short_name, ../summary/custom_translations/custom_woman_start_label)"/>
+      <bind nodeset="/newborn_registration/delivery_date" type="string" calculate="../inputs/t_delivery_date"/>
+      <bind nodeset="/newborn_registration/format_delivery_date" type="string" calculate="format-date-time( /newborn_registration/delivery_date ,&quot;%d/%m/%Y&quot;)"/>
+      <bind nodeset="/newborn_registration/days_since_delivery" type="string" calculate="floor( decimal-date-time(today()) - decimal-date-time( /newborn_registration/delivery_date ) )"/>
+      <bind nodeset="/newborn_registration/months_since_delivery" type="string" calculate="difference-in-months( /newborn_registration/delivery_date , today())"/>
+      <bind nodeset="/newborn_registration/weeks_since_delivery" type="string" calculate="round( /newborn_registration/delivery_date  div 7, 0)"/>
+      <bind nodeset="/newborn_registration/newborn_at_delivery" type="string" calculate="../inputs/t_newborn_at_delivery"/>
+      <bind nodeset="/newborn_registration/newborn_at_delivery_number" type="string" calculate="number( /newborn_registration/newborn_at_delivery )"/>
+      <bind nodeset="/newborn_registration/g_profil_creation/g_creation_info/n_create_profile" readonly="true()" type="string"/>
+      <bind nodeset="/newborn_registration/g_profil_creation/g_creation_info/newborn_to_create" type="int" constraint=".&gt;=0 and . &lt;=  /newborn_registration/newborn_at_delivery_number " required="true()" jr:constraintMsg="jr:itext('/newborn_registration/g_profil_creation/g_creation_info/newborn_to_create:jr:constraintMsg')"/>
+      <bind nodeset="/newborn_registration/g_profil_creation/g_child_registration_count" type="string" readonly="true()" calculate=" /newborn_registration/g_profil_creation/g_creation_info/newborn_to_create "/>
+      <bind nodeset="/newborn_registration/g_profil_creation/g_child_registration" relevant=" /newborn_registration/g_profil_creation/g_creation_info/newborn_to_create &gt;0"/>
+      <bind nodeset="/newborn_registration/g_profil_creation/g_child_registration/c92_household/first_name" type="string" required="true()"/>
+      <bind nodeset="/newborn_registration/g_profil_creation/g_child_registration/c92_household/last_name" type="string" required="true()"/>
+      <bind nodeset="/newborn_registration/g_profil_creation/g_child_registration/c92_household/name" type="string" calculate="concat( /newborn_registration/g_profil_creation/g_child_registration/c92_household/first_name ,' ', /newborn_registration/g_profil_creation/g_child_registration/c92_household/last_name )"/>
+      <bind nodeset="/newborn_registration/g_profil_creation/g_child_registration/c92_household/parent/_id" type="string" calculate="../../../../../inputs/contact/parent/_id"/>
+      <bind nodeset="/newborn_registration/g_profil_creation/g_child_registration/c92_household/parent/parent/_id" type="string" calculate="../../../../../../inputs/contact/parent/parent/_id"/>
+      <bind nodeset="/newborn_registration/g_profil_creation/g_child_registration/c92_household/parent/parent/parent/_id" type="string" calculate="../../../../../../../inputs/contact/parent/parent/parent/_id"/>
+      <bind nodeset="/newborn_registration/g_profil_creation/g_child_registration/c92_household/type" type="string"/>
+      <bind nodeset="/newborn_registration/g_profil_creation/g_child_registration/c92_household/contact_type" type="string"/>
+      <bind nodeset="/newborn_registration/g_profil_creation/g_child_registration/c92_household/place_type" type="string"/>
+      <bind nodeset="/newborn_registration/g_profil_creation/g_child_registration/c92_household/ID" type="string"/>
+      <bind nodeset="/newborn_registration/g_profil_creation/g_child_registration/c92_household/date_of_birth" type="string" required="true()" calculate="../ephemeral_dob/dob_approx"/>
+      <bind nodeset="/newborn_registration/g_profil_creation/g_child_registration/c92_household/date_of_birth_method" type="string" calculate="../ephemeral_dob/dob_method"/>
+      <bind nodeset="/newborn_registration/g_profil_creation/g_child_registration/c92_household/person_age_in_years" type="string" calculate="floor(difference-in-months( /newborn_registration/g_profil_creation/g_child_registration/c92_household/date_of_birth , today() ) div 12 )"/>
+      <bind nodeset="/newborn_registration/g_profil_creation/g_child_registration/c92_household/person_age_in_months" type="string" calculate="difference-in-months(  /newborn_registration/g_profil_creation/g_child_registration/c92_household/date_of_birth , today() )"/>
+      <bind nodeset="/newborn_registration/g_profil_creation/g_child_registration/c92_household/person_age_in_days" type="string" calculate="floor( decimal-date-time(today()) - decimal-date-time( /newborn_registration/g_profil_creation/g_child_registration/c92_household/date_of_birth ) )"/>
+      <bind nodeset="/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/dob" readonly="true()" type="string"/>
+      <bind nodeset="/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/dob_calendar" type="string" relevant="not(selected(../dob_method,'approx'))" jr:constraintMsg="jr:itext('/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/dob_calendar:jr:constraintMsg')" required="true()" calculate=" /newborn_registration/delivery_date "/>
+      <bind nodeset="/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/age_label" readonly="true()" type="string" relevant="selected(../dob_method,'approx')"/>
+      <bind nodeset="/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/age_years" type="int" required="true()" jr:constraintMsg="jr:itext('/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/age_years:jr:constraintMsg')" constraint=". &gt;= 0 and . &lt;= 130" relevant="selected(../dob_method,'approx')"/>
+      <bind nodeset="/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/age_months" type="int" required="true()" jr:constraintMsg="jr:itext('/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/age_months:jr:constraintMsg')" constraint=". &gt;= 0 and . &lt;= 11" relevant="selected(../dob_method,'approx')"/>
+      <bind nodeset="/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/age_days" type="int" required="true()" jr:constraintMsg="jr:itext('/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/age_days:jr:constraintMsg')" constraint=". &gt;= 0 and . &lt;= 30" relevant="selected(../dob_method,'approx')"/>
+      <bind nodeset="/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/ephemeral_months" type="string" calculate="if(format-date-time(today(),&quot;%m&quot;) - ../age_months &lt; 0, format-date-time(today(),&quot;%m&quot;) - ../age_months + 12, format-date-time(today(),&quot;%m&quot;) - ../age_months)"/>
+      <bind nodeset="/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/ephemeral_years" type="string" calculate="if(format-date-time(today(),&quot;%m&quot;) - ../age_months &lt; 0, format-date-time(today(),&quot;%Y&quot;) - ../age_years - 1, format-date-time(today(),&quot;%Y&quot;) -../age_years)"/>
+      <bind nodeset="/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/dob_approx" type="string" calculate="concat(string( /newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/ephemeral_years ),'-',if( /newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/ephemeral_months &lt;10, concat('0',string( /newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/ephemeral_months )),  /newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/ephemeral_months ),'-',string(format-date-time(today(), &quot;%d&quot;)))"/>
+      <bind nodeset="/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/dob_raw" type="string" calculate="if(not(selected( ../dob_method,'approx')), 
+../dob_calendar,
+../dob_approx)"/>
+      <bind nodeset="/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/dob_iso" type="string" calculate="format-date-time(../dob_raw,&quot;%Y-%m-%d&quot;)"/>
+      <bind nodeset="/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/dob_debug" readonly="true()" type="string" relevant="0"/>
+      <bind nodeset="/newborn_registration/g_profil_creation/g_child_registration/c92_household/sex" type="select1" required="true()"/>
+      <bind nodeset="/newborn_registration/g_profil_creation/g_child_registration/c92_household/select_role" type="string"/>
+      <bind nodeset="/newborn_registration/g_profil_creation/g_child_registration/c92_household/auto_role" type="string"/>
+      <bind nodeset="/newborn_registration/g_profil_creation/g_child_registration/c92_household/role" type="string"/>
+      <bind nodeset="/newborn_registration/g_profil_creation/g_child_registration/c92_household/birth_certificate" type="select1" required="true()"/>
+      <bind nodeset="/newborn_registration/g_profil_creation/g_child_registration/c92_household/declaration_within_the_legal_time" type="select1" relevant="selected( /newborn_registration/g_profil_creation/g_child_registration/c92_household/birth_certificate ,'yes')" required="true()"/>
+      <bind nodeset="/newborn_registration/g_profil_creation/g_child_registration/c92_household/date_of_issue_birth_certificate" type="date" required="true()" jr:constraintMsg="jr:itext('/newborn_registration/g_profil_creation/g_child_registration/c92_household/date_of_issue_birth_certificate:jr:constraintMsg')" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" relevant="selected( /newborn_registration/g_profil_creation/g_child_registration/c92_household/birth_certificate ,'yes')"/>
+      <bind nodeset="/newborn_registration/g_profil_creation/g_child_registration/c92_household/advice_for_birth_certificate" readonly="true()" type="string" relevant="selected( /newborn_registration/g_profil_creation/g_child_registration/c92_household/birth_certificate ,'no')"/>
+      <bind nodeset="/newborn_registration/g_profil_creation/g_child_registration/c92_household/mother_id" type="string" calculate="../../../../inputs/contact/patient_id"/>
+      <bind nodeset="/newborn_registration/g_profil_creation/g_child_registration/c92_household/mother_uuid" type="string" calculate="../../../../inputs/contact/_id"/>
+      <bind nodeset="/newborn_registration/g_profil_creation/g_child_registration/c92_household/mother_name" type="string" calculate=" /newborn_registration/patient_name "/>
+      <bind nodeset="/newborn_registration/g_profil_creation/g_child_registration/c92_household/created_by" type="string" calculate="../../../../inputs/user/contact_id"/>
+      <bind nodeset="/newborn_registration/g_profil_creation/g_child_registration/c92_household/created_from" type="string" calculate="."/>
+      <bind nodeset="/newborn_registration/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/newborn_registration/inputs">
+      <input ref="/newborn_registration/inputs/t_delivery_date">
+        <label ref="jr:itext('/newborn_registration/inputs/t_delivery_date:label')"/>
+      </input>
+      <group ref="/newborn_registration/inputs/user">
+        <label ref="jr:itext('/newborn_registration/inputs/user:label')"/>
+        <input appearance="db-object" ref="/newborn_registration/inputs/user/contact_id">
+          <label ref="jr:itext('/newborn_registration/inputs/user/contact_id:label')"/>
+        </input>
+      </group>
+      <group ref="/newborn_registration/inputs/contact">
+        <input appearance="db-object" ref="/newborn_registration/inputs/contact/_id">
+          <label ref="jr:itext('/newborn_registration/inputs/contact/_id:label')"/>
+        </input>
+        <group ref="/newborn_registration/inputs/contact/parent">
+          <input appearance="hidden" ref="/newborn_registration/inputs/contact/parent/_id">
+            <label ref="jr:itext('/newborn_registration/inputs/contact/parent/_id:label')"/>
+          </input>
+          <group ref="/newborn_registration/inputs/contact/parent/parent">
+            <input appearance="hidden" ref="/newborn_registration/inputs/contact/parent/parent/_id">
+              <label ref="jr:itext('/newborn_registration/inputs/contact/parent/parent/_id:label')"/>
+            </input>
+            <group ref="/newborn_registration/inputs/contact/parent/parent/parent">
+              <input appearance="hidden" ref="/newborn_registration/inputs/contact/parent/parent/parent/_id">
+                <label ref="jr:itext('/newborn_registration/inputs/contact/parent/parent/parent/_id:label')"/>
+              </input>
+            </group>
+            <group ref="/newborn_registration/inputs/contact/parent/parent/contact"/>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group ref="/newborn_registration/g_profil_creation">
+      <label ref="jr:itext('/newborn_registration/g_profil_creation:label')"/>
+      <group appearance="field-list" ref="/newborn_registration/g_profil_creation/g_creation_info">
+        <input ref="/newborn_registration/g_profil_creation/g_creation_info/n_create_profile">
+          <label ref="jr:itext('/newborn_registration/g_profil_creation/g_creation_info/n_create_profile:label')"/>
+        </input>
+        <input ref="/newborn_registration/g_profil_creation/g_creation_info/newborn_to_create">
+          <label ref="jr:itext('/newborn_registration/g_profil_creation/g_creation_info/newborn_to_create:label')"/>
+        </input>
+      </group>
+      <group ref="/newborn_registration/g_profil_creation/g_child_registration">
+        <label ref="jr:itext('/newborn_registration/g_profil_creation/g_child_registration:label')"/>
+        <repeat nodeset="/newborn_registration/g_profil_creation/g_child_registration" jr:count=" /newborn_registration/g_profil_creation/g_child_registration_count ">
+          <group appearance="field-list" ref="/newborn_registration/g_profil_creation/g_child_registration/c92_household">
+            <input ref="/newborn_registration/g_profil_creation/g_child_registration/c92_household/first_name">
+              <label ref="jr:itext('/newborn_registration/g_profil_creation/g_child_registration/c92_household/first_name:label')"/>
+            </input>
+            <input ref="/newborn_registration/g_profil_creation/g_child_registration/c92_household/last_name">
+              <label ref="jr:itext('/newborn_registration/g_profil_creation/g_child_registration/c92_household/last_name:label')"/>
+            </input>
+            <group ref="/newborn_registration/g_profil_creation/g_child_registration/c92_household/parent">
+              <group ref="/newborn_registration/g_profil_creation/g_child_registration/c92_household/parent/parent">
+                <group ref="/newborn_registration/g_profil_creation/g_child_registration/c92_household/parent/parent/parent"/>
+              </group>
+            </group>
+            <group ref="/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob">
+              <input ref="/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/dob">
+                <label ref="jr:itext('/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/dob:label')"/>
+              </input>
+              <input ref="/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/age_label">
+                <label ref="jr:itext('/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/age_label:label')"/>
+              </input>
+              <input ref="/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/age_years">
+                <label ref="jr:itext('/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/age_years:label')"/>
+                <hint ref="jr:itext('/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/age_years:hint')"/>
+              </input>
+              <input ref="/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/age_months">
+                <label ref="jr:itext('/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/age_months:label')"/>
+                <hint ref="jr:itext('/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/age_months:hint')"/>
+              </input>
+              <input ref="/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/age_days">
+                <label ref="jr:itext('/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/age_days:label')"/>
+                <hint ref="jr:itext('/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/age_days:hint')"/>
+              </input>
+              <input ref="/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/dob_debug">
+                <label ref="jr:itext('/newborn_registration/g_profil_creation/g_child_registration/c92_household/ephemeral_dob/dob_debug:label')"/>
+              </input>
+            </group>
+            <select1 appearance="horizontal" ref="/newborn_registration/g_profil_creation/g_child_registration/c92_household/sex">
+              <label ref="jr:itext('/newborn_registration/g_profil_creation/g_child_registration/c92_household/sex:label')"/>
+              <item>
+                <label ref="jr:itext('/newborn_registration/g_profil_creation/g_child_registration/c92_household/sex/female:label')"/>
+                <value>female</value>
+              </item>
+              <item>
+                <label ref="jr:itext('/newborn_registration/g_profil_creation/g_child_registration/c92_household/sex/male:label')"/>
+                <value>male</value>
+              </item>
+            </select1>
+            <select1 ref="/newborn_registration/g_profil_creation/g_child_registration/c92_household/birth_certificate">
+              <label ref="jr:itext('/newborn_registration/g_profil_creation/g_child_registration/c92_household/birth_certificate:label')"/>
+              <item>
+                <label ref="jr:itext('/newborn_registration/g_profil_creation/g_child_registration/c92_household/birth_certificate/yes:label')"/>
+                <value>yes</value>
+              </item>
+              <item>
+                <label ref="jr:itext('/newborn_registration/g_profil_creation/g_child_registration/c92_household/birth_certificate/no:label')"/>
+                <value>no</value>
+              </item>
+            </select1>
+            <select1 ref="/newborn_registration/g_profil_creation/g_child_registration/c92_household/declaration_within_the_legal_time">
+              <label ref="jr:itext('/newborn_registration/g_profil_creation/g_child_registration/c92_household/declaration_within_the_legal_time:label')"/>
+              <item>
+                <label ref="jr:itext('/newborn_registration/g_profil_creation/g_child_registration/c92_household/declaration_within_the_legal_time/yes:label')"/>
+                <value>yes</value>
+              </item>
+              <item>
+                <label ref="jr:itext('/newborn_registration/g_profil_creation/g_child_registration/c92_household/declaration_within_the_legal_time/no:label')"/>
+                <value>no</value>
+              </item>
+            </select1>
+            <input ref="/newborn_registration/g_profil_creation/g_child_registration/c92_household/date_of_issue_birth_certificate">
+              <label ref="jr:itext('/newborn_registration/g_profil_creation/g_child_registration/c92_household/date_of_issue_birth_certificate:label')"/>
+            </input>
+            <input ref="/newborn_registration/g_profil_creation/g_child_registration/c92_household/advice_for_birth_certificate">
+              <label ref="jr:itext('/newborn_registration/g_profil_creation/g_child_registration/c92_household/advice_for_birth_certificate:label')"/>
+            </input>
+          </group>
+        </repeat>
+      </group>
+    </group>
+  </h:body>
+</h:html>

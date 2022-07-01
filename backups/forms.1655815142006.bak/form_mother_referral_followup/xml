@@ -1,0 +1,1273 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>Mother Referral Followup</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/mother_referral_followup/days_since_delivery:label">
+            <value>Days since delivery</value>
+          </text>
+          <text id="/mother_referral_followup/delivery_date:label">
+            <value>Delivery date</value>
+          </text>
+          <text id="/mother_referral_followup/follow_up_count_number:label">
+            <value>Number of followup</value>
+          </text>
+          <text id="/mother_referral_followup/followup_count:label">
+            <value>Follow up count</value>
+          </text>
+          <text id="/mother_referral_followup/g_end_followup/why_end_followup/mother_deceased:label">
+            <value><output value=" /mother_referral_followup/patient_name "/> is deceased</value>
+          </text>
+          <text id="/mother_referral_followup/g_end_followup/why_end_followup/newborn_deceased:label">
+            <value>Newborn is deceased</value>
+          </text>
+          <text id="/mother_referral_followup/g_end_followup/why_end_followup/other:label">
+            <value>other</value>
+          </text>
+          <text id="/mother_referral_followup/g_end_followup/why_end_followup:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/mother_referral_followup/g_end_followup/why_end_followup:label">
+            <value>Why do you want to close this follow-up?</value>
+          </text>
+          <text id="/mother_referral_followup/g_end_followup/why_end_followup_other:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/mother_referral_followup/g_end_followup/why_end_followup_other:label">
+            <value>Specify (Other)</value>
+          </text>
+          <text id="/mother_referral_followup/g_end_followup:label">
+            <value>Close out</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_disease_progress/health_status/aggravated:label">
+            <value>Aggravated</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_disease_progress/health_status/healed:label">
+            <value>Healed</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_disease_progress/health_status/improved:label">
+            <value>Improved</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_disease_progress/health_status/unchanged:label">
+            <value>Unchanged</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_disease_progress/health_status:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_disease_progress/health_status:label">
+            <value>What is her health status?</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_disease_progress:label">
+            <value>Disease progress</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_patient_present/how_patient_found/during_home_visit:label">
+            <value>During a home visit</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_patient_present/how_patient_found/patient_to_chw:label">
+            <value>Patient when to CHW</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_patient_present/how_patient_found:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_patient_present/how_patient_found:label">
+            <value>How was <output value=" /mother_referral_followup/patient_name "/> found?</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_patient_present/patient_present/no:label">
+            <value>No</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_patient_present/patient_present/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_patient_present/patient_present:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_patient_present/patient_present:label">
+            <value>Was <output value=" /mother_referral_followup/patient_name "/> present?</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_patient_present:label">
+            <value><output value=" /mother_referral_followup/patient_name "/> presence</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_realisation/followup_date:jr:constraintMsg">
+            <value>Date should be in the past</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_realisation/followup_date:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_realisation/followup_date:label">
+            <value>Enter the date of followup:</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_realisation/followup_done_today/no:label">
+            <value>No</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_realisation/followup_done_today/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_realisation/followup_done_today:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_realisation/followup_done_today:label">
+            <value>Was the followup done today?</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_realisation/not_done_today/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_realisation/not_done_today/phone_discharged:label">
+            <value>Phone discharged/broken</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_realisation/not_done_today/phone_lost:label">
+            <value>Phone lost</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_realisation/not_done_today:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_realisation/not_done_today:label">
+            <value>Why wasn't the followup done today?</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_realisation/other_followup_reason:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_realisation/other_followup_reason:label">
+            <value>Specify (Other)</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_realisation:label">
+            <value>Realisation date</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_treatment/diagnosis_given:hint">
+            <value>Check the care booklet of <output value=" /mother_referral_followup/patient_name "/></value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_treatment/diagnosis_given:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_treatment/diagnosis_given:label">
+            <value>What diagnosis was given?</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_treatment/problem_handled/no:label">
+            <value>No</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_treatment/problem_handled/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_treatment/problem_handled:hint">
+            <value>Check the care booklet of <output value=" /mother_referral_followup/patient_name "/></value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_treatment/problem_handled:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_treatment/problem_handled:label">
+            <value>Was the problem handled?</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_treatment/reason_action:hint">
+            <value>Check the care booklet of <output value=" /mother_referral_followup/patient_name "/></value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_treatment/reason_action:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_treatment/reason_action:label">
+            <value>Stade the reason and action performed</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_treatment/treatment_given:hint">
+            <value>Check the care booklet of <output value=" /mother_referral_followup/patient_name "/></value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_treatment/treatment_given:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_treatment/treatment_given:label">
+            <value>What treatment was given?</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_treatment:label">
+            <value><output value=" /mother_referral_followup/patient_name "/>'s treatment</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_visit/did_not_go/end_followup:label">
+            <value>End of followup</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_visit/did_not_go/husband_refusal:label">
+            <value>Husband's refusal</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_visit/did_not_go/lack_money:label">
+            <value>Lack of money</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_visit/did_not_go/lack_time:label">
+            <value>Lack of time</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_visit/did_not_go/not_motivated:label">
+            <value>Not motivated</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_visit/did_not_go/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_visit/did_not_go/oversight:label">
+            <value>Oversight</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_visit/did_not_go:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_visit/did_not_go:label">
+            <value>Why didn't <output value=" /mother_referral_followup/patient_name "/> go to the health center?</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_visit/health_center_date:jr:constraintMsg">
+            <value>Date should not be in the future</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_visit/health_center_date:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_visit/health_center_date:label">
+            <value>What is the visit date to the health center?</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_visit/n_visit:label">
+            <value>Encourage <output value=" /mother_referral_followup/patient_name "/> to visit the prenatal care center immediately to make sure she and her baby are healthy and to plan her delivery.</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_visit/other_no_visit_reason:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_visit/other_no_visit_reason:label">
+            <value>Specify (Other)</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_visit/went_to_health_center/no:label">
+            <value>No</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_visit/went_to_health_center/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_visit/went_to_health_center:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_visit/went_to_health_center:label">
+            <value>Did <output value=" /mother_referral_followup/patient_name "/> visited the health center?</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_visit:label">
+            <value>Visit of <output value=" /mother_referral_followup/patient_name "/> at the health center</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup:label">
+            <value>Follow up</value>
+          </text>
+          <text id="/mother_referral_followup/g_summary/n_close_out:label">
+            <value>There is no more followup for this woman</value>
+          </text>
+          <text id="/mother_referral_followup/g_summary/n_death_report:label">
+            <value>Fill out the death form</value>
+          </text>
+          <text id="/mother_referral_followup/g_summary/n_diagnosis_given:label">
+            <value>Diagnosis: <output value=" /mother_referral_followup/g_followup/g_treatment/diagnosis_given "/></value>
+          </text>
+          <text id="/mother_referral_followup/g_summary/n_did_not_go:label">
+            <value><output value=" /mother_referral_followup/patient_name "/> didn't go to the health center</value>
+          </text>
+          <text id="/mother_referral_followup/g_summary/n_directions:label">
+            <value>Teach <output value=" /mother_referral_followup/patient_name "/> to recognize danger signs. 
+Ask <output value=" /mother_referral_followup/patient_name "/> to follow the directions given for the good health of himself and the baby.
+Remind people that sleeping under a mosquito net and eating well improves health.</value>
+          </text>
+          <text id="/mother_referral_followup/g_summary/n_escort_cscom:label">
+            <value>Immediately escort <output value=" /mother_referral_followup/patient_name "/> to the health center</value>
+          </text>
+          <text id="/mother_referral_followup/g_summary/n_followup:label">
+            <value>Next visit&lt;i class="fa fa-flag"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/mother_referral_followup/g_summary/n_next_followup:label">
+            <value>Next followup for <output value=" /mother_referral_followup/patient_name "/> is 24 hours: <output value=" /mother_referral_followup/next_followup_days "/></value></text>
+          <text id="/mother_referral_followup/g_summary/n_next_request:label">
+            <value>Next followup will be at the request of <output value=" /mother_referral_followup/patient_name "/></value>
+          </text>
+          <text id="/mother_referral_followup/g_summary/n_problem_handled:label">
+            <value>The problem was handled</value>
+          </text>
+          <text id="/mother_referral_followup/g_summary/n_reason:label">
+            <value>Reason: <output value=" /mother_referral_followup/g_followup/g_visit/label_did_not_go "/><output value=" /mother_referral_followup/g_followup/g_visit/other_no_visit_reason "/>
+            </value>
+          </text>
+          <text id="/mother_referral_followup/g_summary/n_refer_cscom:label">
+            <value>Refer to the CSCOM</value>
+          </text>
+          <text id="/mother_referral_followup/g_summary/n_submit:label">
+            <value>Make sure <output value=" /mother_referral_followup/patient_name "/> is not present before proceeding with this action.
+Submitting this form will close the tracking of the pregnant <output value=" /mother_referral_followup/patient_name "/>.</value>
+          </text>
+          <text id="/mother_referral_followup/g_summary/n_talk:label">
+            <value>Talk to <output value=" /mother_referral_followup/patient_name "/> and tell her that you will follow up in the next 48 hours to make sure she went to the health center.</value>
+          </text>
+          <text id="/mother_referral_followup/g_summary/n_treatment_given:label">
+            <value>Care: <output value=" /mother_referral_followup/g_followup/g_treatment/treatment_given "/></value>
+          </text>
+          <text id="/mother_referral_followup/g_summary/r_diagnosis:label">
+            <value>Diagnosis and treatment&lt;i class = "fa fa-stethoscope"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/mother_referral_followup/g_summary/r_instructions:label">
+            <value>Special Instructions&lt;i class = "fa fa-hand-o-right"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/mother_referral_followup/g_summary/r_patient_info:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /mother_referral_followup/patient_name "/>&lt;/h4&gt; &lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /mother_referral_followup/patient_age_in_years "/> years old&lt;/h5&gt;</value>
+          </text>
+          <text id="/mother_referral_followup/g_summary/r_summary:label">
+            <value>Patient summary&lt;i class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/mother_referral_followup/g_summary:label">
+            <value>Summary</value>
+          </text>
+          <text id="/mother_referral_followup/g_task/task_to_perform/close_followup:label">
+            <value>Close followup</value>
+          </text>
+          <text id="/mother_referral_followup/g_task/task_to_perform/referral_followup:label">
+            <value>Referral followup</value>
+          </text>
+          <text id="/mother_referral_followup/g_task/task_to_perform:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/mother_referral_followup/g_task/task_to_perform:label">
+            <value>What do you want to do?</value>
+          </text>
+          <text id="/mother_referral_followup/g_task:label">
+            <value>Follow-up realisation</value>
+          </text>
+          <text id="/mother_referral_followup/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/mother_referral_followup/inputs/contact/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/mother_referral_followup/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/mother_referral_followup/inputs/contact/parent/_id:label">
+            <value>Household ID</value>
+          </text>
+          <text id="/mother_referral_followup/inputs/contact/parent/parent/_id:label">
+            <value>Area ID</value>
+          </text>
+          <text id="/mother_referral_followup/inputs/contact/parent/parent/contact/chw_name:label">
+            <value>CHW name</value>
+          </text>
+          <text id="/mother_referral_followup/inputs/contact/parent/parent/contact/phone:label">
+            <value>CHW phone</value>
+          </text>
+          <text id="/mother_referral_followup/inputs/contact/parent/parent/parent/_id:label">
+            <value>Health Facility ID</value>
+          </text>
+          <text id="/mother_referral_followup/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/mother_referral_followup/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/mother_referral_followup/inputs/contact/short_name:label">
+            <value>Short Name</value>
+          </text>
+          <text id="/mother_referral_followup/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/mother_referral_followup/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/mother_referral_followup/inputs/t_delivery_date:label">
+            <value>Delivery date</value>
+          </text>
+          <text id="/mother_referral_followup/inputs/t_follow_up_count:label">
+            <value>Follow up count</value>
+          </text>
+          <text id="/mother_referral_followup/inputs/user/contact_id:label">
+            <value>Contact ID</value>
+          </text>
+          <text id="/mother_referral_followup/inputs/user/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/mother_referral_followup/inputs/user/phone:label">
+            <value>Phone</value>
+          </text>
+          <text id="/mother_referral_followup/inputs/user:label">
+            <value>User</value>
+          </text>
+          <text id="/mother_referral_followup/months_since_delivery:label">
+            <value>Pregnancy age in months</value>
+          </text>
+          <text id="/mother_referral_followup/weeks_since_delivery:label">
+            <value>Pregnancy age in weeks</value>
+          </text>
+        </translation>
+        <translation lang="fr">
+          <text id="/mother_referral_followup/days_since_delivery:label">
+            <value>Nombre de jours depuis l'accouchement</value>
+          </text>
+          <text id="/mother_referral_followup/delivery_date:label">
+            <value>Date d'accouchement</value>
+          </text>
+          <text id="/mother_referral_followup/follow_up_count_number:label">
+            <value>Nombre de suivi</value>
+          </text>
+          <text id="/mother_referral_followup/followup_count:label">
+            <value>Nombre de suivi</value>
+          </text>
+          <text id="/mother_referral_followup/g_end_followup/why_end_followup/mother_deceased:label">
+            <value>Décès de <output value=" /mother_referral_followup/patient_name "/></value>
+          </text>
+          <text id="/mother_referral_followup/g_end_followup/why_end_followup/newborn_deceased:label">
+            <value>Décès du nouveau-né</value>
+          </text>
+          <text id="/mother_referral_followup/g_end_followup/why_end_followup/other:label">
+            <value>Autre</value>
+          </text>
+          <text id="/mother_referral_followup/g_end_followup/why_end_followup:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/mother_referral_followup/g_end_followup/why_end_followup:label">
+            <value>Pourquoi voulez-vous clôturer ce suivi?</value>
+          </text>
+          <text id="/mother_referral_followup/g_end_followup/why_end_followup_other:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/mother_referral_followup/g_end_followup/why_end_followup_other:label">
+            <value>Préciser (Autre)</value>
+          </text>
+          <text id="/mother_referral_followup/g_end_followup:label">
+            <value>Clôture</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_disease_progress/health_status/aggravated:label">
+            <value>Aggravé</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_disease_progress/health_status/healed:label">
+            <value>Guéri</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_disease_progress/health_status/improved:label">
+            <value>Amélioré</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_disease_progress/health_status/unchanged:label">
+            <value>Pas de changement</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_disease_progress/health_status:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_disease_progress/health_status:label">
+            <value>Quel est son état de santé?</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_disease_progress:label">
+            <value>Progression de la maladie</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_patient_present/how_patient_found/during_home_visit:label">
+            <value>Au cours de la visite à domicile</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_patient_present/how_patient_found/patient_to_chw:label">
+            <value>La patiente s'est rendue chez l'ASC</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_patient_present/how_patient_found:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_patient_present/how_patient_found:label">
+            <value>Comment <output value=" /mother_referral_followup/patient_name "/> a été retrouvée?</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_patient_present/patient_present/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_patient_present/patient_present/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_patient_present/patient_present:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_patient_present/patient_present:label">
+            <value><output value=" /mother_referral_followup/patient_name "/> a-t-elle été retrouvée?</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_patient_present:label">
+            <value>Recherche de <output value=" /mother_referral_followup/patient_name "/></value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_realisation/followup_date:jr:constraintMsg">
+            <value>La date doit être dans le passé</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_realisation/followup_date:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_realisation/followup_date:label">
+            <value>Entrez la date où le suivi a été fait:</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_realisation/followup_done_today/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_realisation/followup_done_today/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_realisation/followup_done_today:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_realisation/followup_done_today:label">
+            <value>Ce suivi a-t-il été fait aujourd'hui?</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_realisation/not_done_today/other:label">
+            <value>Autre</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_realisation/not_done_today/phone_discharged:label">
+            <value>Téléphone Déchargé/Cassé</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_realisation/not_done_today/phone_lost:label">
+            <value>Téléphone perdu</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_realisation/not_done_today:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_realisation/not_done_today:label">
+            <value>Pourquoi le suivi n'a pas été fait aujourd'hui?</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_realisation/other_followup_reason:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_realisation/other_followup_reason:label">
+            <value>Préciser (Autre)</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_realisation:label">
+            <value>Date de réalisation</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_treatment/diagnosis_given:hint">
+            <value>Vérifiez le carnet de soins de <output value=" /mother_referral_followup/patient_name "/></value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_treatment/diagnosis_given:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_treatment/diagnosis_given:label">
+            <value>Quel a été le diagnostic?</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_treatment/problem_handled/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_treatment/problem_handled/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_treatment/problem_handled:hint">
+            <value>Vérifiez le carnet de soins de <output value=" /mother_referral_followup/patient_name "/></value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_treatment/problem_handled:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_treatment/problem_handled:label">
+            <value>Le problème a t-il été traité?</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_treatment/reason_action:hint">
+            <value>Vérifiez le carnet de soins de <output value=" /mother_referral_followup/patient_name "/></value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_treatment/reason_action:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_treatment/reason_action:label">
+            <value>Indiquez la raison et l'action effectuée :</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_treatment/treatment_given:hint">
+            <value>Vérifiez le carnet de soins de <output value=" /mother_referral_followup/patient_name "/></value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_treatment/treatment_given:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_treatment/treatment_given:label">
+            <value>Quel a été le traitement fait?</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_treatment:label">
+            <value>Traitement de <output value=" /mother_referral_followup/patient_name "/></value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_visit/did_not_go/end_followup:label">
+            <value>Fin du suivi</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_visit/did_not_go/husband_refusal:label">
+            <value>Refus du mari</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_visit/did_not_go/lack_money:label">
+            <value>Pas d'argent</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_visit/did_not_go/lack_time:label">
+            <value>Manque de temps</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_visit/did_not_go/not_motivated:label">
+            <value>Pas motivé</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_visit/did_not_go/other:label">
+            <value>Autre</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_visit/did_not_go/oversight:label">
+            <value>Oubli</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_visit/did_not_go:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_visit/did_not_go:label">
+            <value>Pourquoi <output value=" /mother_referral_followup/patient_name "/> ne s'est-elle pas rendue au centre de santé?</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_visit/health_center_date:jr:constraintMsg">
+            <value>La date ne doit pas être dans le futur</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_visit/health_center_date:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_visit/health_center_date:label">
+            <value>Quelle est la date de visite au centre de Santé?</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_visit/n_visit:label">
+            <value>Encouragez <output value=" /mother_referral_followup/patient_name "/> à se rendre immédiatement dans le centre de soins prénatals afin de s'assurer qu'elle et son bébé sont en bonne santé et pour planifier son accouchement.</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_visit/other_no_visit_reason:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_visit/other_no_visit_reason:label">
+            <value>Précisez (Autre)</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_visit/went_to_health_center/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_visit/went_to_health_center/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_visit/went_to_health_center:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_visit/went_to_health_center:label">
+            <value><output value=" /mother_referral_followup/patient_name "/> s'est-elle rendue au centre de santé ?</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup/g_visit:label">
+            <value>Visite de <output value=" /mother_referral_followup/patient_name "/> au centre de santé</value>
+          </text>
+          <text id="/mother_referral_followup/g_followup:label">
+            <value>Suivi</value>
+          </text>
+          <text id="/mother_referral_followup/g_summary/n_close_out:label">
+            <value>Il n'y a plus de suivi pour cette femme.</value>
+          </text>
+          <text id="/mother_referral_followup/g_summary/n_death_report:label">
+            <value>Remplir le formulaire de décès.</value>
+          </text>
+          <text id="/mother_referral_followup/g_summary/n_diagnosis_given:label">
+            <value>Diagnostic: <output value=" /mother_referral_followup/g_followup/g_treatment/diagnosis_given "/></value>
+          </text>
+          <text id="/mother_referral_followup/g_summary/n_did_not_go:label">
+            <value><output value=" /mother_referral_followup/patient_name "/> ne s'est pas rendue au centre de santé</value>
+          </text>
+          <text id="/mother_referral_followup/g_summary/n_directions:label">
+            <value>Apprendre à <output value=" /mother_referral_followup/patient_name "/> à reconnaître les signes de danger. 
+Demander à <output value=" /mother_referral_followup/patient_name "/> de suivre les indications données pour sa bonne santé et celle du bébé.
+Rappeler que dormir sous une moustiquaire et avoir une bonne alimentation améliore la santé.</value>
+          </text>
+          <text id="/mother_referral_followup/g_summary/n_escort_cscom:label">
+            <value>Accompagner immédiatement <output value=" /mother_referral_followup/patient_name "/> au centre de santé</value>
+          </text>
+          <text id="/mother_referral_followup/g_summary/n_followup:label">
+            <value>Suivi&lt;i class="fa fa-flag"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/mother_referral_followup/g_summary/n_next_followup:label">
+            <value>Le prochain rendez-vous pour le suivi de <output value=" /mother_referral_followup/patient_name "/> est 24h: <output value=" /mother_referral_followup/next_followup_days "/></value></text>
+          <text id="/mother_referral_followup/g_summary/n_next_request:label">
+            <value>Le prochain suivi se fera à la demande de <output value=" /mother_referral_followup/patient_name "/></value>
+          </text>
+          <text id="/mother_referral_followup/g_summary/n_problem_handled:label">
+            <value>Le problème a été traité</value>
+          </text>
+          <text id="/mother_referral_followup/g_summary/n_reason:label">
+            <value>Raison : <output value=" /mother_referral_followup/g_followup/g_visit/label_did_not_go "/><output value=" /mother_referral_followup/g_followup/g_visit/other_no_visit_reason "/>
+            </value>
+          </text>
+          <text id="/mother_referral_followup/g_summary/n_refer_cscom:label">
+            <value>Référer au CSCOM</value>
+          </text>
+          <text id="/mother_referral_followup/g_summary/n_submit:label">
+            <value>Rassurez-vous de l'absence de <output value=" /mother_referral_followup/patient_name "/> avant de procéder à cette action. 
+Soumettre ce formulaire va fermer le suivi de le suivi de <output value=" /mother_referral_followup/patient_name "/> enceinte.</value>
+          </text>
+          <text id="/mother_referral_followup/g_summary/n_talk:label">
+            <value>Discuter avec <output value=" /mother_referral_followup/patient_name "/> et dites lui que vous ferez un suivi dans les prochaines 48h pour s'assurer qu'elle est allée au centre de santé.</value>
+          </text>
+          <text id="/mother_referral_followup/g_summary/n_treatment_given:label">
+            <value>Intervention: <output value=" /mother_referral_followup/g_followup/g_treatment/treatment_given "/></value>
+          </text>
+          <text id="/mother_referral_followup/g_summary/r_diagnosis:label">
+            <value>Diagnostic et traitement&lt;i class = "fa fa-stethoscope"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/mother_referral_followup/g_summary/r_instructions:label">
+            <value>Instructions spéciales&lt;i class = "fa fa-hand-o-right"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/mother_referral_followup/g_summary/r_patient_info:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /mother_referral_followup/patient_name "/>&lt;/h4&gt; &lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /mother_referral_followup/patient_age_in_years "/> years old&lt;/h5&gt;</value>
+          </text>
+          <text id="/mother_referral_followup/g_summary/r_summary:label">
+            <value>Détail de la patiente &lt;i class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/mother_referral_followup/g_summary:label">
+            <value>Résumé</value>
+          </text>
+          <text id="/mother_referral_followup/g_task/task_to_perform/close_followup:label">
+            <value>Arrêt du suivi</value>
+          </text>
+          <text id="/mother_referral_followup/g_task/task_to_perform/referral_followup:label">
+            <value>Suivi de référence</value>
+          </text>
+          <text id="/mother_referral_followup/g_task/task_to_perform:jr:requiredMsg">
+            <value>Ce champ est obligatoire</value>
+          </text>
+          <text id="/mother_referral_followup/g_task/task_to_perform:label">
+            <value>Que voulez-vous faire?</value>
+          </text>
+          <text id="/mother_referral_followup/g_task:label">
+            <value>Réalisation du Suivi</value>
+          </text>
+          <text id="/mother_referral_followup/inputs/contact/_id:label">
+            <value>Quel est le nom de la patiente ?</value>
+          </text>
+          <text id="/mother_referral_followup/inputs/contact/date_of_birth:label">
+            <value>Date de naissance</value>
+          </text>
+          <text id="/mother_referral_followup/inputs/contact/name:label">
+            <value>Nom</value>
+          </text>
+          <text id="/mother_referral_followup/inputs/contact/parent/_id:label">
+            <value>ID du Menage</value>
+          </text>
+          <text id="/mother_referral_followup/inputs/contact/parent/parent/_id:label">
+            <value>ID de la concession</value>
+          </text>
+          <text id="/mother_referral_followup/inputs/contact/parent/parent/contact/chw_name:label">
+            <value>Nom de l'ASC</value>
+          </text>
+          <text id="/mother_referral_followup/inputs/contact/parent/parent/contact/phone:label">
+            <value>Téléphone de l'ASC</value>
+          </text>
+          <text id="/mother_referral_followup/inputs/contact/parent/parent/parent/_id:label">
+            <value>ID du village</value>
+          </text>
+          <text id="/mother_referral_followup/inputs/contact/patient_id:label">
+            <value>ID de patiente</value>
+          </text>
+          <text id="/mother_referral_followup/inputs/contact/sex:label">
+            <value>Sexe</value>
+          </text>
+          <text id="/mother_referral_followup/inputs/contact/short_name:label">
+            <value>Nom Court</value>
+          </text>
+          <text id="/mother_referral_followup/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/mother_referral_followup/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/mother_referral_followup/inputs/t_delivery_date:label">
+            <value>Date d'accouchement</value>
+          </text>
+          <text id="/mother_referral_followup/inputs/t_follow_up_count:label">
+            <value>Nombre de suivi</value>
+          </text>
+          <text id="/mother_referral_followup/inputs/user/contact_id:label">
+            <value>Contact ID</value>
+          </text>
+          <text id="/mother_referral_followup/inputs/user/name:label">
+            <value>Nom</value>
+          </text>
+          <text id="/mother_referral_followup/inputs/user/phone:label">
+            <value>Téléphone</value>
+          </text>
+          <text id="/mother_referral_followup/inputs/user:label">
+            <value>Utilisateur</value>
+          </text>
+          <text id="/mother_referral_followup/months_since_delivery:label">
+            <value>Nombre de mois depuis l'accouchement</value>
+          </text>
+          <text id="/mother_referral_followup/weeks_since_delivery:label">
+            <value>Nombre de semaines depuis l'accouchement</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <mother_referral_followup id="mother_referral_followup" prefix="J1!mother_referral_followup!" delimiter="#" version="2022-05-09  19-25">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <t_follow_up_count/>
+            <t_delivery_date/>
+            <user>
+              <contact_id/>
+              <name/>
+              <phone/>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <short_name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <_id/>
+                <parent>
+                  <_id/>
+                  <parent>
+                    <_id/>
+                  </parent>
+                  <contact>
+                    <chw_name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <household_id tag="hidden"/>
+          <area_id tag="hidden"/>
+          <facility_id tag="hidden"/>
+          <patient_age_in_years tag="hidden"/>
+          <patient_uuid tag="hidden"/>
+          <patient_id tag="hidden"/>
+          <patient_name tag="hidden"/>
+          <patient_short_name tag="hidden"/>
+          <patient_short_name_start tag="hidden"/>
+          <followup_count/>
+          <follow_up_count_number/>
+          <delivery_date/>
+          <days_since_delivery/>
+          <months_since_delivery/>
+          <weeks_since_delivery/>
+          <refer_cscom/>
+          <continue_followup/>
+          <next_followup_days/>
+          <g_task>
+            <task_to_perform/>
+          </g_task>
+          <g_followup>
+            <g_realisation>
+              <followup_done_today/>
+              <followup_date/>
+              <not_done_today/>
+              <other_followup_reason/>
+            </g_realisation>
+            <g_patient_present>
+              <patient_present/>
+              <how_patient_found/>
+            </g_patient_present>
+            <g_visit>
+              <went_to_health_center/>
+              <health_center_date/>
+              <did_not_go/>
+              <label_did_not_go/>
+              <other_no_visit_reason/>
+              <n_visit/>
+            </g_visit>
+            <g_treatment>
+              <diagnosis_given/>
+              <treatment_given/>
+              <problem_handled/>
+              <reason_action/>
+            </g_treatment>
+            <g_disease_progress>
+              <health_status/>
+            </g_disease_progress>
+          </g_followup>
+          <g_end_followup>
+            <why_end_followup/>
+            <why_end_followup_other/>
+          </g_end_followup>
+          <g_summary>
+            <r_summary/>
+            <r_patient_info/>
+            <n_refer_cscom/>
+            <r_diagnosis/>
+            <n_did_not_go/>
+            <n_reason/>
+            <n_diagnosis_given/>
+            <n_treatment_given/>
+            <n_problem_handled/>
+            <r_instructions/>
+            <n_submit/>
+            <n_talk/>
+            <n_directions/>
+            <n_escort_cscom/>
+            <n_death_report/>
+            <n_followup/>
+            <n_next_followup/>
+            <n_next_request/>
+            <n_close_out/>
+          </g_summary>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </mother_referral_followup>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/mother_referral_followup/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/mother_referral_followup/inputs/source" type="string"/>
+      <bind nodeset="/mother_referral_followup/inputs/source_id" type="string"/>
+      <bind nodeset="/mother_referral_followup/inputs/t_follow_up_count" type="string"/>
+      <bind nodeset="/mother_referral_followup/inputs/t_delivery_date" type="string"/>
+      <bind nodeset="/mother_referral_followup/inputs/user/contact_id" type="db:person"/>
+      <bind nodeset="/mother_referral_followup/inputs/user/name" type="string"/>
+      <bind nodeset="/mother_referral_followup/inputs/user/phone" type="string"/>
+      <bind nodeset="/mother_referral_followup/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/mother_referral_followup/inputs/contact/name" type="string"/>
+      <bind nodeset="/mother_referral_followup/inputs/contact/short_name" type="string"/>
+      <bind nodeset="/mother_referral_followup/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/mother_referral_followup/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/mother_referral_followup/inputs/contact/sex" type="string"/>
+      <bind nodeset="/mother_referral_followup/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/mother_referral_followup/inputs/contact/parent/parent/_id" type="string"/>
+      <bind nodeset="/mother_referral_followup/inputs/contact/parent/parent/parent/_id" type="string"/>
+      <bind nodeset="/mother_referral_followup/inputs/contact/parent/parent/contact/chw_name" type="string"/>
+      <bind nodeset="/mother_referral_followup/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind nodeset="/mother_referral_followup/household_id" type="string" calculate="../inputs/contact/parent/_id"/>
+      <bind nodeset="/mother_referral_followup/area_id" type="string" calculate="../inputs/contact/parent/parent/_id"/>
+      <bind nodeset="/mother_referral_followup/facility_id" type="string" calculate="../inputs/contact/parent/parent/parent/_id"/>
+      <bind nodeset="/mother_referral_followup/patient_age_in_years" type="string" calculate="floor( difference-in-months( ../inputs/contact/date_of_birth, today() ) div 12 )"/>
+      <bind nodeset="/mother_referral_followup/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/mother_referral_followup/patient_id" type="string" calculate="../inputs/contact/patient_id"/>
+      <bind nodeset="/mother_referral_followup/patient_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/mother_referral_followup/patient_short_name" type="string" calculate="coalesce(../inputs/contact/short_name, ../summary/custom_translations/custom_woman_label)"/>
+      <bind nodeset="/mother_referral_followup/patient_short_name_start" type="string" calculate="coalesce(../inputs/contact/short_name, ../summary/custom_translations/custom_woman_start_label)"/>
+      <bind nodeset="/mother_referral_followup/followup_count" type="string" calculate="../inputs/t_follow_up_count"/>
+      <bind nodeset="/mother_referral_followup/follow_up_count_number" type="string" calculate="number( /mother_referral_followup/inputs/t_follow_up_count )"/>
+      <bind nodeset="/mother_referral_followup/delivery_date" type="string" calculate="../inputs/t_delivery_date"/>
+      <bind nodeset="/mother_referral_followup/days_since_delivery" type="string" calculate="floor( decimal-date-time(today()) - decimal-date-time( /mother_referral_followup/delivery_date ) )"/>
+      <bind nodeset="/mother_referral_followup/months_since_delivery" type="string" calculate="difference-in-months( /mother_referral_followup/delivery_date , today())"/>
+      <bind nodeset="/mother_referral_followup/weeks_since_delivery" type="string" calculate="round( /mother_referral_followup/delivery_date  div 7, 0)"/>
+      <bind nodeset="/mother_referral_followup/refer_cscom" type="string" calculate="if( /mother_referral_followup/g_followup/g_disease_progress/health_status  = 'aggravated' or  /mother_referral_followup/g_followup/g_disease_progress/health_status  = 'unchanged' ,'true','false')"/>
+      <bind nodeset="/mother_referral_followup/continue_followup" type="string" calculate="if( /mother_referral_followup/g_task/task_to_perform ='referral_followup' and  /mother_referral_followup/g_followup/g_disease_progress/health_status  != 'improved' and  /mother_referral_followup/g_followup/g_disease_progress/health_status  != 'healed' ,'true','false')"/>
+      <bind nodeset="/mother_referral_followup/next_followup_days" type="string" calculate="format-date-time(date-time(decimal-date-time(today())+ 1),&quot;%d/%m/%Y&quot;)"/>
+      <bind nodeset="/mother_referral_followup/g_task/task_to_perform" type="select1" jr:requiredMsg="jr:itext('/mother_referral_followup/g_task/task_to_perform:jr:requiredMsg')" required="true()"/>
+      <bind nodeset="/mother_referral_followup/g_followup" relevant=" /mother_referral_followup/g_task/task_to_perform ='referral_followup'"/>
+      <bind nodeset="/mother_referral_followup/g_followup/g_realisation/followup_done_today" type="select1" jr:requiredMsg="jr:itext('/mother_referral_followup/g_followup/g_realisation/followup_done_today:jr:requiredMsg')" required="true()"/>
+      <bind nodeset="/mother_referral_followup/g_followup/g_realisation/followup_date" type="date" constraint=".&lt; today()-1" jr:requiredMsg="jr:itext('/mother_referral_followup/g_followup/g_realisation/followup_date:jr:requiredMsg')" jr:constraintMsg="jr:itext('/mother_referral_followup/g_followup/g_realisation/followup_date:jr:constraintMsg')" relevant=" /mother_referral_followup/g_followup/g_realisation/followup_done_today ='no'" required="true()"/>
+      <bind nodeset="/mother_referral_followup/g_followup/g_realisation/not_done_today" type="select1" jr:requiredMsg="jr:itext('/mother_referral_followup/g_followup/g_realisation/not_done_today:jr:requiredMsg')" required="true()" relevant=" /mother_referral_followup/g_followup/g_realisation/followup_done_today ='no'"/>
+      <bind nodeset="/mother_referral_followup/g_followup/g_realisation/other_followup_reason" type="string" jr:requiredMsg="jr:itext('/mother_referral_followup/g_followup/g_realisation/other_followup_reason:jr:requiredMsg')" required="true()" relevant=" /mother_referral_followup/g_followup/g_realisation/not_done_today ='other'"/>
+      <bind nodeset="/mother_referral_followup/g_followup/g_patient_present/patient_present" type="select1" jr:requiredMsg="jr:itext('/mother_referral_followup/g_followup/g_patient_present/patient_present:jr:requiredMsg')" required="true()"/>
+      <bind nodeset="/mother_referral_followup/g_followup/g_patient_present/how_patient_found" type="select1" jr:requiredMsg="jr:itext('/mother_referral_followup/g_followup/g_patient_present/how_patient_found:jr:requiredMsg')" required="true()" relevant=" /mother_referral_followup/g_followup/g_patient_present/patient_present ='yes'"/>
+      <bind nodeset="/mother_referral_followup/g_followup/g_visit" relevant=" /mother_referral_followup/g_followup/g_patient_present/patient_present ='yes'"/>
+      <bind nodeset="/mother_referral_followup/g_followup/g_visit/went_to_health_center" type="select1" jr:requiredMsg="jr:itext('/mother_referral_followup/g_followup/g_visit/went_to_health_center:jr:requiredMsg')" required="true()"/>
+      <bind nodeset="/mother_referral_followup/g_followup/g_visit/health_center_date" type="date" constraint=".&lt; today()" jr:requiredMsg="jr:itext('/mother_referral_followup/g_followup/g_visit/health_center_date:jr:requiredMsg')" jr:constraintMsg="jr:itext('/mother_referral_followup/g_followup/g_visit/health_center_date:jr:constraintMsg')" relevant=" /mother_referral_followup/g_followup/g_visit/went_to_health_center ='yes'" required="true()"/>
+      <bind nodeset="/mother_referral_followup/g_followup/g_visit/did_not_go" type="select1" jr:requiredMsg="jr:itext('/mother_referral_followup/g_followup/g_visit/did_not_go:jr:requiredMsg')" required="true()" relevant=" /mother_referral_followup/g_followup/g_visit/went_to_health_center ='no'"/>
+      <bind nodeset="/mother_referral_followup/g_followup/g_visit/label_did_not_go" type="string" calculate="jr:choice-name( /mother_referral_followup/g_followup/g_visit/did_not_go ,' /mother_referral_followup/g_followup/g_visit/did_not_go ')" relevant=" /mother_referral_followup/g_followup/g_visit/did_not_go !=''"/>
+      <bind nodeset="/mother_referral_followup/g_followup/g_visit/other_no_visit_reason" type="string" jr:requiredMsg="jr:itext('/mother_referral_followup/g_followup/g_visit/other_no_visit_reason:jr:requiredMsg')" required="true()" relevant=" /mother_referral_followup/g_followup/g_visit/did_not_go ='other'"/>
+      <bind nodeset="/mother_referral_followup/g_followup/g_visit/n_visit" readonly="true()" type="string" relevant=" /mother_referral_followup/g_followup/g_visit/went_to_health_center ='no'"/>
+      <bind nodeset="/mother_referral_followup/g_followup/g_treatment" relevant=" /mother_referral_followup/g_followup/g_visit/went_to_health_center ='yes'"/>
+      <bind nodeset="/mother_referral_followup/g_followup/g_treatment/diagnosis_given" type="string" jr:requiredMsg="jr:itext('/mother_referral_followup/g_followup/g_treatment/diagnosis_given:jr:requiredMsg')" required="true()"/>
+      <bind nodeset="/mother_referral_followup/g_followup/g_treatment/treatment_given" type="string" jr:requiredMsg="jr:itext('/mother_referral_followup/g_followup/g_treatment/treatment_given:jr:requiredMsg')" required="true()"/>
+      <bind nodeset="/mother_referral_followup/g_followup/g_treatment/problem_handled" type="select1" jr:requiredMsg="jr:itext('/mother_referral_followup/g_followup/g_treatment/problem_handled:jr:requiredMsg')" required="true()"/>
+      <bind nodeset="/mother_referral_followup/g_followup/g_treatment/reason_action" type="string" jr:requiredMsg="jr:itext('/mother_referral_followup/g_followup/g_treatment/reason_action:jr:requiredMsg')" required="true()" relevant=" /mother_referral_followup/g_followup/g_treatment/problem_handled ='yes'"/>
+      <bind nodeset="/mother_referral_followup/g_followup/g_disease_progress" relevant=" /mother_referral_followup/g_followup/g_visit/went_to_health_center ='yes'"/>
+      <bind nodeset="/mother_referral_followup/g_followup/g_disease_progress/health_status" type="select1" jr:requiredMsg="jr:itext('/mother_referral_followup/g_followup/g_disease_progress/health_status:jr:requiredMsg')" required="true()"/>
+      <bind nodeset="/mother_referral_followup/g_end_followup" relevant=" /mother_referral_followup/g_task/task_to_perform ='close_followup'"/>
+      <bind nodeset="/mother_referral_followup/g_end_followup/why_end_followup" type="select1" jr:requiredMsg="jr:itext('/mother_referral_followup/g_end_followup/why_end_followup:jr:requiredMsg')" required="true()"/>
+      <bind nodeset="/mother_referral_followup/g_end_followup/why_end_followup_other" type="string" jr:requiredMsg="jr:itext('/mother_referral_followup/g_end_followup/why_end_followup_other:jr:requiredMsg')" required="true()" relevant=" /mother_referral_followup/g_end_followup/why_end_followup ='other'"/>
+      <bind nodeset="/mother_referral_followup/g_summary/r_summary" readonly="true()" type="string"/>
+      <bind nodeset="/mother_referral_followup/g_summary/r_patient_info" readonly="true()" type="string"/>
+      <bind nodeset="/mother_referral_followup/g_summary/n_refer_cscom" readonly="true()" type="string" relevant=" /mother_referral_followup/refer_cscom ='true'"/>
+      <bind nodeset="/mother_referral_followup/g_summary/r_diagnosis" readonly="true()" type="string" relevant=" /mother_referral_followup/g_task/task_to_perform ='referral_followup' and  /mother_referral_followup/g_followup/g_patient_present/patient_present ='yes'"/>
+      <bind nodeset="/mother_referral_followup/g_summary/n_did_not_go" readonly="true()" type="string" relevant=" /mother_referral_followup/g_followup/g_visit/went_to_health_center ='no'"/>
+      <bind nodeset="/mother_referral_followup/g_summary/n_reason" readonly="true()" type="string" relevant=" /mother_referral_followup/g_followup/g_visit/went_to_health_center ='no'"/>
+      <bind nodeset="/mother_referral_followup/g_summary/n_diagnosis_given" readonly="true()" type="string" relevant=" /mother_referral_followup/g_followup/g_visit/went_to_health_center ='yes'"/>
+      <bind nodeset="/mother_referral_followup/g_summary/n_treatment_given" readonly="true()" type="string" relevant=" /mother_referral_followup/g_followup/g_visit/went_to_health_center ='yes'"/>
+      <bind nodeset="/mother_referral_followup/g_summary/n_problem_handled" readonly="true()" type="string" relevant=" /mother_referral_followup/g_followup/g_treatment/problem_handled ='yes'"/>
+      <bind nodeset="/mother_referral_followup/g_summary/r_instructions" readonly="true()" type="string" relevant=" /mother_referral_followup/g_end_followup/why_end_followup !='other'"/>
+      <bind nodeset="/mother_referral_followup/g_summary/n_submit" readonly="true()" type="string" relevant=" /mother_referral_followup/g_followup/g_patient_present/patient_present ='no'"/>
+      <bind nodeset="/mother_referral_followup/g_summary/n_talk" readonly="true()" type="string" relevant=" /mother_referral_followup/g_followup/g_visit/went_to_health_center ='no'"/>
+      <bind nodeset="/mother_referral_followup/g_summary/n_directions" readonly="true()" type="string" relevant=" /mother_referral_followup/g_followup/g_patient_present/patient_present ='yes'"/>
+      <bind nodeset="/mother_referral_followup/g_summary/n_escort_cscom" readonly="true()" type="string" relevant=" /mother_referral_followup/refer_cscom ='true'"/>
+      <bind nodeset="/mother_referral_followup/g_summary/n_death_report" readonly="true()" type="string" relevant=" /mother_referral_followup/g_end_followup/why_end_followup ='mother_deceased' or  /mother_referral_followup/g_end_followup/why_end_followup ='newborn_deceased'"/>
+      <bind nodeset="/mother_referral_followup/g_summary/n_followup" readonly="true()" type="string"/>
+      <bind nodeset="/mother_referral_followup/g_summary/n_next_followup" readonly="true()" type="string" relevant="number( /mother_referral_followup/follow_up_count_number ) != 3 and  /mother_referral_followup/continue_followup ='true'"/>
+      <bind nodeset="/mother_referral_followup/g_summary/n_next_request" readonly="true()" type="string" relevant=" /mother_referral_followup/g_followup/g_disease_progress/health_status  = 'improved'"/>
+      <bind nodeset="/mother_referral_followup/g_summary/n_close_out" readonly="true()" type="string" relevant=" /mother_referral_followup/g_task/task_to_perform ='close_followup' or  /mother_referral_followup/g_followup/g_disease_progress/health_status  = 'healed'"/>
+      <bind nodeset="/mother_referral_followup/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/mother_referral_followup/inputs">
+      <input ref="/mother_referral_followup/inputs/t_follow_up_count">
+        <label ref="jr:itext('/mother_referral_followup/inputs/t_follow_up_count:label')"/>
+      </input>
+      <input ref="/mother_referral_followup/inputs/t_delivery_date">
+        <label ref="jr:itext('/mother_referral_followup/inputs/t_delivery_date:label')"/>
+      </input>
+      <group ref="/mother_referral_followup/inputs/user">
+        <label ref="jr:itext('/mother_referral_followup/inputs/user:label')"/>
+        <input appearance="db-object" ref="/mother_referral_followup/inputs/user/contact_id">
+          <label ref="jr:itext('/mother_referral_followup/inputs/user/contact_id:label')"/>
+        </input>
+      </group>
+      <group ref="/mother_referral_followup/inputs/contact">
+        <input appearance="db-object" ref="/mother_referral_followup/inputs/contact/_id">
+          <label ref="jr:itext('/mother_referral_followup/inputs/contact/_id:label')"/>
+        </input>
+        <group ref="/mother_referral_followup/inputs/contact/parent">
+          <input appearance="hidden" ref="/mother_referral_followup/inputs/contact/parent/_id">
+            <label ref="jr:itext('/mother_referral_followup/inputs/contact/parent/_id:label')"/>
+          </input>
+          <group ref="/mother_referral_followup/inputs/contact/parent/parent">
+            <input appearance="hidden" ref="/mother_referral_followup/inputs/contact/parent/parent/_id">
+              <label ref="jr:itext('/mother_referral_followup/inputs/contact/parent/parent/_id:label')"/>
+            </input>
+            <group ref="/mother_referral_followup/inputs/contact/parent/parent/parent">
+              <input appearance="hidden" ref="/mother_referral_followup/inputs/contact/parent/parent/parent/_id">
+                <label ref="jr:itext('/mother_referral_followup/inputs/contact/parent/parent/parent/_id:label')"/>
+              </input>
+            </group>
+            <group ref="/mother_referral_followup/inputs/contact/parent/parent/contact"/>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/mother_referral_followup/g_task">
+      <label ref="jr:itext('/mother_referral_followup/g_task:label')"/>
+      <select1 ref="/mother_referral_followup/g_task/task_to_perform">
+        <label ref="jr:itext('/mother_referral_followup/g_task/task_to_perform:label')"/>
+        <item>
+          <label ref="jr:itext('/mother_referral_followup/g_task/task_to_perform/referral_followup:label')"/>
+          <value>referral_followup</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/mother_referral_followup/g_task/task_to_perform/close_followup:label')"/>
+          <value>close_followup</value>
+        </item>
+      </select1>
+    </group>
+    <group ref="/mother_referral_followup/g_followup">
+      <label ref="jr:itext('/mother_referral_followup/g_followup:label')"/>
+      <group appearance="field-list" ref="/mother_referral_followup/g_followup/g_realisation">
+        <label ref="jr:itext('/mother_referral_followup/g_followup/g_realisation:label')"/>
+        <select1 ref="/mother_referral_followup/g_followup/g_realisation/followup_done_today">
+          <label ref="jr:itext('/mother_referral_followup/g_followup/g_realisation/followup_done_today:label')"/>
+          <item>
+            <label ref="jr:itext('/mother_referral_followup/g_followup/g_realisation/followup_done_today/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/mother_referral_followup/g_followup/g_realisation/followup_done_today/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+        <input ref="/mother_referral_followup/g_followup/g_realisation/followup_date">
+          <label ref="jr:itext('/mother_referral_followup/g_followup/g_realisation/followup_date:label')"/>
+        </input>
+        <select1 ref="/mother_referral_followup/g_followup/g_realisation/not_done_today">
+          <label ref="jr:itext('/mother_referral_followup/g_followup/g_realisation/not_done_today:label')"/>
+          <item>
+            <label ref="jr:itext('/mother_referral_followup/g_followup/g_realisation/not_done_today/phone_discharged:label')"/>
+            <value>phone_discharged</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/mother_referral_followup/g_followup/g_realisation/not_done_today/phone_lost:label')"/>
+            <value>phone_lost</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/mother_referral_followup/g_followup/g_realisation/not_done_today/other:label')"/>
+            <value>other</value>
+          </item>
+        </select1>
+        <input ref="/mother_referral_followup/g_followup/g_realisation/other_followup_reason">
+          <label ref="jr:itext('/mother_referral_followup/g_followup/g_realisation/other_followup_reason:label')"/>
+        </input>
+      </group>
+      <group appearance="field-list" ref="/mother_referral_followup/g_followup/g_patient_present">
+        <label ref="jr:itext('/mother_referral_followup/g_followup/g_patient_present:label')"/>
+        <select1 ref="/mother_referral_followup/g_followup/g_patient_present/patient_present">
+          <label ref="jr:itext('/mother_referral_followup/g_followup/g_patient_present/patient_present:label')"/>
+          <item>
+            <label ref="jr:itext('/mother_referral_followup/g_followup/g_patient_present/patient_present/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/mother_referral_followup/g_followup/g_patient_present/patient_present/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+        <select1 ref="/mother_referral_followup/g_followup/g_patient_present/how_patient_found">
+          <label ref="jr:itext('/mother_referral_followup/g_followup/g_patient_present/how_patient_found:label')"/>
+          <item>
+            <label ref="jr:itext('/mother_referral_followup/g_followup/g_patient_present/how_patient_found/during_home_visit:label')"/>
+            <value>during_home_visit</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/mother_referral_followup/g_followup/g_patient_present/how_patient_found/patient_to_chw:label')"/>
+            <value>patient_to_chw</value>
+          </item>
+        </select1>
+      </group>
+      <group appearance="field-list" ref="/mother_referral_followup/g_followup/g_visit">
+        <label ref="jr:itext('/mother_referral_followup/g_followup/g_visit:label')"/>
+        <select1 ref="/mother_referral_followup/g_followup/g_visit/went_to_health_center">
+          <label ref="jr:itext('/mother_referral_followup/g_followup/g_visit/went_to_health_center:label')"/>
+          <item>
+            <label ref="jr:itext('/mother_referral_followup/g_followup/g_visit/went_to_health_center/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/mother_referral_followup/g_followup/g_visit/went_to_health_center/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+        <input ref="/mother_referral_followup/g_followup/g_visit/health_center_date">
+          <label ref="jr:itext('/mother_referral_followup/g_followup/g_visit/health_center_date:label')"/>
+        </input>
+        <select1 ref="/mother_referral_followup/g_followup/g_visit/did_not_go">
+          <label ref="jr:itext('/mother_referral_followup/g_followup/g_visit/did_not_go:label')"/>
+          <item>
+            <label ref="jr:itext('/mother_referral_followup/g_followup/g_visit/did_not_go/oversight:label')"/>
+            <value>oversight</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/mother_referral_followup/g_followup/g_visit/did_not_go/lack_time:label')"/>
+            <value>lack_time</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/mother_referral_followup/g_followup/g_visit/did_not_go/lack_money:label')"/>
+            <value>lack_money</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/mother_referral_followup/g_followup/g_visit/did_not_go/not_motivated:label')"/>
+            <value>not_motivated</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/mother_referral_followup/g_followup/g_visit/did_not_go/end_followup:label')"/>
+            <value>end_followup</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/mother_referral_followup/g_followup/g_visit/did_not_go/husband_refusal:label')"/>
+            <value>husband_refusal</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/mother_referral_followup/g_followup/g_visit/did_not_go/other:label')"/>
+            <value>other</value>
+          </item>
+        </select1>
+        <input ref="/mother_referral_followup/g_followup/g_visit/other_no_visit_reason">
+          <label ref="jr:itext('/mother_referral_followup/g_followup/g_visit/other_no_visit_reason:label')"/>
+        </input>
+        <input ref="/mother_referral_followup/g_followup/g_visit/n_visit">
+          <label ref="jr:itext('/mother_referral_followup/g_followup/g_visit/n_visit:label')"/>
+        </input>
+      </group>
+      <group appearance="field-list" ref="/mother_referral_followup/g_followup/g_treatment">
+        <label ref="jr:itext('/mother_referral_followup/g_followup/g_treatment:label')"/>
+        <input appearance="multiline" ref="/mother_referral_followup/g_followup/g_treatment/diagnosis_given">
+          <label ref="jr:itext('/mother_referral_followup/g_followup/g_treatment/diagnosis_given:label')"/>
+          <hint ref="jr:itext('/mother_referral_followup/g_followup/g_treatment/diagnosis_given:hint')"/>
+        </input>
+        <input appearance="multiline" ref="/mother_referral_followup/g_followup/g_treatment/treatment_given">
+          <label ref="jr:itext('/mother_referral_followup/g_followup/g_treatment/treatment_given:label')"/>
+          <hint ref="jr:itext('/mother_referral_followup/g_followup/g_treatment/treatment_given:hint')"/>
+        </input>
+        <select1 ref="/mother_referral_followup/g_followup/g_treatment/problem_handled">
+          <label ref="jr:itext('/mother_referral_followup/g_followup/g_treatment/problem_handled:label')"/>
+          <hint ref="jr:itext('/mother_referral_followup/g_followup/g_treatment/problem_handled:hint')"/>
+          <item>
+            <label ref="jr:itext('/mother_referral_followup/g_followup/g_treatment/problem_handled/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/mother_referral_followup/g_followup/g_treatment/problem_handled/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+        <input appearance="multiline" ref="/mother_referral_followup/g_followup/g_treatment/reason_action">
+          <label ref="jr:itext('/mother_referral_followup/g_followup/g_treatment/reason_action:label')"/>
+          <hint ref="jr:itext('/mother_referral_followup/g_followup/g_treatment/reason_action:hint')"/>
+        </input>
+      </group>
+      <group appearance="field-list" ref="/mother_referral_followup/g_followup/g_disease_progress">
+        <label ref="jr:itext('/mother_referral_followup/g_followup/g_disease_progress:label')"/>
+        <select1 ref="/mother_referral_followup/g_followup/g_disease_progress/health_status">
+          <label ref="jr:itext('/mother_referral_followup/g_followup/g_disease_progress/health_status:label')"/>
+          <item>
+            <label ref="jr:itext('/mother_referral_followup/g_followup/g_disease_progress/health_status/aggravated:label')"/>
+            <value>aggravated</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/mother_referral_followup/g_followup/g_disease_progress/health_status/improved:label')"/>
+            <value>improved</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/mother_referral_followup/g_followup/g_disease_progress/health_status/unchanged:label')"/>
+            <value>unchanged</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/mother_referral_followup/g_followup/g_disease_progress/health_status/healed:label')"/>
+            <value>healed</value>
+          </item>
+        </select1>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/mother_referral_followup/g_end_followup">
+      <label ref="jr:itext('/mother_referral_followup/g_end_followup:label')"/>
+      <select1 ref="/mother_referral_followup/g_end_followup/why_end_followup">
+        <label ref="jr:itext('/mother_referral_followup/g_end_followup/why_end_followup:label')"/>
+        <item>
+          <label ref="jr:itext('/mother_referral_followup/g_end_followup/why_end_followup/mother_deceased:label')"/>
+          <value>mother_deceased</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/mother_referral_followup/g_end_followup/why_end_followup/newborn_deceased:label')"/>
+          <value>newborn_deceased</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/mother_referral_followup/g_end_followup/why_end_followup/other:label')"/>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/mother_referral_followup/g_end_followup/why_end_followup_other">
+        <label ref="jr:itext('/mother_referral_followup/g_end_followup/why_end_followup_other:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list summary" ref="/mother_referral_followup/g_summary">
+      <label ref="jr:itext('/mother_referral_followup/g_summary:label')"/>
+      <input appearance="h1 yellow" ref="/mother_referral_followup/g_summary/r_summary">
+        <label ref="jr:itext('/mother_referral_followup/g_summary/r_summary:label')"/>
+      </input>
+      <input ref="/mother_referral_followup/g_summary/r_patient_info">
+        <label ref="jr:itext('/mother_referral_followup/g_summary/r_patient_info:label')"/>
+      </input>
+      <input appearance="h1 red" ref="/mother_referral_followup/g_summary/n_refer_cscom">
+        <label ref="jr:itext('/mother_referral_followup/g_summary/n_refer_cscom:label')"/>
+      </input>
+      <input appearance="h1 blue" ref="/mother_referral_followup/g_summary/r_diagnosis">
+        <label ref="jr:itext('/mother_referral_followup/g_summary/r_diagnosis:label')"/>
+      </input>
+      <input ref="/mother_referral_followup/g_summary/n_did_not_go">
+        <label ref="jr:itext('/mother_referral_followup/g_summary/n_did_not_go:label')"/>
+      </input>
+      <input ref="/mother_referral_followup/g_summary/n_reason">
+        <label ref="jr:itext('/mother_referral_followup/g_summary/n_reason:label')"/>
+      </input>
+      <input ref="/mother_referral_followup/g_summary/n_diagnosis_given">
+        <label ref="jr:itext('/mother_referral_followup/g_summary/n_diagnosis_given:label')"/>
+      </input>
+      <input ref="/mother_referral_followup/g_summary/n_treatment_given">
+        <label ref="jr:itext('/mother_referral_followup/g_summary/n_treatment_given:label')"/>
+      </input>
+      <input ref="/mother_referral_followup/g_summary/n_problem_handled">
+        <label ref="jr:itext('/mother_referral_followup/g_summary/n_problem_handled:label')"/>
+      </input>
+      <input appearance="h1 blue" ref="/mother_referral_followup/g_summary/r_instructions">
+        <label ref="jr:itext('/mother_referral_followup/g_summary/r_instructions:label')"/>
+      </input>
+      <input ref="/mother_referral_followup/g_summary/n_submit">
+        <label ref="jr:itext('/mother_referral_followup/g_summary/n_submit:label')"/>
+      </input>
+      <input ref="/mother_referral_followup/g_summary/n_talk">
+        <label ref="jr:itext('/mother_referral_followup/g_summary/n_talk:label')"/>
+      </input>
+      <input ref="/mother_referral_followup/g_summary/n_directions">
+        <label ref="jr:itext('/mother_referral_followup/g_summary/n_directions:label')"/>
+      </input>
+      <input appearance="h3 red" ref="/mother_referral_followup/g_summary/n_escort_cscom">
+        <label ref="jr:itext('/mother_referral_followup/g_summary/n_escort_cscom:label')"/>
+      </input>
+      <input ref="/mother_referral_followup/g_summary/n_death_report">
+        <label ref="jr:itext('/mother_referral_followup/g_summary/n_death_report:label')"/>
+      </input>
+      <input appearance="h1 green" ref="/mother_referral_followup/g_summary/n_followup">
+        <label ref="jr:itext('/mother_referral_followup/g_summary/n_followup:label')"/>
+      </input>
+      <input ref="/mother_referral_followup/g_summary/n_next_followup">
+        <label ref="jr:itext('/mother_referral_followup/g_summary/n_next_followup:label')"/>
+      </input>
+      <input ref="/mother_referral_followup/g_summary/n_next_request">
+        <label ref="jr:itext('/mother_referral_followup/g_summary/n_next_request:label')"/>
+      </input>
+      <input ref="/mother_referral_followup/g_summary/n_close_out">
+        <label ref="jr:itext('/mother_referral_followup/g_summary/n_close_out:label')"/>
+      </input>
+    </group>
+  </h:body>
+</h:html>

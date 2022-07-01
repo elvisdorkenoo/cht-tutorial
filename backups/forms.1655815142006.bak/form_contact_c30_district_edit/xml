@@ -1,0 +1,168 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>Edit District</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/data/c30_district/contact/_id:label">
+            <value>Primary Contact</value>
+          </text>
+          <text id="/data/c30_district/name:label">
+            <value>District Name</value>
+          </text>
+          <text id="/data/init/parent/parent_id:label">
+            <value>Region belonging to the district</value>
+          </text>
+        </translation>
+        <translation lang="fr">
+          <text id="/data/c30_district/contact/_id:label">
+            <value>Contact primaire</value>
+          </text>
+          <text id="/data/c30_district/meta/created_by:label">
+            <value>-</value>
+          </text>
+          <text id="/data/c30_district/meta/created_by_person_uuid:label">
+            <value>-</value>
+          </text>
+          <text id="/data/c30_district/meta/created_by_place_uuid:label">
+            <value>-</value>
+          </text>
+          <text id="/data/c30_district/meta:label">
+            <value>-</value>
+          </text>
+          <text id="/data/c30_district/name:label">
+            <value>Nom du District</value>
+          </text>
+          <text id="/data/c30_district/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/data/c30_district/type:label">
+            <value>-</value>
+          </text>
+          <text id="/data/c30_district:label">
+            <value>-</value>
+          </text>
+          <text id="/data/init/parent/parent_id:label">
+            <value>Région d'appartenance du district</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user/facility_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user/name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs:label">
+            <value>-</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <data id="contact:c30_district:edit" prefix="J1!contact:c30_district:edit!" delimiter="#" version="2022-05-06 12-36">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <user>
+              <contact_id/>
+              <facility_id/>
+              <name/>
+            </user>
+          </inputs>
+          <c30_district>
+            <parent/>
+            <type/>
+            <parent_place_id/>
+            <contact>
+              <name/>
+              <contact_name/>
+              <_id/>
+            </contact>
+            <name/>
+            <geolocation/>
+            <meta tag="hidden">
+              <created_by/>
+              <created_by_person_uuid/>
+              <created_by_place_uuid/>
+              <last_edited_by/>
+              <last_edited_by_person_uuid/>
+              <last_edited_by_place_uuid/>
+            </meta>
+          </c30_district>
+          <init>
+            <parent>
+              <parent_id/>
+              <region/>
+              <name/>
+              <region_name/>
+            </parent>
+          </init>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+      <bind nodeset="/data/inputs" relevant="false()"/>
+      <bind nodeset="/data/inputs/user/contact_id" type="string"/>
+      <bind nodeset="/data/inputs/user/facility_id" type="string"/>
+      <bind nodeset="/data/inputs/user/name" type="string"/>
+      <bind nodeset="/data/c30_district/parent" type="string" readonly="true()"/>
+      <bind nodeset="/data/c30_district/type" type="string" readonly="true()"/>
+      <bind nodeset="/data/c30_district/parent_place_id" type="string" calculate="../parent"/>
+      <bind nodeset="/data/c30_district/contact/name" type="string"/>
+      <bind nodeset="/data/c30_district/contact/contact_name" type="string" calculate="../name"/>
+      <bind nodeset="/data/c30_district/contact/_id" type="string" required="true()"/>
+      <bind nodeset="/data/c30_district/name" type="string" required="true()"/>
+      <bind nodeset="/data/c30_district/geolocation" type="string" calculate="concat(../../inputs/meta/location/lat, concat(' ', ../../inputs/meta/location/long))"/>
+      <bind nodeset="/data/c30_district/meta/created_by" type="string" readonly="true()"/>
+      <bind nodeset="/data/c30_district/meta/created_by_person_uuid" type="string" readonly="true()"/>
+      <bind nodeset="/data/c30_district/meta/created_by_place_uuid" type="string"/>
+      <bind nodeset="/data/c30_district/meta/last_edited_by" type="string" calculate="../../../inputs/user/name"/>
+      <bind nodeset="/data/c30_district/meta/last_edited_by_person_uuid" type="string" calculate="../../../inputs/user/contact_id"/>
+      <bind nodeset="/data/c30_district/meta/last_edited_by_place_uuid" type="string" calculate="../../../inputs/user/facility_id"/>
+      <bind nodeset="/data/init/parent/parent_id" type="string" calculate=" /data/c30_district/parent_place_id " readonly="true()"/>
+      <bind nodeset="/data/init/parent/region" type="string"/>
+      <bind nodeset="/data/init/parent/name" type="string"/>
+      <bind nodeset="/data/init/parent/region_name" type="string" calculate="../name"/>
+      <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body>
+    <group ref="/data/inputs">
+      <group ref="/data/inputs/user">
+        <input ref="/data/inputs/user/contact_id"/>
+        <input ref="/data/inputs/user/facility_id"/>
+        <input ref="/data/inputs/user/name"/>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/data/c30_district">
+      <group ref="/data/c30_district/contact">
+        <input appearance="select-contact type-c32_district" ref="/data/c30_district/contact/_id">
+          <label ref="jr:itext('/data/c30_district/contact/_id:label')"/>
+        </input>
+      </group>
+      <input ref="/data/c30_district/name">
+        <label ref="jr:itext('/data/c30_district/name:label')"/>
+      </input>
+      <group appearance="hidden" ref="/data/c30_district/meta"/>
+    </group>
+    <group appearance="field-list hidden" ref="/data/init">
+      <group appearance="hidden" ref="/data/init/parent">
+        <input appearance="db-object" ref="/data/init/parent/parent_id">
+          <label ref="jr:itext('/data/init/parent/parent_id:label')"/>
+        </input>
+      </group>
+    </group>
+  </h:body>
+</h:html>

@@ -1,0 +1,5 @@
+{
+  "place": false,
+  "person": true,
+  "expression": "summary.isEligibleForDelivery && ageInYears(contact) > 12"
+}

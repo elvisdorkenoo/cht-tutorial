@@ -1,0 +1,1063 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>Ajouter personne</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/data/c92_household/adult/marital_status/monogamy:label">
+            <value>Monogamy</value>
+          </text>
+          <text id="/data/c92_household/adult/marital_status/polygamy:label">
+            <value>Polygamy</value>
+          </text>
+          <text id="/data/c92_household/adult/marital_status:label">
+            <value>Marital status</value>
+          </text>
+          <text id="/data/c92_household/adult/matrimonial_status/divorced:label">
+            <value>Divorced</value>
+          </text>
+          <text id="/data/c92_household/adult/matrimonial_status/married:label">
+            <value>Married</value>
+          </text>
+          <text id="/data/c92_household/adult/matrimonial_status/single:label">
+            <value>Single</value>
+          </text>
+          <text id="/data/c92_household/adult/matrimonial_status/widowed:label">
+            <value>Widowed</value>
+          </text>
+          <text id="/data/c92_household/adult/matrimonial_status:label">
+            <value>Matrimonial Status</value>
+          </text>
+          <text id="/data/c92_household/adult/profession/apprentice:label">
+            <value>Apprentice</value>
+          </text>
+          <text id="/data/c92_household/adult/profession/craftsman:label">
+            <value>Craftsman</value>
+          </text>
+          <text id="/data/c92_household/adult/profession/farmer:label">
+            <value>Farmer</value>
+          </text>
+          <text id="/data/c92_household/adult/profession/other_profession:label">
+            <value>Other</value>
+          </text>
+          <text id="/data/c92_household/adult/profession/pupil_student:label">
+            <value>Pupil/Student</value>
+          </text>
+          <text id="/data/c92_household/adult/profession/shepherd:label">
+            <value>Shepherd</value>
+          </text>
+          <text id="/data/c92_household/adult/profession:label">
+            <value>Profession</value>
+          </text>
+          <text id="/data/c92_household/adult/profession_other:label">
+            <value>Specify (Other)</value>
+          </text>
+          <text id="/data/c92_household/adult/relation_to_hh/brother_sister:label">
+            <value>Brother/Sister</value>
+          </text>
+          <text id="/data/c92_household/adult/relation_to_hh/cousin:label">
+            <value>Cousin</value>
+          </text>
+          <text id="/data/c92_household/adult/relation_to_hh/father_mother:label">
+            <value>Father/Mother</value>
+          </text>
+          <text id="/data/c92_household/adult/relation_to_hh/husband_wife:label">
+            <value>Husband/Wife</value>
+          </text>
+          <text id="/data/c92_household/adult/relation_to_hh/other_relation:label">
+            <value>Other</value>
+          </text>
+          <text id="/data/c92_household/adult/relation_to_hh/uncle_aunt:label">
+            <value>Uncle/Aunt</value>
+          </text>
+          <text id="/data/c92_household/adult/relation_to_hh:label">
+            <value>Relationship to head of household</value>
+          </text>
+          <text id="/data/c92_household/adult:label">
+            <value>Adult</value>
+          </text>
+          <text id="/data/c92_household/child/advice_for_birth_certificate:label">
+            <value>Advise the child's parent about the need for a birth certificate.
+Advise the mother of the reporting agent near her place of residence.</value>
+          </text>
+          <text id="/data/c92_household/child/birth_certificate/false:label">
+            <value>No</value>
+          </text>
+          <text id="/data/c92_household/child/birth_certificate/true:label">
+            <value>Yes</value>
+          </text>
+          <text id="/data/c92_household/child/birth_certificate:label">
+            <value>Does the child have a birth certificate?</value>
+          </text>
+          <text id="/data/c92_household/child/child_attend_school/false:label">
+            <value>No</value>
+          </text>
+          <text id="/data/c92_household/child/child_attend_school/true:label">
+            <value>Yes</value>
+          </text>
+          <text id="/data/c92_household/child/child_attend_school:label">
+            <value>Does the child attend school?</value>
+          </text>
+          <text id="/data/c92_household/child/child_disability/dont_know:label">
+            <value>Don't know</value>
+          </text>
+          <text id="/data/c92_household/child/child_disability/no:label">
+            <value>No</value>
+          </text>
+          <text id="/data/c92_household/child/child_disability/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/data/c92_household/child/child_disability:label">
+            <value>Does the child have a disability?</value>
+          </text>
+          <text id="/data/c92_household/child/child_grade/kindergarten:label">
+            <value>Kindergarten</value>
+          </text>
+          <text id="/data/c92_household/child/child_grade/pre-kindergarten:label">
+            <value>Pre-Kindergarten</value>
+          </text>
+          <text id="/data/c92_household/child/child_grade/primary:label">
+            <value>Primary</value>
+          </text>
+          <text id="/data/c92_household/child/child_grade/secondary:label">
+            <value>Secondary</value>
+          </text>
+          <text id="/data/c92_household/child/child_grade/university:label">
+            <value>University</value>
+          </text>
+          <text id="/data/c92_household/child/child_grade:label">
+            <value>What is his/her grade?</value>
+          </text>
+          <text id="/data/c92_household/child/child_her_first_period_yet/false:label">
+            <value>No</value>
+          </text>
+          <text id="/data/c92_household/child/child_her_first_period_yet/true:label">
+            <value>Yes</value>
+          </text>
+          <text id="/data/c92_household/child/child_her_first_period_yet:label">
+            <value>Has the child had her first period yet?</value>
+          </text>
+          <text id="/data/c92_household/child/child_her_first_period_yet_age:jr:constraintMsg">
+            <value>Age must be between 13 years and <output value=" /data/c92_household/person_age_in_years "/></value>
+          </text>
+          <text id="/data/c92_household/child/child_her_first_period_yet_age:label">
+            <value>At what age?</value>
+          </text>
+          <text id="/data/c92_household/child/child_mother_name:label">
+            <value>Mother's name</value>
+          </text>
+          <text id="/data/c92_household/child/child_mother_phone_number:jr:constraintMsg">
+            <value>Please enter a valid local number. For example: XX XX XX XX</value>
+          </text>
+          <text id="/data/c92_household/child/child_mother_phone_number:label">
+            <value>Phone number</value>
+          </text>
+          <text id="/data/c92_household/child/child_other_relation_to_tutor:label">
+            <value>Specify (Other)</value>
+          </text>
+          <text id="/data/c92_household/child/child_other_type_disability:label">
+            <value>Specify (Other)</value>
+          </text>
+          <text id="/data/c92_household/child/child_relation_to_tutor/c_brother_sister:label">
+            <value>Brother/Sister</value>
+          </text>
+          <text id="/data/c92_household/child/child_relation_to_tutor/c_cousin:label">
+            <value>Cousin</value>
+          </text>
+          <text id="/data/c92_household/child/child_relation_to_tutor/c_nephew_niece:label">
+            <value>Nephew/Niece</value>
+          </text>
+          <text id="/data/c92_household/child/child_relation_to_tutor/c_other_relation:label">
+            <value>Other</value>
+          </text>
+          <text id="/data/c92_household/child/child_relation_to_tutor/c_uncle_aunt:label">
+            <value>Uncle/Aunt</value>
+          </text>
+          <text id="/data/c92_household/child/child_relation_to_tutor:label">
+            <value>Tutor Relationship</value>
+          </text>
+          <text id="/data/c92_household/child/child_taking_care/father:label">
+            <value>Father</value>
+          </text>
+          <text id="/data/c92_household/child/child_taking_care/mother:label">
+            <value>Mother</value>
+          </text>
+          <text id="/data/c92_household/child/child_taking_care/tutor:label">
+            <value>Tutor</value>
+          </text>
+          <text id="/data/c92_household/child/child_taking_care:label">
+            <value>Who is taking care of the child on a daily basis?</value>
+          </text>
+          <text id="/data/c92_household/child/child_tutor_name:label">
+            <value>Tutor's name</value>
+          </text>
+          <text id="/data/c92_household/child/child_tutor_phone_number:hint">
+            <value>If number is not available, put "11111111"</value>
+          </text>
+          <text id="/data/c92_household/child/child_tutor_phone_number:jr:constraintMsg">
+            <value>Please enter a valid local number. For example: XX XX XX XX</value>
+          </text>
+          <text id="/data/c92_household/child/child_tutor_phone_number:label">
+            <value>Tutor's phone number</value>
+          </text>
+          <text id="/data/c92_household/child/child_type_disability/auditory:label">
+            <value>Auditory</value>
+          </text>
+          <text id="/data/c92_household/child/child_type_disability/engine:label">
+            <value>Engine</value>
+          </text>
+          <text id="/data/c92_household/child/child_type_disability/mental:label">
+            <value>Mental</value>
+          </text>
+          <text id="/data/c92_household/child/child_type_disability/other_disability:label">
+            <value>Other</value>
+          </text>
+          <text id="/data/c92_household/child/child_type_disability/visual:label">
+            <value>Visual</value>
+          </text>
+          <text id="/data/c92_household/child/child_type_disability:label">
+            <value>What type of disability?</value>
+          </text>
+          <text id="/data/c92_household/child/date_of_issue_birth_certificate:label">
+            <value>What is the date of issue of the birth certificate?</value>
+          </text>
+          <text id="/data/c92_household/child/declaration_within_the_legal_time/false:label">
+            <value>No</value>
+          </text>
+          <text id="/data/c92_household/child/declaration_within_the_legal_time/true:label">
+            <value>Yes</value>
+          </text>
+          <text id="/data/c92_household/child/declaration_within_the_legal_time:label">
+            <value>Was the declaration made within the legal time (1 month)?</value>
+          </text>
+          <text id="/data/c92_household/child:label">
+            <value>Infant/Adolescent</value>
+          </text>
+          <text id="/data/c92_household/ephemeral_dob/age_label:label">
+            <value>**Age**</value>
+          </text>
+          <text id="/data/c92_household/ephemeral_dob/age_months:jr:constraintMsg">
+            <value>Months must between 0 and 11</value>
+          </text>
+          <text id="/data/c92_household/ephemeral_dob/age_months:label">
+            <value>Months</value>
+          </text>
+          <text id="/data/c92_household/ephemeral_dob/age_years:jr:constraintMsg">
+            <value>Age must be between 0 and 130</value>
+          </text>
+          <text id="/data/c92_household/ephemeral_dob/age_years:label">
+            <value>Years</value>
+          </text>
+          <text id="/data/c92_household/ephemeral_dob/dob_approx:label">
+            <value>DOB</value>
+          </text>
+          <text id="/data/c92_household/ephemeral_dob/dob_calendar:hint">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/data/c92_household/ephemeral_dob/dob_calendar:jr:constraintMsg">
+            <value>Date must be before today</value>
+          </text>
+          <text id="/data/c92_household/ephemeral_dob/dob_calendar:label">
+            <value>Age</value>
+          </text>
+          <text id="/data/c92_household/ephemeral_dob/dob_debug:label">
+            <value>Months: <output value=" /data/c92_household/ephemeral_dob/ephemeral_months "/>
+Year: <output value=" /data/c92_household/ephemeral_dob/ephemeral_years "/>
+DOB Approx: <output value=" /data/c92_household/ephemeral_dob/dob_approx "/>
+DOB Calendar: <output value=" /data/c92_household/ephemeral_dob/dob_calendar "/>
+DOB ISO: <output value=" /data/c92_household/ephemeral_dob/dob_iso "/></value></text>
+          <text id="/data/c92_household/ephemeral_dob/dob_iso:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/data/c92_household/ephemeral_dob/dob_method/approx:label">
+            <value>Date of birth unknown</value>
+          </text>
+          <text id="/data/c92_household/ephemeral_dob/dob_method:label">
+          </text>
+          <text id="/data/c92_household/first_name:label">
+            <value>First name</value>
+          </text>
+          <text id="/data/c92_household/last_name:label">
+            <value>Last name</value>
+          </text>
+          <text id="/data/c92_household/phone:hint">
+            <value>Put "11111111" if no number is available</value>
+          </text>
+          <text id="/data/c92_household/phone:jr:constraintMsg">
+            <value>Please enter a valid local number, or use the standard international format, which includes a plus sign (+) and country code. For example: +254712345678</value>
+          </text>
+          <text id="/data/c92_household/phone:label">
+            <value>Phone Number</value>
+          </text>
+          <text id="/data/c92_household/sex/female:label">
+            <value>Female</value>
+          </text>
+          <text id="/data/c92_household/sex/male:label">
+            <value>Male</value>
+          </text>
+          <text id="/data/c92_household/sex:label">
+            <value>Sex</value>
+          </text>
+        </translation>
+        <translation lang="fr">
+          <text id="/data/c92_household/adult/marital_status/monogamy:label">
+            <value>Monogamie</value>
+          </text>
+          <text id="/data/c92_household/adult/marital_status/polygamy:label">
+            <value>Polygamie</value>
+          </text>
+          <text id="/data/c92_household/adult/marital_status:label">
+            <value>Régime marital</value>
+          </text>
+          <text id="/data/c92_household/adult/matrimonial_status/divorced:label">
+            <value>Divorcé (e)</value>
+          </text>
+          <text id="/data/c92_household/adult/matrimonial_status/married:label">
+            <value>Marié(e)</value>
+          </text>
+          <text id="/data/c92_household/adult/matrimonial_status/single:label">
+            <value>Célibataire</value>
+          </text>
+          <text id="/data/c92_household/adult/matrimonial_status/widowed:label">
+            <value>Veuve</value>
+          </text>
+          <text id="/data/c92_household/adult/matrimonial_status:label">
+            <value>Situation Matrimoniale</value>
+          </text>
+          <text id="/data/c92_household/adult/profession/apprentice:label">
+            <value>Apprenti(e)</value>
+          </text>
+          <text id="/data/c92_household/adult/profession/craftsman:label">
+            <value>Artisan(e)</value>
+          </text>
+          <text id="/data/c92_household/adult/profession/farmer:label">
+            <value>Paysan(ne)</value>
+          </text>
+          <text id="/data/c92_household/adult/profession/other_profession:label">
+            <value>Autre</value>
+          </text>
+          <text id="/data/c92_household/adult/profession/pupil_student:label">
+            <value>Elève/Etudiant(e)</value>
+          </text>
+          <text id="/data/c92_household/adult/profession/shepherd:label">
+            <value>Berger(e)</value>
+          </text>
+          <text id="/data/c92_household/adult/profession:label">
+            <value>Profession</value>
+          </text>
+          <text id="/data/c92_household/adult/profession_other:label">
+            <value>Spécifier (Autre)</value>
+          </text>
+          <text id="/data/c92_household/adult/relation_to_hh/brother_sister:label">
+            <value>Frère/Sœur</value>
+          </text>
+          <text id="/data/c92_household/adult/relation_to_hh/cousin:label">
+            <value>Cousin/Cousine</value>
+          </text>
+          <text id="/data/c92_household/adult/relation_to_hh/father_mother:label">
+            <value>Père/Mère</value>
+          </text>
+          <text id="/data/c92_household/adult/relation_to_hh/husband_wife:label">
+            <value>Epoux/Epouse</value>
+          </text>
+          <text id="/data/c92_household/adult/relation_to_hh/other_relation:label">
+            <value>Autre</value>
+          </text>
+          <text id="/data/c92_household/adult/relation_to_hh/uncle_aunt:label">
+            <value>Oncle/Tante</value>
+          </text>
+          <text id="/data/c92_household/adult/relation_to_hh:label">
+            <value>Relation avec le chef de ménage</value>
+          </text>
+          <text id="/data/c92_household/adult:label">
+            <value>Adulte</value>
+          </text>
+          <text id="/data/c92_household/child/advice_for_birth_certificate:label">
+            <value>Conseillez le parent de l'enfant sur la nécessité d'avoir un acte de naissance.
+Indiquer à la mère l'agent de déclaration proche de son lieu de résidence. &lt;i class="fa fa-flag"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/data/c92_household/child/birth_certificate/false:label">
+            <value>Non</value>
+          </text>
+          <text id="/data/c92_household/child/birth_certificate/true:label">
+            <value>Oui</value>
+          </text>
+          <text id="/data/c92_household/child/birth_certificate:label">
+            <value>L'enfant a t-il un acte de naissance?</value>
+          </text>
+          <text id="/data/c92_household/child/child_attend_school/false:label">
+            <value>Non</value>
+          </text>
+          <text id="/data/c92_household/child/child_attend_school/true:label">
+            <value>Oui</value>
+          </text>
+          <text id="/data/c92_household/child/child_attend_school:label">
+            <value>L'enfant va-t-il à l'école?</value>
+          </text>
+          <text id="/data/c92_household/child/child_disability/dont_know:label">
+            <value>Ne sait pas</value>
+          </text>
+          <text id="/data/c92_household/child/child_disability/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/data/c92_household/child/child_disability/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/data/c92_household/child/child_disability:label">
+            <value>L'enfant a t-il un handicap?</value>
+          </text>
+          <text id="/data/c92_household/child/child_grade/kindergarten:label">
+            <value>Maternel</value>
+          </text>
+          <text id="/data/c92_household/child/child_grade/pre-kindergarten:label">
+            <value>Pré-Maternel</value>
+          </text>
+          <text id="/data/c92_household/child/child_grade/primary:label">
+            <value>Primaire</value>
+          </text>
+          <text id="/data/c92_household/child/child_grade/secondary:label">
+            <value>Secondaire</value>
+          </text>
+          <text id="/data/c92_household/child/child_grade/university:label">
+            <value>Universitaire</value>
+          </text>
+          <text id="/data/c92_household/child/child_grade:label">
+            <value>Quel est son niveau ?</value>
+          </text>
+          <text id="/data/c92_household/child/child_her_first_period_yet/false:label">
+            <value>Non</value>
+          </text>
+          <text id="/data/c92_household/child/child_her_first_period_yet/true:label">
+            <value>Oui</value>
+          </text>
+          <text id="/data/c92_household/child/child_her_first_period_yet:label">
+            <value>L'enfant a-t-elle eu déjà ses premières règles?</value>
+          </text>
+          <text id="/data/c92_household/child/child_her_first_period_yet_age:jr:constraintMsg">
+            <value>Age doit être comprise entre 13 ans et <output value=" /data/c92_household/person_age_in_years "/></value>
+          </text>
+          <text id="/data/c92_household/child/child_her_first_period_yet_age:label">
+            <value>A quel âge?</value>
+          </text>
+          <text id="/data/c92_household/child/child_mother_name:label">
+            <value>Nom de la mère</value>
+          </text>
+          <text id="/data/c92_household/child/child_mother_phone_number:jr:constraintMsg">
+            <value>Veuillez entrer un numéro local valide. Par exemple: XX XX XX XX</value>
+          </text>
+          <text id="/data/c92_household/child/child_mother_phone_number:label">
+            <value>Numéro de téléphone de la mère</value>
+          </text>
+          <text id="/data/c92_household/child/child_other_relation_to_tutor:label">
+            <value>Spécifier (Autre)</value>
+          </text>
+          <text id="/data/c92_household/child/child_other_type_disability:label">
+            <value>Spécifier (Autre)</value>
+          </text>
+          <text id="/data/c92_household/child/child_relation_to_tutor/c_brother_sister:label">
+            <value>Frère/Sœur</value>
+          </text>
+          <text id="/data/c92_household/child/child_relation_to_tutor/c_cousin:label">
+            <value>Cousin/Cousine</value>
+          </text>
+          <text id="/data/c92_household/child/child_relation_to_tutor/c_nephew_niece:label">
+            <value>Neveu/Nièce</value>
+          </text>
+          <text id="/data/c92_household/child/child_relation_to_tutor/c_other_relation:label">
+            <value>Autre</value>
+          </text>
+          <text id="/data/c92_household/child/child_relation_to_tutor/c_uncle_aunt:label">
+            <value>Oncle/Tante</value>
+          </text>
+          <text id="/data/c92_household/child/child_relation_to_tutor:label">
+            <value>Relation avec le tuteur/tutrice</value>
+          </text>
+          <text id="/data/c92_household/child/child_taking_care/father:label">
+            <value>Père</value>
+          </text>
+          <text id="/data/c92_household/child/child_taking_care/mother:label">
+            <value>Mère</value>
+          </text>
+          <text id="/data/c92_household/child/child_taking_care/tutor:label">
+            <value>Tutrice/Tuteur</value>
+          </text>
+          <text id="/data/c92_household/child/child_taking_care:label">
+            <value>Qui s'occupe de l'enfant au quotidien?</value>
+          </text>
+          <text id="/data/c92_household/child/child_tutor_name:label">
+            <value>Nom du tuteur/tutrice</value>
+          </text>
+          <text id="/data/c92_household/child/child_tutor_phone_number:hint">
+            <value>Si le numéro n'est pas disponible, mettre "11111111"</value>
+          </text>
+          <text id="/data/c92_household/child/child_tutor_phone_number:jr:constraintMsg">
+            <value>Veuillez entrer un numéro local valide. Par exemple: XX XX XX XX</value>
+          </text>
+          <text id="/data/c92_household/child/child_tutor_phone_number:label">
+            <value>Numéro de téléphone du tuteur/tutrice</value>
+          </text>
+          <text id="/data/c92_household/child/child_type_disability/auditory:label">
+            <value>Auditif</value>
+          </text>
+          <text id="/data/c92_household/child/child_type_disability/engine:label">
+            <value>Moteur</value>
+          </text>
+          <text id="/data/c92_household/child/child_type_disability/mental:label">
+            <value>Mental</value>
+          </text>
+          <text id="/data/c92_household/child/child_type_disability/other_disability:label">
+            <value>Autre</value>
+          </text>
+          <text id="/data/c92_household/child/child_type_disability/visual:label">
+            <value>Visuel</value>
+          </text>
+          <text id="/data/c92_household/child/child_type_disability:label">
+            <value>Quel type de handicap?</value>
+          </text>
+          <text id="/data/c92_household/child/date_of_issue_birth_certificate:label">
+            <value>Quelle est la date de délivrance de l'acte de naissance?</value>
+          </text>
+          <text id="/data/c92_household/child/declaration_within_the_legal_time/false:label">
+            <value>Non</value>
+          </text>
+          <text id="/data/c92_household/child/declaration_within_the_legal_time/true:label">
+            <value>Oui</value>
+          </text>
+          <text id="/data/c92_household/child/declaration_within_the_legal_time:label">
+            <value>La déclaration a t-elle été faite dans le délai légal (1 mois)?</value>
+          </text>
+          <text id="/data/c92_household/child:label">
+            <value>Enfant et Adolescent</value>
+          </text>
+          <text id="/data/c92_household/ephemeral_dob/age_label:label">
+            <value>**Age**</value>
+          </text>
+          <text id="/data/c92_household/ephemeral_dob/age_months:jr:constraintMsg">
+            <value>-</value>
+          </text>
+          <text id="/data/c92_household/ephemeral_dob/age_months:label">
+            <value>Mois</value>
+          </text>
+          <text id="/data/c92_household/ephemeral_dob/age_years:jr:constraintMsg">
+            <value>-</value>
+          </text>
+          <text id="/data/c92_household/ephemeral_dob/age_years:label">
+            <value>Age</value>
+          </text>
+          <text id="/data/c92_household/ephemeral_dob/dob_approx:label">
+            <value>-</value>
+          </text>
+          <text id="/data/c92_household/ephemeral_dob/dob_calendar:hint">
+            <value>Date de naissance</value>
+          </text>
+          <text id="/data/c92_household/ephemeral_dob/dob_calendar:jr:constraintMsg">
+            <value>-</value>
+          </text>
+          <text id="/data/c92_household/ephemeral_dob/dob_calendar:label">
+            <value>Date de naissance</value>
+          </text>
+          <text id="/data/c92_household/ephemeral_dob/dob_debug:label">
+            <value>-</value>
+          </text>
+          <text id="/data/c92_household/ephemeral_dob/dob_iso:label">
+            <value>-</value>
+          </text>
+          <text id="/data/c92_household/ephemeral_dob/dob_method/approx:label">
+            <value>Date de naissance non connue</value>
+          </text>
+          <text id="/data/c92_household/ephemeral_dob/dob_method:label">
+          </text>
+          <text id="/data/c92_household/first_name:label">
+            <value>Prénom (s)</value>
+          </text>
+          <text id="/data/c92_household/last_name:label">
+            <value>Nom</value>
+          </text>
+          <text id="/data/c92_household/meta:label">
+            <value>-</value>
+          </text>
+          <text id="/data/c92_household/phone:hint">
+            <value>Si le numéro n'est pas disponible, mettre "11111111"</value>
+          </text>
+          <text id="/data/c92_household/phone:jr:constraintMsg">
+            <value>Entrez un numero valide sous la forme XXXXXXXX</value>
+          </text>
+          <text id="/data/c92_household/phone:label">
+            <value>N° de téléphone</value>
+          </text>
+          <text id="/data/c92_household/sex/female:label">
+            <value>Femme</value>
+          </text>
+          <text id="/data/c92_household/sex/male:label">
+            <value>Homme</value>
+          </text>
+          <text id="/data/c92_household/sex:label">
+            <value>Sexe</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <data id="contact:c92_household:create" prefix="J1!contact:c92_household:create!" delimiter="#" version="2022-05-09 19-29">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <user>
+              <contact_id/>
+              <facility_id/>
+              <name/>
+            </user>
+          </inputs>
+          <c92_household>
+            <parent>PARENT</parent>
+            <first_name/>
+            <last_name/>
+            <name/>
+            <date_of_birth/>
+            <date_of_birth_method/>
+            <person_age_in_years/>
+            <person_age_in_months/>
+            <person_age_in_days/>
+            <ephemeral_dob>
+              <dob_calendar/>
+              <age_label/>
+              <age_years/>
+              <age_months/>
+              <dob_method/>
+              <ephemeral_months/>
+              <ephemeral_years/>
+              <dob_approx/>
+              <dob_raw/>
+              <dob_iso/>
+              <dob_debug/>
+            </ephemeral_dob>
+            <sex/>
+            <phone/>
+            <role/>
+            <adult>
+              <profession/>
+              <profession_other/>
+              <matrimonial_status/>
+              <relation_to_hh/>
+              <marital_status/>
+            </adult>
+            <child>
+              <birth_certificate/>
+              <declaration_within_the_legal_time/>
+              <date_of_issue_birth_certificate/>
+              <advice_for_birth_certificate/>
+              <child_disability/>
+              <child_type_disability/>
+              <child_other_type_disability/>
+              <child_taking_care/>
+              <child_mother_name/>
+              <child_mother_phone_number/>
+              <child_tutor_name/>
+              <child_tutor_phone_number/>
+              <child_relation_to_tutor/>
+              <child_other_relation_to_tutor/>
+              <child_attend_school/>
+              <child_grade/>
+              <child_her_first_period_yet/>
+              <child_her_first_period_yet_age/>
+            </child>
+            <meta tag="hidden">
+              <created_by/>
+              <created_by_person_uuid/>
+              <created_by_place_uuid/>
+            </meta>
+          </c92_household>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+      <bind nodeset="/data/inputs" relevant="false()"/>
+      <bind nodeset="/data/inputs/user/contact_id" type="string"/>
+      <bind nodeset="/data/inputs/user/facility_id" type="string"/>
+      <bind nodeset="/data/inputs/user/name" type="string"/>
+      <bind nodeset="/data/c92_household/parent" type="string"/>
+      <bind nodeset="/data/c92_household/first_name" type="string" required="true()"/>
+      <bind nodeset="/data/c92_household/last_name" type="string" required="true()"/>
+      <bind nodeset="/data/c92_household/name" type="string" calculate="concat( /data/c92_household/first_name ,' ', /data/c92_household/last_name )"/>
+      <bind nodeset="/data/c92_household/date_of_birth" type="string" required="true()" calculate="../ephemeral_dob/dob_iso"/>
+      <bind nodeset="/data/c92_household/date_of_birth_method" type="string" calculate="../ephemeral_dob/dob_method"/>
+      <bind nodeset="/data/c92_household/person_age_in_years" type="string" calculate="floor(difference-in-months( /data/c92_household/date_of_birth , today() ) div 12 )"/>
+      <bind nodeset="/data/c92_household/person_age_in_months" type="string" calculate="difference-in-months(  /data/c92_household/date_of_birth , today() )"/>
+      <bind nodeset="/data/c92_household/person_age_in_days" type="string" calculate="floor( decimal-date-time(today()) - decimal-date-time( /data/c92_household/date_of_birth ) )"/>
+      <bind nodeset="/data/c92_household/ephemeral_dob/dob_calendar" type="date" required="true()" relevant="not(selected(../dob_method,'approx'))" jr:constraintMsg="jr:itext('/data/c92_household/ephemeral_dob/dob_calendar:jr:constraintMsg')" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
+      <bind nodeset="/data/c92_household/ephemeral_dob/age_label" readonly="true()" type="string" relevant="selected(../dob_method,'approx')"/>
+      <bind nodeset="/data/c92_household/ephemeral_dob/age_years" type="int" required="true()" relevant="selected(../dob_method,'approx')" jr:constraintMsg="jr:itext('/data/c92_household/ephemeral_dob/age_years:jr:constraintMsg')" constraint=". &gt;= 0 and . &lt;= 130"/>
+      <bind nodeset="/data/c92_household/ephemeral_dob/age_months" type="int" constraint=". &gt;= 0 and . &lt;= 11" relevant="selected(../dob_method,'approx')" jr:constraintMsg="jr:itext('/data/c92_household/ephemeral_dob/age_months:jr:constraintMsg')"/>
+      <bind nodeset="/data/c92_household/ephemeral_dob/dob_method" type="select"/>
+      <bind nodeset="/data/c92_household/ephemeral_dob/ephemeral_months" type="string" calculate="if(format-date-time(today(),&quot;%m&quot;) - ../age_months &lt; 0, format-date-time(today(),&quot;%m&quot;) - ../age_months + 12, format-date-time(today(),&quot;%m&quot;) - ../age_months)"/>
+      <bind nodeset="/data/c92_household/ephemeral_dob/ephemeral_years" type="string" calculate="if(format-date-time(today(),&quot;%m&quot;) - ../age_months &lt; 0, format-date-time(today(),&quot;%Y&quot;) - ../age_years - 1, format-date-time(today(),&quot;%Y&quot;) -../age_years)"/>
+      <bind nodeset="/data/c92_household/ephemeral_dob/dob_approx" type="string" calculate="concat(string( /data/c92_household/ephemeral_dob/ephemeral_years ),'-',if( /data/c92_household/ephemeral_dob/ephemeral_months &lt;10, concat('0',string( /data/c92_household/ephemeral_dob/ephemeral_months )),  /data/c92_household/ephemeral_dob/ephemeral_months ),'-',string(format-date-time(today(), &quot;%d&quot;)))"/>
+      <bind nodeset="/data/c92_household/ephemeral_dob/dob_raw" type="string" calculate="if(not(selected( ../dob_method,'approx')), 
+../dob_calendar,
+../dob_approx)"/>
+      <bind nodeset="/data/c92_household/ephemeral_dob/dob_iso" type="string" calculate="format-date-time(../dob_raw,&quot;%Y-%m-%d&quot;)"/>
+      <bind nodeset="/data/c92_household/ephemeral_dob/dob_debug" readonly="true()" type="string" relevant="false()"/>
+      <bind nodeset="/data/c92_household/sex" type="select1" required="true()"/>
+      <bind nodeset="/data/c92_household/phone" type="string" required="true()" jr:constraintMsg="jr:itext('/data/c92_household/phone:jr:constraintMsg')" constraint="regex(.,'^(\d{2}\s?){4}$')"/>
+      <bind nodeset="/data/c92_household/role" type="string" calculate="&quot;patient&quot;"/>
+      <bind nodeset="/data/c92_household/adult" relevant=" /data/c92_household/person_age_in_years  &gt; 19"/>
+      <bind nodeset="/data/c92_household/adult/profession" type="select1" required="true()"/>
+      <bind nodeset="/data/c92_household/adult/profession_other" type="string" required="true()" relevant="selected( /data/c92_household/adult/profession ,'other_profession')"/>
+      <bind nodeset="/data/c92_household/adult/matrimonial_status" type="select1" required="true()"/>
+      <bind nodeset="/data/c92_household/adult/relation_to_hh" type="select1" required="true()" calculate="&quot;head&quot;"/>
+      <bind nodeset="/data/c92_household/adult/marital_status" type="select1" required="true()" relevant="selected( /data/c92_household/adult/matrimonial_status ,'married')"/>
+      <bind nodeset="/data/c92_household/child" relevant=" /data/c92_household/date_of_birth  != '' and  /data/c92_household/person_age_in_years  &gt;= 0 and  /data/c92_household/person_age_in_years  &lt;= 19"/>
+      <bind nodeset="/data/c92_household/child/birth_certificate" type="select1" required="true()"/>
+      <bind nodeset="/data/c92_household/child/declaration_within_the_legal_time" type="select1" required="true()" relevant="selected( /data/c92_household/child/birth_certificate ,'true')"/>
+      <bind nodeset="/data/c92_household/child/date_of_issue_birth_certificate" type="date" required="true()" relevant="selected( /data/c92_household/child/birth_certificate ,'true')"/>
+      <bind nodeset="/data/c92_household/child/advice_for_birth_certificate" readonly="true()" type="string" relevant="selected( /data/c92_household/child/birth_certificate ,'false')"/>
+      <bind nodeset="/data/c92_household/child/child_disability" type="select1" required="true()"/>
+      <bind nodeset="/data/c92_household/child/child_type_disability" type="select" required="true()" relevant="selected( /data/c92_household/child/child_disability ,'yes')"/>
+      <bind nodeset="/data/c92_household/child/child_other_type_disability" type="string" required="true()" relevant="selected( /data/c92_household/child/child_type_disability ,'other_disability')"/>
+      <bind nodeset="/data/c92_household/child/child_taking_care" type="select1" required="true()"/>
+      <bind nodeset="/data/c92_household/child/child_mother_name" type="string" required="true()" relevant="selected( /data/c92_household/child/child_taking_care ,'mother')"/>
+      <bind nodeset="/data/c92_household/child/child_mother_phone_number" type="int" constraint="regex(.,'^(\d{2}\s?){4}$')" relevant="selected( /data/c92_household/child/child_taking_care ,'mother')" jr:constraintMsg="jr:itext('/data/c92_household/child/child_mother_phone_number:jr:constraintMsg')"/>
+      <bind nodeset="/data/c92_household/child/child_tutor_name" type="string" required="true()" relevant="selected( /data/c92_household/child/child_taking_care ,'tutor')"/>
+      <bind nodeset="/data/c92_household/child/child_tutor_phone_number" type="int" constraint="regex(.,'^(\d{2}\s?){4}$')" relevant="selected( /data/c92_household/child/child_taking_care ,'tutor')" jr:constraintMsg="jr:itext('/data/c92_household/child/child_tutor_phone_number:jr:constraintMsg')"/>
+      <bind nodeset="/data/c92_household/child/child_relation_to_tutor" type="select1" required="true()" relevant="selected( /data/c92_household/child/child_taking_care ,'tutor')"/>
+      <bind nodeset="/data/c92_household/child/child_other_relation_to_tutor" type="string" required="true()" relevant="selected( /data/c92_household/child/child_relation_to_tutor ,'c_other_relation')"/>
+      <bind nodeset="/data/c92_household/child/child_attend_school" type="select1" required="true()"/>
+      <bind nodeset="/data/c92_household/child/child_grade" type="select1" required="true()" relevant="selected( /data/c92_household/child/child_attend_school ,'true')"/>
+      <bind nodeset="/data/c92_household/child/child_her_first_period_yet" type="select1" required="true()" relevant=" /data/c92_household/person_age_in_years  &gt;= 13 and  /data/c92_household/person_age_in_years  &lt;= 19 and selected( /data/c92_household/sex , 'female')"/>
+      <bind nodeset="/data/c92_household/child/child_her_first_period_yet_age" type="int" required="true()" relevant="selected( /data/c92_household/child/child_her_first_period_yet ,'true')" jr:constraintMsg="jr:itext('/data/c92_household/child/child_her_first_period_yet_age:jr:constraintMsg')"/>
+      <bind nodeset="/data/c92_household/meta/created_by" type="string" calculate="../../../inputs/user/name"/>
+      <bind nodeset="/data/c92_household/meta/created_by_person_uuid" type="string" calculate="../../../inputs/user/contact_id"/>
+      <bind nodeset="/data/c92_household/meta/created_by_place_uuid" type="string" calculate="../../../inputs/user/facility_id"/>
+      <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body>
+    <group ref="/data/inputs">
+      <group ref="/data/inputs/user">
+        <input ref="/data/inputs/user/contact_id"/>
+        <input ref="/data/inputs/user/facility_id"/>
+        <input ref="/data/inputs/user/name"/>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/data/c92_household">
+      <input ref="/data/c92_household/first_name">
+        <label ref="jr:itext('/data/c92_household/first_name:label')"/>
+      </input>
+      <input ref="/data/c92_household/last_name">
+        <label ref="jr:itext('/data/c92_household/last_name:label')"/>
+      </input>
+      <group ref="/data/c92_household/ephemeral_dob">
+        <input ref="/data/c92_household/ephemeral_dob/dob_calendar">
+          <label ref="jr:itext('/data/c92_household/ephemeral_dob/dob_calendar:label')"/>
+          <hint ref="jr:itext('/data/c92_household/ephemeral_dob/dob_calendar:hint')"/>
+        </input>
+        <input ref="/data/c92_household/ephemeral_dob/age_label">
+          <label ref="jr:itext('/data/c92_household/ephemeral_dob/age_label:label')"/>
+        </input>
+        <input ref="/data/c92_household/ephemeral_dob/age_years">
+          <label ref="jr:itext('/data/c92_household/ephemeral_dob/age_years:label')"/>
+        </input>
+        <input ref="/data/c92_household/ephemeral_dob/age_months">
+          <label ref="jr:itext('/data/c92_household/ephemeral_dob/age_months:label')"/>
+        </input>
+        <select appearance="horizontal" ref="/data/c92_household/ephemeral_dob/dob_method">
+          <label ref="jr:itext('/data/c92_household/ephemeral_dob/dob_method:label')"/>
+          <item>
+            <label ref="jr:itext('/data/c92_household/ephemeral_dob/dob_method/approx:label')"/>
+            <value>approx</value>
+          </item>
+        </select>
+        <input ref="/data/c92_household/ephemeral_dob/dob_debug">
+          <label ref="jr:itext('/data/c92_household/ephemeral_dob/dob_debug:label')"/>
+        </input>
+      </group>
+      <select1 appearance="horizontal" ref="/data/c92_household/sex">
+        <label ref="jr:itext('/data/c92_household/sex:label')"/>
+        <item>
+          <label ref="jr:itext('/data/c92_household/sex/female:label')"/>
+          <value>female</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c92_household/sex/male:label')"/>
+          <value>male</value>
+        </item>
+      </select1>
+      <input ref="/data/c92_household/phone">
+        <label ref="jr:itext('/data/c92_household/phone:label')"/>
+        <hint ref="jr:itext('/data/c92_household/phone:hint')"/>
+      </input>
+      <group ref="/data/c92_household/adult">
+        <label ref="jr:itext('/data/c92_household/adult:label')"/>
+        <select1 ref="/data/c92_household/adult/profession">
+          <label ref="jr:itext('/data/c92_household/adult/profession:label')"/>
+          <item>
+            <label ref="jr:itext('/data/c92_household/adult/profession/shepherd:label')"/>
+            <value>shepherd</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/c92_household/adult/profession/farmer:label')"/>
+            <value>farmer</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/c92_household/adult/profession/craftsman:label')"/>
+            <value>craftsman</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/c92_household/adult/profession/apprentice:label')"/>
+            <value>apprentice</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/c92_household/adult/profession/pupil_student:label')"/>
+            <value>pupil_student</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/c92_household/adult/profession/other_profession:label')"/>
+            <value>other_profession</value>
+          </item>
+        </select1>
+        <input ref="/data/c92_household/adult/profession_other">
+          <label ref="jr:itext('/data/c92_household/adult/profession_other:label')"/>
+        </input>
+        <select1 ref="/data/c92_household/adult/matrimonial_status">
+          <label ref="jr:itext('/data/c92_household/adult/matrimonial_status:label')"/>
+          <item>
+            <label ref="jr:itext('/data/c92_household/adult/matrimonial_status/single:label')"/>
+            <value>single</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/c92_household/adult/matrimonial_status/married:label')"/>
+            <value>married</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/c92_household/adult/matrimonial_status/divorced:label')"/>
+            <value>divorced</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/c92_household/adult/matrimonial_status/widowed:label')"/>
+            <value>widowed</value>
+          </item>
+        </select1>
+        <select1 ref="/data/c92_household/adult/relation_to_hh">
+          <label ref="jr:itext('/data/c92_household/adult/relation_to_hh:label')"/>
+          <item>
+            <label ref="jr:itext('/data/c92_household/adult/relation_to_hh/husband_wife:label')"/>
+            <value>husband_wife</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/c92_household/adult/relation_to_hh/father_mother:label')"/>
+            <value>father_mother</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/c92_household/adult/relation_to_hh/uncle_aunt:label')"/>
+            <value>uncle_aunt</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/c92_household/adult/relation_to_hh/brother_sister:label')"/>
+            <value>brother_sister</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/c92_household/adult/relation_to_hh/cousin:label')"/>
+            <value>cousin</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/c92_household/adult/relation_to_hh/other_relation:label')"/>
+            <value>other_relation</value>
+          </item>
+        </select1>
+        <select1 ref="/data/c92_household/adult/marital_status">
+          <label ref="jr:itext('/data/c92_household/adult/marital_status:label')"/>
+          <item>
+            <label ref="jr:itext('/data/c92_household/adult/marital_status/monogamy:label')"/>
+            <value>monogamy</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/c92_household/adult/marital_status/polygamy:label')"/>
+            <value>polygamy</value>
+          </item>
+        </select1>
+      </group>
+      <group ref="/data/c92_household/child">
+        <label ref="jr:itext('/data/c92_household/child:label')"/>
+        <select1 ref="/data/c92_household/child/birth_certificate">
+          <label ref="jr:itext('/data/c92_household/child/birth_certificate:label')"/>
+          <item>
+            <label ref="jr:itext('/data/c92_household/child/birth_certificate/true:label')"/>
+            <value>true</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/c92_household/child/birth_certificate/false:label')"/>
+            <value>false</value>
+          </item>
+        </select1>
+        <select1 ref="/data/c92_household/child/declaration_within_the_legal_time">
+          <label ref="jr:itext('/data/c92_household/child/declaration_within_the_legal_time:label')"/>
+          <item>
+            <label ref="jr:itext('/data/c92_household/child/declaration_within_the_legal_time/true:label')"/>
+            <value>true</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/c92_household/child/declaration_within_the_legal_time/false:label')"/>
+            <value>false</value>
+          </item>
+        </select1>
+        <input ref="/data/c92_household/child/date_of_issue_birth_certificate">
+          <label ref="jr:itext('/data/c92_household/child/date_of_issue_birth_certificate:label')"/>
+        </input>
+        <input ref="/data/c92_household/child/advice_for_birth_certificate">
+          <label ref="jr:itext('/data/c92_household/child/advice_for_birth_certificate:label')"/>
+        </input>
+        <select1 ref="/data/c92_household/child/child_disability">
+          <label ref="jr:itext('/data/c92_household/child/child_disability:label')"/>
+          <item>
+            <label ref="jr:itext('/data/c92_household/child/child_disability/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/c92_household/child/child_disability/no:label')"/>
+            <value>no</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/c92_household/child/child_disability/dont_know:label')"/>
+            <value>dont_know</value>
+          </item>
+        </select1>
+        <select ref="/data/c92_household/child/child_type_disability">
+          <label ref="jr:itext('/data/c92_household/child/child_type_disability:label')"/>
+          <item>
+            <label ref="jr:itext('/data/c92_household/child/child_type_disability/engine:label')"/>
+            <value>engine</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/c92_household/child/child_type_disability/mental:label')"/>
+            <value>mental</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/c92_household/child/child_type_disability/visual:label')"/>
+            <value>visual</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/c92_household/child/child_type_disability/auditory:label')"/>
+            <value>auditory</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/c92_household/child/child_type_disability/other_disability:label')"/>
+            <value>other_disability</value>
+          </item>
+        </select>
+        <input ref="/data/c92_household/child/child_other_type_disability">
+          <label ref="jr:itext('/data/c92_household/child/child_other_type_disability:label')"/>
+        </input>
+        <select1 ref="/data/c92_household/child/child_taking_care">
+          <label ref="jr:itext('/data/c92_household/child/child_taking_care:label')"/>
+          <item>
+            <label ref="jr:itext('/data/c92_household/child/child_taking_care/mother:label')"/>
+            <value>mother</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/c92_household/child/child_taking_care/father:label')"/>
+            <value>father</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/c92_household/child/child_taking_care/tutor:label')"/>
+            <value>tutor</value>
+          </item>
+        </select1>
+        <input ref="/data/c92_household/child/child_mother_name">
+          <label ref="jr:itext('/data/c92_household/child/child_mother_name:label')"/>
+        </input>
+        <input ref="/data/c92_household/child/child_mother_phone_number">
+          <label ref="jr:itext('/data/c92_household/child/child_mother_phone_number:label')"/>
+        </input>
+        <input ref="/data/c92_household/child/child_tutor_name">
+          <label ref="jr:itext('/data/c92_household/child/child_tutor_name:label')"/>
+        </input>
+        <input ref="/data/c92_household/child/child_tutor_phone_number">
+          <label ref="jr:itext('/data/c92_household/child/child_tutor_phone_number:label')"/>
+          <hint ref="jr:itext('/data/c92_household/child/child_tutor_phone_number:hint')"/>
+        </input>
+        <select1 ref="/data/c92_household/child/child_relation_to_tutor">
+          <label ref="jr:itext('/data/c92_household/child/child_relation_to_tutor:label')"/>
+          <item>
+            <label ref="jr:itext('/data/c92_household/child/child_relation_to_tutor/c_uncle_aunt:label')"/>
+            <value>c_uncle_aunt</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/c92_household/child/child_relation_to_tutor/c_brother_sister:label')"/>
+            <value>c_brother_sister</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/c92_household/child/child_relation_to_tutor/c_nephew_niece:label')"/>
+            <value>c_nephew_niece</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/c92_household/child/child_relation_to_tutor/c_cousin:label')"/>
+            <value>c_cousin</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/c92_household/child/child_relation_to_tutor/c_other_relation:label')"/>
+            <value>c_other_relation</value>
+          </item>
+        </select1>
+        <input ref="/data/c92_household/child/child_other_relation_to_tutor">
+          <label ref="jr:itext('/data/c92_household/child/child_other_relation_to_tutor:label')"/>
+        </input>
+        <select1 ref="/data/c92_household/child/child_attend_school">
+          <label ref="jr:itext('/data/c92_household/child/child_attend_school:label')"/>
+          <item>
+            <label ref="jr:itext('/data/c92_household/child/child_attend_school/true:label')"/>
+            <value>true</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/c92_household/child/child_attend_school/false:label')"/>
+            <value>false</value>
+          </item>
+        </select1>
+        <select1 ref="/data/c92_household/child/child_grade">
+          <label ref="jr:itext('/data/c92_household/child/child_grade:label')"/>
+          <item>
+            <label ref="jr:itext('/data/c92_household/child/child_grade/pre-kindergarten:label')"/>
+            <value>pre-kindergarten</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/c92_household/child/child_grade/kindergarten:label')"/>
+            <value>kindergarten</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/c92_household/child/child_grade/primary:label')"/>
+            <value>primary</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/c92_household/child/child_grade/secondary:label')"/>
+            <value>secondary</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/c92_household/child/child_grade/university:label')"/>
+            <value>university</value>
+          </item>
+        </select1>
+        <select1 ref="/data/c92_household/child/child_her_first_period_yet">
+          <label ref="jr:itext('/data/c92_household/child/child_her_first_period_yet:label')"/>
+          <item>
+            <label ref="jr:itext('/data/c92_household/child/child_her_first_period_yet/true:label')"/>
+            <value>true</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/c92_household/child/child_her_first_period_yet/false:label')"/>
+            <value>false</value>
+          </item>
+        </select1>
+        <input ref="/data/c92_household/child/child_her_first_period_yet_age">
+          <label ref="jr:itext('/data/c92_household/child/child_her_first_period_yet_age:label')"/>
+        </input>
+      </group>
+      <group appearance="hidden" ref="/data/c92_household/meta"/>
+    </group>
+  </h:body>
+</h:html>

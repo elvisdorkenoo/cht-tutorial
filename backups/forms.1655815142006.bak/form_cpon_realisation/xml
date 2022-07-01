@@ -1,0 +1,971 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>Cpon Realization</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/cpon_realisation/g_end_followup/why_end_followup/change_residence:label">
+            <value>Change of residence of <output value=" /cpon_realisation/patient_name "/></value>
+          </text>
+          <text id="/cpon_realisation/g_end_followup/why_end_followup/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/cpon_realisation/g_end_followup/why_end_followup/patient_deceased:label">
+            <value>Death of <output value=" /cpon_realisation/patient_name "/></value>
+          </text>
+          <text id="/cpon_realisation/g_end_followup/why_end_followup:label">
+            <value>Why do you want to stop this tracking?</value>
+          </text>
+          <text id="/cpon_realisation/g_end_followup/why_end_followup_other:label">
+            <value>Specify(Other)</value>
+          </text>
+          <text id="/cpon_realisation/g_end_followup:label">
+            <value>End Followup</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/g_realisation_date/followup_date:jr:constraintMsg">
+            <value>The date cannot be in the future</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/g_realisation_date/followup_date:label">
+            <value>Enter the date when the followup has been done</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/g_realisation_date/followup_done_today/no:label">
+            <value>No</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/g_realisation_date/followup_done_today/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/g_realisation_date/followup_done_today:label">
+            <value>Was this followup done today ?</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/g_realisation_date/followup_not_done_other:label">
+            <value>Specify(Other)</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/g_realisation_date/followup_not_done_reason/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/g_realisation_date/followup_not_done_reason/phone_discharged:label">
+            <value>Discharged/Broken Phone</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/g_realisation_date/followup_not_done_reason/phone_lost:label">
+            <value>Lost Phone</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/g_realisation_date/followup_not_done_reason:label">
+            <value>Why was the followup not done today?</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/g_realisation_date/patient_found/no:label">
+            <value>No</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/g_realisation_date/patient_found/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/g_realisation_date/patient_found:label">
+            <value>Has <output value=" /cpon_realisation/patient_name "/> been found?</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/g_realisation_date/patient_found_how/during_home_visit:label">
+            <value>During the home visit</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/g_realisation_date/patient_found_how/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/g_realisation_date/patient_found_how/patient_to_chw:label">
+            <value><output value=" /cpon_realisation/patient_name "/> went to ASC</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/g_realisation_date/patient_found_how:label">
+            <value>How was <output value=" /cpon_realisation/patient_name "/> been found?</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/g_realisation_date/patient_found_other:label">
+            <value>Specify(Other)</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/g_realisation_date:label">
+            <value>Realisation Date</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/cpon_realisation_date:jr:constraintMsg">
+            <value>The date cannot be in the future</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/cpon_realisation_date:label">
+            <value>When was CPoN performed?</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/cpon_scheduled_date:jr:constraintMsg">
+            <value>The date cannot be in the future</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/cpon_scheduled_date:label">
+            <value>When was the CPoN scheduled?</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/did_cpon_visit/no:label">
+            <value>No</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/did_cpon_visit/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/did_cpon_visit:label">
+            <value>Did <output value=" /cpon_realisation/patient_name "/> go to CpoN?</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/why_no_cpon_visit/lack_motivation:label">
+            <value>Lack of motivation from <output value=" /cpon_realisation/patient_name "/></value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/why_no_cpon_visit/lack_time:label">
+            <value><output value=" /cpon_realisation/patient_name "/> lack of time</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/why_no_cpon_visit/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/why_no_cpon_visit/refusal:label">
+            <value>Refusal by husband/other family members</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/why_no_cpon_visit:label">
+            <value>Why didn't <output value=" /cpon_realisation/patient_name "/> come to the CPoN on the given date?</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/why_no_cpon_visit_other:label">
+            <value>Specify(Other)</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation:label">
+            <value>CpoN Realisation</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_next_cpon_visit/has_new_cpon_scheduled/no:label">
+            <value>No</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_next_cpon_visit/has_new_cpon_scheduled/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_next_cpon_visit/has_new_cpon_scheduled:label">
+            <value>Is there a new CPoN scheduled?</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_next_cpon_visit/new_cpon_scheduled_date:jr:constraintMsg">
+            <value>The date must be in the future</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_next_cpon_visit/new_cpon_scheduled_date:label">
+            <value>What is the date chosen for the CpoN?</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_next_cpon_visit/when_cpon_visit:jr:constraintMsg">
+            <value>The date must be in the future</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_next_cpon_visit/when_cpon_visit:label">
+            <value>When would you like to go to the CpoN?</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_next_cpon_visit:label">
+            <value>Next CpoN Visit</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation:label">
+            <value>Followup Realisation</value>
+          </text>
+          <text id="/cpon_realisation/g_summary/n_cpon_not_performed:label">
+            <value>CPoN not performed</value>
+          </text>
+          <text id="/cpon_realisation/g_summary/n_next_chw_visit:label">
+            <value>The next CHW visit is for: <output value=" /cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_next_cpon_visit/new_cpon_scheduled_date "/> <output value=" /cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_next_cpon_visit/when_cpon_visit "/></value>
+          </text>
+          <text id="/cpon_realisation/g_summary/n_next_cpon:label">
+            <value>Date of the next CPoN: <output value=" /cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_next_cpon_visit/new_cpon_scheduled_date "/><output value=" /cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_next_cpon_visit/when_cpon_visit "/>
+            </value>
+          </text>
+          <text id="/cpon_realisation/g_summary/n_next_cpon_not_programmed:label">
+            <value>Next unscheduled CpoN</value>
+          </text>
+          <text id="/cpon_realisation/g_summary/n_no_info_cpon:label">
+            <value>No information on CpoN</value>
+          </text>
+          <text id="/cpon_realisation/g_summary/n_not_followup:label">
+            <value>There is no further follow-up for this woman.</value>
+          </text>
+          <text id="/cpon_realisation/g_summary/n_not_found:label">
+            <value><output value=" /cpon_realisation/patient_name "/> was not found</value>
+          </text>
+          <text id="/cpon_realisation/g_summary/n_not_present_patient_fill_form:label">
+            <value>Make sure that <output value=" /cpon_realisation/patient_name "/> is not present before proceeding with this action. 
+Submitting this form will close the monitoring of <output value=" /cpon_realisation/patient_name "/> pregnant.</value>
+          </text>
+          <text id="/cpon_realisation/g_summary/n_not_programmed:label">
+            <value>Unscheduled CpoN</value>
+          </text>
+          <text id="/cpon_realisation/g_summary/n_patient_deceased_form:label">
+            <value>Please complete the death form for this woman</value>
+          </text>
+          <text id="/cpon_realisation/g_summary/n_patient_info:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /cpon_realisation/patient_name "/>&lt;/h4&gt; &lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /cpon_realisation/patient_age_in_years "/> years old&lt;/h5&gt;</value>
+          </text>
+          <text id="/cpon_realisation/g_summary/n_program_cpon:label">
+            <value>Scheduled date for the CPoN: <output value=" /cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/cpon_scheduled_date "/></value>
+          </text>
+          <text id="/cpon_realisation/g_summary/n_realisation_cpon:label">
+            <value>CPoN completion date: <output value=" /cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/cpon_realisation_date "/></value>
+          </text>
+          <text id="/cpon_realisation/g_summary/r_cpn_info:label">
+            <value>CPN Information&lt;i class = "fa fa-stethoscope"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/cpon_realisation/g_summary/r_followup:label">
+            <value>Tracking&lt;i class="fa fa-flag"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/cpon_realisation/g_summary/r_special_instruction:label">
+            <value>Special instructions&lt;i class="fa fa-hand-o-right"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/cpon_realisation/g_summary/r_summary:label">
+            <value>Patient summary&lt;i class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/cpon_realisation/g_summary:label">
+            <value>Summary</value>
+          </text>
+          <text id="/cpon_realisation/g_task_realisation/cpon_followup/close_followup:label">
+            <value>Stop followup</value>
+          </text>
+          <text id="/cpon_realisation/g_task_realisation/cpon_followup/cpon_followup:label">
+            <value>Followup of <output value=" /cpon_realisation/patient_name "/> pregnant</value>
+          </text>
+          <text id="/cpon_realisation/g_task_realisation/cpon_followup:label">
+            <value>What do you want to do?</value>
+          </text>
+          <text id="/cpon_realisation/g_task_realisation:label">
+            <value>Task to perform</value>
+          </text>
+          <text id="/cpon_realisation/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/cpon_realisation/inputs/contact/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/cpon_realisation/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/cpon_realisation/inputs/contact/parent/_id:label">
+            <value>Household ID</value>
+          </text>
+          <text id="/cpon_realisation/inputs/contact/parent/parent/_id:label">
+            <value>Area ID</value>
+          </text>
+          <text id="/cpon_realisation/inputs/contact/parent/parent/contact/chw_name:label">
+            <value>CHW name</value>
+          </text>
+          <text id="/cpon_realisation/inputs/contact/parent/parent/contact/phone:label">
+            <value>CHW phone</value>
+          </text>
+          <text id="/cpon_realisation/inputs/contact/parent/parent/parent/_id:label">
+            <value>Health Facility ID</value>
+          </text>
+          <text id="/cpon_realisation/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/cpon_realisation/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/cpon_realisation/inputs/contact/short_name:label">
+            <value>Short Name</value>
+          </text>
+          <text id="/cpon_realisation/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/cpon_realisation/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/cpon_realisation/inputs/user/contact_id:label">
+            <value>Contact ID</value>
+          </text>
+          <text id="/cpon_realisation/inputs/user/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/cpon_realisation/inputs/user/phone:label">
+            <value>Phone</value>
+          </text>
+          <text id="/cpon_realisation/inputs/user:label">
+            <value>User</value>
+          </text>
+        </translation>
+        <translation lang="fr">
+          <text id="/cpon_realisation/g_end_followup/why_end_followup/change_residence:label">
+            <value>Changement du lieu residence de <output value=" /cpon_realisation/patient_name "/></value>
+          </text>
+          <text id="/cpon_realisation/g_end_followup/why_end_followup/other:label">
+            <value>Autre</value>
+          </text>
+          <text id="/cpon_realisation/g_end_followup/why_end_followup/patient_deceased:label">
+            <value>Décès de <output value=" /cpon_realisation/patient_name "/></value>
+          </text>
+          <text id="/cpon_realisation/g_end_followup/why_end_followup:label">
+            <value>Pourquoi voulez-vous arrêter ce suivi?</value>
+          </text>
+          <text id="/cpon_realisation/g_end_followup/why_end_followup_other:label">
+            <value>Précisez (Autre)</value>
+          </text>
+          <text id="/cpon_realisation/g_end_followup:label">
+            <value>Arrêt du suivi</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/g_realisation_date/followup_date:jr:constraintMsg">
+            <value>La date ne peut pas être au future</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/g_realisation_date/followup_date:label">
+            <value>Entrez la date où le suivi a été fait</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/g_realisation_date/followup_done_today/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/g_realisation_date/followup_done_today/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/g_realisation_date/followup_done_today:label">
+            <value>Ce suivi a t-il été fait aujourd'hui?</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/g_realisation_date/followup_not_done_other:label">
+            <value>Précisez (Autre)</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/g_realisation_date/followup_not_done_reason/other:label">
+            <value>Autre</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/g_realisation_date/followup_not_done_reason/phone_discharged:label">
+            <value>Téléphone Déchargé/Cassé</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/g_realisation_date/followup_not_done_reason/phone_lost:label">
+            <value>Téléphone Perdu</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/g_realisation_date/followup_not_done_reason:label">
+            <value>Pourquoi le suivi n'a pas été fait aujourd'hui?</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/g_realisation_date/patient_found/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/g_realisation_date/patient_found/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/g_realisation_date/patient_found:label">
+            <value><output value=" /cpon_realisation/patient_name "/> a t-elle été retrouvée?</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/g_realisation_date/patient_found_how/during_home_visit:label">
+            <value>Au cours de la visite à domicile</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/g_realisation_date/patient_found_how/other:label">
+            <value>Autre</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/g_realisation_date/patient_found_how/patient_to_chw:label">
+            <value><output value=" /cpon_realisation/patient_name "/> s'est rendue chez l'ASC</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/g_realisation_date/patient_found_how:label">
+            <value>Comment <output value=" /cpon_realisation/patient_name "/> a t-elle été retrouvée?</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/g_realisation_date/patient_found_other:label">
+            <value>Précisez (Autre)</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/g_realisation_date:label">
+            <value>Date de réalisation</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/cpon_realisation_date:jr:constraintMsg">
+            <value>La date ne peut pas être au future</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/cpon_realisation_date:label">
+            <value>Quand est-ce que la CPoN a été réalisée?</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/cpon_scheduled_date:jr:constraintMsg">
+            <value>La date ne peut pas être au future</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/cpon_scheduled_date:label">
+            <value>Quand est-ce que la CPoN avait été programmée?</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/did_cpon_visit/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/did_cpon_visit/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/did_cpon_visit:label">
+            <value><output value=" /cpon_realisation/patient_name "/> s'est-elle rendue à la CpoN?</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/why_no_cpon_visit/lack_motivation:label">
+            <value>Manque de motivation de <output value=" /cpon_realisation/patient_name "/></value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/why_no_cpon_visit/lack_time:label">
+            <value>Manque de temps de <output value=" /cpon_realisation/patient_name "/></value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/why_no_cpon_visit/other:label">
+            <value>Autre</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/why_no_cpon_visit/refusal:label">
+            <value>Refus du mari/autres membres de la famille</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/why_no_cpon_visit:label">
+            <value>Pourquoi <output value=" /cpon_realisation/patient_name "/> ne s'est-elle pas rendue à la CPoN à la date indiquée?</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/why_no_cpon_visit_other:label">
+            <value>Précisez (Autre)</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation:label">
+            <value>Réalisation CpoN</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_next_cpon_visit/has_new_cpon_scheduled/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_next_cpon_visit/has_new_cpon_scheduled/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_next_cpon_visit/has_new_cpon_scheduled:label">
+            <value>Est-ce qu'il y a une nouvelle CPoN programmée?</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_next_cpon_visit/new_cpon_scheduled_date:jr:constraintMsg">
+            <value>La date doit être au future</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_next_cpon_visit/new_cpon_scheduled_date:label">
+            <value>Quelle est la date choisie pour la CpoN?</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_next_cpon_visit/when_cpon_visit:jr:constraintMsg">
+            <value>La date doit être au future</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_next_cpon_visit/when_cpon_visit:label">
+            <value>Quand souhaitez vous allez à la CPoN ?</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_next_cpon_visit:label">
+            <value>Prochaine Visite CpoN</value>
+          </text>
+          <text id="/cpon_realisation/g_followup_realisation:label">
+            <value>Réalisation du suivi</value>
+          </text>
+          <text id="/cpon_realisation/g_summary/n_cpon_not_performed:label">
+            <value>CPoN non réalisée</value>
+          </text>
+          <text id="/cpon_realisation/g_summary/n_next_chw_visit:label">
+            <value>La prochaine visite de l'ASC est pour le: <output value=" /cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_next_cpon_visit/new_cpon_scheduled_date_french "/><output value=" /cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_next_cpon_visit/when_cpon_visit_french "/>
+            </value>
+          </text>
+          <text id="/cpon_realisation/g_summary/n_next_cpon:label">
+            <value>Date de la prochaine CPoN : <output value=" /cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_next_cpon_visit/new_cpon_scheduled_date_french "/><output value=" /cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_next_cpon_visit/when_cpon_visit_french "/>
+            </value>
+          </text>
+          <text id="/cpon_realisation/g_summary/n_next_cpon_not_programmed:label">
+            <value>Prochaine CPoN non programmée</value>
+          </text>
+          <text id="/cpon_realisation/g_summary/n_no_info_cpon:label">
+            <value>Pas d'information sur la CPoN</value>
+          </text>
+          <text id="/cpon_realisation/g_summary/n_not_followup:label">
+            <value>Il n'y a plus de suivi pour cette femme.</value>
+          </text>
+          <text id="/cpon_realisation/g_summary/n_not_found:label">
+            <value><output value=" /cpon_realisation/patient_name "/> n'a pas été retrouvée</value>
+          </text>
+          <text id="/cpon_realisation/g_summary/n_not_present_patient_fill_form:label">
+            <value>Rassurez vous de la non présence de <output value=" /cpon_realisation/patient_name "/> avant de procéder à cette action.
+Soumettre ce formulaire va fermer le suivi de le suivi de <output value=" /cpon_realisation/patient_name "/> enceinte.</value>
+          </text>
+          <text id="/cpon_realisation/g_summary/n_not_programmed:label">
+            <value>CPoN non programmée</value>
+          </text>
+          <text id="/cpon_realisation/g_summary/n_patient_deceased_form:label">
+            <value>Veuillez remplir le formulaire de décès pour cette femme</value>
+          </text>
+          <text id="/cpon_realisation/g_summary/n_patient_info:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /cpon_realisation/patient_name "/>&lt;/h4&gt; &lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /cpon_realisation/patient_age_in_years "/> years old&lt;/h5&gt;</value>
+          </text>
+          <text id="/cpon_realisation/g_summary/n_program_cpon:label">
+            <value>Date programmée pour la CPoN : <output value=" /cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/cpon_scheduled_date_french "/></value>
+          </text>
+          <text id="/cpon_realisation/g_summary/n_realisation_cpon:label">
+            <value>Date de réalisation de la CPoN : <output value=" /cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/cpon_realisation_date_french "/></value>
+          </text>
+          <text id="/cpon_realisation/g_summary/r_cpn_info:label">
+            <value>Informations sur les CPN&lt;i class = "fa fa-stethoscope"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/cpon_realisation/g_summary/r_followup:label">
+            <value>Suivi&lt;i class="fa fa-flag"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/cpon_realisation/g_summary/r_special_instruction:label">
+            <value>Instructions spéciales&lt;i class = "fa fa-hand-o-right"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/cpon_realisation/g_summary/r_summary:label">
+            <value>Détail de la patiente &lt;i class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/cpon_realisation/g_summary:label">
+            <value>Résumé</value>
+          </text>
+          <text id="/cpon_realisation/g_task_realisation/cpon_followup/close_followup:label">
+            <value>Arrêt du suivi</value>
+          </text>
+          <text id="/cpon_realisation/g_task_realisation/cpon_followup/cpon_followup:label">
+            <value>Suivi de <output value=" /cpon_realisation/patient_name "/> enceinte</value>
+          </text>
+          <text id="/cpon_realisation/g_task_realisation/cpon_followup:label">
+            <value>Que voulez-vous faire?</value>
+          </text>
+          <text id="/cpon_realisation/g_task_realisation:label">
+            <value>Tâche à effectuer</value>
+          </text>
+          <text id="/cpon_realisation/inputs/contact/_id:label">
+            <value>Quel est le nom du Patient ?</value>
+          </text>
+          <text id="/cpon_realisation/inputs/contact/date_of_birth:label">
+            <value>Date de naissance</value>
+          </text>
+          <text id="/cpon_realisation/inputs/contact/name:label">
+            <value>Nom</value>
+          </text>
+          <text id="/cpon_realisation/inputs/contact/parent/_id:label">
+            <value>ID du Menage</value>
+          </text>
+          <text id="/cpon_realisation/inputs/contact/parent/parent/_id:label">
+            <value>ID de la Zone</value>
+          </text>
+          <text id="/cpon_realisation/inputs/contact/parent/parent/contact/chw_name:label">
+            <value>Nom de l'ASC</value>
+          </text>
+          <text id="/cpon_realisation/inputs/contact/parent/parent/contact/phone:label">
+            <value>Telephone de l'ASC</value>
+          </text>
+          <text id="/cpon_realisation/inputs/contact/parent/parent/parent/_id:label">
+            <value>Health Facility ID</value>
+          </text>
+          <text id="/cpon_realisation/inputs/contact/patient_id:label">
+            <value>ID du Patient</value>
+          </text>
+          <text id="/cpon_realisation/inputs/contact/sex:label">
+            <value>Sexe</value>
+          </text>
+          <text id="/cpon_realisation/inputs/contact/short_name:label">
+            <value>Nom Court</value>
+          </text>
+          <text id="/cpon_realisation/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/cpon_realisation/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/cpon_realisation/inputs/user/contact_id:label">
+            <value>Contact ID</value>
+          </text>
+          <text id="/cpon_realisation/inputs/user/name:label">
+            <value>Nom</value>
+          </text>
+          <text id="/cpon_realisation/inputs/user/phone:label">
+            <value>Telephone</value>
+          </text>
+          <text id="/cpon_realisation/inputs/user:label">
+            <value>Utilisateur</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <cpon_realisation id="cpon_realisation" prefix="J1!cpon_realisation!" delimiter="#" version="2022-05-05  16-37">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+              <name/>
+              <phone/>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <short_name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <_id/>
+                <parent>
+                  <_id/>
+                  <parent>
+                    <_id/>
+                  </parent>
+                  <contact>
+                    <chw_name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <household_id tag="hidden"/>
+          <area_id tag="hidden"/>
+          <facility_id tag="hidden"/>
+          <patient_age_in_years tag="hidden"/>
+          <patient_uuid tag="hidden"/>
+          <patient_id tag="hidden"/>
+          <patient_name tag="hidden"/>
+          <patient_short_name tag="hidden"/>
+          <patient_short_name_start tag="hidden"/>
+          <g_task_realisation>
+            <cpon_followup/>
+          </g_task_realisation>
+          <g_followup_realisation>
+            <g_realisation_date>
+              <followup_done_today/>
+              <followup_date/>
+              <followup_not_done_reason/>
+              <followup_not_done_other/>
+              <patient_found/>
+              <patient_found_how/>
+              <patient_found_other/>
+            </g_realisation_date>
+            <gr_cpn_realisation>
+              <g_cpn_realisation>
+                <did_cpon_visit/>
+                <cpon_scheduled_date/>
+                <cpon_realisation_date/>
+                <cpon_scheduled_date_french/>
+                <cpon_realisation_date_french/>
+                <why_no_cpon_visit/>
+                <why_no_cpon_visit_other/>
+              </g_cpn_realisation>
+              <g_next_cpon_visit>
+                <when_cpon_visit/>
+                <when_cpon_visit_french/>
+                <has_new_cpon_scheduled/>
+                <new_cpon_scheduled_date/>
+                <new_cpon_scheduled_date_french/>
+              </g_next_cpon_visit>
+            </gr_cpn_realisation>
+          </g_followup_realisation>
+          <g_end_followup>
+            <why_end_followup/>
+            <why_end_followup_other/>
+          </g_end_followup>
+          <g_summary>
+            <r_summary/>
+            <n_patient_info/>
+            <r_cpn_info/>
+            <n_not_found/>
+            <n_program_cpon/>
+            <n_realisation_cpon/>
+            <n_next_cpon/>
+            <n_cpon_not_performed/>
+            <n_not_programmed/>
+            <n_next_cpon_not_programmed/>
+            <n_no_info_cpon/>
+            <r_special_instruction/>
+            <n_patient_deceased_form/>
+            <n_not_present_patient_fill_form/>
+            <r_followup/>
+            <n_next_chw_visit/>
+            <n_not_followup/>
+          </g_summary>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </cpon_realisation>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/cpon_realisation/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/cpon_realisation/inputs/source" type="string"/>
+      <bind nodeset="/cpon_realisation/inputs/source_id" type="string"/>
+      <bind nodeset="/cpon_realisation/inputs/user/contact_id" type="db:person"/>
+      <bind nodeset="/cpon_realisation/inputs/user/name" type="string"/>
+      <bind nodeset="/cpon_realisation/inputs/user/phone" type="string"/>
+      <bind nodeset="/cpon_realisation/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/cpon_realisation/inputs/contact/name" type="string"/>
+      <bind nodeset="/cpon_realisation/inputs/contact/short_name" type="string"/>
+      <bind nodeset="/cpon_realisation/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/cpon_realisation/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/cpon_realisation/inputs/contact/sex" type="string"/>
+      <bind nodeset="/cpon_realisation/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/cpon_realisation/inputs/contact/parent/parent/_id" type="string"/>
+      <bind nodeset="/cpon_realisation/inputs/contact/parent/parent/parent/_id" type="string"/>
+      <bind nodeset="/cpon_realisation/inputs/contact/parent/parent/contact/chw_name" type="string"/>
+      <bind nodeset="/cpon_realisation/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind nodeset="/cpon_realisation/household_id" type="string" calculate="../inputs/contact/parent/_id"/>
+      <bind nodeset="/cpon_realisation/area_id" type="string" calculate="../inputs/contact/parent/parent/_id"/>
+      <bind nodeset="/cpon_realisation/facility_id" type="string" calculate="../inputs/contact/parent/parent/parent/_id"/>
+      <bind nodeset="/cpon_realisation/patient_age_in_years" type="string" calculate="floor( difference-in-months( ../inputs/contact/date_of_birth, today() ) div 12 )"/>
+      <bind nodeset="/cpon_realisation/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/cpon_realisation/patient_id" type="string" calculate="../inputs/contact/patient_id"/>
+      <bind nodeset="/cpon_realisation/patient_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/cpon_realisation/patient_short_name" type="string" calculate="coalesce(../inputs/contact/short_name, ../summary/custom_translations/custom_woman_label)"/>
+      <bind nodeset="/cpon_realisation/patient_short_name_start" type="string" calculate="coalesce(../inputs/contact/short_name, ../summary/custom_translations/custom_woman_start_label)"/>
+      <bind nodeset="/cpon_realisation/g_task_realisation/cpon_followup" type="select1" required="true()"/>
+      <bind nodeset="/cpon_realisation/g_followup_realisation" relevant=" /cpon_realisation/g_task_realisation/cpon_followup  = 'cpon_followup'"/>
+      <bind nodeset="/cpon_realisation/g_followup_realisation/g_realisation_date/followup_done_today" type="select1" required="true()"/>
+      <bind nodeset="/cpon_realisation/g_followup_realisation/g_realisation_date/followup_date" type="date" required="true()" constraint=".&lt;today()-1" jr:constraintMsg="jr:itext('/cpon_realisation/g_followup_realisation/g_realisation_date/followup_date:jr:constraintMsg')" relevant=" /cpon_realisation/g_followup_realisation/g_realisation_date/followup_done_today  = 'no'"/>
+      <bind nodeset="/cpon_realisation/g_followup_realisation/g_realisation_date/followup_not_done_reason" type="select1" required="true()" relevant=" /cpon_realisation/g_followup_realisation/g_realisation_date/followup_done_today  = 'no'"/>
+      <bind nodeset="/cpon_realisation/g_followup_realisation/g_realisation_date/followup_not_done_other" type="string" required="true()" relevant=" /cpon_realisation/g_followup_realisation/g_realisation_date/followup_not_done_reason  = 'other'"/>
+      <bind nodeset="/cpon_realisation/g_followup_realisation/g_realisation_date/patient_found" type="select1" required="true()"/>
+      <bind nodeset="/cpon_realisation/g_followup_realisation/g_realisation_date/patient_found_how" type="select1" required="true()" relevant=" /cpon_realisation/g_followup_realisation/g_realisation_date/patient_found ='yes'"/>
+      <bind nodeset="/cpon_realisation/g_followup_realisation/g_realisation_date/patient_found_other" type="string" required="true()" relevant=" /cpon_realisation/g_followup_realisation/g_realisation_date/patient_found_how  = 'other'"/>
+      <bind nodeset="/cpon_realisation/g_followup_realisation/gr_cpn_realisation" relevant=" /cpon_realisation/g_followup_realisation/g_realisation_date/patient_found ='yes'"/>
+      <bind nodeset="/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/did_cpon_visit" type="select1" required="true()"/>
+      <bind nodeset="/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/cpon_scheduled_date" type="date" required="false()" constraint=".&lt;today()-1" jr:constraintMsg="jr:itext('/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/cpon_scheduled_date:jr:constraintMsg')" relevant=" /cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/did_cpon_visit  = 'yes'"/>
+      <bind nodeset="/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/cpon_realisation_date" type="date" required="false()" constraint=".&lt;today()-1" jr:constraintMsg="jr:itext('/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/cpon_realisation_date:jr:constraintMsg')" relevant=" /cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/did_cpon_visit  = 'yes'"/>
+      <bind nodeset="/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/cpon_scheduled_date_french" type="string" calculate="format-date-time( /cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/cpon_scheduled_date ,&quot;%d/%m/%Y&quot;)"/>
+      <bind nodeset="/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/cpon_realisation_date_french" type="string" calculate="format-date-time( /cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/cpon_realisation_date ,&quot;%d/%m/%Y&quot;)"/>
+      <bind nodeset="/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/why_no_cpon_visit" type="select1" required="true()" relevant=" /cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/did_cpon_visit  = 'no' or (decimal-date-time( /cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/cpon_scheduled_date ) != decimal-date-time( /cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/cpon_realisation_date ))"/>
+      <bind nodeset="/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/why_no_cpon_visit_other" type="string" required="true()" relevant=" /cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/why_no_cpon_visit  = 'other'"/>
+      <bind nodeset="/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_next_cpon_visit/when_cpon_visit" type="date" required="false()" constraint=".&gt;today()" jr:constraintMsg="jr:itext('/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_next_cpon_visit/when_cpon_visit:jr:constraintMsg')" relevant=" /cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/did_cpon_visit  = 'no'"/>
+      <bind nodeset="/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_next_cpon_visit/when_cpon_visit_french" type="string" calculate="format-date-time( /cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_next_cpon_visit/when_cpon_visit ,&quot;%d/%m/%Y&quot;)" relevant=" /cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_next_cpon_visit/when_cpon_visit  != ''"/>
+      <bind nodeset="/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_next_cpon_visit/has_new_cpon_scheduled" type="select1" required="true()" relevant=" /cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/did_cpon_visit  = 'yes'"/>
+      <bind nodeset="/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_next_cpon_visit/new_cpon_scheduled_date" type="date" required="true()" constraint=".&gt;today()" jr:constraintMsg="jr:itext('/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_next_cpon_visit/new_cpon_scheduled_date:jr:constraintMsg')" relevant=" /cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_next_cpon_visit/has_new_cpon_scheduled  = 'yes'"/>
+      <bind nodeset="/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_next_cpon_visit/new_cpon_scheduled_date_french" type="string" calculate="format-date-time( /cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_next_cpon_visit/new_cpon_scheduled_date ,&quot;%d/%m/%Y&quot;)" relevant=" /cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_next_cpon_visit/has_new_cpon_scheduled  = 'yes'"/>
+      <bind nodeset="/cpon_realisation/g_end_followup" relevant=" /cpon_realisation/g_task_realisation/cpon_followup  = 'close_followup'"/>
+      <bind nodeset="/cpon_realisation/g_end_followup/why_end_followup" type="select1" required="true()"/>
+      <bind nodeset="/cpon_realisation/g_end_followup/why_end_followup_other" type="string" required="true()" relevant=" /cpon_realisation/g_end_followup/why_end_followup  = 'other'"/>
+      <bind nodeset="/cpon_realisation/g_summary/r_summary" readonly="true()" type="string"/>
+      <bind nodeset="/cpon_realisation/g_summary/n_patient_info" readonly="true()" type="string"/>
+      <bind nodeset="/cpon_realisation/g_summary/r_cpn_info" readonly="true()" type="string"/>
+      <bind nodeset="/cpon_realisation/g_summary/n_not_found" readonly="true()" type="string" relevant=" /cpon_realisation/g_followup_realisation/g_realisation_date/patient_found  = 'no'"/>
+      <bind nodeset="/cpon_realisation/g_summary/n_program_cpon" readonly="true()" type="string" relevant=" /cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/cpon_scheduled_date  != ''"/>
+      <bind nodeset="/cpon_realisation/g_summary/n_realisation_cpon" readonly="true()" type="string" relevant=" /cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/cpon_realisation_date  != ''"/>
+      <bind nodeset="/cpon_realisation/g_summary/n_next_cpon" readonly="true()" type="string" relevant=" /cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_next_cpon_visit/new_cpon_scheduled_date  != '' or  /cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_next_cpon_visit/when_cpon_visit  != ''"/>
+      <bind nodeset="/cpon_realisation/g_summary/n_cpon_not_performed" readonly="true()" type="string" relevant=" /cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/did_cpon_visit  = 'no'"/>
+      <bind nodeset="/cpon_realisation/g_summary/n_not_programmed" readonly="true()" type="string" relevant=" /cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_next_cpon_visit/new_cpon_scheduled_date  = '' and  /cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_next_cpon_visit/when_cpon_visit  = ''"/>
+      <bind nodeset="/cpon_realisation/g_summary/n_next_cpon_not_programmed" readonly="true()" type="string" relevant=" /cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_next_cpon_visit/has_new_cpon_scheduled  = 'no'"/>
+      <bind nodeset="/cpon_realisation/g_summary/n_no_info_cpon" readonly="true()" type="string" relevant=" /cpon_realisation/g_followup_realisation/g_realisation_date/patient_found  = 'no'"/>
+      <bind nodeset="/cpon_realisation/g_summary/r_special_instruction" readonly="true()" type="string"/>
+      <bind nodeset="/cpon_realisation/g_summary/n_patient_deceased_form" readonly="true()" type="string" relevant=" /cpon_realisation/g_end_followup/why_end_followup  = 'patient_deceased'"/>
+      <bind nodeset="/cpon_realisation/g_summary/n_not_present_patient_fill_form" readonly="true()" type="string" relevant=" /cpon_realisation/g_followup_realisation/g_realisation_date/patient_found  = 'yes'"/>
+      <bind nodeset="/cpon_realisation/g_summary/r_followup" readonly="true()" type="string"/>
+      <bind nodeset="/cpon_realisation/g_summary/n_next_chw_visit" readonly="true()" type="string" relevant=" /cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_next_cpon_visit/has_new_cpon_scheduled  = 'yes' or  /cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_next_cpon_visit/when_cpon_visit  != ''"/>
+      <bind nodeset="/cpon_realisation/g_summary/n_not_followup" readonly="true()" type="string" relevant=" /cpon_realisation/g_task_realisation/cpon_followup  = 'close_followup'"/>
+      <bind nodeset="/cpon_realisation/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/cpon_realisation/inputs">
+      <group ref="/cpon_realisation/inputs/user">
+        <label ref="jr:itext('/cpon_realisation/inputs/user:label')"/>
+        <input appearance="db-object" ref="/cpon_realisation/inputs/user/contact_id">
+          <label ref="jr:itext('/cpon_realisation/inputs/user/contact_id:label')"/>
+        </input>
+      </group>
+      <group ref="/cpon_realisation/inputs/contact">
+        <input appearance="db-object" ref="/cpon_realisation/inputs/contact/_id">
+          <label ref="jr:itext('/cpon_realisation/inputs/contact/_id:label')"/>
+        </input>
+        <group ref="/cpon_realisation/inputs/contact/parent">
+          <input appearance="hidden" ref="/cpon_realisation/inputs/contact/parent/_id">
+            <label ref="jr:itext('/cpon_realisation/inputs/contact/parent/_id:label')"/>
+          </input>
+          <group ref="/cpon_realisation/inputs/contact/parent/parent">
+            <input appearance="hidden" ref="/cpon_realisation/inputs/contact/parent/parent/_id">
+              <label ref="jr:itext('/cpon_realisation/inputs/contact/parent/parent/_id:label')"/>
+            </input>
+            <group ref="/cpon_realisation/inputs/contact/parent/parent/parent">
+              <input appearance="hidden" ref="/cpon_realisation/inputs/contact/parent/parent/parent/_id">
+                <label ref="jr:itext('/cpon_realisation/inputs/contact/parent/parent/parent/_id:label')"/>
+              </input>
+            </group>
+            <group ref="/cpon_realisation/inputs/contact/parent/parent/contact"/>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/cpon_realisation/g_task_realisation">
+      <label ref="jr:itext('/cpon_realisation/g_task_realisation:label')"/>
+      <select1 ref="/cpon_realisation/g_task_realisation/cpon_followup">
+        <label ref="jr:itext('/cpon_realisation/g_task_realisation/cpon_followup:label')"/>
+        <item>
+          <label ref="jr:itext('/cpon_realisation/g_task_realisation/cpon_followup/cpon_followup:label')"/>
+          <value>cpon_followup</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/cpon_realisation/g_task_realisation/cpon_followup/close_followup:label')"/>
+          <value>close_followup</value>
+        </item>
+      </select1>
+    </group>
+    <group ref="/cpon_realisation/g_followup_realisation">
+      <label ref="jr:itext('/cpon_realisation/g_followup_realisation:label')"/>
+      <group appearance="field-list" ref="/cpon_realisation/g_followup_realisation/g_realisation_date">
+        <label ref="jr:itext('/cpon_realisation/g_followup_realisation/g_realisation_date:label')"/>
+        <select1 ref="/cpon_realisation/g_followup_realisation/g_realisation_date/followup_done_today">
+          <label ref="jr:itext('/cpon_realisation/g_followup_realisation/g_realisation_date/followup_done_today:label')"/>
+          <item>
+            <label ref="jr:itext('/cpon_realisation/g_followup_realisation/g_realisation_date/followup_done_today/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/cpon_realisation/g_followup_realisation/g_realisation_date/followup_done_today/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+        <input ref="/cpon_realisation/g_followup_realisation/g_realisation_date/followup_date">
+          <label ref="jr:itext('/cpon_realisation/g_followup_realisation/g_realisation_date/followup_date:label')"/>
+        </input>
+        <select1 ref="/cpon_realisation/g_followup_realisation/g_realisation_date/followup_not_done_reason">
+          <label ref="jr:itext('/cpon_realisation/g_followup_realisation/g_realisation_date/followup_not_done_reason:label')"/>
+          <item>
+            <label ref="jr:itext('/cpon_realisation/g_followup_realisation/g_realisation_date/followup_not_done_reason/phone_discharged:label')"/>
+            <value>phone_discharged</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/cpon_realisation/g_followup_realisation/g_realisation_date/followup_not_done_reason/phone_lost:label')"/>
+            <value>phone_lost</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/cpon_realisation/g_followup_realisation/g_realisation_date/followup_not_done_reason/other:label')"/>
+            <value>other</value>
+          </item>
+        </select1>
+        <input ref="/cpon_realisation/g_followup_realisation/g_realisation_date/followup_not_done_other">
+          <label ref="jr:itext('/cpon_realisation/g_followup_realisation/g_realisation_date/followup_not_done_other:label')"/>
+        </input>
+        <select1 ref="/cpon_realisation/g_followup_realisation/g_realisation_date/patient_found">
+          <label ref="jr:itext('/cpon_realisation/g_followup_realisation/g_realisation_date/patient_found:label')"/>
+          <item>
+            <label ref="jr:itext('/cpon_realisation/g_followup_realisation/g_realisation_date/patient_found/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/cpon_realisation/g_followup_realisation/g_realisation_date/patient_found/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+        <select1 ref="/cpon_realisation/g_followup_realisation/g_realisation_date/patient_found_how">
+          <label ref="jr:itext('/cpon_realisation/g_followup_realisation/g_realisation_date/patient_found_how:label')"/>
+          <item>
+            <label ref="jr:itext('/cpon_realisation/g_followup_realisation/g_realisation_date/patient_found_how/during_home_visit:label')"/>
+            <value>during_home_visit</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/cpon_realisation/g_followup_realisation/g_realisation_date/patient_found_how/patient_to_chw:label')"/>
+            <value>patient_to_chw</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/cpon_realisation/g_followup_realisation/g_realisation_date/patient_found_how/other:label')"/>
+            <value>other</value>
+          </item>
+        </select1>
+        <input ref="/cpon_realisation/g_followup_realisation/g_realisation_date/patient_found_other">
+          <label ref="jr:itext('/cpon_realisation/g_followup_realisation/g_realisation_date/patient_found_other:label')"/>
+        </input>
+      </group>
+      <group ref="/cpon_realisation/g_followup_realisation/gr_cpn_realisation">
+        <group appearance="field-list" ref="/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation">
+          <label ref="jr:itext('/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation:label')"/>
+          <select1 ref="/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/did_cpon_visit">
+            <label ref="jr:itext('/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/did_cpon_visit:label')"/>
+            <item>
+              <label ref="jr:itext('/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/did_cpon_visit/yes:label')"/>
+              <value>yes</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/did_cpon_visit/no:label')"/>
+              <value>no</value>
+            </item>
+          </select1>
+          <input ref="/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/cpon_scheduled_date">
+            <label ref="jr:itext('/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/cpon_scheduled_date:label')"/>
+          </input>
+          <input ref="/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/cpon_realisation_date">
+            <label ref="jr:itext('/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/cpon_realisation_date:label')"/>
+          </input>
+          <select1 ref="/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/why_no_cpon_visit">
+            <label ref="jr:itext('/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/why_no_cpon_visit:label')"/>
+            <item>
+              <label ref="jr:itext('/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/why_no_cpon_visit/lack_time:label')"/>
+              <value>lack_time</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/why_no_cpon_visit/lack_motivation:label')"/>
+              <value>lack_motivation</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/why_no_cpon_visit/refusal:label')"/>
+              <value>refusal</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/why_no_cpon_visit/other:label')"/>
+              <value>other</value>
+            </item>
+          </select1>
+          <input ref="/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/why_no_cpon_visit_other">
+            <label ref="jr:itext('/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_cpn_realisation/why_no_cpon_visit_other:label')"/>
+          </input>
+        </group>
+        <group appearance="field-list" ref="/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_next_cpon_visit">
+          <label ref="jr:itext('/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_next_cpon_visit:label')"/>
+          <input ref="/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_next_cpon_visit/when_cpon_visit">
+            <label ref="jr:itext('/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_next_cpon_visit/when_cpon_visit:label')"/>
+          </input>
+          <select1 ref="/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_next_cpon_visit/has_new_cpon_scheduled">
+            <label ref="jr:itext('/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_next_cpon_visit/has_new_cpon_scheduled:label')"/>
+            <item>
+              <label ref="jr:itext('/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_next_cpon_visit/has_new_cpon_scheduled/yes:label')"/>
+              <value>yes</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_next_cpon_visit/has_new_cpon_scheduled/no:label')"/>
+              <value>no</value>
+            </item>
+          </select1>
+          <input ref="/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_next_cpon_visit/new_cpon_scheduled_date">
+            <label ref="jr:itext('/cpon_realisation/g_followup_realisation/gr_cpn_realisation/g_next_cpon_visit/new_cpon_scheduled_date:label')"/>
+          </input>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/cpon_realisation/g_end_followup">
+      <label ref="jr:itext('/cpon_realisation/g_end_followup:label')"/>
+      <select1 ref="/cpon_realisation/g_end_followup/why_end_followup">
+        <label ref="jr:itext('/cpon_realisation/g_end_followup/why_end_followup:label')"/>
+        <item>
+          <label ref="jr:itext('/cpon_realisation/g_end_followup/why_end_followup/change_residence:label')"/>
+          <value>change_residence</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/cpon_realisation/g_end_followup/why_end_followup/patient_deceased:label')"/>
+          <value>patient_deceased</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/cpon_realisation/g_end_followup/why_end_followup/other:label')"/>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/cpon_realisation/g_end_followup/why_end_followup_other">
+        <label ref="jr:itext('/cpon_realisation/g_end_followup/why_end_followup_other:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list summary" ref="/cpon_realisation/g_summary">
+      <label ref="jr:itext('/cpon_realisation/g_summary:label')"/>
+      <input appearance="h1 yellow" ref="/cpon_realisation/g_summary/r_summary">
+        <label ref="jr:itext('/cpon_realisation/g_summary/r_summary:label')"/>
+      </input>
+      <input ref="/cpon_realisation/g_summary/n_patient_info">
+        <label ref="jr:itext('/cpon_realisation/g_summary/n_patient_info:label')"/>
+      </input>
+      <input appearance="h1 green" ref="/cpon_realisation/g_summary/r_cpn_info">
+        <label ref="jr:itext('/cpon_realisation/g_summary/r_cpn_info:label')"/>
+      </input>
+      <input ref="/cpon_realisation/g_summary/n_not_found">
+        <label ref="jr:itext('/cpon_realisation/g_summary/n_not_found:label')"/>
+      </input>
+      <input ref="/cpon_realisation/g_summary/n_program_cpon">
+        <label ref="jr:itext('/cpon_realisation/g_summary/n_program_cpon:label')"/>
+      </input>
+      <input ref="/cpon_realisation/g_summary/n_realisation_cpon">
+        <label ref="jr:itext('/cpon_realisation/g_summary/n_realisation_cpon:label')"/>
+      </input>
+      <input ref="/cpon_realisation/g_summary/n_next_cpon">
+        <label ref="jr:itext('/cpon_realisation/g_summary/n_next_cpon:label')"/>
+      </input>
+      <input ref="/cpon_realisation/g_summary/n_cpon_not_performed">
+        <label ref="jr:itext('/cpon_realisation/g_summary/n_cpon_not_performed:label')"/>
+      </input>
+      <input ref="/cpon_realisation/g_summary/n_not_programmed">
+        <label ref="jr:itext('/cpon_realisation/g_summary/n_not_programmed:label')"/>
+      </input>
+      <input ref="/cpon_realisation/g_summary/n_next_cpon_not_programmed">
+        <label ref="jr:itext('/cpon_realisation/g_summary/n_next_cpon_not_programmed:label')"/>
+      </input>
+      <input ref="/cpon_realisation/g_summary/n_no_info_cpon">
+        <label ref="jr:itext('/cpon_realisation/g_summary/n_no_info_cpon:label')"/>
+      </input>
+      <input appearance="h1 blue" ref="/cpon_realisation/g_summary/r_special_instruction">
+        <label ref="jr:itext('/cpon_realisation/g_summary/r_special_instruction:label')"/>
+      </input>
+      <input ref="/cpon_realisation/g_summary/n_patient_deceased_form">
+        <label ref="jr:itext('/cpon_realisation/g_summary/n_patient_deceased_form:label')"/>
+      </input>
+      <input ref="/cpon_realisation/g_summary/n_not_present_patient_fill_form">
+        <label ref="jr:itext('/cpon_realisation/g_summary/n_not_present_patient_fill_form:label')"/>
+      </input>
+      <input appearance="h1 green" ref="/cpon_realisation/g_summary/r_followup">
+        <label ref="jr:itext('/cpon_realisation/g_summary/r_followup:label')"/>
+      </input>
+      <input ref="/cpon_realisation/g_summary/n_next_chw_visit">
+        <label ref="jr:itext('/cpon_realisation/g_summary/n_next_chw_visit:label')"/>
+      </input>
+      <input ref="/cpon_realisation/g_summary/n_not_followup">
+        <label ref="jr:itext('/cpon_realisation/g_summary/n_not_followup:label')"/>
+      </input>
+    </group>
+  </h:body>
+</h:html>

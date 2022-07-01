@@ -1,0 +1,126 @@
+
+  <model>
+    <instance>
+        <newborn_registration xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" id="newborn_registration" prefix="J1!newborn_registration!" delimiter="#" version="2022-05-13  10-43">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <t_newborn_at_delivery/>
+            <t_delivery_date/>
+            <user>
+              <contact_id/>
+              <name/>
+              <phone/>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <short_name/>
+              <patient_id/>
+              <sex/>
+              <parent>
+                <_id/>
+                <parent>
+                  <_id/>
+                  <parent>
+                    <_id/>
+                  </parent>
+                  <contact>
+                    <chw_name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <household_id tag="hidden"/>
+          <area_id tag="hidden"/>
+          <facility_id tag="hidden"/>
+          <patient_age_in_years tag="hidden"/>
+          <patient_uuid tag="hidden"/>
+          <patient_id tag="hidden"/>
+          <patient_name tag="hidden"/>
+          <patient_short_name tag="hidden"/>
+          <patient_short_name_start tag="hidden"/>
+          <delivery_date/>
+          <format_delivery_date/>
+          <days_since_delivery/>
+          <months_since_delivery/>
+          <weeks_since_delivery/>
+          <newborn_at_delivery/>
+          <newborn_at_delivery_number/>
+          <g_profil_creation>
+            <g_creation_info>
+              <n_create_profile/>
+              <newborn_to_create/>
+            </g_creation_info>
+            <g_child_registration_count/>
+            <g_child_registration jr:template="">
+              <c92_household db-doc="true">
+                <first_name/>
+                <last_name/>
+                <name/>
+                <parent>
+                  <_id/>
+                  <parent>
+                    <_id/>
+                    <parent>
+                      <_id/>
+                    </parent>
+                  </parent>
+                </parent>
+                <type>contact</type>
+                <contact_type>c92_household</contact_type>
+                <place_type>c90_household</place_type>
+                <ID/>
+                <date_of_birth/>
+                <date_of_birth_method/>
+                <person_age_in_years/>
+                <person_age_in_months/>
+                <person_age_in_days/>
+                <ephemeral_dob>
+                  <dob/>
+                  <dob_calendar/>
+                  <age_label/>
+                  <age_years/>
+                  <age_months/>
+                  <age_days/>
+                  <ephemeral_months/>
+                  <ephemeral_years/>
+                  <dob_approx/>
+                  <dob_raw/>
+                  <dob_iso/>
+                  <dob_debug/>
+                </ephemeral_dob>
+                <sex/>
+                <select_role>patient</select_role>
+                <auto_role>patient</auto_role>
+                <role>patient</role>
+                <birth_certificate/>
+                <declaration_within_the_legal_time/>
+                <date_of_issue_birth_certificate/>
+                <advice_for_birth_certificate/>
+                <mother_id/>
+                <mother_uuid/>
+                <mother_name/>
+                <created_by/>
+                <created_from db-doc-ref="/newborn_registration"/>
+              </c92_household>
+            </g_child_registration>
+          </g_profil_creation>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </newborn_registration>
+      </instance>
+    <instance id="contact-summary"/>
+  </model>
+
