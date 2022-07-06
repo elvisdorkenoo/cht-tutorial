@@ -348,9 +348,9 @@
       <bind nodeset="/data/community/contact/name" type="string"/>
       <bind nodeset="/data/community/contact/contact_name" type="string" calculate="../name"/>
       <bind nodeset="/data/community/contact/_id" type="db:person"/>
-      <bind nodeset="/data/community/is_name_generated" type="select1" required="true()" calculate="if(  /data/community/generated_name  = ../name, 'true', 'false')" relevant="not( /data/community/contact/_id ) or selected( . , 'true') or boolean( /data/community/contact/_id )" readonly="boolean( /data/community/contact/_id )"/>
+      <bind nodeset="/data/community/is_name_generated" type="select1" relevant="not( /data/community/contact/_id ) or selected( . , 'true') or boolean( /data/community/contact/_id )" required="true()" readonly="boolean( /data/community/contact/_id )" calculate="if(  /data/community/generated_name  = ../name, 'true', 'false')"/>
       <bind nodeset="/data/community/generated_name" type="string" calculate=" /data/init/generated_name_translation "/>
-      <bind nodeset="/data/community/name" type="string" required="true()" calculate="if( ( selected( /data/community/is_name_generated , 'true') or selected( /data/community/is_name_generated , 'yes') ),  /data/community/generated_name , .)" relevant="boolean( /data/community/contact/_id ) or not( /data/community/contact/_id ) or not(selected( /data/community/is_name_generated , 'true')) or not(selected( /data/community/is_name_generated , 'yes'))"/>
+      <bind nodeset="/data/community/name" type="string" relevant="boolean( /data/community/contact/_id ) or not( /data/community/contact/_id ) or not(selected( /data/community/is_name_generated , 'true')) or not(selected( /data/community/is_name_generated , 'yes'))" required="true()" calculate="if( ( selected( /data/community/is_name_generated , 'true') or selected( /data/community/is_name_generated , 'yes') ),  /data/community/generated_name , .)"/>
       <bind nodeset="/data/community/external_id" type="string"/>
       <bind nodeset="/data/community/address" type="string"/>
       <bind nodeset="/data/community/notes" type="string"/>

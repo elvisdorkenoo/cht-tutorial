@@ -1,0 +1,87 @@
+
+  <model>
+    <instance>
+        <child_health_assessment xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" id="child_health_assessment" prefix="J1!child_health_assessment!" delimiter="#" version="2022-07-06 16:44:13">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <contact>
+              <_id/>
+              <name/>
+              <short_name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <parent>
+                  <contact>
+                    <name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <patient_age_in_years tag="hidden">0</patient_age_in_years>
+          <patient_age_in_months tag="hidden">0</patient_age_in_months>
+          <patient_age_in_days tag="hidden"/>
+          <patient_uuid tag="hidden"/>
+          <patient_id_ tag="hidden"/>
+          <patient_name tag="hidden"/>
+          <patient_short_name tag="hidden"/>
+          <patient_display_name tag="hidden"/>
+          <patient_sex tag="hidden"/>
+          <patient_details>
+            <patient_height/>
+            <patient_weight/>
+            <immunisation_package_yes_no/>
+          </patient_details>
+          <last_immunisation_details>
+            <last_immunisation/>
+            <immunisation_reaction_yes_no/>
+          </last_immunisation_details>
+          <patient_state>
+            <patient_unwell/>
+            <symptoms/>
+            <symptoms_first_date/>
+          </patient_state>
+          <group_review tag="hidden">
+            <submit/>
+            <r_referral>
+              <r_referral_header/>
+              <r_referral_details/>
+            </r_referral>
+            <r_followup>
+              <r_followup_header/>
+              <r_followup_detils/>
+            </r_followup>
+            <summary_ tag="hidden">
+              <summary_patient_details tag="hidden"/>
+              <summary_patient_id tag="hidden"/>
+              <summary_patient_name tag="hidden"/>
+              <summary_patient_sex tag="hidden"/>
+              <summary_patient_weight tag="hidden"/>
+              <summary_patient_height tag="hidden"/>
+              <bmi tag="hidden"/>
+              <summary_BMI tag="hidden"/>
+              <summary_symptoms_details tag="hidden"/>
+              <summary_symptoms tag="hidden"/>
+              <summary_symptoms_date tag="hidden"/>
+            </summary_>
+          </group_review>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </child_health_assessment>
+      </instance>
+    <instance id="contact-summary"/>
+  </model>
+

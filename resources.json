@@ -2,5 +2,6 @@
   "medic-district-hospital": "medic-district-hospital.svg",
   "medic-health-facility": "medic-health-center.svg",
   "medic-community": "medic-chw-area.svg",
-  "medic-household": "medic-family.svg"
+  "medic-household": "medic-family.svg",
+  "icon-follow-up" : "icon-follow-up.png"
 }
