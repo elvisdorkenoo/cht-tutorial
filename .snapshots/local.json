@@ -6,6 +6,42 @@
     "localhost/medic": "GPr17W8o14OppewznUWzqw=="
   },
   "resources": {
-    "localhost/medic": "qmjrti/ngaVXwyIUJc+TSg=="
+    "localhost/medic": "Snjg6YSn4F9WuZKm0w9ZKw=="
+  },
+  "form:contact:community:create": {
+    "localhost/medic": "AUce2qrtUHfsiGsWCFVPPA=="
+  },
+  "form:contact:community:edit": {
+    "localhost/medic": "LAEsuXXXy//+zeeOJmiKuA=="
+  },
+  "form:contact:district:create": {
+    "localhost/medic": "UXiWVMrpA57q0LIQWbRQGg=="
+  },
+  "form:contact:district:edit": {
+    "localhost/medic": "j+lXQVmfrmcAyFNKYU4Zpg=="
+  },
+  "form:contact:health_facility:create": {
+    "localhost/medic": "rfLUcqjahOWiMr5/QjqKnw=="
+  },
+  "form:contact:health_facility:edit": {
+    "localhost/medic": "A3yKvddE2Jv4ofpY4v9bkg=="
+  },
+  "form:contact:household:create": {
+    "localhost/medic": "MA7xuWctkJ4DP2fzkL8Fnw=="
+  },
+  "form:contact:household:edit": {
+    "localhost/medic": "zS/yqy0yKpyfTor7QUKqwA=="
+  },
+  "form:contact:moh:create": {
+    "localhost/medic": "Jpb7c7eLtrkYTMqXoUnNxA=="
+  },
+  "form:contact:moh:edit": {
+    "localhost/medic": "HGoxYt4qCueRV3Jt3qQQZQ=="
+  },
+  "messages-en": {
+    "localhost/medic": "rkBPzooLg6QoB2v2BDOcXA=="
+  },
+  "form:child_health_assessment": {
+    "localhost/medic": "ng844FKsx2JXAF06gxqr1g=="
   }
 }

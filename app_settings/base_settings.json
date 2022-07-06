@@ -7,7 +7,8 @@
       "name": "usertype.district-coordinator"
     },
     "health-assistant": {
-      "name": "usertype.health-assistant"
+      "name": "usertype.health-assistant",
+      "offline": false
     },
     "vhw": {
       "name": "usertype.vhw",
@@ -31,7 +32,7 @@
 
     ],
     "can_create_records": [
-
+      "vhw"
     ],
     "can_create_users": [
 
@@ -43,13 +44,13 @@
 
     ],
     "can_delete_reports": [
-
+      "vhw"
     ],
     "can_delete_users": [
 
     ],
     "can_edit": [
-
+      "vhw"
     ],
     "can_edit_profile": [
 
@@ -74,7 +75,7 @@
 
     ],
     "can_update_reports": [
-
+      "vhw"
     ],
     "can_update_users": [
 
@@ -86,22 +87,34 @@
 
     ],
     "can_view_analytics": [
-
+      "moh_coordinator",
+      "district_coordinator",
+      "health-assistant"
     ],
     "can_view_analytics_tab": [
-
+      "moh_coordinator",
+      "district_coordinator",
+      "health-assistant"
     ],
     "can_view_call_action": [
 
     ],
     "can_view_contacts": [
-
+      "district_coordinator",
+      "health-assistant",
+      "vhw"
     ],
     "can_view_contacts_tab": [
+      "district_coordinator",
+      "health-assistant",
+      "vhw"
+    ],
+    "can_view_last_visited_date": [
 
     ],
-    "can_view_last_visited_date": [],
-    "can_view_uhc_stats": [],
+    "can_view_uhc_stats": [
+
+    ],
     "can_view_message_action": [
 
     ],
@@ -115,30 +128,36 @@
 
     ],
     "can_view_reports": [
-
+      "health-assistant",
+      "vhw"
     ],
     "can_view_reports_tab": [
-
+      "health-assistant",
+      "vhw"
     ],
     "can_view_tasks": [
-
+      "vhw"
     ],
     "can_view_tasks_tab": [
-
+      "vhw"
     ],
     "can_view_tasks_group": [
-
+      "vhw"
     ],
     "can_view_unallocated_data_records": [
 
     ],
     "can_view_users": [
-
-    ],
-    "can_write_wealth_quintiles": [],
-    "can_aggregate_targets": [
       "moh_coordinator",
       "district_coordinator"
+    ],
+    "can_write_wealth_quintiles": [
+
+    ],
+    "can_aggregate_targets": [
+      "moh_coordinator",
+      "district_coordinator",
+      "health-assistant"
     ],
     "can_upgrade": [
 
@@ -150,7 +169,7 @@
       "name_key": "contact.type.moh",
       "group_key": "contact.type.moh.plural",
       "create_key": "contact.type.moh.new",
-      "edit_key": "contact.type.place.edit",
+      "edit_key": "contact.type.moh.edit",
       "icon": "medic-district-hospital",
       "create_form": "form:contact:moh:create",
       "edit_form": "form:contact:moh:edit"
@@ -160,7 +179,7 @@
       "name_key": "contact.type.district",
       "group_key": "contact.type.district.plural",
       "create_key": "contact.type.district.new",
-      "edit_key": "contact.type.place.edit",
+      "edit_key": "contact.type.district.edit",
       "parents": [
         "moh"
       ],
@@ -173,7 +192,7 @@
       "name_key": "contact.type.health_facility",
       "group_key": "contact.type.health_facility.plural",
       "create_key": "contact.type.health_facility.new",
-      "edit_key": "contact.type.place.edit",
+      "edit_key": "contact.type.health_facility.edit",
       "parents": [
         "moh",
         "district"
@@ -187,7 +206,7 @@
       "name_key": "contact.type.community",
       "group_key": "contact.type.community.plural",
       "create_key": "contact.type.community.new",
-      "edit_key": "contact.type.place.edit",
+      "edit_key": "contact.type.community.edit",
       "parents": [
         "moh",
         "district",
@@ -203,7 +222,6 @@
       "group_key": "contact.type.household.plural",
       "create_key": "contact.type.household.new",
       "edit_key": "contact.type.household.edit",
-      "primary_contact_key": "clinic.field.contact",
       "parents": [
         "moh",
         "district",
@@ -211,8 +229,8 @@
         "community"
       ],
       "icon": "medic-family",
-      "create_form": "form:contact:person:create",
-      "edit_form": "form:contact:person:edit"
+      "create_form": "form:contact:household:create",
+      "edit_form": "form:contact:household:edit"
     }
   ]
 }

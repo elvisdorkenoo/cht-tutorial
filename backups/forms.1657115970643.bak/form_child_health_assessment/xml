@@ -1,0 +1,398 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>Child Health Assessment</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/child_health_assessment/group_review/r_followup/r_followup_detils:label">
+            <value>&lt;span style="text-align:center;"&gt;A follow up task will be created. Please visit the patient again in 3 days to assess his recovery.&lt;/span&gt;</value>
+          </text>
+          <text id="/child_health_assessment/group_review/r_followup/r_followup_header:label">
+            <value>&lt;h4 style="text-align:center;"&gt;Follow up&lt;/h4&gt;</value>
+          </text>
+          <text id="/child_health_assessment/group_review/r_referral/r_referral_details:label">
+            <value>&lt;span style="text-align:center;"&gt;Refer to the Health Facility to get help as soon as possible.&lt;/span&gt;</value>
+          </text>
+          <text id="/child_health_assessment/group_review/r_referral/r_referral_header:label">
+            <value>&lt;h4 style="text-align:center;"&gt;Referral.&lt;/h4&gt;</value>
+          </text>
+          <text id="/child_health_assessment/group_review/submit:label">
+            <value>&lt;h4 style="text-align:center;"&gt;Be sure you Submit to complete this action.&lt;/h4&gt;</value>
+          </text>
+          <text id="/child_health_assessment/group_review/summary_/patient_uuid:label">
+            <value>../../../inputs/contact/_id</value>
+          </text>
+          <text id="/child_health_assessment/group_review/summary_/summary_BMI:label">
+            <value>BMI : (<output value=" /child_health_assessment/patient_details/patient_weight "/>/<output value=" /child_health_assessment/patient_details/patient_height "/>)</value>
+          </text>
+          <text id="/child_health_assessment/group_review/summary_/summary_patient_details:label">
+            <value>&lt;h4 style="text-align:center;"&gt;Patient Details&lt;/h4&gt;</value>
+          </text>
+          <text id="/child_health_assessment/group_review/summary_/summary_patient_height:label">
+            <value>Height : <output value=" /child_health_assessment/patient_details/patient_height "/></value>
+          </text>
+          <text id="/child_health_assessment/group_review/summary_/summary_patient_id:label">
+            <value>Patient ID : <output value=" /child_health_assessment/patient_id_ "/></value>
+          </text>
+          <text id="/child_health_assessment/group_review/summary_/summary_patient_name:label">
+            <value>Patient Name : <output value=" /child_health_assessment/patient_name "/></value>
+          </text>
+          <text id="/child_health_assessment/group_review/summary_/summary_patient_sex:label">
+            <value>Patient Sex : <output value=" /child_health_assessment/patient_sex "/></value>
+          </text>
+          <text id="/child_health_assessment/group_review/summary_/summary_patient_weight:label">
+            <value>Weight : <output value=" /child_health_assessment/patient_details/patient_weight "/></value>
+          </text>
+          <text id="/child_health_assessment/inputs/contact/_id:hint">
+            <value>Select one from the list</value>
+          </text>
+          <text id="/child_health_assessment/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/child_health_assessment/inputs/contact/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/child_health_assessment/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/child_health_assessment/inputs/contact/parent/parent/contact/name:label">
+            <value>CHW name</value>
+          </text>
+          <text id="/child_health_assessment/inputs/contact/parent/parent/contact/phone:label">
+            <value>CHW phone</value>
+          </text>
+          <text id="/child_health_assessment/inputs/contact/parent/parent/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/child_health_assessment/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/child_health_assessment/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/child_health_assessment/inputs/contact/short_name:label">
+            <value>Short Name</value>
+          </text>
+          <text id="/child_health_assessment/inputs/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/child_health_assessment/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/child_health_assessment/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/child_health_assessment/last_immunisation_details/immunisation_reaction_yes_no:label">
+            <value>Did the patient present reaction after immunisation?</value>
+          </text>
+          <text id="/child_health_assessment/last_immunisation_details/last_immunisation:hint">
+            <value>Select one from the list</value>
+          </text>
+          <text id="/child_health_assessment/last_immunisation_details/last_immunisation:label">
+            <value>What is the received last immunisation package</value>
+          </text>
+          <text id="/child_health_assessment/patient_details/immunisation_package_yes_no:label">
+            <value>Did the patient receive an immunisation package?</value>
+          </text>
+          <text id="/child_health_assessment/patient_details/patient_height:label">
+            <value>What's the patient height in cm?</value>
+          </text>
+          <text id="/child_health_assessment/patient_details/patient_weight:label">
+            <value>What's the patient weight in kg?</value>
+          </text>
+          <text id="/child_health_assessment/patient_details:label">
+            <value>Patient details :</value>
+          </text>
+          <text id="/child_health_assessment/patient_state/patient_unwell:label">
+            <value>Is the patient unwell?</value>
+          </text>
+          <text id="/child_health_assessment/patient_state/symptoms:label">
+            <value>Select the symptoms the patient is having now</value>
+          </text>
+          <text id="/child_health_assessment/patient_state/symptoms_first_date:label">
+            <value>When did the symptoms first started?</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <child_health_assessment id="child_health_assessment" prefix="J1!child_health_assessment!" delimiter="#" version="2022-07-06 13:49:52">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <contact>
+              <_id/>
+              <name/>
+              <short_name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <parent>
+                  <contact>
+                    <name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <patient_age_in_years tag="hidden">0</patient_age_in_years>
+          <patient_age_in_months tag="hidden">0</patient_age_in_months>
+          <patient_age_in_days tag="hidden"/>
+          <patient_uuid tag="hidden"/>
+          <patient_id_ tag="hidden"/>
+          <patient_name tag="hidden"/>
+          <patient_short_name tag="hidden"/>
+          <patient_display_name tag="hidden"/>
+          <patient_sex tag="hidden"/>
+          <patient_details>
+            <patient_height/>
+            <patient_weight/>
+            <immunisation_package_yes_no/>
+          </patient_details>
+          <last_immunisation_details>
+            <last_immunisation/>
+            <immunisation_reaction_yes_no/>
+          </last_immunisation_details>
+          <patient_state>
+            <patient_unwell/>
+            <symptoms/>
+            <symptoms_first_date/>
+          </patient_state>
+          <group_review tag="hidden">
+            <submit/>
+            <r_referral>
+              <r_referral_header/>
+              <r_referral_details/>
+            </r_referral>
+            <r_followup>
+              <r_followup_header/>
+              <r_followup_detils/>
+            </r_followup>
+            <summary_ tag="hidden">
+              <summary_patient_details tag="hidden"/>
+              <summary_patient_id tag="hidden"/>
+              <summary_patient_name tag="hidden"/>
+              <summary_patient_sex tag="hidden"/>
+              <summary_patient_weight tag="hidden"/>
+              <summary_patient_height tag="hidden"/>
+              <summary_BMI tag="hidden"/>
+              <patient_uuid tag="hidden"/>
+            </summary_>
+          </group_review>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </child_health_assessment>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/child_health_assessment/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/child_health_assessment/inputs/source" type="string"/>
+      <bind nodeset="/child_health_assessment/inputs/source_id" type="string"/>
+      <bind nodeset="/child_health_assessment/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/child_health_assessment/inputs/contact/name" type="string"/>
+      <bind nodeset="/child_health_assessment/inputs/contact/short_name" type="string"/>
+      <bind nodeset="/child_health_assessment/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/child_health_assessment/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/child_health_assessment/inputs/contact/sex" type="string"/>
+      <bind nodeset="/child_health_assessment/inputs/contact/parent/parent/contact/name" type="string"/>
+      <bind nodeset="/child_health_assessment/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind nodeset="/child_health_assessment/patient_age_in_years" type="string" calculate="floor( difference-in-months(  /child_health_assessment/inputs/contact/date_of_birth , today() ) div 12 )"/>
+      <bind nodeset="/child_health_assessment/patient_age_in_months" type="string" calculate="difference-in-months(  /child_health_assessment/inputs/contact/date_of_birth , today() )"/>
+      <bind nodeset="/child_health_assessment/patient_age_in_days" type="string" calculate="floor(decimal-date-time(today()) - decimal-date-time( /child_health_assessment/inputs/contact/date_of_birth ) )"/>
+      <bind nodeset="/child_health_assessment/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/child_health_assessment/patient_id_" type="string" calculate="../inputs/contact/patient_id"/>
+      <bind nodeset="/child_health_assessment/patient_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/child_health_assessment/patient_short_name" type="string" calculate="../inputs/contact/short_name"/>
+      <bind nodeset="/child_health_assessment/patient_display_name" type="string" calculate="if(../patient_short_name = '', ../patient_name, concat(../patient_name, ' (', ../patient_short_name, ')'))"/>
+      <bind nodeset="/child_health_assessment/patient_sex" type="string" calculate="../inputs/contact/sex"/>
+      <bind nodeset="/child_health_assessment/patient_details/patient_height" type="int" required="true()"/>
+      <bind nodeset="/child_health_assessment/patient_details/patient_weight" type="int" required="true()"/>
+      <bind nodeset="/child_health_assessment/patient_details/immunisation_package_yes_no" type="select1" required="true()"/>
+      <bind nodeset="/child_health_assessment/last_immunisation_details" relevant="selected(../patient_details/immunisation_package_yes_no, 'yes')"/>
+      <bind nodeset="/child_health_assessment/last_immunisation_details/last_immunisation" type="select1" required="true()"/>
+      <bind nodeset="/child_health_assessment/last_immunisation_details/immunisation_reaction_yes_no" type="select1" required="true()"/>
+      <bind nodeset="/child_health_assessment/patient_state/patient_unwell" type="select1" required="true()"/>
+      <bind nodeset="/child_health_assessment/patient_state/symptoms" type="select" required="false()"/>
+      <bind nodeset="/child_health_assessment/patient_state/symptoms_first_date" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" required="false()"/>
+      <bind nodeset="/child_health_assessment/group_review/submit" readonly="true()" type="string"/>
+      <bind nodeset="/child_health_assessment/group_review/r_referral" relevant="selected(../../patient_state/patient_unwell, 'yes')"/>
+      <bind nodeset="/child_health_assessment/group_review/r_referral/r_referral_header" readonly="true()" type="string"/>
+      <bind nodeset="/child_health_assessment/group_review/r_referral/r_referral_details" readonly="true()" type="string"/>
+      <bind nodeset="/child_health_assessment/group_review/r_followup" relevant="selected(../../patient_state/patient_unwell, 'yes')"/>
+      <bind nodeset="/child_health_assessment/group_review/r_followup/r_followup_header" readonly="true()" type="string"/>
+      <bind nodeset="/child_health_assessment/group_review/r_followup/r_followup_detils" readonly="true()" type="string"/>
+      <bind nodeset="/child_health_assessment/group_review/summary_/summary_patient_details" readonly="true()" type="string"/>
+      <bind nodeset="/child_health_assessment/group_review/summary_/summary_patient_id" readonly="true()" type="string"/>
+      <bind nodeset="/child_health_assessment/group_review/summary_/summary_patient_name" readonly="true()" type="string"/>
+      <bind nodeset="/child_health_assessment/group_review/summary_/summary_patient_sex" readonly="true()" type="string"/>
+      <bind nodeset="/child_health_assessment/group_review/summary_/summary_patient_weight" readonly="true()" type="string"/>
+      <bind nodeset="/child_health_assessment/group_review/summary_/summary_patient_height" readonly="true()" type="string"/>
+      <bind nodeset="/child_health_assessment/group_review/summary_/summary_BMI" readonly="true()" type="string" calculate="0"/>
+      <bind nodeset="/child_health_assessment/group_review/summary_/patient_uuid" readonly="true()" type="string" calculate="../../../inputs/contact/_id"/>
+      <bind nodeset="/child_health_assessment/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/child_health_assessment/inputs">
+      <group ref="/child_health_assessment/inputs/contact">
+        <label ref="jr:itext('/child_health_assessment/inputs/contact:label')"/>
+        <input appearance="db-object" ref="/child_health_assessment/inputs/contact/_id">
+          <label ref="jr:itext('/child_health_assessment/inputs/contact/_id:label')"/>
+          <hint ref="jr:itext('/child_health_assessment/inputs/contact/_id:hint')"/>
+        </input>
+        <group ref="/child_health_assessment/inputs/contact/parent">
+          <group ref="/child_health_assessment/inputs/contact/parent/parent">
+            <group ref="/child_health_assessment/inputs/contact/parent/parent/contact">
+              <label ref="jr:itext('/child_health_assessment/inputs/contact/parent/parent/contact:label')"/>
+            </group>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/child_health_assessment/patient_details">
+      <label ref="jr:itext('/child_health_assessment/patient_details:label')"/>
+      <input ref="/child_health_assessment/patient_details/patient_height">
+        <label ref="jr:itext('/child_health_assessment/patient_details/patient_height:label')"/>
+      </input>
+      <input ref="/child_health_assessment/patient_details/patient_weight">
+        <label ref="jr:itext('/child_health_assessment/patient_details/patient_weight:label')"/>
+      </input>
+      <select1 ref="/child_health_assessment/patient_details/immunisation_package_yes_no">
+        <label ref="jr:itext('/child_health_assessment/patient_details/immunisation_package_yes_no:label')"/>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/child_health_assessment/last_immunisation_details">
+      <select1 ref="/child_health_assessment/last_immunisation_details/last_immunisation">
+        <label ref="jr:itext('/child_health_assessment/last_immunisation_details/last_immunisation:label')"/>
+        <hint ref="jr:itext('/child_health_assessment/last_immunisation_details/last_immunisation:hint')"/>
+        <item>
+          <label>Hepatitis A and B Pediatric</label>
+          <value>hepatitis</value>
+        </item>
+        <item>
+          <label>Influenza</label>
+          <value>influenza</value>
+        </item>
+        <item>
+          <label>MENB - Meningococcal Group B</label>
+          <value>menb</value>
+        </item>
+        <item>
+          <label>Measles, Mumps and Rubella</label>
+          <value>measles</value>
+        </item>
+        <item>
+          <label>Pneumocaccal13-valen</label>
+          <value>pneumocaccal13-valen</value>
+        </item>
+      </select1>
+      <select1 ref="/child_health_assessment/last_immunisation_details/immunisation_reaction_yes_no">
+        <label ref="jr:itext('/child_health_assessment/last_immunisation_details/immunisation_reaction_yes_no:label')"/>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/child_health_assessment/patient_state">
+      <select1 ref="/child_health_assessment/patient_state/patient_unwell">
+        <label ref="jr:itext('/child_health_assessment/patient_state/patient_unwell:label')"/>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <select ref="/child_health_assessment/patient_state/symptoms">
+        <label ref="jr:itext('/child_health_assessment/patient_state/symptoms:label')"/>
+        <item>
+          <label>Fever</label>
+          <value>fever</value>
+        </item>
+        <item>
+          <label>Nausea</label>
+          <value>nausea</value>
+        </item>
+        <item>
+          <label>Seizures</label>
+          <value>seizures</value>
+        </item>
+      </select>
+      <input ref="/child_health_assessment/patient_state/symptoms_first_date">
+        <label ref="jr:itext('/child_health_assessment/patient_state/symptoms_first_date:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list summary" ref="/child_health_assessment/group_review">
+      <input ref="/child_health_assessment/group_review/submit">
+        <label ref="jr:itext('/child_health_assessment/group_review/submit:label')"/>
+      </input>
+      <group ref="/child_health_assessment/group_review/r_referral">
+        <input appearance="h1 green" ref="/child_health_assessment/group_review/r_referral/r_referral_header">
+          <label ref="jr:itext('/child_health_assessment/group_review/r_referral/r_referral_header:label')"/>
+        </input>
+        <input ref="/child_health_assessment/group_review/r_referral/r_referral_details">
+          <label ref="jr:itext('/child_health_assessment/group_review/r_referral/r_referral_details:label')"/>
+        </input>
+      </group>
+      <group ref="/child_health_assessment/group_review/r_followup">
+        <input appearance="h1 blue" ref="/child_health_assessment/group_review/r_followup/r_followup_header">
+          <label ref="jr:itext('/child_health_assessment/group_review/r_followup/r_followup_header:label')"/>
+        </input>
+        <input ref="/child_health_assessment/group_review/r_followup/r_followup_detils">
+          <label ref="jr:itext('/child_health_assessment/group_review/r_followup/r_followup_detils:label')"/>
+        </input>
+      </group>
+      <group ref="/child_health_assessment/group_review/summary_">
+        <input appearance="h1 yellow" ref="/child_health_assessment/group_review/summary_/summary_patient_details">
+          <label ref="jr:itext('/child_health_assessment/group_review/summary_/summary_patient_details:label')"/>
+        </input>
+        <input ref="/child_health_assessment/group_review/summary_/summary_patient_id">
+          <label ref="jr:itext('/child_health_assessment/group_review/summary_/summary_patient_id:label')"/>
+        </input>
+        <input ref="/child_health_assessment/group_review/summary_/summary_patient_name">
+          <label ref="jr:itext('/child_health_assessment/group_review/summary_/summary_patient_name:label')"/>
+        </input>
+        <input ref="/child_health_assessment/group_review/summary_/summary_patient_sex">
+          <label ref="jr:itext('/child_health_assessment/group_review/summary_/summary_patient_sex:label')"/>
+        </input>
+        <input ref="/child_health_assessment/group_review/summary_/summary_patient_weight">
+          <label ref="jr:itext('/child_health_assessment/group_review/summary_/summary_patient_weight:label')"/>
+        </input>
+        <input ref="/child_health_assessment/group_review/summary_/summary_patient_height">
+          <label ref="jr:itext('/child_health_assessment/group_review/summary_/summary_patient_height:label')"/>
+        </input>
+        <input ref="/child_health_assessment/group_review/summary_/summary_BMI">
+          <label ref="jr:itext('/child_health_assessment/group_review/summary_/summary_BMI:label')"/>
+        </input>
+        <input ref="/child_health_assessment/group_review/summary_/patient_uuid">
+          <label ref="jr:itext('/child_health_assessment/group_review/summary_/patient_uuid:label')"/>
+        </input>
+      </group>
+    </group>
+  </h:body>
+</h:html>
