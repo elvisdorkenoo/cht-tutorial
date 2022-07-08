@@ -12,10 +12,12 @@ module.exports = [
     idType: 'report',
     appliesToType: ['followup_child_health'],
     appliesIf: function (contact, report) {
+      // eslint-disable-next-line no-console
+      console.log('passesIf', report);
       return contact.reports.includes(report);
     },
     passesIf: function (contact, report) {
-      return contact.reports.includes(report);
+      return contact.reports.includes(report) && report.fields.danger_signs.visit_confirm ==='yes';
     },
     date: 'reported',
   },

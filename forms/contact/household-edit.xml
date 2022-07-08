@@ -348,7 +348,7 @@
       <bind nodeset="/data/household/contact/name" type="string"/>
       <bind nodeset="/data/household/contact/contact_name" type="string" calculate="../name"/>
       <bind nodeset="/data/household/contact/_id" type="db:person"/>
-      <bind nodeset="/data/household/is_name_generated" type="select1" required="true()" calculate="if(  /data/household/generated_name  = ../name, 'true', 'false')" relevant="not( /data/household/contact/_id ) or selected( . , 'true') or boolean( /data/household/contact/_id )" readonly="boolean( /data/household/contact/_id )"/>
+      <bind nodeset="/data/household/is_name_generated" type="select1" required="true()" relevant="not( /data/household/contact/_id ) or selected( . , 'true') or boolean( /data/household/contact/_id )" readonly="boolean( /data/household/contact/_id )" calculate="if(  /data/household/generated_name  = ../name, 'true', 'false')"/>
       <bind nodeset="/data/household/generated_name" type="string" calculate=" /data/init/generated_name_translation "/>
       <bind nodeset="/data/household/name" type="string" required="true()" relevant="boolean( /data/household/contact/_id ) or not( /data/household/contact/_id ) or not(selected( /data/household/is_name_generated , 'true')) or not(selected( /data/household/is_name_generated , 'yes'))" calculate="if( ( selected( /data/household/is_name_generated , 'true') or selected( /data/household/is_name_generated , 'yes') ),  /data/household/generated_name , .)"/>
       <bind nodeset="/data/household/external_id" type="string"/>

@@ -6,37 +6,37 @@
     "localhost/medic": "GPr17W8o14OppewznUWzqw=="
   },
   "resources": {
-    "localhost/medic": "Q4cfPq9rnE45RhMOGJ1GfQ=="
+    "localhost/medic": "FMbUmw4KOCCB/cXPj9jiBA=="
   },
   "form:contact:community:create": {
-    "localhost/medic": "wptfOWOmk1EMHM0ci4bPcQ=="
+    "localhost/medic": "/AX170Ac0+DUHAszVt/tXw=="
   },
   "form:contact:community:edit": {
-    "localhost/medic": "LJbJJjJbezbtblBRYbNWiQ=="
+    "localhost/medic": "4vZy2UDcm9wGJ7T7bDq3+w=="
   },
   "form:contact:district:create": {
-    "localhost/medic": "2//3W4MIzORsMLJekntYyw=="
+    "localhost/medic": "YDnaSB4xDVspcZMkRwSqJA=="
   },
   "form:contact:district:edit": {
-    "localhost/medic": "ntVcd4HuyR3GeujRDJvf+w=="
+    "localhost/medic": "6/mcDkMjveizaO1mccPSjw=="
   },
   "form:contact:health_facility:create": {
-    "localhost/medic": "w0ZVEq8Tr1O47yyp3/4jCQ=="
+    "localhost/medic": "+DmDX9iz+fPdb9527iVd6w=="
   },
   "form:contact:health_facility:edit": {
-    "localhost/medic": "g9kg9LRAKH0GuwnmKzV23g=="
+    "localhost/medic": "OZgqqDadfocCL3EvDM/7tg=="
   },
   "form:contact:household:create": {
-    "localhost/medic": "/Yv2E3+oFNj9eNRlx0LNkA=="
+    "localhost/medic": "y+VwgwBubQMNDI3XjaNbtQ=="
   },
   "form:contact:household:edit": {
-    "localhost/medic": "D/bVCs6xcRWMKtkmqke+JA=="
+    "localhost/medic": "IN7L/QcYkzUj9kx9yveivg=="
   },
   "form:contact:moh:create": {
-    "localhost/medic": "42RLEcoyYPFiAjakRiRz5w=="
+    "localhost/medic": "5N1vfwizyMLSyaMXiaDrww=="
   },
   "form:contact:moh:edit": {
-    "localhost/medic": "9/T+ms7PMib/nWLYz718/Q=="
+    "localhost/medic": "nQlZ4abt7rfCV69Ci0/veQ=="
   },
   "messages-en": {
     "localhost/medic": "rkBPzooLg6QoB2v2BDOcXA=="
@@ -46,5 +46,11 @@
   },
   "form:followup_child_health": {
     "localhost/medic": "brNrr06v5amSZt4tDQGuCw=="
+  },
+  "form:contact:person:create": {
+    "localhost/medic": "v8swRXt6DlPi7yqVs420Wg=="
+  },
+  "form:contact:person:edit": {
+    "localhost/medic": "5ex9+K60NbJyCCh/klSu7w=="
   }
 }
