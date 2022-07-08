@@ -10,22 +10,30 @@ module.exports = [
     subtitle_translation_key: 'This month',
     appliesTo: 'reports',
     idType: 'report',
-    appliesIf: true,
-    passesIf: true,
-    date: 'now',
+    appliesToType: ['followup_child_health'],
+    appliesIf: function (contact, report) {
+      return contact.reports.includes(report);
+    },
+    passesIf: function (contact, report) {
+      return contact.reports.includes(report);
+    },
+    date: 'reported',
   },
 
   // CHILD ASSESSMENT THIS MONTH
   {
     id: 'child-assessment-this-month',
     type: 'count',
-    icon: 'infant',
+    icon: 'icon-infant',
     goal: -1,
     translation_key: 'Child Assessment',
     subtitle_translation_key: 'This month',
     appliesTo: 'reports',
     idType: 'report',
-    appliesIf: true,
+    appliesToType: ['child_health_assessment'],
+    appliesIf: function (contact, report) {
+      return contact.reports.includes(report);
+    },
     date: 'reported',
   },
 ];

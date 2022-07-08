@@ -89,12 +89,14 @@
     "can_view_analytics": [
       "moh_coordinator",
       "district_coordinator",
-      "health-assistant"
+      "health-assistant",
+      "vhw"
     ],
     "can_view_analytics_tab": [
       "moh_coordinator",
       "district_coordinator",
-      "health-assistant"
+      "health-assistant",
+      "vhw"
     ],
     "can_view_call_action": [
 
