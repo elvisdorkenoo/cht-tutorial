@@ -2,9 +2,13 @@
   "name": "healthy-village",
   "version": "1.0.0",
   "description": "Healthy Village",
-  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
   "scripts": {
-    "eslint": "eslint **.json **.js"
+    "eslint": "eslint **.json **.js",
+    "test": "TZ=Africa/Nairobi mocha --reporter progress test/**/*.spec.js --timeout 25000",
+    "ci": "./test/check-app-settings-is-committed && npm run eslint && npm run test"
   },
   "author": "",
   "license": "ISC",
